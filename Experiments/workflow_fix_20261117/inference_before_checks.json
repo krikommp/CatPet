@@ -1,0 +1,37 @@
+[
+  {
+    "path": "Tools/ActionEncoder/action_config_schema.py",
+    "matches_backup": true,
+    "sha256": "fa8f5502327117a336b660774d2bb90e1b571c77b67a028ff2383b7173915767"
+  },
+  {
+    "path": "Tools/ActionEncoder/encoder.py",
+    "matches_backup": true,
+    "sha256": "2f92cd1959cd334b147c69af360a16ff3a5c803ce07fffe8c93fbb190c5ffa90"
+  },
+  {
+    "path": "Tools/ActionEncoder/server.py",
+    "matches_backup": true,
+    "sha256": "12ae6d3cf8efc9e4f01d8e00208d0c0c3aff43fa290fac927a86a54eee1d842a"
+  },
+  {
+    "path": "Assets/Scripts/ActionEncoder/LocalActionEncoderClient.cs",
+    "matches_backup": true,
+    "sha256": "bd81c531f73caca6fb189ad8e8fd38888329b852ab553f5b00f59ca0c8c15543"
+  },
+  {
+    "path": "Assets/Scripts/ActionLanguage/CandidateProviders.cs",
+    "matches_backup": true,
+    "sha256": "94ea5bf4cf5f2bbead8aaf84aabb10b50707f9dc9472d093140e067849712586"
+  },
+  {
+    "path": "Assets/Scripts/ActionLanguage/ActionReviewModels.cs",
+    "matches_backup": true,
+    "sha256": "fd29a904f43cbf6c41793dda2366d74c7ee242f462cc39af832a9a060dce1351"
+  },
+  {
+    "path": "Assets/Scripts/ActionLanguage/Editor/ActionReviewWindow.cs",
+    "matches_backup": true,
+    "sha256": "a06bdcb487475a63ced5aade5a00a19d006d369e20f698f986848ed9ecc3fb52"
+  }
+]

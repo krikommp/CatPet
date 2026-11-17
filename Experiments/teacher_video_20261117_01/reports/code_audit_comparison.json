@@ -1,0 +1,137 @@
+{
+  "baseline_legacy_fixed_eval": {
+    "checkpoint_id": "8cfb7a72bdac",
+    "metrics": {
+      "total": 28,
+      "gold_execute": 14,
+      "objective_constraints_total": 34,
+      "gold_scope_unresolved_rows": 1,
+      "decision_correct": 20,
+      "structure_correct": 16,
+      "execute_structure_correct": 10,
+      "false_execute_execute": 0,
+      "constraint_total": 0,
+      "constraint_passed": 0,
+      "predicted_scope_unresolved_rows": 7,
+      "objective_constraints_passed": 16,
+      "gold_unsupported": 6,
+      "false_execute_unsupported": 6,
+      "gold_none": 4,
+      "false_execute_none": 2,
+      "gold_ambiguous": 4,
+      "false_execute_ambiguous": 0
+    },
+    "constraints_by_kind": {
+      "cycle_count": {
+        "total": 19,
+        "passed": 11
+      },
+      "exact_duration_ms": {
+        "total": 8,
+        "passed": 0
+      },
+      "relative": {
+        "total": 3,
+        "passed": 3
+      },
+      "gradual_relative": {
+        "total": 4,
+        "passed": 2
+      }
+    },
+    "technical_error_reasons": {}
+  },
+  "round9_legacy_fixed_eval": {
+    "checkpoint_id": "838f2c1ac110",
+    "metrics": {
+      "total": 28,
+      "gold_execute": 14,
+      "objective_constraints_total": 34,
+      "gold_scope_unresolved_rows": 1,
+      "decision_correct": 20,
+      "structure_correct": 17,
+      "execute_structure_correct": 11,
+      "false_execute_execute": 0,
+      "constraint_total": 0,
+      "constraint_passed": 0,
+      "predicted_scope_unresolved_rows": 5,
+      "objective_constraints_passed": 16,
+      "gold_unsupported": 6,
+      "false_execute_unsupported": 5,
+      "gold_none": 4,
+      "false_execute_none": 2,
+      "gold_ambiguous": 4,
+      "false_execute_ambiguous": 0
+    },
+    "constraints_by_kind": {
+      "cycle_count": {
+        "total": 19,
+        "passed": 13
+      },
+      "exact_duration_ms": {
+        "total": 8,
+        "passed": 0
+      },
+      "relative": {
+        "total": 3,
+        "passed": 2
+      },
+      "gradual_relative": {
+        "total": 4,
+        "passed": 1
+      }
+    },
+    "technical_error_reasons": {}
+  },
+  "round9_strict_fixed_eval": {
+    "checkpoint_id": "838f2c1ac110",
+    "metrics": {
+      "total": 28,
+      "gold_execute": 14,
+      "objective_constraints_total": 34,
+      "gold_scope_unresolved_rows": 1,
+      "technical_errors": 19,
+      "instruction_guard_rejections": 15,
+      "predicted_scope_unresolved_rows": 4,
+      "constraint_total": 0,
+      "decision_correct": 7,
+      "structure_correct": 7,
+      "execute_structure_correct": 1,
+      "false_execute_execute": 0,
+      "constraint_passed": 0,
+      "objective_constraints_passed": 2,
+      "gold_unsupported": 6,
+      "false_execute_unsupported": 0,
+      "gold_none": 4,
+      "false_execute_none": 1,
+      "gold_ambiguous": 4,
+      "false_execute_ambiguous": 0
+    },
+    "constraints_by_kind": {
+      "cycle_count": {
+        "total": 19,
+        "passed": 1
+      },
+      "exact_duration_ms": {
+        "total": 8,
+        "passed": 0
+      },
+      "relative": {
+        "total": 3,
+        "passed": 1
+      },
+      "gradual_relative": {
+        "total": 4,
+        "passed": 0
+      }
+    },
+    "technical_error_reasons": {
+      "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 15,
+      "invalid_hold_mapping": 2,
+      "hold_segment_too_short": 2
+    }
+  },
+  "comparison_scope": "Frozen baseline and Gemini round 9, same 28 test descriptions; families may be seen; no independent generalization or visual quality claim; this assistant did not train either checkpoint.",
+  "fixed_eval_sha256": "b5026d771cf25e619ff16b693eb13748b6faa3220b323d856ba0355c0add7460",
+  "parser_sha256": "145d2aa5b4441782b13a41f418c1dec6626ebd826ec0262020db1bc3774ea4a6"
+}

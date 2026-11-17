@@ -1,0 +1,28 @@
+[
+  {
+    "shared_file": "Tools\\ActionEncoder\\action_config_schema.py",
+    "shared_current_sha256": "fa8f5502327117a336b660774d2bb90e1b571c77b67a028ff2383b7173915767",
+    "initial_snapshot_sha256": "fa8f5502327117a336b660774d2bb90e1b571c77b67a028ff2383b7173915767",
+    "shared_unchanged_since_initial_snapshot": true,
+    "isolated_sha256": "f0240d66ccc94bce5d6813126cfa9b2b65ea10f1169c816df2fa9d6e87b7bb54"
+  },
+  {
+    "shared_file": "Tools\\ActionEncoder\\encoder.py",
+    "shared_current_sha256": "2f92cd1959cd334b147c69af360a16ff3a5c803ce07fffe8c93fbb190c5ffa90",
+    "initial_snapshot_sha256": "2f92cd1959cd334b147c69af360a16ff3a5c803ce07fffe8c93fbb190c5ffa90",
+    "shared_unchanged_since_initial_snapshot": true,
+    "isolated_sha256": "537d795f9c816d8fcae5c8190dc139fc19b81756bbb57f1d8c6243a6444c1be9"
+  },
+  {
+    "shared_file": "Tools\\ActionEncoder\\train_action_config.py",
+    "shared_current_sha256": "88b02d86303b8a3187f1e0c5e4a352dbfef46e89ab58e737f7724fb4b4377953",
+    "initial_snapshot_sha256": "88b02d86303b8a3187f1e0c5e4a352dbfef46e89ab58e737f7724fb4b4377953",
+    "shared_unchanged_since_initial_snapshot": true,
+    "isolated_sha256": "78b13b8c5f21c9c133b2f7995ad9824e7ea0c0dc6b5e55eca68f0367d6c76ebb"
+  },
+  {
+    "isolated_file": "source/input_constraints.py",
+    "isolated_sha256": "145d2aa5b4441782b13a41f418c1dec6626ebd826ec0262020db1bc3774ea4a6",
+    "new_file": true
+  }
+]

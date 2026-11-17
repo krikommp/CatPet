@@ -1,0 +1,14 @@
+{
+  "purpose": "Root-cause diagnostic only, not another candidate checkpoint or release",
+  "data": "Frozen train27 for all gradient updates; existing val8 for observation only; fixed test never loaded by this script",
+  "arms": [
+    {"name": "original_recipe_200_updates", "steps": 200, "batch_size": 32, "head_lr": 0.001, "backbone_lr": 0.00008, "unfreeze_last_layers": 2},
+    {"name": "frozen_backbone_head_200_updates", "steps": 200, "batch_size": 32, "head_lr": 0.001, "unfreeze_last_layers": 0}
+  ],
+  "observation_steps": [0, 6, 20, 50, 100, 200],
+  "seed": 1337,
+  "cpu_threads": 2,
+  "checkpoint_writes": false,
+  "hyperparameter_search": false,
+  "interpretation": "Train fit capacity is not heldout success. Do not select, save, deploy or tune any model based on this diagnostic. Reproduce first6 original updates and compare saved selected state to rule out implementation mismatch."
+}

@@ -1,0 +1,108 @@
+{
+  "schema_version": "technical-visual-smoke.v1",
+  "stage": "technical_render_smoke_only",
+  "run_directory": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a",
+  "reviewer_type": "AI",
+  "reviewer_context": "/root/dataset_audit",
+  "observation_method": "all_extracted_frames_contact_sheets_and_trajectory",
+  "observation_tool": "functions.view_image",
+  "physical_report": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\reports\\real_recording_evidence_check.json",
+    "sha256": "331c019be37879775195788a0c19eafc71fec6b59066367a0821018ba0565c7f"
+  },
+  "total_viewed_frames": 106,
+  "technical_render_smoke_passed": true,
+  "framing_regression_resolved": true,
+  "training_acceptance": false,
+  "training_eligible": false,
+  "release_approved": false,
+  "semantic_scores_assigned": false,
+  "naturalness_scores_assigned": false,
+  "previous_crop_report": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\reports\\real_recording_visual_smoke.v2.json",
+    "sha256": "bb4e3385e763b320bba8214206805667003b85fe9bfea4223d0c8c836d209cf8"
+  },
+  "rows": [
+    {
+      "candidate_id": "flow-blink",
+      "config_sha256": "ed68d68e57e920496f41d1cd1ef4a507fae5aaa995ee5955fd8a6c14d844f1d3",
+      "video_sha256": "2ab155c6fb4d9f9b3380fb65da4bb502f282216fde68a2b853672104a4ef43a0",
+      "evidence_sha256": "01dd2fc11ea9ddab047b5af007f9d6e794fd40bd33199920cc82b65dd639a22f",
+      "trajectory_sha256": "f14723c06ad685a261d29ef319003ea3e0ad5002a38043eb39d6579776eb1faf",
+      "decoded_frames": 25,
+      "all_frames_viewed": true,
+      "render_visible": true,
+      "head_and_hands_in_frame": true,
+      "timing_consistent_with_recorded_trajectory": true,
+      "observations": [
+        "All 25 frames were viewed. Eyes visibly close and reopen; restored by approximately 600 ms. Render is visible and changing. Head, ears and both hands remain inside the frame."
+      ],
+      "contact_sheets": [
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\contact_sheets\\flow-blink_page1.png",
+          "sha256": "93073032726d87b78393450224b0432f24bb789e8b77a8f4019e5d12a4b1e1fb"
+        }
+      ]
+    },
+    {
+      "candidate_id": "flow-parallel",
+      "config_sha256": "e67afe6ae9e80a25b763cae75d8bc59952e73a441b917b87c26c1e0693131b2d",
+      "video_sha256": "c33164a10c70e135ccf7d73d332c3eda87137e933675c87d4db123c0baf12209",
+      "evidence_sha256": "20562c19705f11ec89d11e0789aca1b990072a79b9b3a9ab0d1bb9261f8977a7",
+      "trajectory_sha256": "3375f9d0c1151456dd065e5f5994825534a3c6d9a366c7bf5fc96cbc657bda2e",
+      "decoded_frames": 31,
+      "all_frames_viewed": true,
+      "render_visible": true,
+      "head_and_hands_in_frame": true,
+      "timing_consistent_with_recorded_trajectory": true,
+      "observations": [
+        "All 31 frames were viewed. Eye closure overlaps visible arm elevation; eye and arm return are visible by approximately 600 and 800 ms respectively.",
+        "Full-resolution frame 14 at approximately 467 ms was also viewed. The complete raised hand and fingertips remain within the right frame boundary. Head and ears are not cropped. Wider fixed framing resolves the preceding run crop."
+      ],
+      "contact_sheets": [
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\contact_sheets\\flow-parallel_page1.png",
+          "sha256": "6e2d96a0847e17adb8c5423083c16400d144faaedc60b89344ff75d0da9b86a1"
+        },
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\contact_sheets\\flow-parallel_page2.png",
+          "sha256": "735af4cde743596a6a90d276ce487d53488981166425ea8d9d2fb52103867ab8"
+        }
+      ],
+      "additional_full_resolution_frame": {
+        "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\contact_sheets\\flow-parallel\\frame_0015.png",
+        "sha256": "5ae1fdcbb8f194ea20595e4aa78cea770d3f805888e220735930332d444ae311"
+      }
+    },
+    {
+      "candidate_id": "flow-sequence",
+      "config_sha256": "69a682a350420282add12c39b1814cab0e92250fa0b7f4563c50f199ce390198",
+      "video_sha256": "df13f03e77302303b039262b8bea3ba2c474f10b4c332882addaa7b1c6346016",
+      "evidence_sha256": "b4718c6e854762b5304bf7a529a23dae266ec292c9d2389c6957a6e5e005c761",
+      "trajectory_sha256": "e8688e145b109e0539b904adfd0d9592b7124f65852f9d694f28824e47cc3a3f",
+      "decoded_frames": 50,
+      "all_frames_viewed": true,
+      "render_visible": true,
+      "head_and_hands_in_frame": true,
+      "timing_consistent_with_recorded_trajectory": true,
+      "observations": [
+        "All 50 frames were viewed. Blink finishes near 600 ms; head pose begins changing around 633 ms, then returns near 1400 ms. Eyes remain open during the head movement. Head, ears and hands remain inside the frame."
+      ],
+      "contact_sheets": [
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\contact_sheets\\flow-sequence_page1.png",
+          "sha256": "cefd253a10ae2e14c9ebd70f34cf3c343cf950626a8b9c2b0a5f42d4c4564fb0"
+        },
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\contact_sheets\\flow-sequence_page2.png",
+          "sha256": "2651023a8613360116f9ef5e7a8d855da5879076f00d5ad6278ce570c6d14a80"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Technical rendering, framing and timing smoke only; no persona, semantic quality, naturalness or formal resource calibration acceptance.",
+    "Timestamped contact sheets cover every decoded frame but do not rate perceptual playback smoothness.",
+    "This observation record is deliberately not an accepted training review and cannot be passed to export_snapshot as admission evidence."
+  ]
+}

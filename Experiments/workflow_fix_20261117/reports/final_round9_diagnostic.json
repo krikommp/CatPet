@@ -1,0 +1,2174 @@
+{
+  "stage": "diagnostic_report",
+  "checkpoint_id": "838f2c1ac110",
+  "execution_source_sha256": {
+    "retrain_and_eval.py": "cdc5dae384970081f0865bd4e98d40e650ddf317384afbdae79134795175e743",
+    "encoder.py": "26d3d2f0a189704f5b1823587c05f414a96afd51e6b3a02257855a59b97f36e3",
+    "action_config_schema.py": "414d3c26cc2b333f048fbf8565380eaf3d266f33085eb572e3947f39a34bcda3",
+    "input_constraints.py": "32b0072999f616240746ab21d3a1ae2f2b2131ff179663ace8294f4862e44de9"
+  },
+  "input_policy": "legacy_raw_text",
+  "checkpoint_sha256": {
+    "config_head.pt": "838f2c1ac110f5fa56359b5f67b8a2beda83c21f2a5e5921fdd86b9c906ec0be",
+    "backbone_state.pt": "dbd29e4a4689f0025465e25d6fb90f27908f675b2404138477ac9a5a69271a89",
+    "manifest.json": "870cc437e7954fd30388d05b773951521e5bbae5bb8b6a10e3d6ab97d7ee8bb9"
+  },
+  "data": {
+    "dataset": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_video_20261117_01\\data\\fixed_eval.jsonl",
+    "dataset_sha256": "b5026d771cf25e619ff16b693eb13748b6faa3220b323d856ba0355c0add7460",
+    "validated_frozen_snapshot": false,
+    "scope": "diagnostic_only_not_training_admission",
+    "source_row_count": 28,
+    "split_scope": "test",
+    "evaluated_row_count": 28
+  },
+  "metrics": {
+    "total": 28,
+    "gold_execute": 14,
+    "technical_errors": 19,
+    "gold_unsupported": 6,
+    "decision_correct": 6,
+    "structure_correct": 6,
+    "execute_structure_correct": 0,
+    "false_execute_unsupported": 1,
+    "gold_none": 4,
+    "false_execute_none": 1,
+    "gold_ambiguous": 4,
+    "false_execute_ambiguous": 0
+  },
+  "confusion": {
+    "execute": {
+      "technical_error": 14
+    },
+    "unsupported": {
+      "technical_error": 4,
+      "none": 1,
+      "execute": 1
+    },
+    "none": {
+      "technical_error": 1,
+      "execute": 1,
+      "none": 2
+    },
+    "ambiguous": {
+      "ambiguous": 4
+    }
+  },
+  "predictions": [
+    {
+      "raw_text": "请完成摇头一次，完整周期用800毫秒。",
+      "input_role": "instruction",
+      "group_id": "sf-bf89577b644e46a0",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 800
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1530,
+                    "controls": {
+                      "hold_ratio": 0.129,
+                      "amplitude_scale": 0.807
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 1,
+            "actual": 1,
+            "span": "摇头一次"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 800,
+            "actual": 1530,
+            "span": "完整周期用800毫秒"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 800,
+            "actual": 1530,
+            "span": "完整周期用800毫秒"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "请摇头两次，第一次用0.8秒，第二次用1.2秒。",
+      "input_role": "instruction",
+      "group_id": "sf-bf89577b644e46a0",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 800
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1200
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1153,
+                    "controls": {
+                      "hold_ratio": 0.077,
+                      "amplitude_scale": 0.888
+                    }
+                  },
+                  {
+                    "duration_ms": 1546,
+                    "controls": {
+                      "hold_ratio": 0.137,
+                      "amplitude_scale": 0.966
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 2,
+            "actual": 2,
+            "span": "摇头两次"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 800,
+            "actual": 1153,
+            "span": "第一次用0.8秒"
+          },
+          {
+            "kind": "referenced_cycle_exists",
+            "action_index": 0,
+            "passed": true,
+            "expected_minimum": 1,
+            "actual": 2,
+            "span": "第一次"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "expected": 1200,
+            "actual": 1546,
+            "span": "第二次用1.2秒"
+          },
+          {
+            "kind": "referenced_cycle_exists",
+            "action_index": 0,
+            "passed": true,
+            "expected_minimum": 2,
+            "actual": 2,
+            "span": "第二次"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 800,
+            "actual": 1153,
+            "span": "第一次用0.8秒"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "expected": 1200,
+            "actual": 1546,
+            "span": "第二次用1.2秒"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "请摇头三次，每次用900毫秒。",
+      "input_role": "instruction",
+      "group_id": "sf-bf89577b644e46a0",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 900
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 900
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 900
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1158,
+                    "controls": {
+                      "hold_ratio": 0.077,
+                      "amplitude_scale": 0.846
+                    }
+                  },
+                  {
+                    "duration_ms": 1363,
+                    "controls": {
+                      "hold_ratio": 0.102,
+                      "amplitude_scale": 0.846
+                    }
+                  },
+                  {
+                    "duration_ms": 1780,
+                    "controls": {
+                      "hold_ratio": 0.162,
+                      "amplitude_scale": 0.859
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 3,
+            "actual": 3,
+            "span": "摇头三次"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 900,
+            "actual": 1158,
+            "span": "每次用900毫秒"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "expected": 900,
+            "actual": 1363,
+            "span": "每次用900毫秒"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 2,
+            "expected": 900,
+            "actual": 1780,
+            "span": "每次用900毫秒"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 900,
+            "actual": 1158,
+            "span": "每次用900毫秒"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "expected": 900,
+            "actual": 1363,
+            "span": "每次用900毫秒"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 2,
+            "expected": 900,
+            "actual": 1780,
+            "span": "每次用900毫秒"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "摇头两次，第二次比前一次更慢。",
+      "input_role": "instruction",
+      "group_id": "sf-bf89577b644e46a0",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 800
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1400
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1247,
+                    "controls": {
+                      "hold_ratio": 0.082,
+                      "amplitude_scale": 0.848
+                    }
+                  },
+                  {
+                    "duration_ms": 1633,
+                    "controls": {
+                      "hold_ratio": 0.14,
+                      "amplitude_scale": 0.895
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 2,
+            "actual": 2,
+            "span": "摇头两次"
+          },
+          {
+            "kind": "referenced_cycle_exists",
+            "action_index": 0,
+            "passed": true,
+            "expected_minimum": 2,
+            "actual": 2,
+            "span": "第二次"
+          }
+        ],
+        "violations": [],
+        "unresolved": [
+          {
+            "kind": "relative_reference_scope",
+            "span": "第二次比前一次更慢"
+          },
+          {
+            "kind": "uncovered_explicit_quantity",
+            "span": "一次"
+          }
+        ],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "摇头两次，第二次幅度更小。",
+      "input_role": "instruction",
+      "group_id": "sf-bf89577b644e46a0",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.6,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1269,
+                    "controls": {
+                      "hold_ratio": 0.084,
+                      "amplitude_scale": 0.845
+                    }
+                  },
+                  {
+                    "duration_ms": 1647,
+                    "controls": {
+                      "hold_ratio": 0.143,
+                      "amplitude_scale": 0.899
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 2,
+            "actual": 2,
+            "span": "摇头两次"
+          },
+          {
+            "kind": "referenced_cycle_exists",
+            "action_index": 0,
+            "passed": true,
+            "expected_minimum": 2,
+            "actual": 2,
+            "span": "第二次"
+          },
+          {
+            "kind": "relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "reference_cycle_index": 0,
+            "field": "amplitude_scale",
+            "op": "lt",
+            "actual": 0.899,
+            "reference": 0.845,
+            "span": "第二次幅度更小"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "reference_cycle_index": 0,
+            "field": "amplitude_scale",
+            "op": "lt",
+            "actual": 0.899,
+            "reference": 0.845,
+            "span": "第二次幅度更小"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "连续摇头三次，幅度越来越大。",
+      "input_role": "instruction",
+      "group_id": "sf-bf89577b644e46a0",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.5,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.1,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1211,
+                    "controls": {
+                      "hold_ratio": 0.077,
+                      "amplitude_scale": 0.846
+                    }
+                  },
+                  {
+                    "duration_ms": 1391,
+                    "controls": {
+                      "hold_ratio": 0.1,
+                      "amplitude_scale": 0.835
+                    }
+                  },
+                  {
+                    "duration_ms": 1689,
+                    "controls": {
+                      "hold_ratio": 0.144,
+                      "amplitude_scale": 0.84
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 3,
+            "actual": 3,
+            "span": "摇头三次"
+          },
+          {
+            "kind": "gradual_relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "reference_cycle_index": 0,
+            "field": "amplitude_scale",
+            "op": "gt",
+            "actual": 0.835,
+            "reference": 0.846,
+            "span": "连续摇头三次，幅度越来越大。"
+          },
+          {
+            "kind": "gradual_relative",
+            "action_index": 0,
+            "passed": true,
+            "cycle_index": 2,
+            "reference_cycle_index": 1,
+            "field": "amplitude_scale",
+            "op": "gt",
+            "actual": 0.84,
+            "reference": 0.835,
+            "span": "连续摇头三次，幅度越来越大。"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "gradual_relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "reference_cycle_index": 0,
+            "field": "amplitude_scale",
+            "op": "gt",
+            "actual": 0.835,
+            "reference": 0.846,
+            "span": "连续摇头三次，幅度越来越大。"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "连续摇头三次，节奏越来越快。",
+      "input_role": "instruction",
+      "group_id": "sf-bf89577b644e46a0",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1600
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1200
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 800
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1239,
+                    "controls": {
+                      "hold_ratio": 0.083,
+                      "amplitude_scale": 0.825
+                    }
+                  },
+                  {
+                    "duration_ms": 1455,
+                    "controls": {
+                      "hold_ratio": 0.109,
+                      "amplitude_scale": 0.819
+                    }
+                  },
+                  {
+                    "duration_ms": 1830,
+                    "controls": {
+                      "hold_ratio": 0.165,
+                      "amplitude_scale": 0.833
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 3,
+            "actual": 3,
+            "span": "摇头三次"
+          },
+          {
+            "kind": "gradual_relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "reference_cycle_index": 0,
+            "field": "duration_ms",
+            "op": "lt",
+            "actual": 1455,
+            "reference": 1239,
+            "span": "连续摇头三次，节奏越来越快。"
+          },
+          {
+            "kind": "gradual_relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 2,
+            "reference_cycle_index": 1,
+            "field": "duration_ms",
+            "op": "lt",
+            "actual": 1830,
+            "reference": 1455,
+            "span": "连续摇头三次，节奏越来越快。"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "gradual_relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 1,
+            "reference_cycle_index": 0,
+            "field": "duration_ms",
+            "op": "lt",
+            "actual": 1455,
+            "reference": 1239,
+            "span": "连续摇头三次，节奏越来越快。"
+          },
+          {
+            "kind": "gradual_relative",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 2,
+            "reference_cycle_index": 1,
+            "field": "duration_ms",
+            "op": "lt",
+            "actual": 1830,
+            "reference": 1455,
+            "span": "连续摇头三次，节奏越来越快。"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "请四处张望一次，完整周期用1200毫秒。",
+      "input_role": "instruction",
+      "group_id": "sf-01c1cf1568eb5dc1",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0
+                    },
+                    "duration_ms": 1200
+                  }
+                ],
+                "resource_id": "look_around.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "invalid_hold_mapping: look_around.basic has no hold-phase points."
+      }
+    },
+    {
+      "raw_text": "四处张望两次，第二次比前一次更慢。",
+      "input_role": "instruction",
+      "group_id": "sf-01c1cf1568eb5dc1",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0
+                    },
+                    "duration_ms": 1000
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0
+                    },
+                    "duration_ms": 1600
+                  }
+                ],
+                "resource_id": "look_around.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "invalid_hold_mapping: look_around.basic has no hold-phase points."
+      }
+    },
+    {
+      "raw_text": "先眨眼两次，再点头一次。",
+      "input_role": "instruction",
+      "group_id": "sf-97b18b04ebf66431",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "blink.full"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "nod.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "hold_segment_too_short: nonzero hold must survive the 80 ms native limit."
+      }
+    },
+    {
+      "raw_text": "先眨眼一次，周期用600毫秒，再点头一次，周期用1000毫秒。",
+      "input_role": "instruction",
+      "group_id": "sf-97b18b04ebf66431",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "blink.full"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "nod.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "blink.full",
+                "cycles": [
+                  {
+                    "duration_ms": 644,
+                    "controls": {
+                      "hold_ratio": 0.161
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "nod.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 985,
+                    "controls": {
+                      "hold_ratio": 0.15,
+                      "amplitude_scale": 1.019
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 1,
+            "actual": 1,
+            "span": "眨眼一次"
+          },
+          {
+            "kind": "cycle_count",
+            "action_index": 1,
+            "passed": true,
+            "expected": 1,
+            "actual": 1,
+            "span": "点头一次"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 600,
+            "actual": 644,
+            "span": "周期用600毫秒"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 600,
+            "actual": 644,
+            "span": "周期用600毫秒"
+          }
+        ],
+        "unresolved": [
+          {
+            "kind": "duration_action_scope",
+            "span": "周期用1000毫秒"
+          }
+        ],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "先眨眼三次，然后点头两次。",
+      "input_role": "instruction",
+      "group_id": "sf-97b18b04ebf66431",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "blink.full"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "nod.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "blink.full",
+                "cycles": [
+                  {
+                    "duration_ms": 774,
+                    "controls": {
+                      "hold_ratio": 0.145
+                    }
+                  },
+                  {
+                    "duration_ms": 795,
+                    "controls": {
+                      "hold_ratio": 0.157
+                    }
+                  },
+                  {
+                    "duration_ms": 1662,
+                    "controls": {
+                      "hold_ratio": 0.415
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "blink.full",
+                "cycles": [
+                  {
+                    "duration_ms": 1140,
+                    "controls": {
+                      "hold_ratio": 0.155
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [
+          {
+            "kind": "count_action_scope",
+            "span": "眨眼三次"
+          },
+          {
+            "kind": "count_action_scope",
+            "span": "点头两次"
+          }
+        ],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "同时开始眨眼两次和挥手一次。",
+      "input_role": "instruction",
+      "group_id": "sf-83f6227b1f259772",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "blink.full"
+              },
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1200
+                  }
+                ],
+                "resource_id": "wave.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "blink.full",
+                "cycles": [
+                  {
+                    "duration_ms": 700,
+                    "controls": {
+                      "hold_ratio": 0.188
+                    }
+                  },
+                  {
+                    "duration_ms": 675,
+                    "controls": {
+                      "hold_ratio": 0.188
+                    }
+                  }
+                ]
+              },
+              {
+                "resource_id": "wave.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1142,
+                    "controls": {
+                      "hold_ratio": 0.189,
+                      "amplitude_scale": 0.822
+                    }
+                  },
+                  {
+                    "duration_ms": 1129,
+                    "controls": {
+                      "hold_ratio": 0.197,
+                      "amplitude_scale": 0.833
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 2,
+            "actual": 2,
+            "span": "眨眼两次"
+          },
+          {
+            "kind": "cycle_count",
+            "action_index": 1,
+            "passed": false,
+            "expected": 1,
+            "actual": 2,
+            "span": "挥手一次"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "cycle_count",
+            "action_index": 1,
+            "passed": false,
+            "expected": 1,
+            "actual": 2,
+            "span": "挥手一次"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "眨眼一次，同时挥手两次。",
+      "input_role": "instruction",
+      "group_id": "sf-83f6227b1f259772",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 800
+                  }
+                ],
+                "resource_id": "blink.full"
+              },
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.8,
+                      "hold_ratio": 0.2
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "wave.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "blink.full",
+                "cycles": [
+                  {
+                    "duration_ms": 655,
+                    "controls": {
+                      "hold_ratio": 0.174
+                    }
+                  },
+                  {
+                    "duration_ms": 614,
+                    "controls": {
+                      "hold_ratio": 0.173
+                    }
+                  }
+                ]
+              },
+              {
+                "resource_id": "wave.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1069,
+                    "controls": {
+                      "hold_ratio": 0.177,
+                      "amplitude_scale": 0.825
+                    }
+                  },
+                  {
+                    "duration_ms": 1048,
+                    "controls": {
+                      "hold_ratio": 0.191,
+                      "amplitude_scale": 0.834
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": false,
+            "expected": 1,
+            "actual": 2,
+            "span": "眨眼一次"
+          },
+          {
+            "kind": "cycle_count",
+            "action_index": 1,
+            "passed": true,
+            "expected": 2,
+            "actual": 2,
+            "span": "挥手两次"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": false,
+            "expected": 1,
+            "actual": 2,
+            "span": "眨眼一次"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "请准确执行摇头四次。",
+      "input_role": "instruction",
+      "group_id": "sf-df70286da0eba261",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1396,
+                    "controls": {
+                      "hold_ratio": 0.117,
+                      "amplitude_scale": 0.883
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": false,
+            "expected": 4,
+            "actual": 1,
+            "span": "摇头四次"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": false,
+            "expected": 4,
+            "actual": 1,
+            "span": "摇头四次"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "请连续眨眼五次，不要减少次数。",
+      "input_role": "instruction",
+      "group_id": "sf-df70286da0eba261",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "none",
+        "steps": []
+      },
+      "inference_ms": 10.076,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "请张嘴打一个哈欠。",
+      "input_role": "instruction",
+      "group_id": "sf-354f897fc32cf524",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "angry.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1480,
+                    "controls": {
+                      "hold_ratio": 0.446,
+                      "amplitude_scale": 1.022
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 7.096,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    },
+    {
+      "raw_text": "先打哈欠，再点头一次。",
+      "input_role": "instruction",
+      "group_id": "sf-354f897fc32cf524",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "nod.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1121,
+                    "controls": {
+                      "hold_ratio": 0.17,
+                      "amplitude_scale": 0.904
+                    }
+                  },
+                  {
+                    "duration_ms": 1241,
+                    "controls": {
+                      "hold_ratio": 0.192,
+                      "amplitude_scale": 0.903
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "nod.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1139,
+                    "controls": {
+                      "hold_ratio": 0.17,
+                      "amplitude_scale": 0.952
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [
+          {
+            "kind": "count_action_scope",
+            "span": "点头一次"
+          }
+        ],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "请眨眼一次，完整周期只用50毫秒。",
+      "input_role": "instruction",
+      "group_id": "sf-1a4b195e6a8879cb",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "blink.full",
+                "cycles": [
+                  {
+                    "duration_ms": 798,
+                    "controls": {
+                      "hold_ratio": 0.177
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 1,
+            "actual": 1,
+            "span": "眨眼一次"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 50,
+            "actual": 798,
+            "span": "完整周期只用50毫秒"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 50,
+            "actual": 798,
+            "span": "完整周期只用50毫秒"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "请点头一次，完整周期用5秒。",
+      "input_role": "instruction",
+      "group_id": "sf-1a4b195e6a8879cb",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Prediction violates explicit instruction constraints or their numeric scope is unresolved."
+      },
+      "raw_config": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "nod.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1552,
+                    "controls": {
+                      "hold_ratio": 0.254,
+                      "amplitude_scale": 0.79
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "constraint_audit": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [
+          {
+            "kind": "cycle_count",
+            "action_index": 0,
+            "passed": true,
+            "expected": 1,
+            "actual": 1,
+            "span": "点头一次"
+          },
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 5000,
+            "actual": 1552,
+            "span": "完整周期用5秒"
+          }
+        ],
+        "violations": [
+          {
+            "kind": "exact_duration_ms",
+            "action_index": 0,
+            "passed": false,
+            "cycle_index": 0,
+            "expected": 5000,
+            "actual": 1552,
+            "span": "完整周期用5秒"
+          }
+        ],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": false
+      }
+    },
+    {
+      "raw_text": "这一轮不要摇头。",
+      "input_role": "instruction",
+      "group_id": "sf-640b77357d11edaf",
+      "expected": {
+        "decision": "none",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "hold_segment_too_short: nonzero hold must survive the 80 ms native limit."
+      }
+    },
+    {
+      "raw_text": "请别晃脑袋，保持当前姿势。",
+      "input_role": "instruction",
+      "group_id": "sf-640b77357d11edaf",
+      "expected": {
+        "decision": "none",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "tilt_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1051,
+                    "controls": {
+                      "hold_ratio": 0.244,
+                      "amplitude_scale": 1.159
+                    }
+                  },
+                  {
+                    "duration_ms": 1045,
+                    "controls": {
+                      "hold_ratio": 0.241,
+                      "amplitude_scale": 1.188
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 8.391,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    },
+    {
+      "raw_text": "请解释一下这段Python代码。",
+      "input_role": "instruction",
+      "group_id": "sf-1244fb6ad7dba23c",
+      "expected": {
+        "decision": "none",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "none",
+        "steps": []
+      },
+      "inference_ms": 6.935,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "把本轮日志保存到桌面。",
+      "input_role": "instruction",
+      "group_id": "sf-1244fb6ad7dba23c",
+      "expected": {
+        "decision": "none",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "none",
+        "steps": []
+      },
+      "inference_ms": 9.585,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "请把刚才那个动作再来一遍。",
+      "input_role": "instruction",
+      "group_id": "sf-000755a5572390c8",
+      "expected": {
+        "decision": "ambiguous",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "ambiguous",
+        "steps": []
+      },
+      "inference_ms": 8.199,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "照上一轮的动作做，但再慢一些。",
+      "input_role": "instruction",
+      "group_id": "sf-000755a5572390c8",
+      "expected": {
+        "decision": "ambiguous",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "ambiguous",
+        "steps": []
+      },
+      "inference_ms": 7.488,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "接着刚才的动作继续吧。",
+      "input_role": "instruction",
+      "group_id": "sf-000755a5572390c8",
+      "expected": {
+        "decision": "ambiguous",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "ambiguous",
+        "steps": []
+      },
+      "inference_ms": 8.646,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "还是那个动作，这次轻一点。",
+      "input_role": "instruction",
+      "group_id": "sf-000755a5572390c8",
+      "expected": {
+        "decision": "ambiguous",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "ambiguous",
+        "steps": []
+      },
+      "inference_ms": 7.451,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    }
+  ],
+  "release_approved": false,
+  "training_started": false,
+  "limitations": [
+    "No Unity playback or video review is performed by this evaluator.",
+    "Semantic-family independence from an older checkpoint is not inferred.",
+    "Unconstrained parameter MAE is not a success metric; explicit instruction checks retain unresolved scopes."
+  ]
+}

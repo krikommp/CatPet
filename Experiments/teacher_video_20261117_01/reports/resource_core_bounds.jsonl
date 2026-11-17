@@ -1,0 +1,12 @@
+{"resource_id":"blink.full","core_max_amplitude":1,"status":"Calibrated","enter_return_alpha":0.5}
+{"resource_id":"nod.basic","core_max_amplitude":1.3500000238418579,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"shake_head.basic","core_max_amplitude":1.3500000238418579,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"tilt_head.basic","core_max_amplitude":1.3500000238418579,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"look_around.basic","core_max_amplitude":1.2499999813735487,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"smile.basic","core_max_amplitude":1.0526315921561542,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"angry.basic","core_max_amplitude":1.1111111405455043,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"shy.basic","core_max_amplitude":1.2499999813735487,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"surprise.basic","core_max_amplitude":1.2000000476837158,"status":"Candidate","enter_return_alpha":0.4}
+{"resource_id":"wave.basic","core_max_amplitude":1.1111111405455043,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"cheer.basic","core_max_amplitude":1.1764705552361838,"status":"Candidate","enter_return_alpha":0.5}
+{"resource_id":"bow.basic","core_max_amplitude":1.1764705882352942,"status":"Candidate","enter_return_alpha":0.5}

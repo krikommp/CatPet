@@ -1,0 +1,217 @@
+[
+  {
+    "old_candidate_id": "autovid-1",
+    "priority": "normal",
+    "issues": [
+      "head_pose_not_visually_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "autovid-2",
+    "priority": "normal",
+    "issues": [
+      "head_pose_not_visually_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r1-002",
+    "priority": "normal",
+    "issues": [
+      "head_pose_not_visually_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r1-005",
+    "priority": "high",
+    "issues": [
+      "explicit_relative_amplitude_violated"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r1-006",
+    "priority": "high",
+    "issues": [
+      "wrong_parallel_resource",
+      "missing_requested_smile"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r1-007",
+    "priority": "high",
+    "issues": [
+      "wrong_sequential_resource"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r2-001",
+    "priority": "high",
+    "issues": [
+      "explicit_relative_amplitude_violated"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r2-004",
+    "priority": "high",
+    "issues": [
+      "wrong_sequential_resource",
+      "explicit_count_violated"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r2-005",
+    "priority": "normal",
+    "issues": [
+      "input_role_required",
+      "literal_high_raise_not_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r2-006",
+    "priority": "normal",
+    "issues": [
+      "head_pose_not_visually_confirmed",
+      "input_role_required"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r2-007",
+    "priority": "high",
+    "issues": [
+      "explicit_relative_amplitude_violated"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r2-008",
+    "priority": "normal",
+    "issues": [
+      "speed_policy_not_fixed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r4-001",
+    "priority": "normal",
+    "issues": [],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r4-003",
+    "priority": "normal",
+    "issues": [
+      "facial_expression_not_visually_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r4-007",
+    "priority": "normal",
+    "issues": [],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r4-008",
+    "priority": "normal",
+    "issues": [
+      "literal_ear_color_not_confirmed",
+      "input_role_required"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r6-006",
+    "priority": "normal",
+    "issues": [],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r7-002",
+    "priority": "normal",
+    "issues": [
+      "head_pose_not_visually_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r7-004",
+    "priority": "normal",
+    "issues": [],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r7-005",
+    "priority": "high",
+    "issues": [
+      "missing_requested_second_action"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r7-006",
+    "priority": "normal",
+    "issues": [
+      "bow_not_visually_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r8-001",
+    "priority": "normal",
+    "issues": [
+      "body_sway_not_visually_confirmed"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r8-003",
+    "priority": "normal",
+    "issues": [
+      "bow_not_visually_confirmed",
+      "input_role_required"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  },
+  {
+    "old_candidate_id": "r8-005",
+    "priority": "normal",
+    "issues": [
+      "bow_not_visually_confirmed",
+      "input_role_required"
+    ],
+    "new_candidate_id_required": true,
+    "instruction": "先明确input_role；修正硬错误；绑定资源与编译器内容hash；录制全程实际参数/帧时间和完成事件；人设评分规范冻结及资源标定前不固定风格偏好；再独立视觉审核。"
+  }
+]

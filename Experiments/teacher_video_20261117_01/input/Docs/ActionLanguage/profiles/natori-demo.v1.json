@@ -1,0 +1,90 @@
+{
+  "profile": "natori-demo.v1",
+  "status": "design_draft_not_installed_in_runtime",
+  "model": "Natori",
+  "sdk": "Cubism 5 SDK for Unity R4_1",
+  "observed_on": "2026-11-16",
+  "evidence": {
+    "method": "Unity Skills component_get_properties on CubismParameter in the loaded official Demo scene; values are SDK model metadata, not animation extrema",
+    "scene": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/Demo.unity",
+    "probe": ".setup/live2d-r4_1/dsl-parameter-probe.json",
+    "model3": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.model3.json",
+    "moc3_sha256": "626f29b43be788d12affb1a57ab57d685ce410314f19c7bde8427a68c1b57715",
+    "model3_sha256": "e5144a5c360a03c383c1ab330466775660099519af24f3a79c011c776cafaaf0",
+    "physics3_sha256": "d280a0088b17df4ddaf8fb417b5ee11601bd40686a91540eaaf0e5eeb69eb874"
+  },
+  "proposed_policy": {
+    "unlisted_parameters": "reject",
+    "units": "native_cubism_values",
+    "max_duration_ms": 10000,
+    "max_frames": 32,
+    "max_distinct_parameters": 16,
+    "min_parameter_segment_ms": 80,
+    "interpolation": "smoothstep",
+    "release_ms": 200,
+    "foreground_blend": "override",
+    "raw_physics_output_control": false
+  },
+  "parameters": {
+    "ParamAngleX": {
+      "min": -30, "max": 30, "default": 0,
+      "owner": "foreground",
+      "label": "头部 X 控制（依据参数名推定）",
+      "semantic_status": "axis_direction_and_appearance_not_visually_calibrated"
+    },
+    "ParamAngleY": {
+      "min": -30, "max": 30, "default": 0,
+      "owner": "foreground",
+      "label": "头部 Y 控制（依据参数名推定）",
+      "semantic_status": "axis_direction_and_appearance_not_visually_calibrated"
+    },
+    "ParamAngleZ": {
+      "min": -30, "max": 30, "default": 0,
+      "owner": "foreground",
+      "label": "头部 Z 控制（依据参数名推定）",
+      "semantic_status": "axis_direction_and_appearance_not_visually_calibrated"
+    },
+    "ParamEyeLOpen": {
+      "min": 0, "max": 1.3, "default": 1,
+      "owner": "foreground",
+      "label": "左眼开合候选；存在于模型 EyeBlink 分组",
+      "semantic_status": "eye_blink_group_verified_endpoint_appearance_pending"
+    },
+    "ParamEyeROpen": {
+      "min": 0, "max": 1.3, "default": 1,
+      "owner": "foreground",
+      "label": "右眼开合候选；存在于模型 EyeBlink 分组",
+      "semantic_status": "eye_blink_group_verified_endpoint_appearance_pending"
+    },
+    "ParamMouthForm": {
+      "min": -3, "max": 1, "default": 0,
+      "owner": "foreground",
+      "label": "嘴形控制；数值与情绪含义的对应关系未知",
+      "semantic_status": "unknown_visual_mapping"
+    },
+    "ParamMouthOpenY": {
+      "min": 0, "max": 1, "default": 0,
+      "owner": "local",
+      "label": "模型 LipSync 分组参数；为后续本地口型驱动保留",
+      "semantic_status": "lip_sync_group_verified_tts_not_implemented"
+    },
+    "ParamBreath": {
+      "min": 0, "max": 1, "default": 0,
+      "owner": "local",
+      "label": "待机动作 mtn_00 使用的参数；由本地待机负责",
+      "semantic_status": "idle_motion_reference_and_runtime_change_verified"
+    }
+  },
+  "physics_output_ids": [
+    "ParamChainWaist", "ParamHairBack", "ParamHairBackFuwa", "ParamHairFront",
+    "ParamHairFrontFuwa", "ParamHairSide", "ParamHairSideFuwa", "ParamJacket",
+    "ParamWatchAX", "ParamWatchBChain", "ParamWatchSwingA1", "ParamWatchSwingA2"
+  ],
+  "notes": [
+    "Only eight parameters were queried for this draft. This is not a complete parameter inventory.",
+    "Owner and limits in proposed_policy are proposed engine policy, not facts exported by Cubism.",
+    "Head labels are name-based inferences; positive direction, parameter coupling and aesthetically useful combinations require visual calibration.",
+    "The bundled cdi3 display-information file was not found for Natori. Unverified arm IDs are not exposed as wave or wrist actions.",
+    "Examples express candidate intentions and have not been played by an Action DSL runtime, which does not yet exist."
+  ]
+}

@@ -1,0 +1,1035 @@
+[
+  {
+    "candidate_id": "tr1-train-01",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 2,
+        "actual": 2,
+        "span": "眨眼两次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 500,
+        "actual": 500,
+        "span": "每次500毫秒"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 1,
+        "expected": 500,
+        "actual": 500,
+        "span": "每次500毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-02",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 2,
+        "actual": 2,
+        "span": "点头两次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 720,
+        "actual": 720,
+        "span": "每次720毫秒"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 1,
+        "expected": 720,
+        "actual": 720,
+        "span": "每次720毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-03",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "摇头一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 900,
+        "actual": 900,
+        "span": "持续900毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-04",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "歪头一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1200,
+        "actual": 1200,
+        "span": "持续1200毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-05",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "张望一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1300,
+        "actual": 1300,
+        "span": "持续1300毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-06",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "微笑一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1400,
+        "actual": 1400,
+        "span": "持续1400毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-07",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "生气一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1500,
+        "actual": 1500,
+        "span": "持续1500毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-08",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "害羞一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1600,
+        "actual": 1600,
+        "span": "持续1600毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-09",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "惊讶一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1200,
+        "actual": 1200,
+        "span": "持续1200毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-10",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 2,
+        "actual": 2,
+        "span": "挥手两次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 800,
+        "actual": 800,
+        "span": "每次800毫秒"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 1,
+        "expected": 800,
+        "actual": 800,
+        "span": "每次800毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-11",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "举手欢呼一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1400,
+        "actual": 1400,
+        "span": "持续1400毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-12",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "鞠躬一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1500,
+        "actual": 1500,
+        "span": "持续1500毫秒"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-13",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "眨眼一次"
+      },
+      {
+        "kind": "cycle_count",
+        "action_index": 1,
+        "passed": true,
+        "expected": 1,
+        "actual": 1,
+        "span": "点头一次"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-14",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-15",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-16",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-17",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-18",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-19",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-20",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-21",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-22",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-23",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-24",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-train-25",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-26",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-27",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-28",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-29",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-30",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-31",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-32",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-33",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-34",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-35",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-train-36",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-val-01",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-val-02",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-val-03",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-val-04",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 3,
+        "actual": 3,
+        "span": "点头三次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 1200,
+        "actual": 1200,
+        "span": "第一次1200毫秒"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 1,
+        "actual": 3,
+        "span": "第一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 1,
+        "expected": 900,
+        "actual": 900,
+        "span": "第二次900毫秒"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 2,
+        "actual": 3,
+        "span": "第二次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 2,
+        "expected": 600,
+        "actual": 600,
+        "span": "第三次600毫秒"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 3,
+        "actual": 3,
+        "span": "第三次"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-val-05",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 3,
+        "actual": 3,
+        "span": "挥手三次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 900,
+        "actual": 900,
+        "span": "每次900毫秒"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 1,
+        "expected": 900,
+        "actual": 900,
+        "span": "每次900毫秒"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 2,
+        "expected": 900,
+        "actual": 900,
+        "span": "每次900毫秒"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 1,
+        "actual": 3,
+        "span": "第一次"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 2,
+        "actual": 3,
+        "span": "第二次"
+      },
+      {
+        "kind": "relative",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 1,
+        "reference_cycle_index": 0,
+        "field": "amplitude_scale",
+        "op": "gt",
+        "actual": 0.8,
+        "reference": 0.5,
+        "span": "第二次更大"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 3,
+        "actual": 3,
+        "span": "第三次"
+      }
+    ],
+    "violations": [],
+    "unresolved": [
+      {
+        "kind": "unsupported_cycle_request",
+        "span": "第一次幅度小"
+      }
+    ],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": false
+  },
+  {
+    "candidate_id": "tr1-val-06",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [
+      {
+        "kind": "cycle_count",
+        "action_index": 0,
+        "passed": true,
+        "expected": 3,
+        "actual": 3,
+        "span": "歪头三次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 0,
+        "expected": 700,
+        "actual": 700,
+        "span": "第一次700毫秒"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 1,
+        "actual": 3,
+        "span": "第一次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 1,
+        "expected": 1000,
+        "actual": 1000,
+        "span": "第二次1000毫秒"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 2,
+        "actual": 3,
+        "span": "第二次"
+      },
+      {
+        "kind": "exact_duration_ms",
+        "action_index": 0,
+        "passed": true,
+        "cycle_index": 2,
+        "expected": 1400,
+        "actual": 1400,
+        "span": "第三次1400毫秒"
+      },
+      {
+        "kind": "referenced_cycle_exists",
+        "action_index": 0,
+        "passed": true,
+        "expected_minimum": 3,
+        "actual": 3,
+        "span": "第三次"
+      }
+    ],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-val-07",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-val-08",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-val-09",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-test-01",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-test-02",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-test-03",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-test-04",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-test-05",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-test-06",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": true,
+    "passed_checked_constraints": true
+  },
+  {
+    "candidate_id": "tr1-test-07",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-test-08",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  },
+  {
+    "candidate_id": "tr1-test-09",
+    "policy": "explicit-instruction-guard.v2",
+    "checks": [],
+    "violations": [],
+    "unresolved": [],
+    "coverage_is_partial": true,
+    "no_silent_repair": true,
+    "execution_constraints_applicable": false
+  }
+]

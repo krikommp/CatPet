@@ -1,0 +1,78 @@
+{
+  "input_sha256": "aef5ce445eb8356857014f3ec35ddc57dea66ab0923a362ad65842f1d1654a10",
+  "input_rows": 3232,
+  "unique_raw_text": 3103,
+  "source_group_count": 1076,
+  "kept_prereview": 1336,
+  "quarantined": 1896,
+  "split_counts": {
+    "test": 375,
+    "train": 893,
+    "val": 68
+  },
+  "rejection_reason_counts": {
+    "native_parameter_segment_below_80ms": 557,
+    "patched_csharp:unrepresentable_hold": 549,
+    "positive_hold_below_80ms_silently_changed_by_original_compiler": 563,
+    "explicit_numeric_scope_unresolved": 1188,
+    "same_text_different_continuous_labels_pending_adjudication": 258,
+    "dialogue_roleplay_or_unclassified_input_role": 331,
+    "patched_csharp:model_range_exceeded": 42,
+    "missing_hold_phase": 263,
+    "patched_csharp:missing_hold_phase": 200,
+    "explicit_count_or_relative_constraint_mismatch": 47,
+    "ambiguous_semantics_needs_persona_or_context_policy": 9,
+    "unsupported_action_silently_approximated": 1
+  },
+  "kept_decisions_by_split": {
+    "train": {
+      "none": 20,
+      "execute": 720,
+      "unsupported": 153
+    },
+    "val": {
+      "execute": 59,
+      "none": 5,
+      "unsupported": 4
+    },
+    "test": {
+      "unsupported": 41,
+      "none": 117,
+      "execute": 91,
+      "ambiguous": 126
+    }
+  },
+  "semantic_components": 197,
+  "constraint_summary": {
+    "checked_constraints": 2614,
+    "violations": 47,
+    "unresolved": 1622
+  },
+  "same_text_continuous_variant_sets_quarantined": 129,
+  "duplicate_raw_text_structural_conflict_sets": 0,
+  "original_split_counts_reproduced": {
+    "train": 2591,
+    "val": 321,
+    "test": 320
+  },
+  "original_split_exact_text_overlap": {
+    "train/test": 11,
+    "train/val": 15,
+    "val/test": 4
+  },
+  "csharp_patch_compile_report_sha256": "76d71fb2ed2f39827b3c8bb309cc914d6a43ac2e963055667263c7a8af67443a",
+  "train_missing_decision_classes": [
+    "ambiguous"
+  ],
+  "training_ready": false,
+  "blocking_dependency": "Persona now observed; label-policy/rubric review, independent visual evidence and missing training class must be resolved before admission",
+  "persona_observed_sha256": "56b4364bf1c7da22e6b6faadc094299e570f93375e0acb78f510c360d614aa41",
+  "persona_observed_does_not_approve_existing_labels": true,
+  "limits": [
+    "No historical video review evidence manufactured.",
+    "Isolated C# compiler checks do not replace Unity playback or resource visual calibration.",
+    "Conservative semantic family heuristics are not a proof of all paraphrase equivalence.",
+    "Current baseline trained on historical rows; this split is only independent for future experiments.",
+    "All non-blink resources remain experimental candidates; no formal calibration claimed."
+  ]
+}

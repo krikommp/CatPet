@@ -1,0 +1,10 @@
+{
+  "tests_run": 17,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "real_http": true,
+  "port_policy": "OS-assigned loopback; existing service untouched",
+  "neural_head": "deterministic fixture; actual LocalEncoder, decoder, guard and handler",
+  "trained": false
+}

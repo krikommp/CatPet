@@ -1,0 +1,11 @@
+{
+  "command": ".\\.venv-action-encoder\\Scripts\\python.exe Experiments/teacher_video_20261117_01/source/train_action_config.py --dataset Experiments/teacher_video_20261117_01/data/cold_start.jsonl --persona-file Docs/ActionLanguage/personas/gemini-cyber-cat.md --review-rubric-version teacher-video-review.pending --validate-only",
+  "exit_code": 1,
+  "expected_failure": true,
+  "reason": "Line 1: Dataset persona hash differs from the training persona.",
+  "persona_sha256": "56b4364bf1c7da22e6b6faadc094299e570f93375e0acb78f510c360d614aa41",
+  "dataset_persona_hash": null,
+  "rubric_value_is_pending_test_argument_not_review_evidence": true,
+  "training_started": false,
+  "checkpoint_directory_created": false
+}

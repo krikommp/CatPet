@@ -1,0 +1,105 @@
+{
+  "profile": "yukikaze.v1",
+  "status": "calibrated_profile_draft_pending_visual_review",
+  "model": "Yukikaze",
+  "sdk": "Cubism 5 SDK for Unity R4_1",
+  "observed_on": "2026-11-16",
+  "evidence": {
+    "method": "UnitySkills component_get_properties on live scene xuefeng CubismParameter components",
+    "scene": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/Demo.unity",
+    "scene_object_path": "xuefeng",
+    "model3": "Assets/Live2D/Models/Yukikaze/xuefeng.model3.json",
+    "prefab": "Assets/Live2D/Models/Yukikaze/xuefeng.prefab",
+    "physics3": "Assets/Live2D/Models/Yukikaze/xuefeng.physics3.json",
+    "scene_controllers_observed": [
+      "CubismUpdateController",
+      "CubismParameterStore",
+      "CubismRenderController",
+      "CubismPhysicsController",
+      "CubismPoseController",
+      "CubismExpressionController",
+      "Animator",
+      "CubismFadeController",
+      "CubismEyeBlinkController",
+      "CubismAutoEyeBlinkInput",
+      "CubismLookController",
+      "CubismLookTarget"
+    ]
+  },
+  "proposed_policy": {
+    "unlisted_parameters": "reject",
+    "units": "native_cubism_values",
+    "max_duration_ms": 10000,
+    "max_frames": 32,
+    "max_distinct_parameters": 16,
+    "min_parameter_segment_ms": 80,
+    "interpolation": "smoothstep",
+    "release_ms": 200,
+    "foreground_blend": "override",
+    "raw_physics_output_control": false
+  },
+  "parameters": {
+    "ParamAngleX": {
+      "min": -30, "max": 30, "default": 0,
+      "owner": "foreground",
+      "label": "头部 X 控制（左右转头，场景实测范围）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamAngleY": {
+      "min": -30, "max": 30, "default": 0,
+      "owner": "foreground",
+      "label": "头部 Y 控制（俯仰点头，场景实测范围）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamAngleZ": {
+      "min": -30, "max": 30, "default": 0,
+      "owner": "foreground",
+      "label": "头部 Z 控制（歪头，场景实测范围）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamEyeLOpen": {
+      "min": 0, "max": 1, "default": 1,
+      "owner": "foreground",
+      "label": "左眼开合（场景实测范围 0..1，默认 1）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamEyeROpen": {
+      "min": 0, "max": 1, "default": 1,
+      "owner": "foreground",
+      "label": "右眼开合（场景实测范围 0..1，默认 1）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamBodyAngleX": {
+      "min": -10, "max": 10, "default": 0,
+      "owner": "foreground",
+      "label": "身体 X 控制（场景实测范围）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamBodyAngleY": {
+      "min": -10, "max": 10, "default": 0,
+      "owner": "foreground",
+      "label": "身体 Y 控制（场景实测范围）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamBodyAngleZ": {
+      "min": -10, "max": 10, "default": 0,
+      "owner": "foreground",
+      "label": "身体 Z 控制（场景实测范围）",
+      "semantic_status": "core_metadata_verified_visual_calibration_pending"
+    },
+    "ParamBreath": {
+      "min": 0, "max": 1, "default": 0,
+      "owner": "local",
+      "label": "呼吸参数（场景实测范围 0..1，保留给本地呼吸）",
+      "semantic_status": "core_metadata_verified_local_owner"
+    }
+  },
+  "physics_output_ids": [
+    "PARAM_Hairfront_vive"
+  ],
+  "notes": [
+    "Metadata values (min/max/default) were read directly from live scene object xuefeng/Parameters/* via UnitySkills on 2026-11-16.",
+    "Notice ParamEyeLOpen/ParamEyeROpen max is 1 (unlike Natori demo where max is 1.3).",
+    "Isolated preview instances must disable or override CubismAutoEyeBlinkInput/CubismEyeBlinkController/CubismLookController when previewing foreground actions to avoid baseline fighting."
+  ]
+}

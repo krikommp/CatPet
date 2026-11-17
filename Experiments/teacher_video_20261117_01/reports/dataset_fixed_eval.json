@@ -1,0 +1,11 @@
+{
+  "count": 28,
+  "sha256": "b5026d771cf25e619ff16b693eb13748b6faa3220b323d856ba0355c0add7460",
+  "new_texts": true,
+  "new_semantic_families_for_baseline": false,
+  "future_train_family_overlap": 0,
+  "note": "Objective challenge pool, not a video-reviewed golden set. Fixed before any new experiment trains. Independent review and exact-duration parsing coverage remain explicit.",
+  "unresolved_constraint_cases": [
+    "objective-eval-011"
+  ]
+}

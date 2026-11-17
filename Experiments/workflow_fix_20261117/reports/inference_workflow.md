@@ -1,0 +1,19 @@
+# Inference and caller workflow verification
+
+Status: implemented and regression checked; no model training, weight promotion, or existing service restart performed by this task. Existing service processes must load the changed code separately to use it.
+
+The decoder preserves predicted resources, conditions parameters on those resources, and rejects invalid stages/counts, empty execution, non-finite output, phase violations and channel conflicts. It does not substitute another resource to make a result valid. Model failures are HTTP 422 `model_output_invalid`; invalid requests remain HTTP 400. A failed instruction guard retains `raw_config` and `constraint_audit` for diagnostics, without returning a successful `config`.
+
+`input_role` is instruction or dialogue. API callers omitting it retain the legacy instruction default. The Unity review UI selects the role, defaults to instruction, and propagates it into the request, candidate and exports. Historical missing-role data is rejected for export with a recorded reason. Dialogue bypasses exact instruction quantity checking. Legacy weight manifests retain unprefixed model input; manifests declaring `action-input-role.v1` use the matching role prefix.
+
+Instruction checks cover explicit action counts, supported cycle durations and relative cycle references. Unsupported numeric scopes remain unresolved. Tests include Chinese twelve, fractional counts, half-second durations, nonadjacent references, negations, first-event phrasing and gradual relations. Additional review found and fixed consumed ordinals that did not check cycle existence, bounds/approximations treated as exact counts or times, and unconsumed half-duration/frequency units. Ordinary 一边 / 一点 / 一起 / 稍等一下 are not interpreted as numeric requests. This is a conservative partial grammar, not proof of arbitrary natural-language intent.
+
+Replaying a reviewed or historical candidate creates a new child candidate with a new id and current session/generation, retaining parent link and role while clearing compile/playback fields. It explicitly replays with current resources and does not claim to restore an undocumented historical resource version. C# changes were handed to the parent task for unified Unity compilation and recording acceptance; this regression does not itself establish Unity playback success.
+
+`model_test.py` is explicitly legacy diagnostic only. Rows require an explicit role or an explicit CLI role for missing legacy roles. Technical errors are separate records rather than semantic confusion labels, preserve the rejected config where available, and count as unsuccessful. The report cannot approve release or training admission.
+
+Validation: `scripts/inference_regression.py` passed 17 groups, including subcases, against an actual ephemeral loopback HTTP server and the real LocalEncoder, decoder, guard and handler. Neural outputs are deterministic fixtures; no checkpoint is trained or replaced. The same suite exercises the legacy diagnostic entry with role-sensitive outcomes and confirms technical errors are not represented as semantic predictions. Python compilation passed for all five modified inference/diagnostic modules. See `reports/inference_regression.json`.
+
+Initial shared files matched the saved before hashes. `model_test.py` also matched its saved SHA256 `1f63785a07240c1599701f79c08b8dae05325e1a1da25cb7a6f33c33cbb63b54` before editing. Final source hashes are recorded separately in `reports/inference_source_hashes.json`.
+
+Independent read-only review of train_action_config.py, retrain_and_eval.py, training_data.py and the frozen snapshot verification boundary found no additional actionable prepare/validate training bypass, output overwrite, held-out split return, or caller-role bypass. The parent separately requested per-epoch prediction retention from the training task.

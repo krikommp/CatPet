@@ -1,0 +1,14 @@
+[
+  {
+    "path": "Tools\\ActionEncoder\\train_action_config.py",
+    "sha256": "88b02d86303b8a3187f1e0c5e4a352dbfef46e89ab58e737f7724fb4b4377953",
+    "before_sha256": "88b02d86303b8a3187f1e0c5e4a352dbfef46e89ab58e737f7724fb4b4377953",
+    "matches": true
+  },
+  {
+    "path": "Tools\\ActionEncoder\\retrain_and_eval.py",
+    "sha256": "c8f4c54c1f92f9aa76e4c98a971cbcb3a472fd3ae52401e28634e3e2f4fda2d8",
+    "before_sha256": "c8f4c54c1f92f9aa76e4c98a971cbcb3a472fd3ae52401e28634e3e2f4fda2d8",
+    "matches": true
+  }
+]

@@ -1,0 +1,496 @@
+{
+  "stage": "diagnostic_report",
+  "checkpoint_id": "838f2c1ac110",
+  "execution_source_sha256": {
+    "retrain_and_eval.py": "cdc5dae384970081f0865bd4e98d40e650ddf317384afbdae79134795175e743",
+    "encoder.py": "26d3d2f0a189704f5b1823587c05f414a96afd51e6b3a02257855a59b97f36e3",
+    "action_config_schema.py": "414d3c26cc2b333f048fbf8565380eaf3d266f33085eb572e3947f39a34bcda3",
+    "input_constraints.py": "32b0072999f616240746ab21d3a1ae2f2b2131ff179663ace8294f4862e44de9"
+  },
+  "input_policy": "legacy_raw_text",
+  "checkpoint_sha256": {
+    "config_head.pt": "838f2c1ac110f5fa56359b5f67b8a2beda83c21f2a5e5921fdd86b9c906ec0be",
+    "backbone_state.pt": "dbd29e4a4689f0025465e25d6fb90f27908f675b2404138477ac9a5a69271a89",
+    "manifest.json": "870cc437e7954fd30388d05b773951521e5bbae5bb8b6a10e3d6ab97d7ee8bb9"
+  },
+  "data": {
+    "snapshot_manifest": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\frozen_snapshot\\manifest.json",
+    "snapshot_manifest_sha256": "76ecaf278d5f7f64077e5995d37078509aebe1da7e2493d7a20fe3bda9feb3f2",
+    "split_scope": "test",
+    "validated_frozen_snapshot": true,
+    "evaluated_row_count": 7
+  },
+  "metrics": {
+    "total": 7,
+    "gold_none": 1,
+    "decision_correct": 5,
+    "structure_correct": 3,
+    "execute_structure_correct": 1,
+    "false_execute_none": 0,
+    "gold_unsupported": 1,
+    "false_execute_unsupported": 1,
+    "gold_ambiguous": 1,
+    "false_execute_ambiguous": 0,
+    "gold_execute": 4,
+    "technical_errors": 1
+  },
+  "confusion": {
+    "none": {
+      "none": 1
+    },
+    "unsupported": {
+      "execute": 1
+    },
+    "ambiguous": {
+      "ambiguous": 1
+    },
+    "execute": {
+      "execute": 3,
+      "technical_error": 1
+    }
+  },
+  "predictions": [
+    {
+      "raw_text": "不要眨眼，也不要鞠躬，停在原位即可。",
+      "input_role": "instruction",
+      "group_id": "tr1-none_negated_specific_actions",
+      "expected": {
+        "decision": "none",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "none",
+        "steps": []
+      },
+      "inference_ms": 10.186,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "请让身体朝左、朝右交替摇摆，不是反复朝同一侧歪头。",
+      "input_role": "instruction",
+      "group_id": "tr1-unsupported_alternating_body",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "tilt_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1128,
+                    "controls": {
+                      "hold_ratio": 0.25,
+                      "amplitude_scale": 1.144
+                    }
+                  },
+                  {
+                    "duration_ms": 1116,
+                    "controls": {
+                      "hold_ratio": 0.246,
+                      "amplitude_scale": 1.185
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 28.07,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    },
+    {
+      "raw_text": "幅度改小一点，速度再慢一些。",
+      "input_role": "instruction",
+      "group_id": "tr1-ambiguous_relative_missing_action",
+      "expected": {
+        "decision": "ambiguous",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "ambiguous",
+        "steps": []
+      },
+      "inference_ms": 13.666,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "用眨眼和挥手一起发出招呼信号，两种动作同时开始。",
+      "input_role": "instruction",
+      "group_id": "tr1-par_blink_wave_signal",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "blink.full"
+              },
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "wave.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "blink.full",
+                "cycles": [
+                  {
+                    "duration_ms": 619,
+                    "controls": {
+                      "hold_ratio": 0.191
+                    }
+                  },
+                  {
+                    "duration_ms": 571,
+                    "controls": {
+                      "hold_ratio": 0.182
+                    }
+                  }
+                ]
+              },
+              {
+                "resource_id": "wave.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1112,
+                    "controls": {
+                      "hold_ratio": 0.185,
+                      "amplitude_scale": 0.862
+                    }
+                  },
+                  {
+                    "duration_ms": 1085,
+                    "controls": {
+                      "hold_ratio": 0.193,
+                      "amplitude_scale": 0.876
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 15.309,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    },
+    {
+      "raw_text": "合影摆姿势时，歪头的同时微笑，保持片刻后回正。",
+      "input_role": "instruction",
+      "group_id": "tr1-par_tilt_smile_pose",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.05,
+                      "hold_ratio": 0.4
+                    },
+                    "duration_ms": 1500
+                  }
+                ],
+                "resource_id": "tilt_head.basic"
+              },
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.98,
+                      "hold_ratio": 0.4
+                    },
+                    "duration_ms": 1500
+                  }
+                ],
+                "resource_id": "smile.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "technical_error": {
+        "type": "ModelOutputError",
+        "message": "Parallel resource conflict at slot 1: smile.basic, channels=['PARAM_Smile_eye', 'ParamBrowLY', 'ParamBrowRY', 'ParamEyeLOpen', 'ParamEyeROpen', 'ParamMouthForm', 'ParamMouthOpenY']."
+      }
+    },
+    {
+      "raw_text": "先露出微笑，接着收起笑容左右张望，像是要去找人。",
+      "input_role": "instruction",
+      "group_id": "tr1-seq_smile_look_investigate",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.98,
+                      "hold_ratio": 0.4
+                    },
+                    "duration_ms": 1400
+                  }
+                ],
+                "resource_id": "smile.basic"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 1300
+                  }
+                ],
+                "resource_id": "look_around.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "smile.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1341,
+                    "controls": {
+                      "hold_ratio": 0.384,
+                      "amplitude_scale": 1.001
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "wave.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1295,
+                    "controls": {
+                      "hold_ratio": 0.177,
+                      "amplitude_scale": 0.865
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 9.506,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    },
+    {
+      "raw_text": "表现改口：先点头，回正后再摇头。",
+      "input_role": "instruction",
+      "group_id": "tr1-seq_nod_shake_correction",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 900
+                  }
+                ],
+                "resource_id": "nod.basic"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.05,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "tilt_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1218,
+                    "controls": {
+                      "hold_ratio": 0.21,
+                      "amplitude_scale": 0.932
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "nod.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 988,
+                    "controls": {
+                      "hold_ratio": 0.159,
+                      "amplitude_scale": 0.973
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 12.299,
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    }
+  ],
+  "release_approved": false,
+  "training_started": false,
+  "limitations": [
+    "No Unity playback or video review is performed by this evaluator.",
+    "Semantic-family independence from an older checkpoint is not inferred.",
+    "Unconstrained parameter MAE is not a success metric; explicit instruction checks retain unresolved scopes."
+  ]
+}

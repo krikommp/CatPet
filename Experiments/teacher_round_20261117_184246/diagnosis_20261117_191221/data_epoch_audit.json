@@ -1,0 +1,1502 @@
+{
+  "audit_kind": "read-only data and epoch root-cause audit; only these audit artifacts were written",
+  "created_utc": "2026-11-17T11:16:36.299312+00:00",
+  "checkpoint_id": "17ab06dfb9a0",
+  "checkpoint_best_epoch": 6,
+  "source_artifact_sha256": {
+    "accepted_records.jsonl": "360a44e52ff5f9cf8859dbd5316665aae3b83a8adba6482eee1222fc7b1017b7",
+    "frozen_snapshot\\dataset.jsonl": "576001e5f22fe4c42b960a99a383833e403e0a7677edc2b8ac0e047b17c3588c",
+    "checkpoint_epoch20\\manifest.json": "6efa722f8bc48fece53eabd86fb67282230f44d2ce2f886a9fa48eba7b69e1ad",
+    "checkpoint_epoch20\\training_request.json": "96194af9d1364465a136249a777632cd445b2941ac6d284f347fd726a9849b3b",
+    "checkpoint_epoch20\\epoch_metrics.jsonl": "e7e8b39d8e8e6406be2729d5f74a5da439276ceeb3addcbeffefca31b3e6d00b"
+  },
+  "integrity": {
+    "accepted_count": 42,
+    "frozen_count": 42,
+    "accepted_to_frozen_field_equality": {
+      "raw_text": true,
+      "input_role": true,
+      "config": true,
+      "split": true,
+      "semantic_family_id": true
+    },
+    "duplicate_role_text_count": 0,
+    "semantic_family_overlap_counts": {
+      "train/val": 0,
+      "train/test": 0,
+      "val/test": 0
+    },
+    "current_training_source_hash_match": {
+      "train_action_config.py": true,
+      "training_data.py": true,
+      "review_evidence.py": true,
+      "input_constraints.py": true,
+      "action_config_schema.py": true,
+      "encoder.py": true
+    },
+    "initial_constraint_audit_accepted_covered": 41,
+    "initial_constraint_audit_accepted_failures": 0,
+    "initial_constraint_audit_not_covered": [
+      "tr1-val-05-r1"
+    ]
+  },
+  "optimizer": {
+    "train_count": 27,
+    "batch_size": 32,
+    "epochs": 20,
+    "updates_per_epoch": 1,
+    "updates_total": 20,
+    "updates_in_saved_best_checkpoint": 6,
+    "head_lr": 0.001,
+    "backbone_lr": 8e-05,
+    "unfrozen_layers": 2,
+    "fresh_head_initialization": true,
+    "source_references": [
+      "Tools/ActionEncoder/train_action_config.py:175",
+      "Tools/ActionEncoder/train_action_config.py:192",
+      "Tools/ActionEncoder/train_action_config.py:220",
+      "Tools/ActionEncoder/train_action_config.py:229"
+    ]
+  },
+  "splits": {
+    "train": {
+      "rows": 27,
+      "unique_semantic_families": 27,
+      "decision_counts": {
+        "none": 4,
+        "unsupported": 4,
+        "ambiguous": 4,
+        "execute": 15
+      },
+      "input_role_counts": {
+        "instruction": 27
+      },
+      "topology_execute_only": {
+        "single": 9,
+        "sequential": 4,
+        "parallel": 2
+      },
+      "resource_label_slots_execute_only": [
+        {
+          "blink.full": 2,
+          "nod.basic": 2,
+          "shake_head.basic": 2,
+          "tilt_head.basic": 2,
+          "look_around.basic": 1,
+          "smile.basic": 1,
+          "angry.basic": 2,
+          "shy.basic": 1,
+          "surprise.basic": 2
+        },
+        {
+          "PAD": 9,
+          "nod.basic": 1,
+          "smile.basic": 1,
+          "shake_head.basic": 1,
+          "blink.full": 1,
+          "angry.basic": 1,
+          "shy.basic": 1
+        }
+      ],
+      "stage_label_slots_execute_only": [
+        {
+          "0": 15
+        },
+        {
+          "2": 9,
+          "1": 4,
+          "0": 2
+        }
+      ],
+      "cycle_count_label_slots_execute_only": [
+        {
+          "2": 3,
+          "1": 12
+        },
+        {
+          "0": 9,
+          "1": 6
+        }
+      ],
+      "active_stage_counts": {
+        "0": 17,
+        "1": 4
+      },
+      "active_cycle_count_counts": {
+        "2": 3,
+        "1": 18
+      },
+      "resource_label_counts_execute_only": {
+        "blink.full": 3,
+        "nod.basic": 3,
+        "shake_head.basic": 3,
+        "tilt_head.basic": 2,
+        "look_around.basic": 1,
+        "smile.basic": 2,
+        "angry.basic": 3,
+        "shy.basic": 2,
+        "surprise.basic": 2,
+        "PAD": 9
+      },
+      "active_action_count": 21,
+      "active_cycle_count": 24,
+      "hold_ratio_values": {
+        "0.0": 13,
+        "0.35": 2,
+        "0.45": 5,
+        "0.4": 4
+      },
+      "saved_split_exactly_equals_frozen_subset": true
+    },
+    "val": {
+      "rows": 8,
+      "unique_semantic_families": 8,
+      "decision_counts": {
+        "none": 1,
+        "unsupported": 1,
+        "ambiguous": 1,
+        "execute": 5
+      },
+      "input_role_counts": {
+        "instruction": 8
+      },
+      "topology_execute_only": {
+        "sequential": 2,
+        "single": 3
+      },
+      "resource_label_slots_execute_only": [
+        {
+          "shy.basic": 1,
+          "look_around.basic": 1,
+          "nod.basic": 1,
+          "wave.basic": 1,
+          "tilt_head.basic": 1
+        },
+        {
+          "smile.basic": 1,
+          "surprise.basic": 1,
+          "PAD": 3
+        }
+      ],
+      "stage_label_slots_execute_only": [
+        {
+          "0": 5
+        },
+        {
+          "1": 2,
+          "2": 3
+        }
+      ],
+      "cycle_count_label_slots_execute_only": [
+        {
+          "1": 2,
+          "3": 3
+        },
+        {
+          "1": 2,
+          "0": 3
+        }
+      ],
+      "active_stage_counts": {
+        "0": 5,
+        "1": 2
+      },
+      "active_cycle_count_counts": {
+        "1": 4,
+        "3": 3
+      },
+      "resource_label_counts_execute_only": {
+        "shy.basic": 1,
+        "look_around.basic": 1,
+        "nod.basic": 1,
+        "wave.basic": 1,
+        "tilt_head.basic": 1,
+        "smile.basic": 1,
+        "surprise.basic": 1,
+        "PAD": 3
+      },
+      "active_action_count": 7,
+      "active_cycle_count": 13,
+      "hold_ratio_values": {
+        "0.4": 2,
+        "0.45": 1,
+        "0.0": 10
+      },
+      "saved_split_exactly_equals_frozen_subset": true
+    },
+    "test": {
+      "rows": 7,
+      "unique_semantic_families": 7,
+      "decision_counts": {
+        "none": 1,
+        "unsupported": 1,
+        "ambiguous": 1,
+        "execute": 4
+      },
+      "input_role_counts": {
+        "instruction": 7
+      },
+      "topology_execute_only": {
+        "parallel": 2,
+        "sequential": 2
+      },
+      "resource_label_slots_execute_only": [
+        {
+          "blink.full": 1,
+          "tilt_head.basic": 1,
+          "smile.basic": 1,
+          "nod.basic": 1
+        },
+        {
+          "wave.basic": 1,
+          "smile.basic": 1,
+          "look_around.basic": 1,
+          "shake_head.basic": 1
+        }
+      ],
+      "stage_label_slots_execute_only": [
+        {
+          "0": 4
+        },
+        {
+          "0": 2,
+          "1": 2
+        }
+      ],
+      "cycle_count_label_slots_execute_only": [
+        {
+          "2": 1,
+          "1": 3
+        },
+        {
+          "2": 1,
+          "1": 3
+        }
+      ],
+      "active_stage_counts": {
+        "0": 6,
+        "1": 2
+      },
+      "active_cycle_count_counts": {
+        "2": 2,
+        "1": 6
+      },
+      "resource_label_counts_execute_only": {
+        "blink.full": 1,
+        "tilt_head.basic": 1,
+        "smile.basic": 2,
+        "nod.basic": 1,
+        "wave.basic": 1,
+        "look_around.basic": 1,
+        "shake_head.basic": 1
+      },
+      "active_action_count": 8,
+      "active_cycle_count": 10,
+      "hold_ratio_values": {
+        "0.0": 7,
+        "0.4": 3
+      },
+      "saved_split_exactly_equals_frozen_subset": true
+    }
+  },
+  "epochs": [
+    {
+      "epoch": 1,
+      "train_loss": 6.750180721282959,
+      "gold_conditioned_val_loss": 6.4763970375061035,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 3,
+        "execute_total": 5,
+        "technical_errors": 3,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1,
+            "correct": 0
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.0,
+        "technical_error_rate": 0.375,
+        "selection_score": -0.3416666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3416666666666667,
+        -0.375,
+        -6.4763970375061035
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),), (('shake_head.basic', 1),)))": 3,
+        "('execute', ((('nod.basic', 1),), (('wave.basic', 1),)))": 1,
+        "('execute', ((('angry.basic', 1),), (('surprise.basic', 1),)))": 4
+      },
+      "technical_error_messages": {
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 3
+      },
+      "known_duration_ms_range": [
+        1003,
+        1182
+      ],
+      "known_hold_ratio_range": [
+        0.142,
+        0.261
+      ],
+      "known_native_rounded_hold_ms_range": [
+        159,
+        309
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 2,
+      "train_loss": 6.356986999511719,
+      "gold_conditioned_val_loss": 6.17225456237793,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 8,
+        "execute_total": 5,
+        "per_decision": {
+          "execute": {
+            "total": 5
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.0,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 1.0,
+        "selection_score": -0.6666666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.6666666666666667,
+        -1.0,
+        -6.17225456237793
+      ],
+      "known_raw_or_decoded_signature_counts": {},
+      "technical_error_messages": {
+        "invalid_hold_mapping: look_around.basic has no hold-phase points.": 8
+      },
+      "known_duration_ms_range": null,
+      "known_hold_ratio_range": null,
+      "known_native_rounded_hold_ms_range": null,
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 3,
+      "train_loss": 5.930192947387695,
+      "gold_conditioned_val_loss": 5.853094100952148,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 8,
+        "execute_total": 5,
+        "per_decision": {
+          "execute": {
+            "total": 5
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.0,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 1.0,
+        "selection_score": -0.6666666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.6666666666666667,
+        -1.0,
+        -5.853094100952148
+      ],
+      "known_raw_or_decoded_signature_counts": {},
+      "technical_error_messages": {
+        "invalid_hold_mapping: look_around.basic has no hold-phase points.": 8
+      },
+      "known_duration_ms_range": null,
+      "known_hold_ratio_range": null,
+      "known_native_rounded_hold_ms_range": null,
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 4,
+      "train_loss": 5.5144572257995605,
+      "gold_conditioned_val_loss": 5.547506809234619,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 8,
+        "execute_total": 5,
+        "per_decision": {
+          "execute": {
+            "total": 5
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.0,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 1.0,
+        "selection_score": -0.6666666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.6666666666666667,
+        -1.0,
+        -5.547506809234619
+      ],
+      "known_raw_or_decoded_signature_counts": {},
+      "technical_error_messages": {
+        "invalid_hold_mapping: look_around.basic has no hold-phase points.": 8
+      },
+      "known_duration_ms_range": null,
+      "known_hold_ratio_range": null,
+      "known_native_rounded_hold_ms_range": null,
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 5,
+      "train_loss": 5.028537273406982,
+      "gold_conditioned_val_loss": 5.347600936889648,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 8,
+        "execute_total": 5,
+        "per_decision": {
+          "execute": {
+            "total": 5
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.0,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 1.0,
+        "selection_score": -0.6666666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.6666666666666667,
+        -1.0,
+        -5.347600936889648
+      ],
+      "known_raw_or_decoded_signature_counts": {},
+      "technical_error_messages": {
+        "invalid_hold_mapping: look_around.basic has no hold-phase points.": 8
+      },
+      "known_duration_ms_range": null,
+      "known_hold_ratio_range": null,
+      "known_native_rounded_hold_ms_range": null,
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 6,
+      "train_loss": 4.615986347198486,
+      "gold_conditioned_val_loss": 5.373581886291504,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 3,
+        "execute_total": 5,
+        "technical_errors": 3,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1,
+            "correct": 0
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.0,
+        "technical_error_rate": 0.375,
+        "selection_score": -0.3416666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3416666666666667,
+        -0.375,
+        -5.373581886291504
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('blink.full', 1),),))": 8
+      },
+      "technical_error_messages": {
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 3
+      },
+      "known_duration_ms_range": [
+        615,
+        620
+      ],
+      "known_hold_ratio_range": [
+        0.132,
+        0.133
+      ],
+      "known_native_rounded_hold_ms_range": [
+        81,
+        83
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 7,
+      "train_loss": 4.320644378662109,
+      "gold_conditioned_val_loss": 5.599566459655762,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 3,
+        "execute_total": 5,
+        "technical_errors": 3,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1,
+            "correct": 0
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.0,
+        "technical_error_rate": 0.375,
+        "selection_score": -0.3416666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3416666666666667,
+        -0.375,
+        -5.599566459655762
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('blink.full', 1),),))": 8
+      },
+      "technical_error_messages": {
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 3
+      },
+      "known_duration_ms_range": [
+        620,
+        625
+      ],
+      "known_hold_ratio_range": [
+        0.145,
+        0.146
+      ],
+      "known_native_rounded_hold_ms_range": [
+        90,
+        92
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 8,
+      "train_loss": 4.068720817565918,
+      "gold_conditioned_val_loss": 5.885305881500244,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 3,
+        "execute_total": 5,
+        "technical_errors": 3,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1,
+            "correct": 0
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.0,
+        "technical_error_rate": 0.375,
+        "selection_score": -0.3416666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3416666666666667,
+        -0.375,
+        -5.885305881500244
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('surprise.basic', 1),),))": 8
+      },
+      "technical_error_messages": {
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 3
+      },
+      "known_duration_ms_range": [
+        1038,
+        1048
+      ],
+      "known_hold_ratio_range": [
+        0.261,
+        0.264
+      ],
+      "known_native_rounded_hold_ms_range": [
+        272,
+        276
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 9,
+      "train_loss": 3.8732993602752686,
+      "gold_conditioned_val_loss": 6.158143997192383,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 3,
+        "execute_total": 5,
+        "technical_errors": 3,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1,
+            "correct": 0
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.0,
+        "technical_error_rate": 0.375,
+        "selection_score": -0.3416666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3416666666666667,
+        -0.375,
+        -6.158143997192383
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('surprise.basic', 1),),))": 8
+      },
+      "technical_error_messages": {
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 3
+      },
+      "known_duration_ms_range": [
+        1050,
+        1060
+      ],
+      "known_hold_ratio_range": [
+        0.261,
+        0.265
+      ],
+      "known_native_rounded_hold_ms_range": [
+        274,
+        281
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 10,
+      "train_loss": 3.711172580718994,
+      "gold_conditioned_val_loss": 6.408610820770264,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 3,
+        "execute_total": 5,
+        "technical_errors": 3,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1,
+            "correct": 0
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.0,
+        "technical_error_rate": 0.375,
+        "selection_score": -0.3416666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3416666666666667,
+        -0.375,
+        -6.408610820770264
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('surprise.basic', 1),),))": 6
+      },
+      "technical_error_messages": {
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 1,
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 2
+      },
+      "known_duration_ms_range": [
+        1069,
+        1079
+      ],
+      "known_hold_ratio_range": [
+        0.249,
+        0.252
+      ],
+      "known_native_rounded_hold_ms_range": [
+        267,
+        272
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 11,
+      "train_loss": 3.6824302673339844,
+      "gold_conditioned_val_loss": 6.647935390472412,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 3,
+        "execute_total": 5,
+        "technical_errors": 3,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1,
+            "correct": 0
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.0,
+        "technical_error_rate": 0.375,
+        "selection_score": -0.3416666666666667,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3416666666666667,
+        -0.375,
+        -6.647935390472412
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('surprise.basic', 1),),))": 7
+      },
+      "technical_error_messages": {
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 2,
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 1
+      },
+      "known_duration_ms_range": [
+        1097,
+        1109
+      ],
+      "known_hold_ratio_range": [
+        0.262,
+        0.265
+      ],
+      "known_native_rounded_hold_ms_range": [
+        288,
+        294
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 12,
+      "train_loss": 3.633486270904541,
+      "gold_conditioned_val_loss": 6.816763401031494,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 1,
+        "technical_errors": 5,
+        "execute_total": 5,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.6666666666666667,
+        "technical_error_rate": 0.625,
+        "selection_score": -0.3694444444444444,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3694444444444444,
+        -0.625,
+        -6.816763401031494
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('surprise.basic', 1),),))": 4
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 4,
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 1
+      },
+      "known_duration_ms_range": [
+        1099,
+        1104
+      ],
+      "known_hold_ratio_range": [
+        0.285,
+        0.289
+      ],
+      "known_native_rounded_hold_ms_range": [
+        314,
+        319
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 13,
+      "train_loss": 3.581160068511963,
+      "gold_conditioned_val_loss": 6.928369998931885,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 2,
+        "technical_errors": 4,
+        "execute_total": 5,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1,
+            "correct": 0
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.33333333333333337,
+        "technical_error_rate": 0.5,
+        "selection_score": -0.3555555555555555,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3555555555555555,
+        -0.5,
+        -6.928369998931885
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 6,
+        "('execute', ((('tilt_head.basic', 1),),))": 1
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 1,
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 3
+      },
+      "known_duration_ms_range": [
+        1266,
+        1457
+      ],
+      "known_hold_ratio_range": [
+        0.342,
+        0.391
+      ],
+      "known_native_rounded_hold_ms_range": [
+        432,
+        569
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 14,
+      "train_loss": 3.5026955604553223,
+      "gold_conditioned_val_loss": 7.020050525665283,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 6,
+        "execute_total": 5,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 0,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 0.75,
+        "selection_score": -0.3833333333333333,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3833333333333333,
+        -0.75,
+        -7.020050525665283
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 3
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 5,
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 1
+      },
+      "known_duration_ms_range": [
+        1421,
+        1439
+      ],
+      "known_hold_ratio_range": [
+        0.377,
+        0.384
+      ],
+      "known_native_rounded_hold_ms_range": [
+        535,
+        553
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 15,
+      "train_loss": 3.521817922592163,
+      "gold_conditioned_val_loss": 7.132381916046143,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 7,
+        "execute_total": 5,
+        "decision_correct": 1,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 0,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 1
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.05,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 0.875,
+        "selection_score": -0.5249999999999999,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.5249999999999999,
+        -0.875,
+        -7.132381916046143
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 1
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 7
+      },
+      "known_duration_ms_range": [
+        1501,
+        1501
+      ],
+      "known_hold_ratio_range": [
+        0.378,
+        0.378
+      ],
+      "known_native_rounded_hold_ms_range": [
+        567,
+        567
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 16,
+      "train_loss": 3.4479832649230957,
+      "gold_conditioned_val_loss": 7.272541046142578,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 7,
+        "execute_total": 5,
+        "decision_correct": 1,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 0,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 1
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.05,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 0.875,
+        "selection_score": -0.5249999999999999,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.5249999999999999,
+        -0.875,
+        -7.272541046142578
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 1
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 7
+      },
+      "known_duration_ms_range": [
+        1543,
+        1543
+      ],
+      "known_hold_ratio_range": [
+        0.387,
+        0.387
+      ],
+      "known_native_rounded_hold_ms_range": [
+        597,
+        597
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 17,
+      "train_loss": 3.3983397483825684,
+      "gold_conditioned_val_loss": 7.358646869659424,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 6,
+        "execute_total": 5,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 0,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 0.75,
+        "selection_score": -0.3833333333333333,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3833333333333333,
+        -0.75,
+        -7.358646869659424
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 2
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 6
+      },
+      "known_duration_ms_range": [
+        1512,
+        1514
+      ],
+      "known_hold_ratio_range": [
+        0.4,
+        0.401
+      ],
+      "known_native_rounded_hold_ms_range": [
+        604,
+        608
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 18,
+      "train_loss": 3.4609262943267822,
+      "gold_conditioned_val_loss": 7.318343639373779,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 6,
+        "execute_total": 5,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 0,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 0.75,
+        "selection_score": -0.3833333333333333,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3833333333333333,
+        -0.75,
+        -7.318343639373779
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 2
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 6
+      },
+      "known_duration_ms_range": [
+        1471,
+        1473
+      ],
+      "known_hold_ratio_range": [
+        0.419,
+        0.42
+      ],
+      "known_native_rounded_hold_ms_range": [
+        617,
+        619
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 19,
+      "train_loss": 3.2922916412353516,
+      "gold_conditioned_val_loss": 7.204416751861572,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 1,
+        "technical_errors": 5,
+        "execute_total": 5,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1,
+            "correct": 0
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 0.6666666666666667,
+        "technical_error_rate": 0.625,
+        "selection_score": -0.3694444444444444,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3694444444444444,
+        -0.625,
+        -7.204416751861572
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 4
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 4,
+        "Prediction violates explicit instruction constraints or has unresolved numeric scope.": 1
+      },
+      "known_duration_ms_range": [
+        1437,
+        1459
+      ],
+      "known_hold_ratio_range": [
+        0.417,
+        0.429
+      ],
+      "known_native_rounded_hold_ms_range": [
+        599,
+        625
+      ],
+      "prediction_file_sha256_matches_metric": true
+    },
+    {
+      "epoch": 20,
+      "train_loss": 3.103706121444702,
+      "gold_conditioned_val_loss": 7.110812187194824,
+      "predicted_resource_validation": {
+        "total": 8,
+        "nonexecute_total": 3,
+        "technical_errors": 6,
+        "execute_total": 5,
+        "decision_correct": 2,
+        "structure_correct": 0,
+        "execute_structure_correct": 0,
+        "false_execution": 0,
+        "per_decision": {
+          "execute": {
+            "total": 5,
+            "correct": 2
+          },
+          "none": {
+            "total": 1
+          },
+          "unsupported": {
+            "total": 1
+          },
+          "ambiguous": {
+            "total": 1
+          }
+        },
+        "macro_decision_accuracy": 0.1,
+        "execute_structure_accuracy": 0.0,
+        "nonexecute_specificity": 1.0,
+        "technical_error_rate": 0.75,
+        "selection_score": -0.3833333333333333,
+        "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+      },
+      "selection_key": [
+        -0.3833333333333333,
+        -0.75,
+        -7.110812187194824
+      ],
+      "known_raw_or_decoded_signature_counts": {
+        "('execute', ((('angry.basic', 1),),))": 1,
+        "('execute', ((('surprise.basic', 1),),))": 1
+      },
+      "technical_error_messages": {
+        "hold_segment_too_short: nonzero hold must survive the 80 ms native limit.": 6
+      },
+      "known_duration_ms_range": [
+        1166,
+        1515
+      ],
+      "known_hold_ratio_range": [
+        0.357,
+        0.434
+      ],
+      "known_native_rounded_hold_ms_range": [
+        416,
+        657
+      ],
+      "prediction_file_sha256_matches_metric": true
+    }
+  ],
+  "selection": {
+    "rule": "Lexicographic maximize (selection_score, -technical_error_rate, -gold_conditioned_val_loss).",
+    "score_formula": "(macro_decision_accuracy + execute_structure_accuracy + nonexecute_specificity)/3 - technical_error_rate",
+    "tied_best_primary_score_epochs": [
+      1,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11
+    ],
+    "best_epoch_recomputed": 6,
+    "all_epochs_execute_structure_correct_zero": true,
+    "source_reference": "Tools/ActionEncoder/train_action_config.py:240"
+  },
+  "interpretation": [
+    "27 train rows are 27 semantic families with one accepted row each; 15 execute rows supervise 9 resources and 21 active action slots.",
+    "The saved checkpoint received only 6 full-batch AdamW updates from a fresh action head. This establishes limited optimization opportunity, but more epochs alone are not established as a remedy: train loss declines while validation loss rises after epoch 5.",
+    "Execute is the plurality decision (15/27), PAD is the majority slot-2 resource (9/15), and one cycle is the majority active cycle target (18/21). These priors fit the collapsed topology, but blink is not a uniquely most frequent gold resource; its specific selection cannot be explained by a blink label majority.",
+    "Training lacks every 3-cycle action, every dialogue example, and all wave/cheer/bow labels. Validation asks three 3-cycle actions including wave; train positive slot-2 examples are only six.",
+    "Frozen labels and split copies retain original accepted text, role, config, split and family exactly. This excludes mutation in those fields, not all semantic label problems.",
+    "Epoch 6 returns one one-cycle blink for all 8 validation inputs before the numeric instruction guard. Five return configurations and three explicit-repeat rows are blocked. The guard does not create blink collapse.",
+    "Epoch 2-5 fail look_around positive-hold validation on every row. Epoch 20 has six nonzero hold spans below native 80 ms. Decoder-error logs do not preserve their raw continuous predictions, so exact failing parameters are unavailable from saved per-epoch predictions.",
+    "Epoch 6 is a least-bad selection with zero correct structures, not an accepted success. Epoch 1 and 6-11 tie on primary score and error rate; epoch 6 wins on lowest conditional validation loss.",
+    "No old corpus was read; no source, labels, snapshots or checkpoints were edited; no training, test-based tuning, or model execution was performed by this sub-audit."
+  ]
+}

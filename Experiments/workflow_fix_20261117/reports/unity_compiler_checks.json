@@ -1,0 +1,89 @@
+{
+  "status": "success",
+  "result": {
+    "count": 4,
+    "logs": [
+      {
+        "groupId": "366ba1b6231a85ee1b00dd4b8c6a1b840434058e0e36fb85a37f9e3a56d96acf",
+        "type": "Log",
+        "message": "[ActionConfig v0.2 Verify] ALL 16 checks PASSED (11 defaults + unsupported hold mapping rejection + per-cycle duration + parallel conflict + formal gate + blink amplitude guard).",
+        "stackTrace": null,
+        "count": 1,
+        "countKnown": true,
+        "firstUtc": "2026-11-17T10:30:46.484699Z",
+        "lastUtc": "2026-11-17T10:30:46.484699Z",
+        "firstSeq": 8410,
+        "lastSeq": 8410,
+        "timeKnown": true,
+        "source": "managed"
+      },
+      {
+        "groupId": "e8c02f88bd36866fc638e55812d3050d6d6286d8bdb92bf838bf9633ad64fb8b",
+        "type": "Log",
+        "message": "[ActionConfig v0.2 Verify] ALL 16 checks PASSED (12 resources + per-cycle duration + parallel conflict + formal gate + blink amplitude guard).",
+        "stackTrace": null,
+        "count": 5,
+        "countKnown": true,
+        "firstUtc": "2026-11-17T04:02:51.3269476Z",
+        "lastUtc": "2026-11-17T08:37:31.0976668Z",
+        "firstSeq": 8352,
+        "lastSeq": 8393,
+        "timeKnown": true,
+        "source": "managed"
+      },
+      {
+        "groupId": "25b640dfbeb083a5c072a7618690e0b9ef6e356d2cb26d07abc16625ecc5ce9d",
+        "type": "Error",
+        "message": "[ActionConfig v0.2 Verify] Resource 'blink.full' failed: invalid_token - Unexpected character 'F' at position 156.\nUnityEngine.Debug:LogError (object)\nPetLive2d.ActionLanguage.Editor.ActionConfigV02Verifier:RunVerification () (at Assets/Scripts/ActionLanguage/Editor/ActionConfigV02Verifier.cs:28)\nUnityEditor.EditorApplication:ExecuteMenuItem (string)\nUnitySkills.EditorSkills:EditorExecuteMenu (string) (at ./Library/PackageCache/com.besty.unity-skills@7a65a1d559/Editor/Skills/EditorSkills.cs:397)...",
+        "stackTrace": null,
+        "count": null,
+        "countKnown": false,
+        "firstUtc": null,
+        "lastUtc": null,
+        "firstSeq": 8350,
+        "lastSeq": 8350,
+        "timeKnown": false,
+        "source": "mixed"
+      },
+      {
+        "groupId": "2fb18eaa93513962b13d5eaa165727e85e253c276f07e4ab3683512a4a11c462",
+        "type": "Error",
+        "message": "[ActionConfig v0.2 Verify] Resource 'blink.full' failed: invalid_token - Unexpected character 'F' at position 156.",
+        "stackTrace": null,
+        "count": 1,
+        "countKnown": true,
+        "firstUtc": "2026-11-17T04:02:10.6697003Z",
+        "lastUtc": "2026-11-17T04:02:10.6697003Z",
+        "firstSeq": 8349,
+        "lastSeq": 8349,
+        "timeKnown": true,
+        "source": "managed"
+      }
+    ],
+    "source": "history",
+    "cursor": "v1:0:8410:0",
+    "nextCursor": null,
+    "totalMatched": 8,
+    "hasMore": false,
+    "complete": false,
+    "dropped": 0,
+    "coverage": {
+      "oldestSeq": 1,
+      "newestSeq": 8410,
+      "snapshotSeq": 8410,
+      "retained": 8410,
+      "capacity": 50000,
+      "maxBytes": 67108864,
+      "unknownTimeCount": 13,
+      "nativeTime": "unknown",
+      "nativeMessageMayBeTruncated": true,
+      "fullTextGuaranteedFor": "managed",
+      "corruptRows": 0,
+      "incompleteThroughSeq": 0,
+      "durabilityIssue": false,
+      "editorLogPath": "C:/Users/chenyifei/AppData/Local/Unity/Editor/Editor.log",
+      "editorLogAvailable": true,
+      "editorLogSource": "Editor.log is an external fallback; it is not imported into cursor history."
+    }
+  }
+}

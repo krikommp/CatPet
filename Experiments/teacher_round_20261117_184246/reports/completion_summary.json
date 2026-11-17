@@ -1,0 +1,118 @@
+{
+  "completed_at": "2026-11-17T11:03:39.209328+00:00",
+  "training_completed": true,
+  "epoch_count": 20,
+  "selected_epoch": 6,
+  "checkpoint_id": "17ab06dfb9a0",
+  "checkpoint_dir": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\checkpoint_epoch20",
+  "checkpoint_hashes": {
+    "manifest.json": "6efa722f8bc48fece53eabd86fb67282230f44d2ce2f886a9fa48eba7b69e1ad",
+    "config_head.pt": "17ab06dfb9a0374fdbed3c04a3ee262bab93db233511d7174f90cd15dad48fb9",
+    "backbone_state.pt": "dd4cc900aa52855a95464940a07461acd342ee5c8e1925f2392fdff5f12f895a"
+  },
+  "snapshot_manifest_sha256": "76ecaf278d5f7f64077e5995d37078509aebe1da7e2493d7a20fe3bda9feb3f2",
+  "fixed_test_comparison": [
+    {
+      "model": "teacher_round1",
+      "checkpoint_id": "17ab06dfb9a0",
+      "total": 7,
+      "decision_correct": 4,
+      "structure_correct": 0,
+      "execute_structure_correct": 0,
+      "execute_total": 4,
+      "technical_errors": 0,
+      "false_execution": 3,
+      "nonexecute_total": 3
+    },
+    {
+      "model": "round9_diagnostic",
+      "checkpoint_id": "838f2c1ac110",
+      "total": 7,
+      "decision_correct": 5,
+      "structure_correct": 3,
+      "execute_structure_correct": 1,
+      "execute_total": 4,
+      "technical_errors": 1,
+      "false_execution": 1,
+      "nonexecute_total": 3
+    }
+  ],
+  "protected_inputs": [
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\checkpoints\\v02_latest\\config_head.pt",
+      "sha256": "838f2c1ac110f5fa56359b5f67b8a2beda83c21f2a5e5921fdd86b9c906ec0be",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\checkpoints\\v02_latest\\backbone_state.pt",
+      "sha256": "dbd29e4a4689f0025465e25d6fb90f27908f675b2404138477ac9a5a69271a89",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\checkpoints\\v02_latest\\manifest.json",
+      "sha256": "870cc437e7954fd30388d05b773951521e5bbae5bb8b6a10e3d6ab97d7ee8bb9",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\llm_v02_corpus.jsonl",
+      "sha256": "d5e7fe1361f60970ffcbe2b0b504b1616ff849d48900afaf5da6ec3ac2f7d924",
+      "unchanged": true
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\checkpoints\\v02_latest\\test_split.jsonl",
+      "sha256": "ecbc2f4d3ad1b6c2cd38cc17003830979bf1a72d86047063b9120344020e75eb",
+      "unchanged": true
+    }
+  ],
+  "frozen_round9_copy_unchanged": true,
+  "resources_by_split": {
+    "train": [
+      "angry.basic",
+      "blink.full",
+      "look_around.basic",
+      "nod.basic",
+      "shake_head.basic",
+      "shy.basic",
+      "smile.basic",
+      "surprise.basic",
+      "tilt_head.basic"
+    ],
+    "val": [
+      "look_around.basic",
+      "nod.basic",
+      "shy.basic",
+      "smile.basic",
+      "surprise.basic",
+      "tilt_head.basic",
+      "wave.basic"
+    ],
+    "test": [
+      "blink.full",
+      "look_around.basic",
+      "nod.basic",
+      "shake_head.basic",
+      "smile.basic",
+      "tilt_head.basic",
+      "wave.basic"
+    ]
+  },
+  "all_20_epoch_predictions_verified": true,
+  "train_loss_first": 6.750180721282959,
+  "train_loss_last": 3.103706121444702,
+  "new_prediction_structure_histogram": {
+    "('execute', ((('blink.full', 1),),))": 7
+  },
+  "release_approved": false,
+  "service_changed": false,
+  "limitations": [
+    "42 admitted rows, 27 train, 7 test: too small for general reliability claims.",
+    "Only instruction inputs; dialogue not sampled.",
+    "No admitted cheer or bow; wave has heldout examples but no train examples.",
+    "Wave judgments depend on broad whole-arm interpretation; reviewer-specific rationales preserved.",
+    "Explicit duration/amplitude progression heldout cases are in validation, not final test; precise numeric generalization is not established.",
+    "Same primitive resources across semantic scenario families are intentional, not proof of statistical independence.",
+    "Semantic independence from round9 historical training data is not established.",
+    "Model predictions were evaluated offline, not re-recorded for visual acceptance.",
+    "Zero technical errors does not establish semantic correctness; all seven new predictions collapse to single blink."
+  ]
+}

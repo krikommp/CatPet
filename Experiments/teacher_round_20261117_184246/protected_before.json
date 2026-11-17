@@ -1,0 +1,6 @@
+{
+  "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\checkpoints\\v02_latest\\config_head.pt": "838f2c1ac110f5fa56359b5f67b8a2beda83c21f2a5e5921fdd86b9c906ec0be",
+  "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\checkpoints\\v02_latest\\backbone_state.pt": "dbd29e4a4689f0025465e25d6fb90f27908f675b2404138477ac9a5a69271a89",
+  "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\checkpoints\\v02_latest\\manifest.json": "870cc437e7954fd30388d05b773951521e5bbae5bb8b6a10e3d6ab97d7ee8bb9",
+  "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\llm_v02_corpus.jsonl": "d5e7fe1361f60970ffcbe2b0b504b1616ff849d48900afaf5da6ec3ac2f7d924"
+}

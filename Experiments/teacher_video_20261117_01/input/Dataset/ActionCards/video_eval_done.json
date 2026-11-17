@@ -1,0 +1,49 @@
+{
+    "total": 6,
+    "completed": 6,
+    "failed": 0,
+    "items": [
+        {
+            "candidate_id": "r8-001",
+            "raw_text": "晃动着身体",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r8-001\\preview.mp4"
+        },
+        {
+            "candidate_id": "r8-002",
+            "raw_text": "开心地晃着身子",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r8-002\\preview.mp4"
+        },
+        {
+            "candidate_id": "r8-003",
+            "raw_text": "很伤心",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r8-003\\preview.mp4"
+        },
+        {
+            "candidate_id": "r8-004",
+            "raw_text": "委屈巴巴",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r8-004\\preview.mp4"
+        },
+        {
+            "candidate_id": "r8-005",
+            "raw_text": "好累呀",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r8-005\\preview.mp4"
+        },
+        {
+            "candidate_id": "r8-006",
+            "raw_text": "没精神",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r8-006\\preview.mp4"
+        }
+    ]
+}

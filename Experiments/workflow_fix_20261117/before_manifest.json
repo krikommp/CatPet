@@ -1,0 +1,165 @@
+{
+  "created_at_utc": "2026-11-17T10:11:15.528098+00:00",
+  "files": [
+    {
+      "path": "Tools\\ActionEncoder\\action_config_schema.py",
+      "sha256": "fa8f5502327117a336b660774d2bb90e1b571c77b67a028ff2383b7173915767"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\action_schema.py",
+      "sha256": "d95275e56aa1469b2da71da030bddbe4e3528db913c995dbda177aade69681e3"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\download_model.py",
+      "sha256": "e6e2c178976b83aaff6aa9f8ee62eb571ce7230acd5a3094ab2a77f944bdb5c5"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\encode.py",
+      "sha256": "a1e94d6d6d617591f3c443c924c3a586ff26bca55094fa805e053b6b48d5b04f"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\encoder.py",
+      "sha256": "2f92cd1959cd334b147c69af360a16ff3a5c803ce07fffe8c93fbb190c5ffa90"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\eval_action_head.py",
+      "sha256": "33b5cf76b216d09c42b4ae35720a22fc98d2f43ddd9097dba08b85d6243755a8"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\generate_seed_dataset.py",
+      "sha256": "5b1ab71630a79f2b5481761763b9e7d4631388835c02b09614fd6758e0954fa1"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\install_dependencies.py",
+      "sha256": "154b43a79f70f732639d67646a95a650cc75f2ee9c5453d1881473d10c6daecf"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\model_test.py",
+      "sha256": "1f63785a07240c1599701f79c08b8dae05325e1a1da25cb7a6f33c33cbb63b54"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\retrain_and_eval.py",
+      "sha256": "c8f4c54c1f92f9aa76e4c98a971cbcb3a472fd3ae52401e28634e3e2f4fda2d8"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\server.py",
+      "sha256": "12ae6d3cf8efc9e4f01d8e00208d0c0c3aff43fa290fac927a86a54eee1d842a"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\train_action_config.py",
+      "sha256": "88b02d86303b8a3187f1e0c5e4a352dbfef46e89ab58e737f7724fb4b4377953"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\train_action_head.py",
+      "sha256": "7ea866b61b3ba2bd54391636bbbe0fd83e826858495981146698ecff4f2ec7c6"
+    },
+    {
+      "path": "Tools\\ActionEncoder\\validate_v02_corpus.py",
+      "sha256": "4cd055486a5ea882943d656093cbbcdd447d334a69ad58488f0aac470d8ecf6d"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ActionConfigCompiler.cs",
+      "sha256": "45a06ecf445e49205561e8816ab6a7e965e8530f283a19fc2985255c7a4b0a4c"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ActionContract.cs",
+      "sha256": "80904a582b78e34c9475e97ee13aa837aa503a99ed4e461401eea4fe6002d772"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ActionPlanCompiler.cs",
+      "sha256": "a7f1f059963e63bc611bcb85b578e59eff15f7ef2210316bd49d2dee15fef541"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ActionPlanReceiver.cs",
+      "sha256": "610d82b71907c0a9941a4b1c64588ed49c3074a5de0920d06eb23e33f71947d6"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ActionPlayer.cs",
+      "sha256": "34bce1551dba581ad9c16016971458d4139c7549758a537ea78031bfcf500337"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ActionResourceCatalog.cs",
+      "sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ActionReviewModels.cs",
+      "sha256": "fd29a904f43cbf6c41793dda2366d74c7ee242f462cc39af832a9a060dce1351"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\CandidateProviders.cs",
+      "sha256": "94ea5bf4cf5f2bbead8aaf84aabb10b50707f9dc9472d093140e067849712586"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\Live2DActionAdapter.cs",
+      "sha256": "38149c942e287be8a42a18d00daaaa086402d39b8370b068331d26f263a7af8a"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\ReviewStore.cs",
+      "sha256": "cb4ca6548ab79560ec5448f9acceda3d67849b4fd7169bd254b723800ba87e27"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\YukikazeActionCatalog.cs",
+      "sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\Editor\\ActionConfigV02Verifier.cs",
+      "sha256": "3e777edc7e96203b2eccd9764fb21f148fc6d693bbe4d0e07f18dd1012d60b12"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\Editor\\ActionReviewWindow.cs",
+      "sha256": "a06bdcb487475a63ced5aade5a00a19d006d369e20f698f986848ed9ecc3fb52"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\Editor\\BatchVideoRecorder.cs",
+      "sha256": "e9677eb587105ea5d5ad9bd1de1bd3639d8b074447034735df57a818217e38cb"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionLanguage\\Editor\\PreviewSession.cs",
+      "sha256": "68c9785553d481d7468205f3311bf7c91b36bc17750f655105ebec1d57379747"
+    },
+    {
+      "path": "Assets\\Scripts\\ActionEncoder\\LocalActionEncoderClient.cs",
+      "sha256": "bd81c531f73caca6fb189ad8e8fd38888329b852ab553f5b00f59ca0c8c15543"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\action-config-v0.2.md",
+      "sha256": "86df20c4c0c402e7d9a6c95a4414493d7148da4239db3808da35ca454570d956"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\action-plan-v0.1.md",
+      "sha256": "32f03e3b36d7a41c4b6706f8d4be2de94b3c45dded351a74bdcaab31ec345a0f"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\ActionModel_Training_Spec.md",
+      "sha256": "27955023826c45270c9b354067edc20b98c90f10fecfb79ca1ef769b6b6a3bc8"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\ActionPlanIntegration.md",
+      "sha256": "cbdb8b67d5f5b066b0e10eee18cc6874cab19b8e4ac3efcbf19f0a87a4ce5898"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\LLM_Training_Handoff_v0.2.md",
+      "sha256": "f2f70f8302b688de71cbf4dbdc73f8ecbdc742096d8cbd572a7f4c7dd677a4a5"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\v0.1.md",
+      "sha256": "f4f4ab21abfea221e47df81ab974c968594c968768c7482a8ac122cb7fabcb4d"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\Yukikaze_ActionModel_Integration_Plan.md",
+      "sha256": "f04d0bca3c1b26d8fa4d095de254bc505aa15a8c9187c47db389ba4912c7559c"
+    },
+    {
+      "path": "Docs\\ActionEncoderTraining.md",
+      "sha256": "951b67036735cf6fcdcf59ffa1dd3013abe6919b4963fc48263d47198831e660"
+    },
+    {
+      "path": "Dataset\\ActionCards\\llm_v02_corpus.jsonl",
+      "sha256": "d5e7fe1361f60970ffcbe2b0b504b1616ff849d48900afaf5da6ec3ac2f7d924"
+    },
+    {
+      "path": "Docs\\ActionLanguage\\personas\\gemini-cyber-cat.md",
+      "sha256": "56b4364bf1c7da22e6b6faadc094299e570f93375e0acb78f510c360d614aa41"
+    }
+  ]
+}

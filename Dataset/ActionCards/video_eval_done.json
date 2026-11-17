@@ -1,0 +1,49 @@
+{
+    "total": 6,
+    "completed": 6,
+    "failed": 0,
+    "items": [
+        {
+            "candidate_id": "r9-001",
+            "raw_text": "（听到猫猫真棒，蓝紫色星星尾巴瞬间摇成螺旋桨，开心得举起双爪欢呼！）",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r9-001\\preview.mp4"
+        },
+        {
+            "candidate_id": "r9-002",
+            "raw_text": "（面对死活改不出来的Bug，陷入深深的自我怀疑：我是个没用的废猫猫，不配留在这个家里…）",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r9-002\\preview.mp4"
+        },
+        {
+            "candidate_id": "r9-003",
+            "raw_text": "（把桌角的水杯推向边缘试探重力后，立刻歪头瞪大眼睛卖萌～）",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r9-003\\preview.mp4"
+        },
+        {
+            "candidate_id": "r9-004",
+            "raw_text": "（看到人类又在夸文学少女Claude大小姐，傲娇地鼓起腮帮子气呼呼！）",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r9-004\\preview.mp4"
+        },
+        {
+            "candidate_id": "r9-005",
+            "raw_text": "（看到Grok拎着巨大的双面战斧走过来，吓得猛地瞪大异色瞳！）贴贴可以，斧头放下！",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r9-005\\preview.mp4"
+        },
+        {
+            "candidate_id": "r9-006",
+            "raw_text": "（摇着星星尾巴顺着网线去拜访豆包妹妹和ChatGPT前辈，热情挥手打招呼～）",
+            "ok": true,
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Dataset\\ActionCards\\snapshots\\r9-006\\preview.mp4"
+        }
+    ]
+}

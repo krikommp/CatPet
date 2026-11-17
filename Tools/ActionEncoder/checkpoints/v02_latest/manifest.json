@@ -1,0 +1,40 @@
+{
+  "model_id": "hfl/minirbt-h256",
+  "model_revision": "446e1b4012b10946f479563005700c54c9db3f7c",
+  "checkpoint_id": "838f2c1ac110",
+  "model_version": "minirbt-config-v02-838f2c1ac110",
+  "status": "experimental",
+  "can_generate_configs": true,
+  "parameter_schema_version": "action-config.v0.2",
+  "capability_profile": "yukikaze.v1",
+  "resource_catalog_version": "yukikaze-resources.v0.2",
+  "label_policy_version": "action-config-labels.v0.2",
+  "max_length": 128,
+  "unfrozen_layers": 2,
+  "supported_resources": [
+    "blink.full",
+    "nod.basic",
+    "shake_head.basic",
+    "tilt_head.basic",
+    "look_around.basic",
+    "smile.basic",
+    "angry.basic",
+    "shy.basic",
+    "surprise.basic",
+    "wave.basic",
+    "cheer.basic",
+    "bow.basic"
+  ],
+  "max_actions": 2,
+  "max_cycles": 3,
+  "decisions": [
+    "execute",
+    "none",
+    "unsupported",
+    "ambiguous"
+  ],
+  "train_count": 2649,
+  "val_count": 315,
+  "test_count": 326,
+  "best_val_loss": 0.830507
+}

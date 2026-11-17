@@ -1,0 +1,129 @@
+{
+  "checkpoint_id": "17ab06dfb9a0",
+  "inputs": "train_and_val_only; fixed test not rerun",
+  "count": 35,
+  "features": {
+    "base": {
+      "mean_norm": 12.021540641784668,
+      "mean_feature_std": 0.2194657027721405,
+      "pairwise_cosine_min": 0.8259176015853882,
+      "pairwise_cosine_mean": 0.9089981317520142,
+      "pairwise_cosine_max": 0.9778358936309814,
+      "centered_energy_fraction": 0.08862093836069107
+    },
+    "trained": {
+      "mean_norm": 13.864858627319336,
+      "mean_feature_std": 0.17218589782714844,
+      "pairwise_cosine_min": 0.9095110893249512,
+      "pairwise_cosine_mean": 0.9576069116592407,
+      "pairwise_cosine_max": 0.9898439049720764,
+      "centered_energy_fraction": 0.04128257930278778
+    },
+    "head_hidden": {
+      "mean_norm": 8.7891845703125,
+      "mean_feature_std": 0.024685105308890343,
+      "pairwise_cosine_min": 0.9929963946342468,
+      "pairwise_cosine_mean": 0.9970475435256958,
+      "pairwise_cosine_max": 0.9993982315063477,
+      "centered_energy_fraction": 0.0035461883526295424
+    }
+  },
+  "metrics": {
+    "train": {
+      "total": 27,
+      "nonexecute_total": 12,
+      "decision_correct": 5,
+      "structure_correct": 0,
+      "execute_structure_correct": 0,
+      "false_execution": 10,
+      "technical_errors": 12,
+      "execute_total": 15,
+      "per_decision": {
+        "execute": {
+          "total": 15,
+          "correct": 5
+        },
+        "none": {
+          "total": 4,
+          "correct": 0
+        },
+        "unsupported": {
+          "total": 4,
+          "correct": 0
+        },
+        "ambiguous": {
+          "total": 4,
+          "correct": 0
+        }
+      },
+      "macro_decision_accuracy": 0.08333333333333333,
+      "execute_structure_accuracy": 0.0,
+      "nonexecute_specificity": 0.16666666666666663,
+      "technical_error_rate": 0.4444444444444444,
+      "selection_score": -0.3611111111111111,
+      "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+    },
+    "val": {
+      "total": 8,
+      "nonexecute_total": 3,
+      "decision_correct": 2,
+      "structure_correct": 0,
+      "execute_structure_correct": 0,
+      "false_execution": 3,
+      "execute_total": 5,
+      "technical_errors": 3,
+      "per_decision": {
+        "execute": {
+          "total": 5,
+          "correct": 2
+        },
+        "none": {
+          "total": 1,
+          "correct": 0
+        },
+        "unsupported": {
+          "total": 1,
+          "correct": 0
+        },
+        "ambiguous": {
+          "total": 1,
+          "correct": 0
+        }
+      },
+      "macro_decision_accuracy": 0.1,
+      "execute_structure_accuracy": 0.0,
+      "nonexecute_specificity": 0.0,
+      "technical_error_rate": 0.375,
+      "selection_score": -0.3416666666666667,
+      "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+    }
+  },
+  "decision_argmax": {
+    "execute": 35
+  },
+  "slot0_argmax": {
+    "blink.full": 35
+  },
+  "slot1_argmax": {
+    "PAD": 35
+  },
+  "decision_probability_std": [
+    0.01352193858474493,
+    0.004425630904734135,
+    0.004848318640142679,
+    0.005504991393536329
+  ],
+  "parity": {
+    "trainer_attention": "sdpa",
+    "runtime_attention": "eager",
+    "pooled_max_abs_difference": 3.337860107421875e-06,
+    "single_vs_batched_first_feature_max_abs_difference": 1.6689300537109375e-06,
+    "single_vs_batched_first_decision_max_abs_difference": 1.7881393432617188e-07
+  },
+  "mean_decision_probability": {
+    "execute": 0.7145415544509888,
+    "none": 0.09130634367465973,
+    "unsupported": 0.08779487013816833,
+    "ambiguous": 0.106357142329216
+  }
+}

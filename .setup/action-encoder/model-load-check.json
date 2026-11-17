@@ -1,0 +1,21 @@
+{
+  "verification": "real_local_checkpoint_load_only",
+  "verified_on": "2026-11-16",
+  "command": ".venv-action-encoder/Scripts/python.exe -c 'import json,sys; sys.path.insert(0,\"Tools/ActionEncoder\"); from encoder import LocalEncoder; model=LocalEncoder(); print(json.dumps(model.health()))'",
+  "exit_code": 0,
+  "wall_time_seconds": 5.895,
+  "status": "ok",
+  "model_id": "hfl/minirbt-h256",
+  "model_revision": "446e1b4012b10946f479563005700c54c9db3f7c",
+  "hidden_size": 256,
+  "parameter_count": 10279424,
+  "device": "cpu",
+  "offline": true,
+  "manifest_integrity_check": "passed",
+  "exact_weight_loading": "passed",
+  "action_head": {"status": "not_trained", "can_generate_actions": false},
+  "forward_inference_run": false,
+  "http_service_started": false,
+  "unity_probe_run": false,
+  "training_started": false
+}

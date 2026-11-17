@@ -1,0 +1,50 @@
+{
+    "total": 5,
+    "completed": 4,
+    "failed": 1,
+    "queue_sha256": "52e514a49c4ebfa43c79e028d301454c8e540c1b4db66810abce51e2a677b1f3",
+    "snapshot_root": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots",
+    "finished": true,
+    "items": [
+        {
+            "candidate_id": "flow-blink",
+            "raw_text": "眨眼一次，每次600毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-blink\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-blink\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "flow-sequence",
+            "raw_text": "先眨眼一次，再点头一次。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-sequence\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-sequence\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "flow-parallel",
+            "raw_text": "同时眨眼一次和挥手一次。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-parallel\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-parallel\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "flow-none",
+            "raw_text": "保持原姿态，不执行动作。",
+            "error": "",
+            "video_path": "",
+            "evidence_path": "",
+            "ok": true
+        },
+        {
+            "candidate_id": "flow-short-hold",
+            "raw_text": "编译拒绝用例",
+            "error": "unrepresentable_hold: Requested hold becomes 6ms after rounding; minimum is 80ms. No parameters were changed.",
+            "video_path": "",
+            "evidence_path": "",
+            "ok": false
+        }
+    ]
+}

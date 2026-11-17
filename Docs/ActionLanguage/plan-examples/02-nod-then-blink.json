@@ -1,0 +1,8 @@
+{
+  "version": "action-plan.v0.1",
+  "decision": "execute",
+  "steps": [
+    {"actions": [{"type": "nod", "count": 2, "amplitude": "small", "speed": "normal"}]},
+    {"actions": [{"type": "blink", "count": 1, "amplitude": "full", "speed": "normal"}]}
+  ]
+}

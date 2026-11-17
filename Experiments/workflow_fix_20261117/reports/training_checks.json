@@ -1,0 +1,15 @@
+{
+  "tests_run": 23,
+  "failures": [],
+  "errors": [],
+  "passed": true,
+  "training_started": false,
+  "test_reviews_are_fixtures_not_real_evidence": true,
+  "source_sha256": {
+    "training_data.py": "969836cd19cda44a6ea1a7c586e7a9e8eaeedd389c58c6c9afaf2ad3ef35d8a4",
+    "train_action_config.py": "f2cd11044ba0214a2fb697d855c790dbb1732261696292b32a132d140aaa8218",
+    "retrain_and_eval.py": "cdc5dae384970081f0865bd4e98d40e650ddf317384afbdae79134795175e743",
+    "review_evidence.py": "3384ec008f6b5bb18f444771be5b67642d1348f89e0c451d31edd558673703bc",
+    "input_constraints.py": "32b0072999f616240746ab21d3a1ae2f2b2131ff179663ace8294f4862e44de9"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "model_id": "hfl/minirbt-h256",
+  "model_revision": "446e1b4012b10946f479563005700c54c9db3f7c",
+  "checkpoint_id": "415a10433a4f",
+  "model_version": "minirbt-head-415a10433a4f",
+  "status": "experimental",
+  "can_generate_actions": true,
+  "capability_profile": "yukikaze.v1",
+  "motion_map_version": "yukikaze-motion.v1",
+  "label_policy_version": "action-labels.v1",
+  "max_length": 128,
+  "unfrozen_layers": 2,
+  "has_finetuned_backbone": true,
+  "pooling": "attention_masked_mean_last_hidden_state",
+  "supported_actions": [
+    "blink",
+    "nod",
+    "shake_head",
+    "tilt_head",
+    "look_around",
+    "smile",
+    "angry",
+    "shy",
+    "surprise",
+    "wave",
+    "cheer",
+    "bow"
+  ],
+  "max_slots": 4,
+  "decisions": [
+    "execute",
+    "none",
+    "unsupported",
+    "ambiguous"
+  ],
+  "train_count": 12066,
+  "val_count": 1825,
+  "test_count": 1563,
+  "best_val_loss": 0.02513
+}

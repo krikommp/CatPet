@@ -1,0 +1,20 @@
+{
+    "passed": true,
+    "run_directory": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a",
+    "error": "",
+    "recorded": 3,
+    "non_execute": 1,
+    "expected_compile_rejections": 1,
+    "overwrite_rejected": true,
+    "all_completed_meta": true,
+    "all_encoder_closed": true,
+    "all_hashes_stable": true,
+    "actual_eye_motion_measured": true,
+    "external_cancel_rejected": true,
+    "input_role_preserved": true,
+    "evidence_paths": [
+        "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-blink\\evidence.json",
+        "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-sequence\\evidence.json",
+        "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-parallel\\evidence.json"
+    ]
+}

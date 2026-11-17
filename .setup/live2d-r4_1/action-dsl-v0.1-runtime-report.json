@@ -1,0 +1,40 @@
+﻿{
+    "Success": true,
+    "TimestampUtc": "2026-11-16T09:57:44.4861035Z",
+    "SceneName": "Demo",
+    "ModelName": "Natori",
+    "AdapterExecutionOrder": 750,
+    "LookExecutionOrder": 700,
+    "PhysicsExecutionOrder": 800,
+    "ExecutionOrderVerified": true,
+    "PassedChecks": [
+        "Test01_ValidExamples_CompileSuccessfully",
+        "Test02_InvalidPackets_AreRejectedWithExactCodes (13 invalid cases)",
+        "Test03_Player_InterpolationHoldSparseAndMovingBaselineRelease",
+        "Test04_Replacement_PauseResume_StaleGeneration_AndIdempotentCancel",
+        "ExecutionOrder verified: Look(700) < Adapter(750) < Physics(800)",
+        "Live2DActionAdapter bound to Natori and verified all 8 profile parameters against CubismModel.",
+        "Played natori-listen.json and natori-blink.json through Live2DActionAdapter on Natori."
+    ],
+    "SampledTimeline": [
+        "t=0ms: ParamAngleX=0.000, ParamAngleZ=0.000, subtitle=我在听，你接着说。",
+        "t=175ms: ParamAngleX=4.000, ParamAngleZ=-3.000, subtitle=我在听，你接着说。",
+        "t=350ms: ParamAngleX=8.000, ParamAngleZ=-6.000, subtitle=我在听，你接着说。",
+        "t=1000ms: ParamAngleX=8.000, ParamAngleZ=-6.000, subtitle=我在听，你接着说。",
+        "t=1300ms: ParamAngleX=4.000, ParamAngleZ=-3.000, subtitle=我在听，你接着说。",
+        "t=1600ms: ParamAngleX=0.000, ParamAngleZ=0.000, subtitle=我在听，你接着说。",
+        "t=1800ms: ParamAngleX=0.000, ParamAngleZ=0.000, subtitle=<null>",
+        "t=1900ms: ParamAngleX=0.000, ParamAngleZ=0.000, subtitle=<null>",
+        "t=2000ms: ParamAngleX=0.000, ParamAngleZ=0.000, subtitle=<null>",
+        "blink t=0ms: ParamEyeLOpen=1.000, ParamEyeROpen=1.000",
+        "blink t=100ms: ParamEyeLOpen=1.000, ParamEyeROpen=1.000",
+        "blink t=400ms: ParamEyeLOpen=1.000, ParamEyeROpen=1.000",
+        "blink t=440ms: ParamEyeLOpen=0.500, ParamEyeROpen=0.500",
+        "blink t=480ms: ParamEyeLOpen=0.000, ParamEyeROpen=0.000",
+        "blink t=540ms: ParamEyeLOpen=0.500, ParamEyeROpen=0.500",
+        "blink t=600ms: ParamEyeLOpen=1.000, ParamEyeROpen=1.000",
+        "blink t=1000ms: ParamEyeLOpen=1.000, ParamEyeROpen=1.000",
+        "blink t=1200ms: ParamEyeLOpen=1.000, ParamEyeROpen=1.000"
+    ],
+    "SummaryMessage": "All ActionLanguage v0.1 contract, player, and Natori Live2D integration checks passed."
+}

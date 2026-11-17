@@ -1,0 +1,5 @@
+# Python 3.11. Install the CPU wheel from the official PyTorch index first.
+# bootstrap.ps1 installs the complete pinned set from wheels.lock.json (verified SHA256).
+# requirements.lock.txt records the corresponding package versions for inspection.
+torch==2.9.1+cpu
+transformers==4.57.6

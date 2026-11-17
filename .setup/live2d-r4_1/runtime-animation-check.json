@@ -1,0 +1,56 @@
+[
+  {
+    "sample": 0,
+    "fields": [
+      {
+        "name": "Value",
+        "value": "0.952199"
+      }
+    ],
+    "properties": [
+      {
+        "name": "Id",
+        "value": "ParamBreath"
+      },
+      {
+        "name": "MinimumValue",
+        "value": "0"
+      },
+      {
+        "name": "MaximumValue",
+        "value": "1"
+      },
+      {
+        "name": "DefaultValue",
+        "value": "0"
+      }
+    ]
+  },
+  {
+    "sample": 1,
+    "fields": [
+      {
+        "name": "Value",
+        "value": "0.952199"
+      }
+    ],
+    "properties": [
+      {
+        "name": "Id",
+        "value": "ParamBreath"
+      },
+      {
+        "name": "MinimumValue",
+        "value": "0"
+      },
+      {
+        "name": "MaximumValue",
+        "value": "1"
+      },
+      {
+        "name": "DefaultValue",
+        "value": "0"
+      }
+    ]
+  }
+]

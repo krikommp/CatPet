@@ -1,0 +1,357 @@
+{
+  "created_at": "2026-11-17T09:46:04.365937+00:00",
+  "files": [
+    {
+      "source": "Tools\\ActionEncoder\\action_config_schema.py",
+      "snapshot": "source\\action_config_schema.py",
+      "sha256": "fa8f5502327117a336b660774d2bb90e1b571c77b67a028ff2383b7173915767",
+      "stable_during_copy": true,
+      "size": 12611,
+      "source_mtime_ns": 1794904608934419900
+    },
+    {
+      "source": "Tools\\ActionEncoder\\action_schema.py",
+      "snapshot": "source\\action_schema.py",
+      "sha256": "d95275e56aa1469b2da71da030bddbe4e3528db913c995dbda177aade69681e3",
+      "stable_during_copy": true,
+      "size": 6452,
+      "source_mtime_ns": 1794882625182476200
+    },
+    {
+      "source": "Tools\\ActionEncoder\\download_model.py",
+      "snapshot": "source\\download_model.py",
+      "sha256": "e6e2c178976b83aaff6aa9f8ee62eb571ce7230acd5a3094ab2a77f944bdb5c5",
+      "stable_during_copy": true,
+      "size": 10577,
+      "source_mtime_ns": 1794824877935258200
+    },
+    {
+      "source": "Tools\\ActionEncoder\\encode.py",
+      "snapshot": "source\\encode.py",
+      "sha256": "a1e94d6d6d617591f3c443c924c3a586ff26bca55094fa805e053b6b48d5b04f",
+      "stable_during_copy": true,
+      "size": 1604,
+      "source_mtime_ns": 1794824535167852000
+    },
+    {
+      "source": "Tools\\ActionEncoder\\encoder.py",
+      "snapshot": "source\\encoder.py",
+      "sha256": "2f92cd1959cd334b147c69af360a16ff3a5c803ce07fffe8c93fbb190c5ffa90",
+      "stable_during_copy": true,
+      "size": 16738,
+      "source_mtime_ns": 1794888240114071800
+    },
+    {
+      "source": "Tools\\ActionEncoder\\eval_action_head.py",
+      "snapshot": "source\\eval_action_head.py",
+      "sha256": "33b5cf76b216d09c42b4ae35720a22fc98d2f43ddd9097dba08b85d6243755a8",
+      "stable_during_copy": true,
+      "size": 5720,
+      "source_mtime_ns": 1794887658960743400
+    },
+    {
+      "source": "Tools\\ActionEncoder\\generate_seed_dataset.py",
+      "snapshot": "source\\generate_seed_dataset.py",
+      "sha256": "5b1ab71630a79f2b5481761763b9e7d4631388835c02b09614fd6758e0954fa1",
+      "stable_during_copy": true,
+      "size": 9622,
+      "source_mtime_ns": 1794883069771524100
+    },
+    {
+      "source": "Tools\\ActionEncoder\\install_dependencies.py",
+      "snapshot": "source\\install_dependencies.py",
+      "sha256": "154b43a79f70f732639d67646a95a650cc75f2ee9c5453d1881473d10c6daecf",
+      "stable_during_copy": true,
+      "size": 5593,
+      "source_mtime_ns": 1794825203371743700
+    },
+    {
+      "source": "Tools\\ActionEncoder\\model_test.py",
+      "snapshot": "source\\model_test.py",
+      "sha256": "1f63785a07240c1599701f79c08b8dae05325e1a1da25cb7a6f33c33cbb63b54",
+      "stable_during_copy": true,
+      "size": 16623,
+      "source_mtime_ns": 1794898318094035500
+    },
+    {
+      "source": "Tools\\ActionEncoder\\retrain_and_eval.py",
+      "snapshot": "source\\retrain_and_eval.py",
+      "sha256": "c8f4c54c1f92f9aa76e4c98a971cbcb3a472fd3ae52401e28634e3e2f4fda2d8",
+      "stable_during_copy": true,
+      "size": 3742,
+      "source_mtime_ns": 1794887663816325700
+    },
+    {
+      "source": "Tools\\ActionEncoder\\server.py",
+      "snapshot": "source\\server.py",
+      "sha256": "12ae6d3cf8efc9e4f01d8e00208d0c0c3aff43fa290fac927a86a54eee1d842a",
+      "stable_during_copy": true,
+      "size": 5993,
+      "source_mtime_ns": 1794888245094973100
+    },
+    {
+      "source": "Tools\\ActionEncoder\\train_action_config.py",
+      "snapshot": "source\\train_action_config.py",
+      "sha256": "88b02d86303b8a3187f1e0c5e4a352dbfef46e89ab58e737f7724fb4b4377953",
+      "stable_during_copy": true,
+      "size": 11581,
+      "source_mtime_ns": 1794888217763735100
+    },
+    {
+      "source": "Tools\\ActionEncoder\\train_action_head.py",
+      "snapshot": "source\\train_action_head.py",
+      "sha256": "7ea866b61b3ba2bd54391636bbbe0fd83e826858495981146698ecff4f2ec7c6",
+      "stable_during_copy": true,
+      "size": 11728,
+      "source_mtime_ns": 1794887661408786300
+    },
+    {
+      "source": "Tools\\ActionEncoder\\validate_v02_corpus.py",
+      "snapshot": "source\\validate_v02_corpus.py",
+      "sha256": "4cd055486a5ea882943d656093cbbcdd447d334a69ad58488f0aac470d8ecf6d",
+      "stable_during_copy": true,
+      "size": 3871,
+      "source_mtime_ns": 1794895076193712900
+    },
+    {
+      "source": "Tools\\ActionEncoder\\checkpoints\\v02_latest\\backbone_state.pt",
+      "snapshot": "baseline\\backbone_state.pt",
+      "sha256": "64b7d3ac1a6d6d052ab23c25ef9927934ba60548ed5ad9cbaa2797e232799b65",
+      "stable_during_copy": true,
+      "size": 41150882,
+      "source_mtime_ns": 1794908302013516200
+    },
+    {
+      "source": "Tools\\ActionEncoder\\checkpoints\\v02_latest\\config_head.pt",
+      "snapshot": "baseline\\config_head.pt",
+      "sha256": "8cfb7a72bdac4d504f217baee132488a76a35ed1359f4c19954d2ab0378e1bc2",
+      "stable_during_copy": true,
+      "size": 929742,
+      "source_mtime_ns": 1794908301921516000
+    },
+    {
+      "source": "Tools\\ActionEncoder\\checkpoints\\v02_latest\\manifest.json",
+      "snapshot": "baseline\\manifest.json",
+      "sha256": "f43f92e379eb244551c6942d10ab05f94cd4014376f6b73f9d1ea197eed65cc6",
+      "stable_during_copy": true,
+      "size": 1021,
+      "source_mtime_ns": 1794908302021514700
+    },
+    {
+      "source": "Tools\\ActionEncoder\\checkpoints\\v02_latest\\test_split.jsonl",
+      "snapshot": "baseline\\test_split.jsonl",
+      "sha256": "3e1f7136c290a8f8d113a8145e545604cd41aacdec2353f013b9022aa1d9ea83",
+      "stable_during_copy": true,
+      "size": 118418,
+      "source_mtime_ns": 1794908302020513600
+    },
+    {
+      "source": "Dataset\\ActionCards\\candidates.jsonl",
+      "snapshot": "input\\Dataset\\ActionCards\\candidates.jsonl",
+      "sha256": "8f508a65b1bbd8e46e5e9a100129a2d83177287ddb6bb681f1b96d71d247cde9",
+      "stable_during_copy": true,
+      "size": 160567,
+      "source_mtime_ns": 1794908651421496400
+    },
+    {
+      "source": "Dataset\\ActionCards\\evaluations.jsonl",
+      "snapshot": "input\\Dataset\\ActionCards\\evaluations.jsonl",
+      "sha256": "8728a871a3bb7f03a0c9e2b40c798700b448aab2efcca7c58cd60a8ae4730cf9",
+      "stable_during_copy": true,
+      "size": 83911,
+      "source_mtime_ns": 1794908653691394200
+    },
+    {
+      "source": "Dataset\\ActionCards\\llm_v02_corpus.jsonl",
+      "snapshot": "input\\Dataset\\ActionCards\\llm_v02_corpus.jsonl",
+      "sha256": "aef5ce445eb8356857014f3ec35ddc57dea66ab0923a362ad65842f1d1654a10",
+      "stable_during_copy": true,
+      "size": 1294887,
+      "source_mtime_ns": 1794907747478324900
+    },
+    {
+      "source": "Dataset\\ActionCards\\merged_train_corpus.jsonl",
+      "snapshot": "input\\Dataset\\ActionCards\\merged_train_corpus.jsonl",
+      "sha256": "76a8bbb3f36844a2dbd8914733bb36c7c7e83010c8e9d943da65597740c017d8",
+      "stable_during_copy": true,
+      "size": 5574103,
+      "source_mtime_ns": 1794883078753524200
+    },
+    {
+      "source": "Dataset\\ActionCards\\seed_corpus.jsonl",
+      "snapshot": "input\\Dataset\\ActionCards\\seed_corpus.jsonl",
+      "sha256": "76a8bbb3f36844a2dbd8914733bb36c7c7e83010c8e9d943da65597740c017d8",
+      "stable_during_copy": true,
+      "size": 5574103,
+      "source_mtime_ns": 1794883077952475900
+    },
+    {
+      "source": "Dataset\\ActionCards\\video_eval_done.json",
+      "snapshot": "input\\Dataset\\ActionCards\\video_eval_done.json",
+      "sha256": "4ae1537ac7138d88c37b0c9b9a559d67e94729eaef16c58f7871990663638b14",
+      "stable_during_copy": true,
+      "size": 1663,
+      "source_mtime_ns": 1794908417723844800
+    },
+    {
+      "source": "Dataset\\ActionCards\\video_eval_queue.jsonl",
+      "snapshot": "input\\Dataset\\ActionCards\\video_eval_queue.jsonl",
+      "sha256": "d70abe4c1a214e6d371f37c36356e3fd2a935643c90e994c0dc8b5be386b2deb",
+      "stable_during_copy": true,
+      "size": 2820,
+      "source_mtime_ns": 1794908404065835900
+    },
+    {
+      "source": "Docs\\ActionLanguage\\profiles\\action-labels.v1.json",
+      "snapshot": "input\\Docs\\ActionLanguage\\profiles\\action-labels.v1.json",
+      "sha256": "d144ec35a7c1fa3c7d1e79a6c33929d2311ee563afb976246f8e936577b6671e",
+      "stable_during_copy": true,
+      "size": 1980,
+      "source_mtime_ns": 1794879946313253500
+    },
+    {
+      "source": "Docs\\ActionLanguage\\profiles\\natori-demo.v1.json",
+      "snapshot": "input\\Docs\\ActionLanguage\\profiles\\natori-demo.v1.json",
+      "sha256": "6646921ad1779e7f3be5439c50bf6b5b08cec19e778de8875f45833837131ac3",
+      "stable_during_copy": true,
+      "size": 4078,
+      "source_mtime_ns": 1794821662565061800
+    },
+    {
+      "source": "Docs\\ActionLanguage\\profiles\\yukikaze-resources.v0.2.json",
+      "snapshot": "input\\Docs\\ActionLanguage\\profiles\\yukikaze-resources.v0.2.json",
+      "sha256": "4c2ee35ed1f8a4493b9e357927e4aad40623cc6e158c4121d90c4737b835c27d",
+      "stable_during_copy": true,
+      "size": 4189,
+      "source_mtime_ns": 1794904606912672700
+    },
+    {
+      "source": "Docs\\ActionLanguage\\profiles\\yukikaze.v1.json",
+      "snapshot": "input\\Docs\\ActionLanguage\\profiles\\yukikaze.v1.json",
+      "sha256": "7a569433e75f7c6dbb6fe4942ea587db5f7dc2f27563386cd7bd7b092cc59933",
+      "stable_during_copy": true,
+      "size": 4096,
+      "source_mtime_ns": 1794879944378971700
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ActionConfigCompiler.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ActionConfigCompiler.cs",
+      "sha256": "45a06ecf445e49205561e8816ab6a7e965e8530f283a19fc2985255c7a4b0a4c",
+      "stable_during_copy": true,
+      "size": 19880,
+      "source_mtime_ns": 1794895766618970000
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ActionContract.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ActionContract.cs",
+      "sha256": "80904a582b78e34c9475e97ee13aa837aa503a99ed4e461401eea4fe6002d772",
+      "stable_during_copy": true,
+      "size": 56481,
+      "source_mtime_ns": 1794822494513603300
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ActionPlanCompiler.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ActionPlanCompiler.cs",
+      "sha256": "a7f1f059963e63bc611bcb85b578e59eff15f7ef2210316bd49d2dee15fef541",
+      "stable_during_copy": true,
+      "size": 23153,
+      "source_mtime_ns": 1794882602991229600
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ActionPlanReceiver.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ActionPlanReceiver.cs",
+      "sha256": "610d82b71907c0a9941a4b1c64588ed49c3074a5de0920d06eb23e33f71947d6",
+      "stable_during_copy": true,
+      "size": 8086,
+      "source_mtime_ns": 1794887814244252100
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ActionPlayer.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ActionPlayer.cs",
+      "sha256": "34bce1551dba581ad9c16016971458d4139c7549758a537ea78031bfcf500337",
+      "stable_during_copy": true,
+      "size": 16029,
+      "source_mtime_ns": 1794822853423396200
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ActionResourceCatalog.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ActionResourceCatalog.cs",
+      "sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "stable_during_copy": true,
+      "size": 20843,
+      "source_mtime_ns": 1794904585251087500
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ActionReviewModels.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ActionReviewModels.cs",
+      "sha256": "fd29a904f43cbf6c41793dda2366d74c7ee242f462cc39af832a9a060dce1351",
+      "stable_during_copy": true,
+      "size": 2898,
+      "source_mtime_ns": 1794887602815895300
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\CandidateProviders.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\CandidateProviders.cs",
+      "sha256": "94ea5bf4cf5f2bbead8aaf84aabb10b50707f9dc9472d093140e067849712586",
+      "stable_during_copy": true,
+      "size": 7075,
+      "source_mtime_ns": 1794888510035639000
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\Live2DActionAdapter.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\Live2DActionAdapter.cs",
+      "sha256": "38149c942e287be8a42a18d00daaaa086402d39b8370b068331d26f263a7af8a",
+      "stable_during_copy": true,
+      "size": 11131,
+      "source_mtime_ns": 1794822580813522200
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\ReviewStore.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\ReviewStore.cs",
+      "sha256": "cb4ca6548ab79560ec5448f9acceda3d67849b4fd7169bd254b723800ba87e27",
+      "stable_during_copy": true,
+      "size": 14799,
+      "source_mtime_ns": 1794888514296851500
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\YukikazeActionCatalog.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\YukikazeActionCatalog.cs",
+      "sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "stable_during_copy": true,
+      "size": 21414,
+      "source_mtime_ns": 1794904583219950800
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\Editor\\ActionConfigV02Verifier.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\Editor\\ActionConfigV02Verifier.cs",
+      "sha256": "3e777edc7e96203b2eccd9764fb21f148fc6d693bbe4d0e07f18dd1012d60b12",
+      "stable_during_copy": true,
+      "size": 5465,
+      "source_mtime_ns": 1794898301262613200
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\Editor\\ActionReviewWindow.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\Editor\\ActionReviewWindow.cs",
+      "sha256": "a06bdcb487475a63ced5aade5a00a19d006d369e20f698f986848ed9ecc3fb52",
+      "stable_during_copy": true,
+      "size": 27378,
+      "source_mtime_ns": 1794898400602853200
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\Editor\\BatchVideoRecorder.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\Editor\\BatchVideoRecorder.cs",
+      "sha256": "e9677eb587105ea5d5ad9bd1de1bd3639d8b074447034735df57a818217e38cb",
+      "stable_during_copy": true,
+      "size": 7182,
+      "source_mtime_ns": 1794899859445862100
+    },
+    {
+      "source": "Assets\\Scripts\\ActionLanguage\\Editor\\PreviewSession.cs",
+      "snapshot": "input\\Assets\\Scripts\\ActionLanguage\\Editor\\PreviewSession.cs",
+      "sha256": "68c9785553d481d7468205f3311bf7c91b36bc17750f655105ebec1d57379747",
+      "stable_during_copy": true,
+      "size": 23543,
+      "source_mtime_ns": 1794897239333237100
+    }
+  ]
+}

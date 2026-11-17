@@ -1,0 +1,282 @@
+{
+    "total": 34,
+    "completed": 34,
+    "failed": 0,
+    "queue_sha256": "10b45b226e586d00ea1e8cdcdbf19546e0e5df5046c4fe3c3a550ee3463273c0",
+    "snapshot_root": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots",
+    "finished": true,
+    "items": [
+        {
+            "candidate_id": "tr1-train-03",
+            "raw_text": "用摇头表示拒绝，摇头一次，持续900毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-03\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-03\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-04",
+            "raw_text": "摆出疑惑的样子，歪头一次，持续1200毫秒，中间稍作停留。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-04\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-04\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-05",
+            "raw_text": "寻找机房里的声音来源，左右张望一次，持续1300毫秒，连贯地看完再回正。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-05\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-05\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-06",
+            "raw_text": "拍照时露出明显的微笑，微笑一次，持续1400毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-06\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-06\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-07",
+            "raw_text": "表演气呼呼地抗议，生气一次，持续1500毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-07\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-07\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-08",
+            "raw_text": "表演被戳穿后不好意思的神态，害羞一次，持续1600毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-08\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-08\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-09",
+            "raw_text": "听到突如其来的警报，惊讶一次，持续1200毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-09\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-09\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-10",
+            "raw_text": "向刚来的朋友挥手打招呼，挥手两次，每次800毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-10\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-10\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-11",
+            "raw_text": "任务成功后举手欢呼一次，持续1400毫秒，举起后停留片刻。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-11\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-11\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-12",
+            "raw_text": "向前辈郑重行礼，鞠躬一次，持续1500毫秒。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-12\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-12\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-13",
+            "raw_text": "刚睡醒确认消息：先眨眼一次，再点头一次。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-13\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-13\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-14",
+            "raw_text": "表现和好的情绪转折：先露出生气的表情，再微笑。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-14\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-14\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-15",
+            "raw_text": "先左右张望寻找朋友，找到后再挥手。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-15\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-15\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-16",
+            "raw_text": "道歉时先鞠躬，再露出害羞的神态。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-16\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-16\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-17",
+            "raw_text": "先惊讶，随后摇头，表现难以置信。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-17\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-17\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-18",
+            "raw_text": "看不懂这张图：先歪头，再眨眼。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-18\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-18\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-19",
+            "raw_text": "获得奖励时，微笑和举手欢呼同时开始。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-19\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-19\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-20",
+            "raw_text": "迎接朋友时，一边微笑，一边挥手。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-20\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-20\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-21",
+            "raw_text": "嘴硬地否认：生气的表情和摇头同时做。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-21\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-21\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-22",
+            "raw_text": "表现困倦，缓慢鞠躬的同时闭眼再睁开。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-22\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-22\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-23",
+            "raw_text": "不好意思地答应，害羞的同时点头。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-23\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-23\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-24",
+            "raw_text": "看到惊喜礼物时，同时露出惊讶的表情并举手欢呼。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-24\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-24\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-val-01",
+            "raw_text": "告别前辈时先鞠躬行礼，再挥手道别。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-01\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-01\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-val-02",
+            "raw_text": "从局促变得放松：先表演害羞，再露出微笑。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-02\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-02\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-val-03",
+            "raw_text": "先左右张望，随后因为发现异常而露出惊讶的表情。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-03\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-03\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-val-04",
+            "raw_text": "点头三次，第一次1200毫秒，第二次900毫秒，第三次600毫秒，越点越快。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-04\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-04\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-val-06",
+            "raw_text": "朝同一侧歪头三次，每次都回正，第一次700毫秒，第二次1000毫秒，第三次1400毫秒，逐次变慢。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-06\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-06\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-test-01",
+            "raw_text": "用眨眼和挥手一起发出招呼信号，两种动作同时开始。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-01\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-01\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-test-02",
+            "raw_text": "合影摆姿势时，歪头的同时微笑，保持片刻后回正。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-02\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-02\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-test-03",
+            "raw_text": "表演不情愿地赔礼：鞠躬时同时保持生气的表情。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-03\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-03\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-test-04",
+            "raw_text": "谢幕先举手欢呼，接着鞠躬致谢。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-04\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-04\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-test-05",
+            "raw_text": "先露出微笑，接着收起笑容左右张望，像是要去找人。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-05\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-05\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-test-06",
+            "raw_text": "表现改口：先点头，回正后再摇头。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-06\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-06\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-val-05-r1",
+            "raw_text": "挥手三次，每次900毫秒，幅度越来越大。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-05-r1\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-05-r1\\evidence.json",
+            "ok": true
+        }
+    ]
+}

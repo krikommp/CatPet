@@ -1,0 +1,26 @@
+{
+    "total": 2,
+    "completed": 2,
+    "failed": 0,
+    "queue_sha256": "c1b4611c58ca4fc11470ad25ba97e89c9674e33cb416981cf81edab7c76ad5f2",
+    "snapshot_root": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\pilot_snapshots",
+    "finished": true,
+    "items": [
+        {
+            "candidate_id": "tr1-train-01",
+            "raw_text": "请眨眼两次，每次500毫秒，闭合后就睁开。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\pilot_snapshots\\tr1-train-01\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\pilot_snapshots\\tr1-train-01\\evidence.json",
+            "ok": true
+        },
+        {
+            "candidate_id": "tr1-train-02",
+            "raw_text": "表示答应，点头两次，每次720毫秒，动作干脆。",
+            "error": "",
+            "video_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\pilot_snapshots\\tr1-train-02\\preview.mp4",
+            "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\pilot_snapshots\\tr1-train-02\\evidence.json",
+            "ok": true
+        }
+    ]
+}

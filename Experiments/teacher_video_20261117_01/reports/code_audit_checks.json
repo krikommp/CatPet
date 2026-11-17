@@ -1,0 +1,256 @@
+{
+  "passed": 22,
+  "total": 22,
+  "training_started": false,
+  "shared_files_modified": false,
+  "persona_status": "file_present_rubric_pending",
+  "persona_sha256": "56b4364bf1c7da22e6b6faadc094299e570f93375e0acb78f510c360d614aa41",
+  "checks": [
+    {
+      "name": "parallel_conflict_no_unrelated_resource_substitution",
+      "passed": true,
+      "evidence": {
+        "original_top1_resources": [
+          "nod.basic",
+          "bow.basic"
+        ],
+        "legacy_returned_resources": [
+          "blink.full",
+          "nod.basic"
+        ],
+        "strict_error": "Parallel resource conflict at slot 1: bow.basic, channels=['ParamAngleY', 'ParamBodyAngleY'].",
+        "semantic_label_not_fabricated": true
+      }
+    },
+    {
+      "name": "empty_execute_is_technical_failure_not_none",
+      "passed": true,
+      "evidence": "execute prediction has no active resource."
+    },
+    {
+      "name": "active_slot_pad_stage_is_not_forced_execute",
+      "passed": true,
+      "evidence": "Invalid active slot 0: stage=2, cycle_count=1."
+    },
+    {
+      "name": "active_slot_zero_cycle_is_not_forced_one",
+      "passed": true,
+      "evidence": "Invalid active slot 0: stage=0, cycle_count=0."
+    },
+    {
+      "name": "sequential_shared_channels_remain_valid_and_ordered",
+      "passed": true,
+      "evidence": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "nod.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 961,
+                    "controls": {
+                      "hold_ratio": 0.225,
+                      "amplitude_scale": 0.85
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "bow.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1249,
+                    "controls": {
+                      "hold_ratio": 0.25,
+                      "amplitude_scale": 0.825
+                    }
+                  },
+                  {
+                    "duration_ms": 1249,
+                    "controls": {
+                      "hold_ratio": 0.25,
+                      "amplitude_scale": 0.825
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "out_of_range_label_cannot_be_clamped",
+      "passed": true,
+      "evidence": "Invalid duration for nod.basic: 100."
+    },
+    {
+      "name": "nonzero_short_hold_rejected",
+      "passed": true,
+      "evidence": "hold_segment_too_short: nonzero hold must survive the 80 ms native limit."
+    },
+    {
+      "name": "lookaround_hold_without_native_phase_rejected",
+      "passed": true,
+      "evidence": "invalid_hold_mapping: look_around.basic has no hold-phase points."
+    },
+    {
+      "name": "training_label_must_equal_actual_CSharp_compile_evidence",
+      "passed": true,
+      "evidence": "Training label differs from the configuration actually compiled."
+    },
+    {
+      "name": "explicit_zero_hold_remains_zero",
+      "passed": true,
+      "evidence": {
+        "decision": 0,
+        "resource_id": [
+          2,
+          0
+        ],
+        "stage": [
+          0,
+          2
+        ],
+        "cycle_count": [
+          1,
+          0
+        ],
+        "dur_norm": [
+          [
+            0.38911436424106244,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5
+          ]
+        ],
+        "amp_norm": [
+          [
+            0.65,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5
+          ]
+        ],
+        "hold_norm": [
+          [
+            0.0,
+            0.5,
+            0.5
+          ],
+          [
+            0.5,
+            0.5,
+            0.5
+          ]
+        ],
+        "amp_mask": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ],
+        "cyc_mask": [
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0
+          ]
+        ]
+      }
+    },
+    {
+      "name": "fixed_split_is_not_resampled",
+      "passed": true,
+      "evidence": "Predeclared train/val/test assignment retained."
+    },
+    {
+      "name": "same_text_different_group_leakage_rejected",
+      "passed": true,
+      "evidence": "Cross-split leakage: ('raw_text', '点头') belongs to train and test."
+    },
+    {
+      "name": "same_group_different_decision_leakage_rejected",
+      "passed": true,
+      "evidence": "Cross-split leakage: ('group_id', 'g1') belongs to train and val."
+    },
+    {
+      "name": "instruction_and_dialogue_explicitly_separated",
+      "passed": true,
+      "evidence": "input_role must be instruction or dialogue."
+    },
+    {
+      "name": "missing_persona_blocks_training",
+      "passed": true,
+      "evidence": "A real, non-empty Gemini persona file is required before training."
+    },
+    {
+      "name": "unbound_provenance_blocks_training",
+      "passed": true,
+      "evidence": "Dataset persona hash differs from the training persona."
+    },
+    {
+      "name": "persona_binding_does_not_admit_unreviewed_train_rows",
+      "passed": true,
+      "evidence": "Training row must explicitly declare training_eligible=true."
+    },
+    {
+      "name": "test_row_not_training_eligible_is_kept_as_test",
+      "passed": true,
+      "evidence": null
+    },
+    {
+      "name": "duplicate_json_keys_rejected",
+      "passed": true,
+      "evidence": "Duplicate JSON key: raw_text"
+    },
+    {
+      "name": "validation_parameters_use_predicted_not_gold_resource",
+      "passed": true,
+      "evidence": {
+        "gold_resource": "nod.basic",
+        "params_conditioned_on": "blink.full",
+        "structure_correct": 0
+      }
+    },
+    {
+      "name": "normal_configure_without_decoder_policy_is_strict",
+      "passed": true,
+      "evidence": "Parallel resource conflict at slot 1: bow.basic, channels=['ParamAngleY', 'ParamBodyAngleY']."
+    },
+    {
+      "name": "runtime_explicit_number_guard_preserves_raw_failure",
+      "passed": true,
+      "evidence": {
+        "technical_error": "Prediction violates explicit instruction constraints or has unresolved numeric scope.",
+        "raw_prediction_preserved": true
+      }
+    }
+  ]
+}

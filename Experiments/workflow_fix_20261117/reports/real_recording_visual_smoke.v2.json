@@ -1,0 +1,90 @@
+{
+  "schema_version": "technical-visual-smoke.v1",
+  "stage": "technical_render_smoke_only",
+  "run_directory": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-ea180ffdfcb4",
+  "reviewer_type": "AI",
+  "reviewer_context": "/root/dataset_audit",
+  "observation_method": "all_extracted_frames_contact_sheets_and_trajectory",
+  "observation_tool": "functions.view_image",
+  "physical_report": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\reports\\real_recording_evidence_check.v2.json",
+  "physical_report_sha256": "eefd608c6fa4ab8c2761678b6c6756cc431631c36abe5a09fd0c00bf5d3bd1b0",
+  "total_viewed_frames": 106,
+  "training_acceptance": false,
+  "training_eligible": false,
+  "release_approved": false,
+  "semantic_scores_assigned": false,
+  "naturalness_scores_assigned": false,
+  "superseded_reason": "Root confirmed camera crop and scheduled wider fixed-camera recapture.",
+  "rows": [
+    {
+      "candidate_id": "flow-blink",
+      "config_sha256": "ed68d68e57e920496f41d1cd1ef4a507fae5aaa995ee5955fd8a6c14d844f1d3",
+      "video_sha256": "81f2a6eba800d4b47aaa2c09977317570c6412c0c8673ce274e778542113d60a",
+      "evidence_sha256": "e7c37457a06e0761f9e6287b42ffba3b73c812484fc03cf46ae697c199b3ee3d",
+      "trajectory_sha256": "f14723c06ad685a261d29ef319003ea3e0ad5002a38043eb39d6579776eb1faf",
+      "decoded_frames": 25,
+      "all_frames_viewed": true,
+      "render_visible": true,
+      "observations": [
+        "All 25 frames were viewed. Eyes visibly close and reopen; restored by approximately 600 ms. Render is visible and changing."
+      ],
+      "contact_sheets": [
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-ea180ffdfcb4\\contact_sheets\\flow-blink_page1.png",
+          "sha256": "6af88169e878ef1950ac6fa3e23922f176e7f0299b4e5772eec0c7ca754dcd01"
+        }
+      ]
+    },
+    {
+      "candidate_id": "flow-parallel",
+      "config_sha256": "e67afe6ae9e80a25b763cae75d8bc59952e73a441b917b87c26c1e0693131b2d",
+      "video_sha256": "cc6b41c147de0a04058487ba8bf5403de3131debf912e8d133c069988f4471c2",
+      "evidence_sha256": "c57a42f18c10e193c292ab20dfd7582b44e88cbb1faaa832c925ec136a3ee334",
+      "trajectory_sha256": "3375f9d0c1151456dd065e5f5994825534a3c6d9a366c7bf5fc96cbc657bda2e",
+      "decoded_frames": 31,
+      "all_frames_viewed": true,
+      "render_visible": true,
+      "observations": [
+        "All 31 frames were viewed. Eye closure overlaps visible arm elevation; return is visible by approximately 800 ms.",
+        "At peak arm elevation the hand/distal forearm crosses the right frame boundary. Top hair is also cropped. Full hand gesture is not reviewable from this capture."
+      ],
+      "contact_sheets": [
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-ea180ffdfcb4\\contact_sheets\\flow-parallel_page1.png",
+          "sha256": "6f32c85e77d554a82c1488ba13372e5d76b090b8c25b136c62f0d9fac6a5ea34"
+        },
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-ea180ffdfcb4\\contact_sheets\\flow-parallel_page2.png",
+          "sha256": "429c592b4f87856c191eb5c088b94c1526293ebea1a1395d0a9a5a5511ddcd36"
+        }
+      ]
+    },
+    {
+      "candidate_id": "flow-sequence",
+      "config_sha256": "69a682a350420282add12c39b1814cab0e92250fa0b7f4563c50f199ce390198",
+      "video_sha256": "9a60675c47abfa59791f32b0df97fb98c89eaf79ed505dd2104335a47f7ded0d",
+      "evidence_sha256": "118648c61da793656c463a98fcec617942883d669e93db27f68252ed922fc4d2",
+      "trajectory_sha256": "e8688e145b109e0539b904adfd0d9592b7124f65852f9d694f28824e47cc3a3f",
+      "decoded_frames": 50,
+      "all_frames_viewed": true,
+      "render_visible": true,
+      "observations": [
+        "All 50 frames were viewed. Blink finishes near 600 ms; head pose begins changing around 633 ms, then returns near 1400 ms. Eyes remain open during the head movement."
+      ],
+      "contact_sheets": [
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-ea180ffdfcb4\\contact_sheets\\flow-sequence_page1.png",
+          "sha256": "86c65e725dd00e4f8f0e0c95d52b657a55ab547f51cf3e736ddd7e1fb387d3de"
+        },
+        {
+          "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-ea180ffdfcb4\\contact_sheets\\flow-sequence_page2.png",
+          "sha256": "f5414868302f9d3fedf8496d63c70cce55f85d2bc57210b4cf62efdbd4262490"
+        }
+      ]
+    }
+  ],
+  "limitations": [
+    "Technical render and timing smoke only; no persona, semantic quality, naturalness or formal resource calibration acceptance.",
+    "Full-motion review from timestamped frames does not rate perceptual playback smoothness."
+  ]
+}

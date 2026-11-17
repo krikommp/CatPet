@@ -1,0 +1,522 @@
+[
+  {
+    "candidate_id": "tr1-train-04",
+    "gold": {
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "cycles": [
+                {
+                  "controls": {
+                    "amplitude_scale": 1.1,
+                    "hold_ratio": 0.35
+                  },
+                  "duration_ms": 1200
+                }
+              ],
+              "resource_id": "tilt_head.basic"
+            }
+          ]
+        }
+      ],
+      "version": "action-config.v0.2"
+    },
+    "predicted": {
+      "version": "action-config.v0.2",
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "resource_id": "tilt_head.basic",
+              "cycles": [
+                {
+                  "duration_ms": 1155,
+                  "controls": {
+                    "hold_ratio": 0.325,
+                    "amplitude_scale": 1.083
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "raw_text": "摆出疑惑的样子，歪头一次，持续1200毫秒，中间稍作停留。",
+    "constraint_audit": {
+      "policy": "explicit-instruction-guard.v2",
+      "checks": [
+        {
+          "kind": "cycle_count",
+          "action_index": 0,
+          "passed": true,
+          "expected": 1,
+          "actual": 1,
+          "span": "歪头一次"
+        },
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1200,
+          "actual": 1155,
+          "span": "持续1200毫秒"
+        }
+      ],
+      "violations": [
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1200,
+          "actual": 1155,
+          "span": "持续1200毫秒"
+        }
+      ],
+      "unresolved": [],
+      "coverage_is_partial": true,
+      "no_silent_repair": true,
+      "execution_constraints_applicable": true,
+      "passed_checked_constraints": false
+    }
+  },
+  {
+    "candidate_id": "tr1-train-06",
+    "gold": {
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "cycles": [
+                {
+                  "controls": {
+                    "amplitude_scale": 0.98,
+                    "hold_ratio": 0.45
+                  },
+                  "duration_ms": 1400
+                }
+              ],
+              "resource_id": "smile.basic"
+            }
+          ]
+        }
+      ],
+      "version": "action-config.v0.2"
+    },
+    "predicted": {
+      "version": "action-config.v0.2",
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "resource_id": "smile.basic",
+              "cycles": [
+                {
+                  "duration_ms": 1378,
+                  "controls": {
+                    "hold_ratio": 0.443,
+                    "amplitude_scale": 0.976
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "raw_text": "拍照时露出明显的微笑，微笑一次，持续1400毫秒。",
+    "constraint_audit": {
+      "policy": "explicit-instruction-guard.v2",
+      "checks": [
+        {
+          "kind": "cycle_count",
+          "action_index": 0,
+          "passed": true,
+          "expected": 1,
+          "actual": 1,
+          "span": "微笑一次"
+        },
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1400,
+          "actual": 1378,
+          "span": "持续1400毫秒"
+        }
+      ],
+      "violations": [
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1400,
+          "actual": 1378,
+          "span": "持续1400毫秒"
+        }
+      ],
+      "unresolved": [],
+      "coverage_is_partial": true,
+      "no_silent_repair": true,
+      "execution_constraints_applicable": true,
+      "passed_checked_constraints": false
+    }
+  },
+  {
+    "candidate_id": "tr1-train-07",
+    "gold": {
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "cycles": [
+                {
+                  "controls": {
+                    "amplitude_scale": 0.98,
+                    "hold_ratio": 0.45
+                  },
+                  "duration_ms": 1500
+                }
+              ],
+              "resource_id": "angry.basic"
+            }
+          ]
+        }
+      ],
+      "version": "action-config.v0.2"
+    },
+    "predicted": {
+      "version": "action-config.v0.2",
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "resource_id": "angry.basic",
+              "cycles": [
+                {
+                  "duration_ms": 1493,
+                  "controls": {
+                    "hold_ratio": 0.448,
+                    "amplitude_scale": 0.981
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "raw_text": "表演气呼呼地抗议，生气一次，持续1500毫秒。",
+    "constraint_audit": {
+      "policy": "explicit-instruction-guard.v2",
+      "checks": [
+        {
+          "kind": "cycle_count",
+          "action_index": 0,
+          "passed": true,
+          "expected": 1,
+          "actual": 1,
+          "span": "生气一次"
+        },
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1500,
+          "actual": 1493,
+          "span": "持续1500毫秒"
+        }
+      ],
+      "violations": [
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1500,
+          "actual": 1493,
+          "span": "持续1500毫秒"
+        }
+      ],
+      "unresolved": [],
+      "coverage_is_partial": true,
+      "no_silent_repair": true,
+      "execution_constraints_applicable": true,
+      "passed_checked_constraints": false
+    }
+  },
+  {
+    "candidate_id": "tr1-train-08",
+    "gold": {
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "cycles": [
+                {
+                  "controls": {
+                    "amplitude_scale": 1.1,
+                    "hold_ratio": 0.45
+                  },
+                  "duration_ms": 1600
+                }
+              ],
+              "resource_id": "shy.basic"
+            }
+          ]
+        }
+      ],
+      "version": "action-config.v0.2"
+    },
+    "predicted": {
+      "version": "action-config.v0.2",
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "resource_id": "shy.basic",
+              "cycles": [
+                {
+                  "duration_ms": 1618,
+                  "controls": {
+                    "hold_ratio": 0.453,
+                    "amplitude_scale": 1.104
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "raw_text": "表演被戳穿后不好意思的神态，害羞一次，持续1600毫秒。",
+    "constraint_audit": {
+      "policy": "explicit-instruction-guard.v2",
+      "checks": [
+        {
+          "kind": "cycle_count",
+          "action_index": 0,
+          "passed": true,
+          "expected": 1,
+          "actual": 1,
+          "span": "害羞一次"
+        },
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1600,
+          "actual": 1618,
+          "span": "持续1600毫秒"
+        }
+      ],
+      "violations": [
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1600,
+          "actual": 1618,
+          "span": "持续1600毫秒"
+        }
+      ],
+      "unresolved": [],
+      "coverage_is_partial": true,
+      "no_silent_repair": true,
+      "execution_constraints_applicable": true,
+      "passed_checked_constraints": false
+    }
+  },
+  {
+    "candidate_id": "tr1-train-09",
+    "gold": {
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "cycles": [
+                {
+                  "controls": {
+                    "amplitude_scale": 1.1,
+                    "hold_ratio": 0.4
+                  },
+                  "duration_ms": 1200
+                }
+              ],
+              "resource_id": "surprise.basic"
+            }
+          ]
+        }
+      ],
+      "version": "action-config.v0.2"
+    },
+    "predicted": {
+      "version": "action-config.v0.2",
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "resource_id": "surprise.basic",
+              "cycles": [
+                {
+                  "duration_ms": 1189,
+                  "controls": {
+                    "hold_ratio": 0.399,
+                    "amplitude_scale": 1.104
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "raw_text": "听到突如其来的警报，惊讶一次，持续1200毫秒。",
+    "constraint_audit": {
+      "policy": "explicit-instruction-guard.v2",
+      "checks": [
+        {
+          "kind": "cycle_count",
+          "action_index": 0,
+          "passed": true,
+          "expected": 1,
+          "actual": 1,
+          "span": "惊讶一次"
+        },
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1200,
+          "actual": 1189,
+          "span": "持续1200毫秒"
+        }
+      ],
+      "violations": [
+        {
+          "kind": "exact_duration_ms",
+          "action_index": 0,
+          "passed": false,
+          "cycle_index": 0,
+          "expected": 1200,
+          "actual": 1189,
+          "span": "持续1200毫秒"
+        }
+      ],
+      "unresolved": [],
+      "coverage_is_partial": true,
+      "no_silent_repair": true,
+      "execution_constraints_applicable": true,
+      "passed_checked_constraints": false
+    }
+  },
+  {
+    "candidate_id": "tr1-train-14",
+    "gold": {
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "cycles": [
+                {
+                  "controls": {
+                    "amplitude_scale": 0.98,
+                    "hold_ratio": 0.4
+                  },
+                  "duration_ms": 1400
+                }
+              ],
+              "resource_id": "angry.basic"
+            }
+          ]
+        },
+        {
+          "actions": [
+            {
+              "cycles": [
+                {
+                  "controls": {
+                    "amplitude_scale": 0.98,
+                    "hold_ratio": 0.45
+                  },
+                  "duration_ms": 1400
+                }
+              ],
+              "resource_id": "smile.basic"
+            }
+          ]
+        }
+      ],
+      "version": "action-config.v0.2"
+    },
+    "predicted": {
+      "version": "action-config.v0.2",
+      "decision": "execute",
+      "steps": [
+        {
+          "actions": [
+            {
+              "resource_id": "angry.basic",
+              "cycles": [
+                {
+                  "duration_ms": 1370,
+                  "controls": {
+                    "hold_ratio": 0.391,
+                    "amplitude_scale": 0.981
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "actions": [
+            {
+              "resource_id": "smile.basic",
+              "cycles": [
+                {
+                  "duration_ms": 1366,
+                  "controls": {
+                    "hold_ratio": 0.438,
+                    "amplitude_scale": 0.982
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "raw_text": "表现和好的情绪转折：先露出生气的表情，再微笑。",
+    "constraint_audit": {
+      "policy": "explicit-instruction-guard.v2",
+      "checks": [],
+      "violations": [],
+      "unresolved": [],
+      "coverage_is_partial": true,
+      "no_silent_repair": true,
+      "execution_constraints_applicable": true,
+      "passed_checked_constraints": true
+    }
+  }
+]

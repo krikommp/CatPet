@@ -1,0 +1,42 @@
+[
+  {
+    "path": "Tools/ActionEncoder/action_config_schema.py",
+    "sha256": "414d3c26cc2b333f048fbf8565380eaf3d266f33085eb572e3947f39a34bcda3"
+  },
+  {
+    "path": "Tools/ActionEncoder/input_constraints.py",
+    "sha256": "32b0072999f616240746ab21d3a1ae2f2b2131ff179663ace8294f4862e44de9"
+  },
+  {
+    "path": "Tools/ActionEncoder/encoder.py",
+    "sha256": "26d3d2f0a189704f5b1823587c05f414a96afd51e6b3a02257855a59b97f36e3"
+  },
+  {
+    "path": "Tools/ActionEncoder/server.py",
+    "sha256": "48ef5913870b08bd78efe697b8419c8e21f378fa0d5d8368db87f85536992b4d"
+  },
+  {
+    "path": "Tools/ActionEncoder/model_test.py",
+    "sha256": "e7488186e4a63372c0f94be3eaa9cff0d87196f5d974240c855b5de85b2d631a"
+  },
+  {
+    "path": "Assets/Scripts/ActionEncoder/LocalActionEncoderClient.cs",
+    "sha256": "16be13fb57a68f632a9e03f9c7ab4d7ba4e85067055fea14a43d3f64b3d57132"
+  },
+  {
+    "path": "Assets/Scripts/ActionLanguage/CandidateProviders.cs",
+    "sha256": "3990a9c9177c50a3e8e89e4315bd6c01dc003721009d539ac1c60126324821be"
+  },
+  {
+    "path": "Assets/Scripts/ActionLanguage/ActionReviewModels.cs",
+    "sha256": "a6bbf57673980ef958e1da2d49ca5a8d6366af8fb15508fcbc6a26895d00dc31"
+  },
+  {
+    "path": "Assets/Scripts/ActionLanguage/Editor/ActionReviewWindow.cs",
+    "sha256": "8e38f3f969c1f06aa03e1a9154bc8d467f6d1bbe41dc77d769a03009c8adda25"
+  },
+  {
+    "path": "Assets/Scripts/ActionLanguage/ReviewStore.cs",
+    "sha256": "f5ecfb588715106b5bb456a2f4f2e322e2a02c792e64e5ea3c8485643d89ac7b"
+  }
+]

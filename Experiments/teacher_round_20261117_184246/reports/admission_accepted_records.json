@@ -1,0 +1,722 @@
+{
+  "created_at": "2026-11-17T10:59:54.342501+00:00",
+  "generated_candidates_including_revisions": 55,
+  "recordings_attempted": 36,
+  "recording_failures": [],
+  "reviewed": 54,
+  "review_verdict_counts": {
+    "accepted": 42,
+    "uncertain": 5,
+    "rejected": 7
+  },
+  "accepted": 42,
+  "accepted_by_split": {
+    "train": {
+      "none": 4,
+      "unsupported": 4,
+      "ambiguous": 4,
+      "execute": 15
+    },
+    "val": {
+      "none": 1,
+      "unsupported": 1,
+      "ambiguous": 1,
+      "execute": 5
+    },
+    "test": {
+      "none": 1,
+      "unsupported": 1,
+      "ambiguous": 1,
+      "execute": 4
+    }
+  },
+  "accepted_resource_coverage": {
+    "blink.full": 4,
+    "nod.basic": 5,
+    "shake_head.basic": 4,
+    "tilt_head.basic": 4,
+    "look_around.basic": 3,
+    "smile.basic": 5,
+    "angry.basic": 3,
+    "shy.basic": 3,
+    "surprise.basic": 3,
+    "wave.basic": 2
+  },
+  "missing_reviews": [],
+  "accepted_ids": [
+    "tr1-train-25",
+    "tr1-train-26",
+    "tr1-train-27",
+    "tr1-train-28",
+    "tr1-train-29",
+    "tr1-train-30",
+    "tr1-train-31",
+    "tr1-train-32",
+    "tr1-train-33",
+    "tr1-train-34",
+    "tr1-train-35",
+    "tr1-train-36",
+    "tr1-val-07",
+    "tr1-val-08",
+    "tr1-val-09",
+    "tr1-test-07",
+    "tr1-test-08",
+    "tr1-test-09",
+    "tr1-train-01",
+    "tr1-train-02",
+    "tr1-train-03",
+    "tr1-train-04",
+    "tr1-train-05",
+    "tr1-train-06",
+    "tr1-train-07",
+    "tr1-train-08",
+    "tr1-train-09",
+    "tr1-train-13",
+    "tr1-train-14",
+    "tr1-train-17",
+    "tr1-train-18",
+    "tr1-train-21",
+    "tr1-train-23",
+    "tr1-val-02",
+    "tr1-val-03",
+    "tr1-val-04",
+    "tr1-val-05-r1",
+    "tr1-val-06",
+    "tr1-test-01",
+    "tr1-test-02",
+    "tr1-test-05",
+    "tr1-test-06"
+  ],
+  "rejected_or_uncertain": [
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend unavailable)",
+      "context_id": "/root/visual_review_a",
+      "prompt_version": "codex-review-round1.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "status": "uncertain",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0.75
+      },
+      "rationale": "Viewed both sheets, every frame 0–54 through 1800 ms, full-size frame 12 and every focus row. Timing and count are correct: the screen-right arm and hand channels rise to 8/0.9 at 400 and 1200 ms, return to 0 at 800 and 1600 ms, and remain neutral through Completed. The hand is inside the frame, though close to the right edge. Visually this is two broad straight-arm outward lifts with an opening palm, rather than a clearly recognizable greeting wave. The supplied raw text specifically asks to wave hello to a friend; I cannot establish exact semantic match merely from wave.basic or the correct cycle count. Do not admit this ambiguous performance. No naturalness score is assigned. Correction advice: calibrate a visibly communicative hand/forearm waving gesture, or obtain a revised rendering with a clearly readable greeting action; changing duration alone does not settle the semantic ambiguity.",
+      "reviewed_at": "2026-11-17T10:55:36.855311+00:00",
+      "candidate_id": "tr1-train-10",
+      "parent_candidate_id": "",
+      "input_role": "instruction",
+      "raw_text_sha256": "46dc05c9b07d3c3f97bd61256bb3946d48ebac922b94ef7aafbe029a9994b14e",
+      "config_sha256": "a1985c9bbfb56d32cfb4cddc817ba0b3b444e03dac539a0f25881ae100c6739c",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "0bf900f3b3b6c1e16a7acaf621718854cc9da72cda85f17cdc4c9da47d2e4544",
+      "video_sha256": "0e900e779e8f10ae67aa01ee2d8cd197ba5d40d366de347ee1e941023dfdee79",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "The visible gesture is ambiguous as a greeting wave: it reads as two straight-arm side lifts; the open hand does not visibly wave at the wrist or forearm."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-10\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-10\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-10\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-10\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-10\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-10\\frames\\frame_000012.png"
+        ]
+      }
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend unavailable)",
+      "context_id": "/root/visual_review_a",
+      "prompt_version": "codex-review-round1.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "status": "rejected",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0.55
+      },
+      "rationale": "Viewed both sheets, every frame 0–48 through 1600 ms, full-size frame 20 and every focus row. The numerical execution is one 1400 ms cycle: both upper-arm channels plateau at 8.925 and vertical-bounce at 0.8925 from 466.7 to 933.3 ms, consistent with hold_ratio 0.35, then return to 0 at 1400 ms. However the actual peak image is a horizontal, outstretched T-like pose with a neutral face rather than a clearly raised-hands celebratory gesture. At peak the outer fingers meet/cross both source-frame edges, so it fails the uncropped-character requirement even though the contact-sheet builder did not crop its input. Reject; no naturalness score is assigned because the hands are clipped. Correction advice: widen recording framing and calibrate the arm pose to read as celebration, then re-record and review the complete gesture. Correct timings and resource name do not cure the visible failure.",
+      "reviewed_at": "2026-11-17T10:55:36.864307+00:00",
+      "candidate_id": "tr1-train-11",
+      "parent_candidate_id": "",
+      "input_role": "instruction",
+      "raw_text_sha256": "7c23623efda3a05995ad1370c157109bd95d434a6d45e8832d36c5404f56a495",
+      "config_sha256": "7970969e9c5b884a1f3305bcbf5cbfd75cc7817955c797060b028bd57387486d",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "105606041ca371ec402ac1f56f70991122e23a7618f35397c34a15451e6d7fd4",
+      "video_sha256": "827a0e355949e19737e19d8a7c9e98be84134a01702059325d8e3d993bc6af2f",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "Hands/fingers intersect the left and right source-frame boundaries during the held outward pose; full uncropped character is not available at the peak."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-11\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-11\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-11\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-11\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-11\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-11\\frames\\frame_000020.png"
+        ]
+      }
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend unavailable)",
+      "context_id": "/root/visual_review_a",
+      "prompt_version": "codex-review-round1.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "status": "rejected",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0.6
+      },
+      "rationale": "Viewed both sheets, every frame 0–51 through 1700 ms, full-size frame 20 and every focus row. The actual head/body channels reach −22/−9.35 degrees from 466.7 through 1033.3 ms, agreeing with amplitude 1.1 and the 570 ms hold in a 1500 ms cycle; both return to zero at 1500 ms and stay there. The rendering, however, shows only a shallow held head dip with the torso still almost upright and gaze forward, much like an extended nod. It does not clearly communicate the requested solemn bow to a senior. Reject on visual semantic mismatch despite correct trajectory and smooth return. No naturalness score is assigned to this rejected candidate. Correction advice: calibrate the body/head mapping so a forward bow is visibly distinct from nodding before re-recording; do not relabel this same held nod as a solemn bow to satisfy the quota.",
+      "reviewed_at": "2026-11-17T10:55:36.873308+00:00",
+      "candidate_id": "tr1-train-12",
+      "parent_candidate_id": "",
+      "input_role": "instruction",
+      "raw_text_sha256": "aed41792a663a8beb462066dffd5d1068c67367bd0ba20a88f42ea155e051cbc",
+      "config_sha256": "a63958d6b9da6e60813bccfdca0b364c797337dc586a80b15739f2fcce2e2428",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "66b9456bc441bc6296e93e21dad4990c3f6c08b4a72ab971ad3ef387c1d65f3a",
+      "video_sha256": "44b00cf297a0fe86a9090fadbf8e702de09beba6a3ad3f5e6bd1b5854715ee49",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-12\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-12\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-12\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-12\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-12\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-12\\frames\\frame_000020.png"
+        ]
+      }
+    },
+    {
+      "candidate_id": "tr1-train-15",
+      "candidate_sha256": "96edc94a7491bdc5936ec904841fdb56b408b1761cd813e83e07883a934c3cfc",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "config_sha256": "76fc850c71582baed1828956fb4218828b4a6c113ed8697f6a53893a0e9e4132",
+      "context_id": "/root/visual_review_b",
+      "correction_advice": "Do not relabel a side arm raise or shallow head dip as a confirmed wave or bow merely because compilation succeeds. Preserve the literal instruction and verify that any valid resource adjustment makes that gesture visually clear; otherwise retain uncertainty/exclusion.",
+      "evidence_sha256": "f00251b98e6f47535a96440dfdf361303000877014b4a38b763bc1a2e66d51d9",
+      "input_role": "instruction",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "observation": {
+        "all_focused_trajectory_frames_read": true,
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-15\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-15\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-15\\contact_sheets\\page_003.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-15\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-15\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-15\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-15\\frames\\frame_000052.png"
+        ],
+        "full_clip_observed": true,
+        "full_resolution_frame_indices": [
+          52
+        ],
+        "limitations": [
+          "Every recorded frame was observed; the literal requested gesture remains visually ambiguous despite matching resource-channel timing."
+        ],
+        "method": "timestamped_frames_and_trajectory",
+        "observed_contact_sheet_pages": 3,
+        "observed_frame_count": 74
+      },
+      "parent_candidate_id": "",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "prompt_version": "codex-review-round1.v1",
+      "provider": "OpenAI / Codex desktop",
+      "rationale": "全部74帧和全轨迹已观察。头与眼先左右张望，333.3ms约-13.946/-.7969、666.7ms约13.973/.79845，1300ms回中且无hold；然后右臂1333.3ms起向侧面抬起，1733.3/1766.7ms达到采样峰8.3663、手形.94121，2200ms放下，2433.3ms完成。原图52确认手掌与指尖完整，但可见手臂基本伸直，是一次侧抬、再落下；没有明确的手掌或前臂来回挥动。张望与先后顺序匹配，然而本条明确要求找到朋友后挥手，现有画面也可被看作侧伸手示意，无法无歧义确认挥手语义，故uncertain，语义不计满分且不评分自然度。",
+      "raw_text_sha256": "5da2354cefa82c6cf51197308f2a2e8c99c338271ab15e6b3af277e26a7cc9c3",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "reviewed_at": "2026-11-17T10:58:11.720016+00:00",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "rubric_version": "codex-independent-video.v1",
+      "scores": {
+        "semantic": 0.7
+      },
+      "semantic_match": false,
+      "status": "uncertain",
+      "video_sha256": "288c5dc616dda136e6d7b9a909e6644a11270870f74f4e111c43e2e770b1c54d"
+    },
+    {
+      "candidate_id": "tr1-train-16",
+      "candidate_sha256": "dec1c1aadca3ff014b8b86ff56bcf9bd38bd2a30061025885a8910f244434360",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "config_sha256": "c209ff9ee21b6afd5f52ac703acfc31e1f9166b6fb0b30ca4f0a5bbc5147a115",
+      "context_id": "/root/visual_review_b",
+      "correction_advice": "Do not relabel a side arm raise or shallow head dip as a confirmed wave or bow merely because compilation succeeds. Preserve the literal instruction and verify that any valid resource adjustment makes that gesture visually clear; otherwise retain uncertainty/exclusion.",
+      "evidence_sha256": "244be5f52e748b8a75bf633da6e46dec1c3fbc2570626d6b3ec40dc198ead4d4",
+      "input_role": "instruction",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "observation": {
+        "all_focused_trajectory_frames_read": true,
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-16\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-16\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-16\\contact_sheets\\page_003.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-16\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-16\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-16\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-16\\frames\\frame_000020.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-16\\frames\\frame_000065.png"
+        ],
+        "full_clip_observed": true,
+        "full_resolution_frame_indices": [
+          20,
+          65
+        ],
+        "limitations": [
+          "Every recorded frame was observed; the literal requested gesture remains visually ambiguous despite matching resource-channel timing."
+        ],
+        "method": "timestamped_frames_and_trajectory",
+        "observed_contact_sheet_pages": 3,
+        "observed_frame_count": 98
+      },
+      "parent_candidate_id": "",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "prompt_version": "codex-review-round1.v1",
+      "provider": "OpenAI / Codex desktop",
+      "rationale": "全部98帧和全轨迹已观察。前半段500..1000ms头Y=-22、身体Y=-9.35并保持，1500ms回正；随后害羞侧倾，1966.7..2533.3ms头Z=-19.8、眼X=.88/Y=-.495、眉Y=-.44、FXmouth2=1，3000ms回位，3233.3ms完成。原图20的头确实低下，但躯干仍接近直立，缺少清楚的腰部前屈，视觉上更接近浅点头；原图65可确认后段侧倾嘟嘴神态。参数名bow及身体Y变化不能替代可见鞠躬证据，本条道歉时先鞠躬的字面要求不能确认已完整实现，故uncertain，语义不计满分且不评分自然度。",
+      "raw_text_sha256": "295313c667e0dd4a85e6529453ece3f4a6b28e973e46f673f31b144b1062afc4",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "reviewed_at": "2026-11-17T10:58:11.877010+00:00",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "rubric_version": "codex-independent-video.v1",
+      "scores": {
+        "semantic": 0.65
+      },
+      "semantic_match": false,
+      "status": "uncertain",
+      "video_sha256": "ae5e96aa3f446dbfd62584314a577aa2ed8c9698bc1665ce7d329f7afcc401a1"
+    },
+    {
+      "candidate_id": "tr1-train-19",
+      "candidate_sha256": "70815f44d33a722b78a2802e0a66f58c67a9623ea93e3dc54b3ccf5920721ab7",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "config_sha256": "3e2b79daaf3f837072fdcc717f0e8476af533ec668a7eebf7c5467d6d3541c09",
+      "context_id": "/root/visual_review_b",
+      "correction_advice": "Re-record with wider framing or a verified smaller cheer amplitude within the existing valid resource range; preserve the simultaneous facial action and required celebration. A new clip must undergo independent complete observation again.",
+      "evidence_sha256": "acd305d670abd74e21badfff9877e77c7bcf155e3ebc9ab3bae4fddc2a835a20",
+      "input_role": "instruction",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "observation": {
+        "all_focused_trajectory_frames_read": true,
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-19\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-19\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-19\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-19\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-19\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-19\\frames\\frame_000020.png"
+        ],
+        "full_clip_observed": true,
+        "full_resolution_frame_indices": [
+          20
+        ],
+        "limitations": [
+          "Source video clips image-left fingertips at the cheer plateau; full recorded frames were inspected, but clipped anatomy is absent from the recording."
+        ],
+        "method": "timestamped_frames_and_trajectory",
+        "observed_contact_sheet_pages": 2,
+        "observed_frame_count": 53
+      },
+      "parent_candidate_id": "",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "prompt_version": "codex-review-round1.v1",
+      "provider": "OpenAI / Codex desktop",
+      "rationale": "已逐页观察全部53帧并读全轨迹，确认微笑与双臂同时启动：33.3ms两者均离开参考值；433.3ms笑眼达到1、双眼闭合，466.7..1033.3ms双臂为9.35、竖向参数.935；1500ms恢复，1733.3ms完成。语义上的同时微笑与抬臂庆祝可辨，时间与hold匹配。但双臂展开时图像左侧手指被视频边缘截断，原图frame20/666.7ms明确可见手指延伸到x=0且尖端缺失；接触表plateau连续多帧重复此裁切。该缺陷不能由成功编译或正确参数覆盖。拒绝，按要求不给裁切片自然度分。",
+      "raw_text_sha256": "3801e095c59dc3a54b00dec5cf7685a0106620f25d326a70016ff1fc3b3072e5",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "reviewed_at": "2026-11-17T10:58:12.189088+00:00",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "rubric_version": "codex-independent-video.v1",
+      "scores": {
+        "semantic": 1
+      },
+      "semantic_match": true,
+      "status": "rejected",
+      "video_sha256": "c5a89f4c09b9d605a20fed14ff89cf422180ebd0a52766e7d070464efd42d24f"
+    },
+    {
+      "candidate_id": "tr1-train-20",
+      "candidate_sha256": "ef068eb9af0d318153cc6daad34de7bca22cc79681aa48ff7ba0e06d96e0ce20",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "config_sha256": "681906c4db20d0d49943909065230a7c1c59b2b70751986d9f26d6097ed34074",
+      "context_id": "/root/visual_review_b",
+      "correction_advice": "Do not relabel a side arm raise or shallow head dip as a confirmed wave or bow merely because compilation succeeds. Preserve the literal instruction and verify that any valid resource adjustment makes that gesture visually clear; otherwise retain uncertainty/exclusion.",
+      "evidence_sha256": "6d28abac0e103ddf4925ac7d10e1d9ea8c87fc203b8972f92fbf3c8b31dabf5f",
+      "input_role": "instruction",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "observation": {
+        "all_focused_trajectory_frames_read": true,
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-20\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-20\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-20\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-20\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-20\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-20\\frames\\frame_000011.png"
+        ],
+        "full_clip_observed": true,
+        "full_resolution_frame_indices": [
+          11
+        ],
+        "limitations": [
+          "Every recorded frame was observed; the literal requested gesture remains visually ambiguous despite matching resource-channel timing."
+        ],
+        "method": "timestamped_frames_and_trajectory",
+        "observed_contact_sheet_pages": 2,
+        "observed_frame_count": 52
+      },
+      "parent_candidate_id": "",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "prompt_version": "codex-review-round1.v1",
+      "provider": "OpenAI / Codex desktop",
+      "rationale": "全部52帧和全轨迹已观察。微笑与手臂同时启动，笑眼433.3..1066.7ms保持1；右臂两次抬起又落下，366.7ms与1133.3ms采样峰均7.9883、手形.89869，约750ms回低位，1500ms整体回位，1700ms完成。原图11确认手掌完整；笑脸与重复抬臂使招呼意图比单次抬臂更容易读出，但画面仍主要是伸直的手臂侧抬和放下，缺少明确的手掌/前臂往复挥动，也可读作反复伸臂。并行与两周期配置正确，却不能仅据此保证原文挥手的完整视觉语义；保留uncertain，不给自然度分。",
+      "raw_text_sha256": "e17f587d689a834a48b9054aaeb74bdef2064ccfd96db00adb06581dd81b2bca",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "reviewed_at": "2026-11-17T10:58:12.276234+00:00",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "rubric_version": "codex-independent-video.v1",
+      "scores": {
+        "semantic": 0.8
+      },
+      "semantic_match": false,
+      "status": "uncertain",
+      "video_sha256": "775f7a500df453a7181222802fdc6857df1e07f2a8f9b8c9efc55bff4507fd98"
+    },
+    {
+      "candidate_id": "tr1-train-22",
+      "candidate_sha256": "bd00499fc897ffe5dfa31ff215ca6f698e4039767b0aa7334fbb4da4a3c91cf2",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "config_sha256": "a0bd4a1a92e79f1cd9205701a6018af0191a0018db52c0445e3d1b2cc316098b",
+      "context_id": "/root/visual_review_b",
+      "correction_advice": "Do not relabel a side arm raise or shallow head dip as a confirmed wave or bow merely because compilation succeeds. Preserve the literal instruction and verify that any valid resource adjustment makes that gesture visually clear; otherwise retain uncertainty/exclusion.",
+      "evidence_sha256": "c0c5ee41252c2749712935c0cfcaf51cdf5bf73e580055c9c7d5853a394c5e95",
+      "input_role": "instruction",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "observation": {
+        "all_focused_trajectory_frames_read": true,
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-22\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-22\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-22\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-22\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-22\\trajectory.jsonl"
+        ],
+        "full_clip_observed": true,
+        "full_resolution_frame_indices": [],
+        "limitations": [
+          "Every recorded frame was observed; the literal requested gesture remains visually ambiguous despite matching resource-channel timing."
+        ],
+        "method": "timestamped_frames_and_trajectory",
+        "observed_contact_sheet_pages": 2,
+        "observed_frame_count": 58
+      },
+      "parent_candidate_id": "",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "prompt_version": "codex-review-round1.v1",
+      "provider": "OpenAI / Codex desktop",
+      "rationale": "全部58帧和全轨迹已观察。双眼与头部同时缓慢下沉，500..1200ms头Y=-20、身体Y=-8.5、双眼开度0，1700ms参考值恢复、1900ms完成。1700ms与.45hold、闭眼再睁开及同步关系均匹配；可见长时间闭眼和低头确实传达困倦。然而身躯在画面中仍大体直立，前俯主要可见于头部，不能明确辨为原文额外要求的鞠躬。情绪匹配不足以补足字面动作约束，故uncertain且不给自然度分。",
+      "raw_text_sha256": "ff2c78911dd1279e4fb237f21cd4f05d3d38bcdced030f109283cadcacbef3e9",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "reviewed_at": "2026-11-17T10:58:12.462762+00:00",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "rubric_version": "codex-independent-video.v1",
+      "scores": {
+        "semantic": 0.8
+      },
+      "semantic_match": false,
+      "status": "uncertain",
+      "video_sha256": "4a533340275b987e971ecfce904283957e63a9c1a784c3d4216a0d93bc5c6fa5"
+    },
+    {
+      "candidate_id": "tr1-train-24",
+      "candidate_sha256": "5c209bbb2a5d9aa0d96e6e6098ecb3cf38d4dffb92827a6cd379073fe6d19204",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "config_sha256": "e2b26fcd8d8799f6d26e291d98b3dac86d3f0cf0f92e644aa0b776603355d8ec",
+      "context_id": "/root/visual_review_b",
+      "correction_advice": "Re-record with wider framing or a verified smaller cheer amplitude within the existing valid resource range; preserve the simultaneous facial action and required celebration. A new clip must undergo independent complete observation again.",
+      "evidence_sha256": "1ba77fbe010effec6247b76da5d743e8bba873b21bfc4fceec2938109441ff2d",
+      "input_role": "instruction",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "observation": {
+        "all_focused_trajectory_frames_read": true,
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-24\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-24\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-24\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-24\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-train-24\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-train-24\\frames\\frame_000020.png"
+        ],
+        "full_clip_observed": true,
+        "full_resolution_frame_indices": [
+          20
+        ],
+        "limitations": [
+          "Source video clips image-left fingertips at the cheer plateau; full recorded frames were inspected, but clipped anatomy is absent from the recording."
+        ],
+        "method": "timestamped_frames_and_trajectory",
+        "observed_contact_sheet_pages": 2,
+        "observed_frame_count": 49
+      },
+      "parent_candidate_id": "",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "prompt_version": "codex-review-round1.v1",
+      "provider": "OpenAI / Codex desktop",
+      "rationale": "已逐页观察全部49帧和全轨迹。惊讶眼、张嘴与双臂抬起都从33.3ms运动帧开始；366.7ms惊讶FX=1，433.3..966.7ms双臂8.925、竖向.8925，惊讶在约896ms后先渐退而双臂保持到约980ms，两资源均1400ms回参考值、1600ms完成，符合各自phase比例。原图20/666.7ms清楚显示惊讶与展开双臂同框，同时图像左侧手指越过x=0边界、尖端被切掉；多帧保持段均有同样问题。动作语义与并行关系可辨，但裁切使这条录像不合格；拒绝且不给自然度分。",
+      "raw_text_sha256": "448fc85861b832c8afda44ca126568b7ac5e7789d84bc73ff9b87d771cdbfa8b",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "reviewed_at": "2026-11-17T10:58:12.662206+00:00",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "rubric_version": "codex-independent-video.v1",
+      "scores": {
+        "semantic": 1
+      },
+      "semantic_match": true,
+      "status": "rejected",
+      "video_sha256": "0e94c20666bc904b82ad338f6cbb01f48083e57d8084db5dc90bcfa0887525a9"
+    },
+    {
+      "candidate_id": "tr1-val-01",
+      "parent_candidate_id": "",
+      "candidate_sha256": "a4f4c2b0662dadb78670dbb93796d847dd7c6cde077a3fc2b0297d81d2b20ba0",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "input_role": "instruction",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend ID unavailable)",
+      "context_id": "/root/visual_review_c",
+      "prompt_version": "codex-review-round1.v1",
+      "prompt_sha256": "3c33cac63f642baa9efb86665178302d9d3dc2433a6be2144e09cf6c34e76354",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T10:58:17.613270+00:00",
+      "status": "rejected",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0.7
+      },
+      "rationale": "Observed all pages 1-3, frames 0-105 (0-3500 ms), plus full-resolution frames 0 and 24. The trace correctly holds head/body pitch at -22/-9.35 from sampled 500-1100 ms, returns both to zero at 1600 ms, then makes two right-arm excursions peaking near 2033 and 2867 ms and settles by 3300 ms. The two waves and sequence are visible, smooth and contained in the frame. However the first act reads as a shallow head dip: the torso remains almost upright, and the full-resolution 800 ms pose does not establish a clearly recognizable bow of greeting. Numerical bow channels alone cannot resolve that semantic uncertainty; reject instead of awarding semantic=1.",
+      "correction_suggestion": "No reliable config-only correction is established. Bow amplitude is already 1.10 with body pitch -9.35 near its -10 native limit; increasing hold or duration cannot demonstrate a missing torso bend. Retain this rejection until a separately recorded candidate visibly establishes the bow. Do not change the bound source or relabel the requested bow as a nod.",
+      "raw_text_sha256": "86aef2e183bfcf08b4f7241a9436f57773a2463bb7d435290a48b8ed1b441b0e",
+      "config_sha256": "a4ca579df337325874994afb46ecb83e6980bd1e42e55fad40001de9c791cc18",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "evidence_sha256": "d097f0fbaaac790e113eb679ee689ab625ec74ea044cdb5c3f6b55ca72ae521f",
+      "video_sha256": "e4f1aef8d4ee8dd293bc91b90cd34fccedfc2ba2fb5416340f80feea7ef29359",
+      "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-01\\evidence.json",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "Bow identity remains visually unclear after full-resolution inspection; naturalness intentionally unscored."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\contact_sheets\\page_003.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-01\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\physical_integrity_report.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\frames\\frame_000000.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\frames\\frame_000024.png"
+        ],
+        "observed_contact_sheet_pages": 3,
+        "observed_frame_count": 106,
+        "all_focused_trajectory_rows_read": true,
+        "artifact_hashes": {
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\contact_sheets\\page_001.png": "6722868bc40e7361c72b8eecc38e34d8ff1af2fdb0a1beed3ec40d6baab42614",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\contact_sheets\\page_002.png": "6d3594016db3e7c7444b6a58eec6c901b88d953158c4a871179cb560cf0b877a",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\contact_sheets\\page_003.png": "d075eca7cd9f7fce6398ef29e80f4cf98e63d111d6e841795100edd039cdd4a6",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\observation_manifest.json": "13deff2853f1a54b8796ae3062d2da7d0390c5ba99f13078b6d54876504b3edb",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\trajectory_focus.jsonl": "66017aecebca2de59c35d477d7fc743c69b5dd40355440b7963d21a581de5feb",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-val-01\\trajectory.jsonl": "1231d7a40d6ca4103cbff62b185fc123ff01fd5a0755a1ac2452cfd33bd0b217",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\physical_integrity_report.json": "3ab6433ccdcd7b22a99bb2132846a723642134d32ecb43bd85f235d46c912249",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\frames\\frame_000000.png": "3baeeec7b3b1dfdd005357a422b9299c55f7090626eec3bd1720acd0b5c3649c",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-val-01\\frames\\frame_000024.png": "468cef8adbd446f69f3ff709d5137cd74117cfd6ba885b6a2efa9984102b89a5"
+        }
+      },
+      "review_scope": "diagnostic_experimental_candidate_review",
+      "resource_calibration_approved": false,
+      "release_approved": false,
+      "training_eligible": false
+    },
+    {
+      "candidate_id": "tr1-test-03",
+      "parent_candidate_id": "",
+      "candidate_sha256": "cde6c83289cbf12061bafdd4c679e1bfbad279aa6820c07ab2791ad1e29cb1a0",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "input_role": "instruction",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend ID unavailable)",
+      "context_id": "/root/visual_review_c",
+      "prompt_version": "codex-review-round1.v1",
+      "prompt_sha256": "3c33cac63f642baa9efb86665178302d9d3dc2433a6be2144e09cf6c34e76354",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T10:58:17.613270+00:00",
+      "status": "rejected",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0.65
+      },
+      "rationale": "Observed pages 1-2, every frame 0-54 (0-1800 ms), and full-resolution frame 24 at 800 ms. Angry eyes, tightened brow and jagged small mouth are visible while the head lowers. Actual angry-eye/FXmouth1 reach 1 with brows Y -.882/X -.588, while bow pitch reaches -20 head/-8.5 body from sampled 500-1100 ms; channels enter concurrently and return by 1600 ms, with Completed at 1800 ms. The concurrency and angry expression are supported. But the torso remains visually almost upright and the pose is a mild downward head movement, insufficiently clear as the requested bow/apology. Full-resolution viewing does not remove this identity ambiguity, so semantic=1 and naturalness are withheld.",
+      "correction_suggestion": "A separate preview could test bow scale 1.15 within native bounds, but only a small increase is available and no acceptance is predicted. Keep the current candidate rejected until a rerecord makes a bow unambiguous; do not modify bound resources or reinterpret the instruction.",
+      "raw_text_sha256": "f1f4aad0eb176fe4c40d66204a34d0fd9d75b3aebaa8d5208e7245a88075adec",
+      "config_sha256": "07fafef70c471a893c00c90fdac34b94bac52c253e83157db63f342bae15ec39",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "evidence_sha256": "3bbe5b642e4c46119351058600cc16e9a8e237fddbb9a5a8cd1522db2afba4ea",
+      "video_sha256": "4f8d67ce910abca6dd596c0c115a74f855ad51bff02a22ed3ea6cb4852e175dc",
+      "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-03\\evidence.json",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "Concurrent angry face is observable, but the bow gesture is not clearly distinguishable from a shallow head dip; naturalness intentionally unscored."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-03\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\physical_integrity_report.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\frames\\frame_000024.png"
+        ],
+        "observed_contact_sheet_pages": 2,
+        "observed_frame_count": 55,
+        "all_focused_trajectory_rows_read": true,
+        "artifact_hashes": {
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\contact_sheets\\page_001.png": "ab1051c4b114124742d0013a18c08474b6c6c22b753afb61eb86ccb6dc3f55b8",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\contact_sheets\\page_002.png": "f0df4267aec9bd8b540ef0f1f36a8cf7c2bfa626737bbb4cce6257d51c91d13c",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\observation_manifest.json": "b5d37b7db554ef3a7f1e4fc3c536b444eecb988281135af12dbe0e5b96e6c3ae",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\trajectory_focus.jsonl": "c191ca0cebc0e4f8f35597364302b4017e59b6cf9a38667114731af3c2e7c613",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-03\\trajectory.jsonl": "37a849f8468b8530317a768b62726d8320af1729350278d802510a78d8e9436e",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\physical_integrity_report.json": "2ab3f21bab52deb5831411e6f79ff598a163dc00fc5ef344ebd92d2f92615321",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-03\\frames\\frame_000024.png": "ecb38ea83d5b77098de1ef3b54d4a58f0c8beff19b56a37df6c255eda8258aa4"
+        }
+      },
+      "review_scope": "diagnostic_experimental_candidate_review",
+      "resource_calibration_approved": false,
+      "release_approved": false,
+      "training_eligible": false
+    },
+    {
+      "candidate_id": "tr1-test-04",
+      "parent_candidate_id": "",
+      "candidate_sha256": "2d1911fe86a2149d4123e0eb8185fc647e086b8b2c2e959c5d8359daf9d2734f",
+      "candidates_file_sha256": "51f9713933454d27cb0fc5fc0384cb82006d2f5bb292d9d98639960039e54cdd",
+      "input_role": "instruction",
+      "reviewed_decision": "execute",
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend ID unavailable)",
+      "context_id": "/root/visual_review_c",
+      "prompt_version": "codex-review-round1.v1",
+      "prompt_sha256": "3c33cac63f642baa9efb86665178302d9d3dc2433a6be2144e09cf6c34e76354",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T10:58:17.613270+00:00",
+      "status": "rejected",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0.6
+      },
+      "rationale": "Observed pages 1-3, every frame 0-99 (0-3300 ms), and full-resolution frames 20 and 68. Both arms visibly spread/raise first, return by 1500 ms, then the head/body pitch gesture begins. Actual cheer arm values plateau at 9.35/9.35 with vertical channel .935 from sampled 466.7-1033.3 ms; bow later holds -22/-9.35 from 2000-2600 ms and returns at 3100 ms. Sequence and numerical completion are correct. However the left fingertips run through x=0 in the 720x840 full-resolution cheer frame 20, also visible across the plateau contact-sheet tiles; therefore the required action is clipped. The bow at full-resolution frame 68 also reads as a shallow head dip with nearly upright torso. Reject; no naturalness score is issued for clipped/uncertain evidence.",
+      "correction_suggestion": "A separate config-only preview may reduce cheer amplitude from 1.10 to .95 to create a hand margin while retaining the two-arm rise, but it must be rerecorded and observed. That alone does not resolve bow identity. Keep this rejection and do not treat camera-cropped hand evidence as complete action visibility.",
+      "raw_text_sha256": "cabbd1c828b4262d855be6b2107d155d899be023302a2311a6717f924c95f05f",
+      "config_sha256": "3c8f0f33fa4d0f4a63cdd4305b94af463e853d71cb989afb82bf239e81092136",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "evidence_sha256": "3a761bc5b3dc99be16dfb464f9447adc04b1bc94a32664653c7f52c1a000dff6",
+      "video_sha256": "242b8beca4be4c163f9637ed923f2d47dd55226dacac13516cf6fcea592ff893",
+      "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-04\\evidence.json",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "The raised-arm silhouette crosses the left frame boundary; fingertips are clipped at full resolution.",
+          "The following bow remains visually ambiguous as a shallow head dip."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\contact_sheets\\page_003.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-04\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\physical_integrity_report.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\frames\\frame_000020.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\frames\\frame_000068.png"
+        ],
+        "observed_contact_sheet_pages": 3,
+        "observed_frame_count": 100,
+        "all_focused_trajectory_rows_read": true,
+        "artifact_hashes": {
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\contact_sheets\\page_001.png": "485853a6cb9dcc8c5628b942ce423eb00c935e05c792cc635609c739b47c8527",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\contact_sheets\\page_002.png": "779a0a19996813869fa9f64630587f9329ea88ba106d51937ef630c2fd88aaf3",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\contact_sheets\\page_003.png": "30feccf55e3f8f9119043d02c15cbff5ea110c8ecee7022ca97886a1c47906b9",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\observation_manifest.json": "8b616ef913dd328a0c3ffd951a47a3e344f29f6629fd6a630927429aa3b2c737",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\trajectory_focus.jsonl": "2796b03fb6aff6f615d047d50a19437ab320c0f20108aaca507d64ba5df5253a",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\main_snapshots\\tr1-test-04\\trajectory.jsonl": "1d293d341e3f7ce00a719a9fa8c7f650c8cd174a9d6a5f0d6d2b5bb866cc3411",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\physical_integrity_report.json": "77d1d351b9b34383faa2296a11cce4d7b543cee23fe62569c56e42fbafd7fd8f",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\frames\\frame_000020.png": "19e891f581ebc45ec5148b21e04d934b7c6bdda39e6f4d9b51a58adbb60bf1e6",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\observations\\tr1-test-04\\frames\\frame_000068.png": "1641c591c593ece8b729269f039fe32af46be233e523fd4e69de3d823f026810"
+        }
+      },
+      "review_scope": "diagnostic_experimental_candidate_review",
+      "resource_calibration_approved": false,
+      "release_approved": false,
+      "training_eligible": false
+    }
+  ],
+  "release_approved": false
+}

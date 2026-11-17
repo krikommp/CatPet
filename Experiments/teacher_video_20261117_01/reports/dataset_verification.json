@@ -1,0 +1,237 @@
+{
+  "passed": 57,
+  "total": 57,
+  "checks": [
+    {
+      "name": "exact_units_and_cycle_binding",
+      "passed": true
+    },
+    {
+      "name": "validator_does_not_rewrite_config",
+      "passed": true
+    },
+    {
+      "name": "swapped_cycle_durations_rejected",
+      "passed": true
+    },
+    {
+      "name": "each_duration_broadcast_only_when_explicit",
+      "passed": true
+    },
+    {
+      "name": "unscoped_number_not_broadcast",
+      "passed": true
+    },
+    {
+      "name": "count_mismatch_rejected",
+      "passed": true
+    },
+    {
+      "name": "infix_chinese_count",
+      "passed": true
+    },
+    {
+      "name": "arabic_count",
+      "passed": true
+    },
+    {
+      "name": "second_slower_pass",
+      "passed": true
+    },
+    {
+      "name": "second_slower_fail",
+      "passed": true
+    },
+    {
+      "name": "second_faster_pass",
+      "passed": true
+    },
+    {
+      "name": "equal_relative_values_rejected",
+      "passed": true
+    },
+    {
+      "name": "strict_gradual_amplitude",
+      "passed": true
+    },
+    {
+      "name": "gradual_tempo",
+      "passed": true
+    },
+    {
+      "name": "multi_action_relative_scope_unresolved",
+      "passed": true
+    },
+    {
+      "name": "nonexecute_not_invented_numeric_checks",
+      "passed": true
+    },
+    {
+      "name": "hold_duration_not_misread_cycle_duration",
+      "passed": true
+    },
+    {
+      "name": "per_clause_one_not_wrong_total_count",
+      "passed": true
+    },
+    {
+      "name": "no_scope_inference_from_single_predicted_action",
+      "passed": true
+    },
+    {
+      "name": "infix_count_missing_resource_reported",
+      "passed": true
+    },
+    {
+      "name": "wrong_predicted_cycle_count_not_used_to_resolve_duration",
+      "passed": true
+    },
+    {
+      "name": "each_explicit_duration_detects_missing_cycle",
+      "passed": true
+    },
+    {
+      "name": "gradual_relation_cannot_pass_with_one_predicted_cycle",
+      "passed": true
+    },
+    {
+      "name": "twelve_not_partial_two",
+      "passed": true
+    },
+    {
+      "name": "fractional_count_not_truncated",
+      "passed": true
+    },
+    {
+      "name": "half_second_unresolved_not_false_pass",
+      "passed": true
+    },
+    {
+      "name": "chinese_decimal_unresolved_not_false_pass",
+      "passed": true
+    },
+    {
+      "name": "seconds_suffix_unresolved_not_false_pass",
+      "passed": true
+    },
+    {
+      "name": "600ms_no_action_context_unresolved",
+      "passed": true
+    },
+    {
+      "name": "explicit_relative_reference_first_not_previous",
+      "passed": true
+    },
+    {
+      "name": "explicit_relative_amplitude_reference",
+      "passed": true
+    },
+    {
+      "name": "previous_reference_consumed_前一次",
+      "passed": true
+    },
+    {
+      "name": "previous_reference_consumed_上一次",
+      "passed": true
+    },
+    {
+      "name": "negated_relative_not_inverted_or_accepted",
+      "passed": true
+    },
+    {
+      "name": "amplitude_number_fails_closed_unresolved",
+      "passed": true
+    },
+    {
+      "name": "half_amplitude_fails_closed_unresolved",
+      "passed": true
+    },
+    {
+      "name": "chinese_hundreds_fails_closed_unresolved",
+      "passed": true
+    },
+    {
+      "name": "unrelated_ordinal_never_waives_first_action_count",
+      "passed": true
+    },
+    {
+      "name": "only_once_not_waived_by_negated_second_cycle",
+      "passed": true
+    },
+    {
+      "name": "negative_duration_not_silently_coerced",
+      "passed": true
+    },
+    {
+      "name": "fractional_ordinal_not_silently_coerced",
+      "passed": true
+    },
+    {
+      "name": "zero_ordinal_not_silently_coerced",
+      "passed": true
+    },
+    {
+      "name": "later_invalid_ordinal_not_silently_coerced",
+      "passed": true
+    },
+    {
+      "name": "positive_short_hold_rejected",
+      "passed": true
+    },
+    {
+      "name": "zero_hold_preserved",
+      "passed": true
+    },
+    {
+      "name": "look_positive_hold_rejected",
+      "passed": true
+    },
+    {
+      "name": "look_zero_hold_valid",
+      "passed": true
+    },
+    {
+      "name": "parallel_conflict_rejected",
+      "passed": true
+    },
+    {
+      "name": "zero_cross_split_group_id",
+      "passed": true
+    },
+    {
+      "name": "zero_cross_split_semantic_family_id",
+      "passed": true
+    },
+    {
+      "name": "zero_cross_split_normalized_text",
+      "passed": true
+    },
+    {
+      "name": "no_same_text_param_variants_in_kept_pool",
+      "passed": true
+    },
+    {
+      "name": "all_kept_rows_pass_actual_csharp_patch",
+      "passed": true
+    },
+    {
+      "name": "kept_rows_no_claimed_video_review",
+      "passed": true
+    },
+    {
+      "name": "all_kept_rows_quarantined_from_training",
+      "passed": true
+    },
+    {
+      "name": "fixed_challenge_families_reserved",
+      "passed": true
+    },
+    {
+      "name": "fixed_challenges_exclude_unconstrained_parameter_metrics",
+      "passed": true
+    }
+  ],
+  "cold_start_sha256": "c5d0612d4625dd1390f77a00784da7fdd6602fed379f07c54f8160880593ef28",
+  "fixed_eval_sha256": "b5026d771cf25e619ff16b693eb13748b6faa3220b323d856ba0355c0add7460",
+  "limits": "Partial grammar validator, not general semantic NLU or perceptual sufficiency test."
+}

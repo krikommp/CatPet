@@ -1,0 +1,22 @@
+[
+  {
+    "path": "Tools\\ActionEncoder\\train_action_config.py",
+    "sha256": "f2cd11044ba0214a2fb697d855c790dbb1732261696292b32a132d140aaa8218"
+  },
+  {
+    "path": "Tools\\ActionEncoder\\retrain_and_eval.py",
+    "sha256": "cdc5dae384970081f0865bd4e98d40e650ddf317384afbdae79134795175e743"
+  },
+  {
+    "path": "Tools\\ActionEncoder\\training_data.py",
+    "sha256": "969836cd19cda44a6ea1a7c586e7a9e8eaeedd389c58c6c9afaf2ad3ef35d8a4"
+  },
+  {
+    "path": "Tools\\ActionEncoder\\test_training_workflow.py",
+    "sha256": "122c91cfd7e5ad579e3beefc0209419591a90516bd029c2a7b8bd8a55cc1fce0"
+  },
+  {
+    "path": "Tools\\ActionEncoder\\training_workflow.md",
+    "sha256": "cb104b96d9fcfa6170c26ffd72e35b7d2f788b675131c2205668705247aa0955"
+  }
+]

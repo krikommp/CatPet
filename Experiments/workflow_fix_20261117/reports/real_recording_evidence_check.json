@@ -1,0 +1,263 @@
+{
+  "stage": "physical_recording_evidence_check",
+  "recording_count": 4,
+  "passed": 3,
+  "expected_rejected": 1,
+  "regression_passed": true,
+  "ai_accepted_created": 0,
+  "training_started": false,
+  "release_approved": false,
+  "rows": [
+    {
+      "stage": "capture_evidence_validation",
+      "valid": true,
+      "candidate_id": "flow-blink",
+      "training_eligible": false,
+      "ai_reviewed": false,
+      "release_approved": false,
+      "config_sha256": "ed68d68e57e920496f41d1cd1ef4a507fae5aaa995ee5955fd8a6c14d844f1d3",
+      "bindings": {
+        "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+        "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+        "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+        "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9"
+      },
+      "ffmpeg_sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+      "decoded_frames": 25,
+      "decoded_duration_ms": 833.333,
+      "video_sha256": "2ab155c6fb4d9f9b3380fb65da4bb502f282216fde68a2b853672104a4ef43a0",
+      "full_decode": true,
+      "evidence_sha256": "01dd2fc11ea9ddab047b5af007f9d6e794fd40bd33199920cc82b65dd639a22f",
+      "trajectory_sha256": "f14723c06ad685a261d29ef319003ea3e0ad5002a38043eb39d6579776eb1faf",
+      "native_sha256": "71532116913fe52f07e991e8f159129d710807119daff907ef3cf7f8addfca03",
+      "native_duration_ms": 600,
+      "first_player_time_ms": 0.0,
+      "last_player_time_ms": 800.0000000000002,
+      "capture_completed_utc": "2026-11-17T10:35:07.3623196Z",
+      "fps": 30,
+      "resource_status": "candidate_except_blink; no formal calibration asserted",
+      "artifacts": [
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-blink\\meta.json",
+          "sha256": "7721ca4536b9aac239acc9ca65c89bac4d77090b192ad987dacc02dfb3722cab",
+          "bytes": 1462
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionConfigCompiler.cs",
+          "sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+          "bytes": 21074
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionResourceCatalog.cs",
+          "sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+          "bytes": 20843
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\YukikazeActionCatalog.cs",
+          "sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+          "bytes": 21414
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Docs\\ActionLanguage\\personas\\gemini-cyber-cat.md",
+          "sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+          "bytes": 10394
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-blink\\evidence.json",
+          "sha256": "01dd2fc11ea9ddab047b5af007f9d6e794fd40bd33199920cc82b65dd639a22f",
+          "bytes": 4410
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-blink\\preview.mp4",
+          "sha256": "2ab155c6fb4d9f9b3380fb65da4bb502f282216fde68a2b853672104a4ef43a0",
+          "bytes": 93847
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-blink\\trajectory.jsonl",
+          "sha256": "f14723c06ad685a261d29ef319003ea3e0ad5002a38043eb39d6579776eb1faf",
+          "bytes": 53836
+        }
+      ],
+      "character_asset_count": 28,
+      "current_character_asset_sha256": "ffd8c94ba3f0f27ddb580e95e3be0af7b9b4f6304449793d7ebfe9d6e2d801ff",
+      "current_character_assets_match_recording": true,
+      "recorded_compiled_assembly_sha256": "7d9efcb64dbdc98f0344fd8745c1533e9fa0aa5bc88ce1d99b3d23b816dbcce9",
+      "current_compiled_assembly_sha256": "7d9efcb64dbdc98f0344fd8745c1533e9fa0aa5bc88ce1d99b3d23b816dbcce9",
+      "current_assembly_matches_recording": true,
+      "expected_rejection": false,
+      "expected_outcome_observed": true
+    },
+    {
+      "valid": false,
+      "candidate_id": "flow-external-cancel",
+      "error": "playback/encoder completion not proven",
+      "ai_reviewed": false,
+      "training_eligible": false,
+      "expected_rejection": true,
+      "expected_outcome_observed": true
+    },
+    {
+      "stage": "capture_evidence_validation",
+      "valid": true,
+      "candidate_id": "flow-parallel",
+      "training_eligible": false,
+      "ai_reviewed": false,
+      "release_approved": false,
+      "config_sha256": "e67afe6ae9e80a25b763cae75d8bc59952e73a441b917b87c26c1e0693131b2d",
+      "bindings": {
+        "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+        "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+        "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+        "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9"
+      },
+      "ffmpeg_sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+      "decoded_frames": 31,
+      "decoded_duration_ms": 1033.333,
+      "video_sha256": "c33164a10c70e135ccf7d73d332c3eda87137e933675c87d4db123c0baf12209",
+      "full_decode": true,
+      "evidence_sha256": "20562c19705f11ec89d11e0789aca1b990072a79b9b3a9ab0d1bb9261f8977a7",
+      "trajectory_sha256": "3375f9d0c1151456dd065e5f5994825534a3c6d9a366c7bf5fc96cbc657bda2e",
+      "native_sha256": "fa07efe0d26d1bb077ca60a63fcbb033d6e460dd194374bbca340fdda53fe93e",
+      "native_duration_ms": 800,
+      "first_player_time_ms": 0.0,
+      "last_player_time_ms": 1000.0000000000045,
+      "capture_completed_utc": "2026-11-17T10:35:16.6283840Z",
+      "fps": 30,
+      "resource_status": "candidate_except_blink; no formal calibration asserted",
+      "artifacts": [
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-parallel\\meta.json",
+          "sha256": "9fb98e41d9f6d68c5bf334e3db9903d58c1c58fb142b84a4d5a47daa70f347ad",
+          "bytes": 1829
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionConfigCompiler.cs",
+          "sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+          "bytes": 21074
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionResourceCatalog.cs",
+          "sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+          "bytes": 20843
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\YukikazeActionCatalog.cs",
+          "sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+          "bytes": 21414
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Docs\\ActionLanguage\\personas\\gemini-cyber-cat.md",
+          "sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+          "bytes": 10394
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-parallel\\evidence.json",
+          "sha256": "20562c19705f11ec89d11e0789aca1b990072a79b9b3a9ab0d1bb9261f8977a7",
+          "bytes": 4775
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-parallel\\preview.mp4",
+          "sha256": "c33164a10c70e135ccf7d73d332c3eda87137e933675c87d4db123c0baf12209",
+          "bytes": 156606
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-parallel\\trajectory.jsonl",
+          "sha256": "3375f9d0c1151456dd065e5f5994825534a3c6d9a366c7bf5fc96cbc657bda2e",
+          "bytes": 67489
+        }
+      ],
+      "character_asset_count": 28,
+      "current_character_asset_sha256": "ffd8c94ba3f0f27ddb580e95e3be0af7b9b4f6304449793d7ebfe9d6e2d801ff",
+      "current_character_assets_match_recording": true,
+      "recorded_compiled_assembly_sha256": "7d9efcb64dbdc98f0344fd8745c1533e9fa0aa5bc88ce1d99b3d23b816dbcce9",
+      "current_compiled_assembly_sha256": "7d9efcb64dbdc98f0344fd8745c1533e9fa0aa5bc88ce1d99b3d23b816dbcce9",
+      "current_assembly_matches_recording": true,
+      "expected_rejection": false,
+      "expected_outcome_observed": true
+    },
+    {
+      "stage": "capture_evidence_validation",
+      "valid": true,
+      "candidate_id": "flow-sequence",
+      "training_eligible": false,
+      "ai_reviewed": false,
+      "release_approved": false,
+      "config_sha256": "69a682a350420282add12c39b1814cab0e92250fa0b7f4563c50f199ce390198",
+      "bindings": {
+        "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+        "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+        "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+        "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9"
+      },
+      "ffmpeg_sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+      "decoded_frames": 50,
+      "decoded_duration_ms": 1666.667,
+      "video_sha256": "df13f03e77302303b039262b8bea3ba2c474f10b4c332882addaa7b1c6346016",
+      "full_decode": true,
+      "evidence_sha256": "b4718c6e854762b5304bf7a529a23dae266ec292c9d2389c6957a6e5e005c761",
+      "trajectory_sha256": "e8688e145b109e0539b904adfd0d9592b7124f65852f9d694f28824e47cc3a3f",
+      "native_sha256": "3c18e0106ec60153407fda2a3829bfc65b8ff9a54dda03bd1db53ac07e7b9fe9",
+      "native_duration_ms": 1400,
+      "first_player_time_ms": 0.0,
+      "last_player_time_ms": 1633.3333333333328,
+      "capture_completed_utc": "2026-11-17T10:35:12.9537210Z",
+      "fps": 30,
+      "resource_status": "candidate_except_blink; no formal calibration asserted",
+      "artifacts": [
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-sequence\\meta.json",
+          "sha256": "e0419ebccfa0ffbd161666b99ae049112daf44c11a866a0217807bcaf3f39da9",
+          "bytes": 1869
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionConfigCompiler.cs",
+          "sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+          "bytes": 21074
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionResourceCatalog.cs",
+          "sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+          "bytes": 20843
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\YukikazeActionCatalog.cs",
+          "sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+          "bytes": 21414
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Docs\\ActionLanguage\\personas\\gemini-cyber-cat.md",
+          "sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+          "bytes": 10394
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-sequence\\evidence.json",
+          "sha256": "b4718c6e854762b5304bf7a529a23dae266ec292c9d2389c6957a6e5e005c761",
+          "bytes": 4816
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-sequence\\preview.mp4",
+          "sha256": "df13f03e77302303b039262b8bea3ba2c474f10b4c332882addaa7b1c6346016",
+          "bytes": 264513
+        },
+        {
+          "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\recording-549a99e2cf7a\\snapshots\\flow-sequence\\trajectory.jsonl",
+          "sha256": "e8688e145b109e0539b904adfd0d9592b7124f65852f9d694f28824e47cc3a3f",
+          "bytes": 107864
+        }
+      ],
+      "character_asset_count": 28,
+      "current_character_asset_sha256": "ffd8c94ba3f0f27ddb580e95e3be0af7b9b4f6304449793d7ebfe9d6e2d801ff",
+      "current_character_assets_match_recording": true,
+      "recorded_compiled_assembly_sha256": "7d9efcb64dbdc98f0344fd8745c1533e9fa0aa5bc88ce1d99b3d23b816dbcce9",
+      "current_compiled_assembly_sha256": "7d9efcb64dbdc98f0344fd8745c1533e9fa0aa5bc88ce1d99b3d23b816dbcce9",
+      "current_assembly_matches_recording": true,
+      "expected_rejection": false,
+      "expected_outcome_observed": true
+    }
+  ],
+  "limits": [
+    "No visual semantic or naturalness review was performed by this validator.",
+    "Assembly current-hash comparison is reported separately; later recompilation does not rewrite historical evidence.",
+    "Candidate resources remain uncalibrated; physical validity grants no training admission."
+  ]
+}

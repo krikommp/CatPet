@@ -1,0 +1,49 @@
+{
+  "label_policy_version": "action-labels.v1",
+  "plan_version": "action-plan.v0.1",
+  "decisions": ["execute", "none", "unsupported", "ambiguous"],
+  "max_slots": 4,
+  "active_max_actions": 2,
+  "active_max_stages": 2,
+  "supported_actions": {
+    "blink": {
+      "amplitudes": ["full"],
+      "default_amplitude": "full",
+      "speeds": ["slow", "normal", "fast"],
+      "default_speed": "normal",
+      "min_count": 1,
+      "max_count": 3,
+      "default_count": 1,
+      "calibration_stage": "p1_primary"
+    },
+    "nod": {
+      "amplitudes": ["small", "normal"],
+      "default_amplitude": "normal",
+      "speeds": ["slow", "normal", "fast"],
+      "default_speed": "normal",
+      "min_count": 1,
+      "max_count": 3,
+      "default_count": 1,
+      "calibration_stage": "p3_expansion"
+    },
+    "shake_head": {
+      "amplitudes": ["small", "normal"],
+      "default_amplitude": "normal",
+      "speeds": ["slow", "normal", "fast"],
+      "default_speed": "normal",
+      "min_count": 1,
+      "max_count": 3,
+      "default_count": 1,
+      "calibration_stage": "p3_expansion"
+    }
+  },
+  "out_of_scope_policy": {
+    "unsupported_actions": "Return decision=unsupported with empty steps; never silently drop unsupported sub-actions.",
+    "out_of_range_count": "Counts > 3 or infinite loops must return decision=unsupported; never clamp to 3.",
+    "large_amplitude": "large amplitude is out of v1 training scope and returns decision=unsupported.",
+    "negation_only": "Pure negation such as '不要点头' returns decision=none with empty steps.",
+    "negation_plus_valid": "Negation + supported action such as '不要点头，眨一下眼' executes only the valid action.",
+    "ambiguous": "Context-free pronouns/references such as '像刚才那样动一下' return decision=ambiguous with empty steps.",
+    "input_too_long": "Inputs exceeding tokenizer max_length must fail with input_too_long before truncation; never truncate and execute prefix."
+  }
+}

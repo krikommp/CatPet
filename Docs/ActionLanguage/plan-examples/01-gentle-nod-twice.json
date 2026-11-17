@@ -1,0 +1,7 @@
+{
+  "version": "action-plan.v0.1",
+  "decision": "execute",
+  "steps": [
+    {"actions": [{"type": "nod", "count": 2, "amplitude": "small", "speed": "normal"}]}
+  ]
+}

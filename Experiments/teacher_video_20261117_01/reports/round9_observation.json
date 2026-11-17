@@ -1,0 +1,111 @@
+{
+  "scope": "Observed corpus snapshot, not proof of which bytes running Gemini process loaded",
+  "rows": 3290,
+  "new_or_changed_vs_initial_snapshot": 58,
+  "hypothetical_legacy_split_counts": {
+    "train": 2649,
+    "val": 315,
+    "test": 326
+  },
+  "legacy_split_overlaps": {
+    "train_val": {
+      "same_text_count": 16,
+      "texts": [
+        "先快轻地加油一下，第二次慢而明显地加油",
+        "先快轻地歪头一下，第二次慢而明显地歪头",
+        "先慢后快地四处张望两次",
+        "先点点头一次，第二次放慢速度",
+        "先用力鼓嘴一下，第二下轻一点",
+        "先眨眨眼一次，第二次放慢速度",
+        "先重后轻地生气两次",
+        "前两次正常挥手，第三次慢下来保持一下",
+        "左右看看两次，第二次快一点",
+        "歪头两次，第二次又慢又重",
+        "生气两次，第二次又慢又重",
+        "眨眼两下，第二下更慢",
+        "眨眼两次，第二次慢一点",
+        "笑一笑三次，一次比一次重",
+        "行礼两下，第二下保持久一点",
+        "连续眨眼三下，越来越慢"
+      ]
+    },
+    "train_test": {
+      "same_text_count": 20,
+      "texts": [
+        "举手欢呼三次，一次比一次轻",
+        "先快轻地四处张望一下，第二次慢而明显地四处张望",
+        "先快轻地点头一下，第二次慢而明显地点头",
+        "先慢后快地行礼两次",
+        "先摇头一次，第二次放慢速度",
+        "先用力鞠躬一下，第二下轻一点",
+        "先轻后重地摇摇头两次",
+        "先重后轻地行礼两次",
+        "前两次正常害羞，第三次慢下来保持一下",
+        "打招呼两次，第二次轻一点",
+        "挥手三次，一次比一次重",
+        "摇摇头两下，第二下更慢",
+        "摇摇头两次，第二次慢一点",
+        "点点头两下，第二下保持久一点",
+        "笑一笑两次，第二次又慢又重",
+        "轻轻摇头一次，第二次幅度大一点",
+        "轻轻歪歪头一次，第二次幅度大一点",
+        "连续加油三下，幅度越来越小",
+        "连续挥手三下，幅度越来越大",
+        "鞠躬两次，第二次快一点"
+      ]
+    },
+    "val_test": {
+      "same_text_count": 7,
+      "texts": [
+        "先慢后快地笑一笑两次",
+        "先用力笑一笑一下，第二下轻一点",
+        "害羞两下，第二下更快",
+        "害羞两次，第二次快一点",
+        "微笑两下，第二下更快",
+        "微笑两次，第二次快一点",
+        "微笑两次，第二次轻一点"
+      ]
+    }
+  },
+  "compiler_audit": {
+    "baseline": {
+      "passed": 3236,
+      "errors": {
+        "model_range_exceeded": 54
+      }
+    },
+    "patched": {
+      "passed": 2487,
+      "errors": {
+        "unrepresentable_hold": 549,
+        "model_range_exceeded": 51,
+        "missing_hold_phase": 203
+      }
+    }
+  },
+  "persona_sha256": "56b4364bf1c7da22e6b6faadc094299e570f93375e0acb78f510c360d614aa41",
+  "persona_hard_constraint_conflicts": [
+    {
+      "recommendation": "cheer amplitude 1.15-1.20",
+      "constraint": "8.5 * amplitude <= 10, hence amplitude <= 1.176470588",
+      "policy": "reject out-of-range, do not silently clamp"
+    },
+    {
+      "recommendation": "bow+blink duration 1700-1950ms",
+      "constraint": "blink maximum 1800ms; bow may be longer independently",
+      "policy": "do not assign 1950ms to blink"
+    },
+    {
+      "recommendation": "tilt twice described as left-right sway",
+      "constraint": "current tilt curve goes to +20 degrees and returns to 0 each cycle; repeat is same-side",
+      "policy": "do not call this alternating left-right motion"
+    },
+    {
+      "recommendation": "wag tail mapped to smile+cheer",
+      "constraint": "no tail resource in bound catalog",
+      "policy": "unsupported for explicit tail instruction; an optional dialogue mood interpretation requires input_role and policy disclosure"
+    }
+  ],
+  "our_training_started": false,
+  "shared_changes": false
+}

@@ -1,0 +1,2323 @@
+{
+  "sdk": "Cubism 5 SDK for Unity R4_1",
+  "source": "https://cubism.live2d.com/sdk-unity/bin/CubismSdkForUnity-5-r.4.1.unitypackage",
+  "packageSha256": "2777b69d4cd02fecd48dc0fe9871700c95943f6d141c18758027bd9aa2ed1de6",
+  "installedAtUtc": "2026-11-16T09:20:15.123583+00:00",
+  "files": [
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_09.exp3.json",
+      "bytes": 1874,
+      "sha256": "328116a63a8f1537da240f9e4900404a175b70efbbef7c559b4ad87163cf79fa"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismCoreDll.cs",
+      "bytes": 13971,
+      "sha256": "cdf0b712142be0b0362be963e56119206779074f0dcde26042321af63254937b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/ICubismBlendColorHandler.cs",
+      "bytes": 473,
+      "sha256": "9920d098730ee2b89db6fe3e9e67b972f15848996fec067a8dba599007091eb5"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMaskedInvertedCulling.mat",
+      "bytes": 1105,
+      "sha256": "4abedea60dec702b8731d0d2d2a18ccce7565ede5a727ca9fea8288da343f505"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_00.fade.asset",
+      "bytes": 5514,
+      "sha256": "979b6602bfecb251d70da90cd1a1fea9e3a00895006064f442c4bc1bfab56e9c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/FrameRateMeasurer.cs",
+      "bytes": 8632,
+      "sha256": "5db983bc56baf914c8d5061eb2d4e3655dbbcdd2b7604f867f5d088a299f5547"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Expression/Editor/Live2D.Cubism.Editor.asmref",
+      "bytes": 60,
+      "sha256": "f74d241ac4af6a7cf38d4b56ce871e32294ef84b933af8f5b3f15d5a23bca726"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/HarmonicMotion/CubismHarmonicMotionController.cs",
+      "bytes": 4281,
+      "sha256": "b833b67d4ce13473e2e05caae55a06305519fe853a65f1137f1eb3cbc09ed80f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Clipping/Clipping.controller",
+      "bytes": 1601,
+      "sha256": "75999a16da025edda743689454304141d8aeb746f1da51bafd45035482ffe846"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsSubRig.cs",
+      "bytes": 17487,
+      "sha256": "6e47f3477eac4fa3ac84b0c222113b13d342e44fbdab18cd406adca97c36b0fd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Windows/x86/Live2DCubismCore.dll",
+      "bytes": 206864,
+      "sha256": "423552a211bc9d9c4e917fdd61a9ff259249b6ededa56c9ca856cdadbaa64ce1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Deleters/CubismAnimationClipDeleter.cs",
+      "bytes": 1803,
+      "sha256": "a7d65a6c285b80f009a5e2f35b5917a84be5ae44ee6473638b000b751822dc38"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/HarmonicMotion/Description.md",
+      "bytes": 392,
+      "sha256": "f3393eb724e559341adcf0306bd2e301b653c31d75fbf181998bf5502eaa56b4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/ArrayExtensionMethods.cs",
+      "bytes": 8697,
+      "sha256": "0243465841c87e66bd76a2370014c81afdbe8d136d9f6371d9985d1b234f0cad"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Deleters/CubismFadeAssetDeleter.cs",
+      "bytes": 2527,
+      "sha256": "a3667b59eb0872eba8764244d8fe44e115b24d61bcf1e06e17abb7ea16ca953d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/LookAt/Billboarder.cs",
+      "bytes": 1107,
+      "sha256": "439e1418fb4e54b79f98c612c014b50db7f90a645cb69b32e958c24bdf9014a5"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/DemoCubism4.unity",
+      "bytes": 1007038,
+      "sha256": "e93ad3ee4a0b6aa6778210936785f7b5d21accac53a25ea4b84f3040b20a4453"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Koharu.asset",
+      "bytes": 563478,
+      "sha256": "f4a4e552645fb9a5d5ccddb17dc5118879805ea27f0026faf65fb3f92beb6ebc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_03.fade.asset",
+      "bytes": 152540,
+      "sha256": "61a6a98f35b7286088e773094cb4e51f59d4a6f7f2d9d2ee57e63b9ca8f7ead3"
+    },
+    {
+      "path": "Assets/csc.rsp",
+      "bytes": 8,
+      "sha256": "90c766ae8407da69817bbe35fc9ef37c67f92d4247619bcad05dfd96125cc4d8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismParametersInspectorInspector.cs",
+      "bytes": 7654,
+      "sha256": "e6b007fa5cb0da348d746d82b6f4096fac4373e5aa7e30c20d3fff9f96b97498"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_07.exp3.json",
+      "bytes": 1987,
+      "sha256": "8bf587d3d7bef509166c8ff95cc9f47c23c895eaf55f9d95110263e44452a53a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Experimental/Emscripten/latest/Live2DCubismCore.bc",
+      "bytes": 92270,
+      "sha256": "48321caaae6f50fd72bb8d9d124a82baa75b3d5cdd3bca7e053cd324668b4e62"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/CubismOriginalWorkflowSettings.cs",
+      "bytes": 1888,
+      "sha256": "f0a439547438bb1a611251830e9dd66a3c5eba21998b8b40b92194d5e86d67b0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.controller",
+      "bytes": 1603,
+      "sha256": "b5ed611d38bfd017f9e61e3024ebee97c1aa66246a52cfb6fc15b7d08acd5dbb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MouthMovement/CubismAudioMouthInput.cs",
+      "bytes": 4206,
+      "sha256": "15f286ce8f6346ba2d45be1707c8c851b92d5f2fc74e24a8b34aed186907ee3b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_04.exp3.json",
+      "bytes": 1985,
+      "sha256": "abad61f4ec7f1a157d6b914643e5bd4ffb29964e67f538cace420ebc9f69a716"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/MotionFade/MotionFade.unity",
+      "bytes": 1711936,
+      "sha256": "6bbc7842dcd98ab67c09122d04655b80e21216693b10a61c4d52caf14798db3b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/ParameterRepeat/CubismRepeatController.cs",
+      "bytes": 3201,
+      "sha256": "6e7010ed5c43eb8d1a6d694f43df584eec5469db772266ae95c94d8adcd72a47"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Motion/CubismMotionController.cs",
+      "bytes": 11242,
+      "sha256": "f2de7033031d955655bee0872a3cd0c95d1df49c829d0b6be521659b67b12daf"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.2048/texture_00.png",
+      "bytes": 2492342,
+      "sha256": "d1dc7315a1b60149e540d26186f8f97ca52e55094e174b59ef0f6bcbc7d93dc7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismPosePartInspector.cs",
+      "bytes": 1607,
+      "sha256": "04fdbfde32e715c0855b4f97233ad75053bf16a037a025af7f9b52d0562ec367"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Pose/CubismPoseController.cs",
+      "bytes": 8324,
+      "sha256": "2a7203fa52057e4326c18b4dced1e7419e0d295c3b5c646c1b8b50dc57cada28"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Expression/CubismPlayingExpression.cs",
+      "bytes": 4183,
+      "sha256": "a4b1498008b4c380c19bd501c3a4fbef1312a9cc7d93e26d05f5b68cb1b66980"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/CubismUnityEditorUtility.cs",
+      "bytes": 1191,
+      "sha256": "94e9013203bc1f28239cbd42988463195ae5f912b0840f6026fb165d26fe3dbd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/AutomaticAsyncBenchmark.unity",
+      "bytes": 32795,
+      "sha256": "321e62ace94a6b68501f69304af2d8a578be2e7a63a7996c6eeb237cb3740632"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/Description.ja.md",
+      "bytes": 359,
+      "sha256": "545a80aea648dba52d095b5bd56c62d1d59770f1fe4e1e8d69f97eca0af35982"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/Editor/FrameRateUiHolderInspector.cs",
+      "bytes": 2499,
+      "sha256": "02f78a722dc55359662d29bcababa070e7f20688cae9f006be70b919ab457d0a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_02.anim",
+      "bytes": 213774,
+      "sha256": "dceb6e30958d2fac5e10ebcb7fe77f97b944babb196569f8426170b89e22ae78"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/LICENSE.md",
+      "bytes": 3090,
+      "sha256": "1b14d964eaf7bb16e5ca2957c2612391216d500aa27594b5bd0b17f1a4746101"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/MotionFade/Natori.controller",
+      "bytes": 6717,
+      "sha256": "7ea12b7fbe9bd649dedff9dfc1f31290a28bc1dbafa99fb42e6b82396b23e802"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/sample_01.motion3.json",
+      "bytes": 28330,
+      "sha256": "21293d1d7c91f8d8b055f5215274df663e345a198517ebf8e3d26613ba37324a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Koharu.2048/texture_00.png",
+      "bytes": 1262815,
+      "sha256": "a470c95d92039c689e3cfbe6069d4fec7ce89cb1e70523456ee51fe6191d3954"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismRenderControllerInspector.cs",
+      "bytes": 3652,
+      "sha256": "ab96d74958156e96207830dad21bd16eaa83a3cadc822fd38adaf490af1ce29b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMultiplyMasked.mat",
+      "bytes": 1095,
+      "sha256": "425b45e0b4db7e2f831903396b7a91cf8af822f2855dde3fd05e054cd2aeb6ad"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Clipping/ClippingMaskTexture.asset",
+      "bytes": 466,
+      "sha256": "b6ef246e3f3acc0aa20a91c935813f4704a1dc6d33c24262ccdd256145c6724e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.prefab",
+      "bytes": 943846,
+      "sha256": "1d5d39262a780f1034d94d489569b4c5c76ca204305a7c961af53010016a8305"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Motion/CubismMotionPreview.cs",
+      "bytes": 1737,
+      "sha256": "93ba7fe5aec1a96eab9a01219262fa19424a77ca4ee67c3d5166d206f896a86c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskTile.cs",
+      "bytes": 1900,
+      "sha256": "905a04358a65122d57e94c40aff75c76659619b98600624cf4c2cafd2dec8766"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/ArrayExtensionMethods.cs",
+      "bytes": 1597,
+      "sha256": "a6d7344d0a5824028f6d012d249a60ee93a7969ceede695a738b62580a6fe337"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Clipping/Clipping.prefab",
+      "bytes": 22891,
+      "sha256": "dd72cb0ac1aeb1039992e856e59b4f10a312bd68920e24ef8e137828059031f3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Expression/CubismExpressionParameterValue.cs",
+      "bytes": 740,
+      "sha256": "f57ffdea8ebe31c6d757073b2bd1e8e33bc048496b305b61f70e12fe4faf71f2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_01.exp3.json",
+      "bytes": 1855,
+      "sha256": "4a00027c15dd0747d171fcf8ff7ec5da7d2acbf374b37f1413a79193cf03a822"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_02.fade.asset",
+      "bytes": 46031,
+      "sha256": "d84ed42806c8c6426d4b9fe12c50109ee7c1eff6a76bd33af438e35fa391d734"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/CubismSampleController.cs",
+      "bytes": 7643,
+      "sha256": "b5f8067a4936a14d36541af91301bb8579a1bcdc05240f307bbdae10eccecb82"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_04.fade.asset",
+      "bytes": 87239,
+      "sha256": "f2ed5e8e4d2daa16e7af735298995e485a31b84698ff483d0af0bab611f696e2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Editor/Description.md",
+      "bytes": 168,
+      "sha256": "a1268025fef776e88157833da8deb5bbf0f3957a5bf70dd09c1fb69daae6162e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.pose3.json",
+      "bytes": 254,
+      "sha256": "efac160eccb7183ee6555d4e53a739042e1c55b92f59a99c2e4bed8e73a5ab91"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/CubismUnityEditorMenu.cs",
+      "bytes": 5723,
+      "sha256": "4447c8f916d9bf1789e9618cb9477acd0b85824d99791b7305c9f59d1ba888f3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/sample_01.fade.asset",
+      "bytes": 83806,
+      "sha256": "1462a3c35b9c0434ea3bea2f3c498a46835e230e53144ef3550932d0a453686c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Masking/MaskTexturePreview.cs",
+      "bytes": 1249,
+      "sha256": "6e73b0a1750e9f6b05fab6dd4a70b0bb01248262b07c63f5955662f7d79115a0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Koharu.moc3",
+      "bytes": 281536,
+      "sha256": "9319db5ae6ffe852fc4dce947331a5cc1a9e18462f79a5e4da96b40c6e5de9af"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/CubismFadeMath.cs",
+      "bytes": 814,
+      "sha256": "93a323fd7cb85d952a8219595f42560cc33cda8bd1cecfd8344ea7da6c3d35f4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismLookParameterInspector.cs",
+      "bytes": 1439,
+      "sha256": "7e6ac99ac11b04f3b0c0c3a4e84b271eda2ddacc12cc0ac8b08902bac68444c4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/UserData/CubismUserDataBody.cs",
+      "bytes": 685,
+      "sha256": "15b66fcc131b19a7cc8a2d983e38449a6df34de7b8467a9e15e6bd92ad251976"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/CubismAssetProcessor.cs",
+      "bytes": 17495,
+      "sha256": "8ec9a3e5a758a6b87f674f877aba3810ca7f5743513b8d225493df08289ecd87"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitAdditiveMaskedInvertedCulling.mat",
+      "bytes": 1111,
+      "sha256": "2c499ebbb993bf313f614f2f23e55cae4d1c85667a44aa1fa91be7e3576ed2d9"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/Description.ja.md",
+      "bytes": 166,
+      "sha256": "56ff4c3f7da8bdb42b5242f7c8f79cc3a9462c739f604de9dee82273324e2d4f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/Description.md",
+      "bytes": 141,
+      "sha256": "ac6e45d17f70be6697329cde08f7e9bd9cd080f9c8fab5a31d6232a38807e044"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_03.fade.asset",
+      "bytes": 76013,
+      "sha256": "31c9910e5b0e6659dfb000b18d796aa6b94b6ab1831b4780c36513e24ad4d9cf"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_03.anim",
+      "bytes": 418772,
+      "sha256": "96eb88e8bc2e3723afee1d78ed8bdfcc996e4bfe26466f2e5da0ff02e9d2f39d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Raycasting/RaycastHitDisplay.cs",
+      "bytes": 2552,
+      "sha256": "7a51ef1b480859ec5128e3f3434850f2339edf68aab8dbb0871d77da99e3f9f7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_08.fade.asset",
+      "bytes": 69463,
+      "sha256": "4bb0db3debe57dafff3454831f0dd01fabc46cf35e86a1371679c30ad8f226b8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/LookAt/CubismLookTargetBehaviour.cs",
+      "bytes": 1171,
+      "sha256": "1c0d9bfa92b3d20db12cc2962a54a3d5a430d7adfbeabcc23d9d9ea4d4d85c3f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_01.fade.asset",
+      "bytes": 74329,
+      "sha256": "6780e1b6473eda1977b72660e4ced6d95d55a9fa2f63d2bb112d205dd935b844"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismPose3Json.cs",
+      "bytes": 3855,
+      "sha256": "4e9608a6d311fe6d7168b0094fc6cb25104b7baa0438c30b6156be0cc7b4c71d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_06.exp3.json",
+      "bytes": 1985,
+      "sha256": "52f1e391008d61efb17a33602c004a637a42bdb8af8aca3d2319ac5dac215ed1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/face01.motion3.json",
+      "bytes": 4496,
+      "sha256": "bc99053a65f60690bb689c44a91e2963f6d70acd6f279ba6f6e2cf29140f60f7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_04.anim",
+      "bytes": 253820,
+      "sha256": "11ae1a583fdea8c07e1de9bab70bdf2c01d53c0c21d8faad73da24889964ae52"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismMaskControllerInspector.cs",
+      "bytes": 1416,
+      "sha256": "b01d4a79291a3d2c3fe8b63a544d5764e1ccb76ad0b77ce8ddfc647a683862dc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/Editor/Live2D.Cubism.Editor.asmref",
+      "bytes": 60,
+      "sha256": "f74d241ac4af6a7cf38d4b56ce871e32294ef84b933af8f5b3f15d5a23bca726"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_05.exp3.json",
+      "bytes": 1848,
+      "sha256": "eb308806036fe4e977afcd30d92c036b60bd04fd585df488b398a4a59da31f60"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismRenderController.cs",
+      "bytes": 29278,
+      "sha256": "8933a497a0625c51bce344c4c0a963b94d202279d6c08142037446ef0720fd1a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_02.motion3.json",
+      "bytes": 41809,
+      "sha256": "68e6e12c14d2c06504891971dcdce7771637aedbda9ef5edc616fd4f6972d20c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_03.motion3.json",
+      "bytes": 21062,
+      "sha256": "5b2d1910a114fae8c86e8589506872681a233448c11d7694f0faa819325ebe7b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_02.fade.asset",
+      "bytes": 137703,
+      "sha256": "47ea75bf25940e5c9d7c51054807426b3c3472ec2441568f10cdf0761af8c80e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismRaycastableInspector.cs",
+      "bytes": 1307,
+      "sha256": "e85c93d38c6244d5df5aa8f0277b178a1fbaf587e8ffe7ba3325039dfb33ca49"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/ICubismFadeState.cs",
+      "bytes": 1658,
+      "sha256": "90bd4f776c9c1e3eb82c298f8f25386b9b9436730aed6b3256241bc1f601c0cd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Pose/Description.ja.md",
+      "bytes": 252,
+      "sha256": "0b18320849027cefd2dee1b6ff6bea8716c54716851f88d913bbe8227b32ddd6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_00.anim",
+      "bytes": 17553,
+      "sha256": "430310f9741ad86e7cd951313bcab04a8b4a37f40eba7c7b602d4e11a6827fbf"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Expression/CubismExpressionList.cs",
+      "bytes": 550,
+      "sha256": "13cf3dd19bc00a03163432cc232b572ef0e9bdf150b3feaf37c5eed5d9603e7e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_01.exp3.asset",
+      "bytes": 1795,
+      "sha256": "e2abcade6349166b5d97aff128ac2b3b47ba487b0d18c53dcd48d2bc7ce69d67"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Editor/CubismiOSPluginProcessor.cs",
+      "bytes": 3699,
+      "sha256": "fd08e5afdd1af6a1f96032a76743ef8c5ec9b870c13d9f7bdf52c576a727e908"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Pose/Description.md",
+      "bytes": 179,
+      "sha256": "efcc0a8e04ec1b4d72fd6a1feb4ce6d496735e12eaf120fec358af3d5f30eedd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismMoc.cs",
+      "bytes": 5193,
+      "sha256": "6e93879ae709a02b9c94f1a6442ba24307b854e0ba403702351d95ca0be4d24f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/LookAt/ICubismLookTarget.cs",
+      "bytes": 849,
+      "sha256": "6c25d64df1a8887a4fe3ccaca98d340f3e571237154354a3ca8a9549fa8f6dda"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismMaskTextureInspector.cs",
+      "bytes": 3051,
+      "sha256": "e8a265198b1e3fa127d6a092abe7f710b50c7c4f98383da34827635f38eee305"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_01.fade.asset",
+      "bytes": 115459,
+      "sha256": "b62fc4effe86754f8c65517179f1c4986c349d711577ba48f86695053f493bc2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Raycasting/CubismRaycastable.cs",
+      "bytes": 612,
+      "sha256": "d42db8e385b5cb94d4713de4f486f11fdc0f907dce5c9d4eab64214a4d8f7158"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/RedistributableFiles.txt",
+      "bytes": 951,
+      "sha256": "793c95b10bfcd6bfa11dbc8dca5daa56f4a6b772d7312c6b9ddcdec2f02ab88a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/TotalElapsedTime.cs",
+      "bytes": 2685,
+      "sha256": "b76d38adc7dfa47da86baff4ab5bd4d7181f1f4ac1887c6b3d734c8c956dc937"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedModel.cs",
+      "bytes": 3608,
+      "sha256": "97dc9737352425607e9b7bd034315135a97095f1ad1826fdc89e692976c85cfb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismDynamicDrawableData.cs",
+      "bytes": 4102,
+      "sha256": "c85514b4d0eaa85bc71d0f6cca584ecfb41376bd97881f37d2395f007df83216"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_02.motion3.json",
+      "bytes": 13541,
+      "sha256": "9db0c12a957829078987e0fb7352681a5064c663d4c27366529272f579d3973b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Pose/Editor/Live2D.Cubism.Editor.asmref",
+      "bytes": 60,
+      "sha256": "f74d241ac4af6a7cf38d4b56ce871e32294ef84b933af8f5b3f15d5a23bca726"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismCanvasInformation.cs",
+      "bytes": 3055,
+      "sha256": "41298fa23c517894ce1e4dc24f72afd0fbee82965bb1433ab6380782656e230c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Experimental/UWP/x86/Live2DCubismCore.dll",
+      "bytes": 78352,
+      "sha256": "e57961fc7d246083378b8d929ebafdad37305537a7859dd3b23a56a2cff90421"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismInspectorAbstruct.cs",
+      "bytes": 2619,
+      "sha256": "6573dc2420798ce9db06e2e4b68c9a1200745f0752c764eb5f206509bd74ca4c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/Editor/CubismFadeMotionImporter.cs",
+      "bytes": 15631,
+      "sha256": "5ee2e596c7221c3550baa6e2bf4b13614e58df24d35ea7c053c902664350fa91"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Importers/ComponentExtensionMethods.cs",
+      "bytes": 1497,
+      "sha256": "d372d3c13ab61d05d5edf23cbce635b84537fea24fc737b3bd8179bd3b773b17"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.2048/texture_01.png",
+      "bytes": 1505136,
+      "sha256": "d80053659ecb2eab98269ade228253034827b8744db1fcb67843acbcc37906de"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMasked.mat",
+      "bytes": 1088,
+      "sha256": "8ae3b913ff410f9db6e14c713769c9397f7e87c2f4ba0f67dd43805a2572277e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismPartsInspectorInspector.cs",
+      "bytes": 8212,
+      "sha256": "61345cfe9b8466cdcdccdc85e96b163ce99a27a58436dfd11649d1abc2b4f35e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Android/x86/libLive2DCubismCore.so",
+      "bytes": 421268,
+      "sha256": "6a26ba1ad1b387f50d73d87ce144639f3aceffb36e630a8cadb2e7ca478e0b2b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/README.ja.md",
+      "bytes": 7229,
+      "sha256": "54be9ab4282bf9926f85e4650d5fcf8a4bfed2a03eb2d8320a3b59718d456dc9"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Motion/CubismMotionState.cs",
+      "bytes": 2651,
+      "sha256": "b102c03cba72397c4d543c4f73ea1a238c437a11e5a4e1ddfd59f113a3a6605b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MouthMovement/CubismAudioSamplingQuality.cs",
+      "bytes": 686,
+      "sha256": "d9b3715204ff0f3a7a12148602c6e594f00a7fb4da5bcea80203078cb20ce5eb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.cdi3.json",
+      "bytes": 16797,
+      "sha256": "f261069f302c013f1c60b48045aa4bf5ac2cb086ebb54917f7e5c3f47e5c8f81"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Animation/Koharu.controller",
+      "bytes": 1908,
+      "sha256": "89c03cf233d0c38afa81d0fe49090e3c3cbde75c80db2c31774bc2de73529311"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_01.motion3.json",
+      "bytes": 15644,
+      "sha256": "a72450ad79739192fca350c327ec45b699d9fafb25304180a5283c9746ee5a44"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_04.exp3.asset",
+      "bytes": 1761,
+      "sha256": "3cd7f9b9fd5f84d3ad670f5500a11ea55f5e511712ca5831c9427d704548fb46"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.expressionList.asset",
+      "bytes": 1010,
+      "sha256": "5f21a85e36a0ceaa2b908c2814c70000798155a33c74ad51421a5a9e9d1506c5"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/HarmonicMotion/HarmonicMotion.unity",
+      "bytes": 546074,
+      "sha256": "8207c1eb63c3f771d498e77066eca4de826b79a2c42a5c0f45e30f30308384a0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismDisplayInfoCombinedParameterInfo.cs",
+      "bytes": 851,
+      "sha256": "c067f4b1be486c53e4d69799230645c8b30e5c4e30252c9599f3fa50e42f6db2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskRenderer.cs",
+      "bytes": 3913,
+      "sha256": "59b0529ca370bdc05d721be7a241a7b468c1500de5aed4f4fa48b1ed85048e51"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/LookAt/CubismLookParameter.cs",
+      "bytes": 2150,
+      "sha256": "de40dea7fdbb775a39fe0f98df43ffd58a03ffce59a6aad6328cd95bfc710cec"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_05.exp3.asset",
+      "bytes": 1800,
+      "sha256": "c4e8b0799debae84e6ceb590a672de26348a21cbcad4d9f3584b2ef916e89795"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_03.motion3.json",
+      "bytes": 48041,
+      "sha256": "fe6b990b6d26a48955c0b33e27c3de8e020c98d2d06be41dcdfecdd053e6dd0f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_07.fade.asset",
+      "bytes": 74444,
+      "sha256": "66de16f6c5603fc12916dd9ab08df483fbeb1f58b93f8e3c3d53c3a009429f1f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/Mask.mat",
+      "bytes": 591,
+      "sha256": "c911e1995b4a3ad16ce78ac914714d788d2b041d9534dac5319ca495b443cb61"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/ICubismTask.cs",
+      "bytes": 481,
+      "sha256": "8370c994e67cf03e8463b0344e30892527eb214d78adf998c7f848de67d2b148"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedParameters.cs",
+      "bytes": 4522,
+      "sha256": "8772eeabbfe6bc7cd9b2f5f9be34b61e454c05b6359228c3e0807d1ec103ee8f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Koharu.prefab",
+      "bytes": 451480,
+      "sha256": "c82931cdb0f930d4a3d9ba0aa1277980a0884c405855c148a357a23e740d404e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_04.exp3.json",
+      "bytes": 1860,
+      "sha256": "cd4a3a18cd8bb2fce897fda9c158fa038aa6587e3b2a86f5a14eb0f40155d981"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Pose/Editor/CubismPoseMotionImporter.cs",
+      "bytes": 14368,
+      "sha256": "a32a2f968afb4e930fbcc56f80f912f4dae0fb214bb9e991f13739d9f1f6c1b0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismLogging.cs",
+      "bytes": 2398,
+      "sha256": "6074c8350cad97e37e3e36ab3a8205b89f4dae0639be5ca616607c9fcdf0533b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedArrayView.cs",
+      "bytes": 21323,
+      "sha256": "32d0e062d0dab772498bdaf5eac3c4b2651052d8fc4643e52148dd8a0dfc39dc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.prefab",
+      "bytes": 1341299,
+      "sha256": "f7ab85b7c4165c4edbda7533c448e3bc3f008ca2858242e8dab635b030635da6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_07.exp3.json",
+      "bytes": 1848,
+      "sha256": "0c2b8cf903e0a90f993f1cab0db48a54b9db255a3867f2713ca7c02c79404fa0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.controller",
+      "bytes": 1602,
+      "sha256": "fabe747c3dee46243ece2f4dff6dfdd4cd61e281acc66043aca81a635f09a98e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedMoc.cs",
+      "bytes": 3317,
+      "sha256": "6742c2c60f0976120d349a48f7078a05ba43c42e09a19518d5f656934e034c1d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/Unlit.mat",
+      "bytes": 1160,
+      "sha256": "31eae2cdca74c6cea3934b518e1b0d15b3041c79a8df4e445003228f8a99c229"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedCanvasInformation.cs",
+      "bytes": 2311,
+      "sha256": "b9917966627adf3b8c5e7b83d1064f6bb8388d6ccc2245f0c0441957f40fba20"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismMotion3Json.cs",
+      "bytes": 26417,
+      "sha256": "6cea10c6e1a6d60bad1d8343dfe4ec1caec85b55fb7c2dd983f08bf92e97d9ac"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/HarmonyOS/armeabi-v7a/libLive2DCubismCore.so",
+      "bytes": 115616,
+      "sha256": "56d2708e2ee5dafd52d33c76840027fcd3b3e8b7a401249ed54cc602fc81905e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Motion/CubismMotionLayer.cs",
+      "bytes": 12331,
+      "sha256": "9dabc59de6bef729502e8486ace4854404fd772b1974ac647c7488387434006a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/FpsCounter.cs",
+      "bytes": 1436,
+      "sha256": "d5db195f7b384159327b5eff5c279c80ac77d4a47faca4c442460caf859d1e10"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitAdditive.mat",
+      "bytes": 1074,
+      "sha256": "a27c45743d01322d4e860072aea412e35b21f86f7c449458dc40cd90803498df"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_00.motion3.json",
+      "bytes": 10165,
+      "sha256": "b15a5ba6d59f7369b2b44f960f809c588921d008317d9f15f8a7c66eed0b3fba"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_02.motion3.json",
+      "bytes": 19926,
+      "sha256": "d2cd0c9315b9058cceb898b71b8e660c14c6e41f59b7b1ba2cf8d9d25b6699b7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/LookAt/Description.ja.md",
+      "bytes": 559,
+      "sha256": "b1b24c2b18c7bbe5c252ff2d3477ff8db01e742a7b97011f654bc197c55034cf"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/ObjectExtensionMethods.cs",
+      "bytes": 3319,
+      "sha256": "5e332d7433b8a8c4719be69cd3b03d9392f8ae9b38e33ec6873aad1019e07471"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/CubismFadeCurveType.cs",
+      "bytes": 509,
+      "sha256": "185fd7d4a85c8805316d63efc729b10e6b4dabf19c9f8c8aaff36cfd664d83a3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Pose/CubismPosePart.cs",
+      "bytes": 617,
+      "sha256": "a328865ee6159eb2d2eecb0ca9a815c081d8de55143a0ca2e7f984775c9c2eb2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedDrawables.cs",
+      "bytes": 8718,
+      "sha256": "d37d075190c6ca308306fbd97af410cdf8db71a4b08f56b6eae408ccf9e217e6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismLookControllerInspector.cs",
+      "bytes": 1397,
+      "sha256": "10d57809a84b90fabc958f44f5c6accc62bbab6a6f6edfc48c04387c4e502182"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsController.cs",
+      "bytes": 5471,
+      "sha256": "5d65d41041f750382714f234bb28e06b3032887c9785acdfa73c3c4e61749e0f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismTaskQueue.cs",
+      "bytes": 1267,
+      "sha256": "51626dac235aef6713692f3968c0bb1d5d70f4e6ee14850059b246d6809b7aa3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismHarmonicMotionParameterInspector.cs",
+      "bytes": 2042,
+      "sha256": "0c17333abc94e6cb362bb0f8168a4e8d6a5c19e93dd159b75ed7059ad801cee2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismParameterBlendMode.cs",
+      "bytes": 745,
+      "sha256": "d99130f919338060d19fdeae2ab1982ea2aff9e28c6aeefde882f533418e5da8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_03.fade.asset",
+      "bytes": 83830,
+      "sha256": "fc05f3f724247b0f2648e1a87ae8cb651bdd505b3f1fe65e4c5fa3141b43df4c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_06.exp3.asset",
+      "bytes": 1751,
+      "sha256": "6cc41fd59cd57db1c058fe0e0396a0efe45d7099e6cc9ebdd76f730655191175"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Expression/Description.ja.md",
+      "bytes": 311,
+      "sha256": "19259553e864a88d9038973b766de10e1302c96c7530df5f1ff8885dca9a1cec"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.physics3.json",
+      "bytes": 25513,
+      "sha256": "72f3c854bf00b551bd379785975571c88239b2da9e6db42a9935bcf4a9f2fa3d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/CubismLookTarget.cs",
+      "bytes": 1221,
+      "sha256": "b010ab423baecdd97b2e79b7d468617e709f5fb26541291f801a2178bf60ec15"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/CHANGELOG.md",
+      "bytes": 6142,
+      "sha256": "2087f2246caa0401bf54d6aff06d290119589255c56d850e383796a6afdf843b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismRendererInspector.cs",
+      "bytes": 6706,
+      "sha256": "ae38f055b716c6043739e38a440230280847ffc593b3bcd9607083b2a6f4909a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_01.anim",
+      "bytes": 273184,
+      "sha256": "a47d36980af1f908df18fece1b386fde95dfb2693606f7cc3d6b96114ccc80b1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsInput.cs",
+      "bytes": 7291,
+      "sha256": "953da18d9129bc9fb73fe1b96c2e8482908a0a6180be73ef0d9d1724d8c7e9c1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/ICubismOpacityHandler.cs",
+      "bytes": 795,
+      "sha256": "6d1df53dea02401db502b981c45e69a0d29e154f1b68d960d9a904a14743e06c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismBuiltinShaders.cs",
+      "bytes": 901,
+      "sha256": "dee447685ffec54c5f11e40fecaa1c3f6ab24ab7ad25471c57c5f8101f0010f7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.fadeMotionList.asset",
+      "bytes": 1179,
+      "sha256": "b9b5139f313aeb3cb67e1e88c23862bad95ada6f85057621a1f243226703eef0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_03.exp3.json",
+      "bytes": 1853,
+      "sha256": "16e50805fdd459440c7d13ad4999aed856d066d60802c9f49ad03e0fd0f54a44"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Motion/Description.ja.md",
+      "bytes": 340,
+      "sha256": "d330ad90745b6d9f354a0f85caff4d5d271eb93c7192146d5398d85eba3bc5f6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_04.motion3.json",
+      "bytes": 27346,
+      "sha256": "a95f67d35c81755dee7f3be1e5e60171f090026725f628c99a1e3585985a1ac1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Masking/MaskPreview.mat",
+      "bytes": 2065,
+      "sha256": "39f10141c3e684a777ab920b6553b5124a1da2bf1e11b2338edcfab08694a10e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismShaderVariables.cs",
+      "bytes": 1503,
+      "sha256": "714e0ce27653b4145ab9124db5e38fff5773d2606dae2c70b9217b4667fc85db"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.2048/texture_00.png",
+      "bytes": 3130953,
+      "sha256": "0b97283d69e62d346bcca25f8a91a5dd477f2e668ad9801b15fa7f108631c624"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_08.anim",
+      "bytes": 213438,
+      "sha256": "f4fc32bd01f57ae8ae1ba5247704242be1d59d63fc8627a879da94d6c10f7129"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_03.exp3.json",
+      "bytes": 1981,
+      "sha256": "460a3077d61adfdd1e6b9a062d0d7c3fcc2fb74c80f67ec3649982a9fab49bee"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/PerspectiveCamera/Description.ja.md",
+      "bytes": 640,
+      "sha256": "f75482765d1a8345e1fbb55fb67a213c098badc19e99d8d5faad3dec49c59757"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismParametersInspector.cs",
+      "bytes": 2671,
+      "sha256": "12d1375eee3852a54c963f595de9d58fbd3bbda43a9e7883c04e23f8a9d08e3d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.asset",
+      "bytes": 1759763,
+      "sha256": "b804237507268ee59d3a9c01b0ae7e0bb095b8253b62c105754f63f009f88d32"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Experimental/UWP/arm/Live2DCubismCore.dll",
+      "bytes": 68624,
+      "sha256": "5fe92f31c2481d8558a3c86aa6b447ab55052bd3d784aaa4e5f0e10bb5ec3920"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/MaoMaskTexture.asset",
+      "bytes": 461,
+      "sha256": "cf31c2659fb06f8326e596e37276ac1002697f91253413b59beccf5f547e89d0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismUpdateExecutionOrder.cs",
+      "bytes": 1718,
+      "sha256": "18e8d95092449ddcf9c01dbd62432693ede1adfdc153e624282a885e983d147f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Clipping/Clipping.model3.json",
+      "bytes": 122,
+      "sha256": "d696e2ffbfc28b8d797dbc8c98626d7e7ff7ec30fb96fb7820fb62b872b9f1aa"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MouthMovement/CubismMouthController.cs",
+      "bytes": 3572,
+      "sha256": "2bb262656de182eb4df9499392d5a5fee6054037023e63e9e3e6283f03347fee"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Experimental/UWP/x64/Live2DCubismCore.dll",
+      "bytes": 100880,
+      "sha256": "54e3ebb2dbc406d7c716d898a32b1fc3a18ae5e739645b3f460edd586007a53d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/MotionFade/Description.md",
+      "bytes": 232,
+      "sha256": "d01bfe09517095046d0fbafe7ea82a953c7207b355a2c639fabf284118a7ed6e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Deleters/CubismDeleterBase.cs",
+      "bytes": 1159,
+      "sha256": "d11d2c4127d4ef5c646ea0059af7d8424c72ebc1c215fc233360ed6520a2b6d1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_03.anim",
+      "bytes": 188438,
+      "sha256": "ba6a8ae88f6409b5ed00c4728621e797d841b23a10b38b6d0ccd81f35e1b10ff"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMultiplyMaskedInvertedCulling.mat",
+      "bytes": 1112,
+      "sha256": "3e5dc7774d2030d5fea73b7747161a11716508c36b6f6e61aa4ca81adece2f33"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_07.motion3.json",
+      "bytes": 21628,
+      "sha256": "6dce3d2fec68f0e85811c8862652766ac6157403e407552410c68fb1088dd449"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_01.anim",
+      "bytes": 165637,
+      "sha256": "543e1df9ad05b0214e90a2eba04d12eed95eced199d2056a8a5cf98127ac70b2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/GameObjectExtensionMethods.cs",
+      "bytes": 1149,
+      "sha256": "bfae7cb8e21f4f3f84680a623f3aa182f0748c62de89ce13cb03137d1a91df2f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.pose3.json",
+      "bytes": 480,
+      "sha256": "e3feed602d86d4dc37365622db1c2950dd6707e13cd9a29afa7f9dc9fcebe398"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_08.exp3.asset",
+      "bytes": 1766,
+      "sha256": "3d2cfa2abba5e6ada4465f035c4ae90650ef61a3b69e22bcc62962cb74959ccc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Editor/Description.ja.md",
+      "bytes": 241,
+      "sha256": "29f91d9c2c9d095b116276bac761113dd0c6a68ba03e31fe27595848fde1c4e2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedParts.cs",
+      "bytes": 2049,
+      "sha256": "2362d322c1cad7a4a266ccad6e4233b097020d0efeb1c0cf2b28d5a2d30c7f10"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_09.exp3.asset",
+      "bytes": 1765,
+      "sha256": "7831d64ad8fdaf221b3bdcfe6a127cf138cdb478194365c7da82e297b39e2949"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Importers/CubismModel3JsonImporter.cs",
+      "bytes": 12333,
+      "sha256": "1a31f658cf8b7f0de3e7761e761cf1016f65c55ec6b6cd971d4b103f2a799005"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_03.anim",
+      "bytes": 280871,
+      "sha256": "4b58575c44b85dbb4eff51f845a28edc8bbd66acd1375aeafd3d9bda1fa014c6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/HarmonicMotion/Description.ja.md",
+      "bytes": 466,
+      "sha256": "e376d6e77be77cf31d08eddedb77eeaa5bd5e4109c1b44bdfa9e138b9a8afa24"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_05.exp3.asset",
+      "bytes": 1749,
+      "sha256": "b784fda064088ee45c1b4347baa322360b18c5c5003fb82ed295029265a7204c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.asset",
+      "bytes": 958612,
+      "sha256": "db8626b6179f072ad85c0b45cf566f4c3caaf60c8f966c218008221e468e4c96"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_00.anim",
+      "bytes": 107446,
+      "sha256": "2b8088badc08aff8404f8ae7014d2967d2867c1992da2b56a550fb1956bf6196"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismParameterStore.cs",
+      "bytes": 4801,
+      "sha256": "a0763b2bb600522673b897d8360fed9d167aa7ed26f1cbfbdfb4c2f2a2237ed5"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/LICENSE.md",
+      "bytes": 520,
+      "sha256": "b81e37048010ef1d336106151201a0323c3309cae44aecdedf57831fe88fa991"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/CubismFadePlayingMotion.cs",
+      "bytes": 1715,
+      "sha256": "7b7b183fbe98d352d3b41b80d8d29b0abbc0fe9f9ce78dace25c0866308264c9"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/LookAt/CubismLookController.cs",
+      "bytes": 6135,
+      "sha256": "11e43716951a603cb8f322b5c15f85ef046d5a2b170101bc3596ba298d4de9bb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_07.exp3.asset",
+      "bytes": 1749,
+      "sha256": "d5f01805febbceae3516773b5d93c001189437ac170e6bfbc9d49b75d5ef581f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_02.fade.asset",
+      "bytes": 70179,
+      "sha256": "87094f4c53e624764ccce4ef455471b0057e7803d6144b3e43147c8b233d1815"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismDontMoveOnReimportAttribute.cs",
+      "bytes": 620,
+      "sha256": "0194b4f6f3a445de00f791e4a141f5822ec1fa8959bc20534a1983296cd6eaa8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Shaders/Unlit.shader",
+      "bytes": 3946,
+      "sha256": "517c3994ab041aabc18761699d0b23fa3d693d207a21635f9d613461e6c3638e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_05.anim",
+      "bytes": 239056,
+      "sha256": "a8166364635b28e60fbdf743668133bf863a0eb0490b208157aa93f1d47d9d42"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/body.motion3.json",
+      "bytes": 5865,
+      "sha256": "1f1870fe095d39862a016b6ae59089a99890d3a6e9f6b36e9c3df43f6067714a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/iOS/Debug-iphonesimulator/libLive2DCubismCore.a",
+      "bytes": 217248,
+      "sha256": "af031337b7448ecd7cc5b23fcbfc4ba7bbb4d80cc59a1e414b7c79e944541389"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Experimental/UWP/arm64/Live2DCubismCore.dll",
+      "bytes": 76816,
+      "sha256": "ddd6ef3b4d2d91cc2ee134e4f199e3a299382f00f44446e0a37ba0e45804d3c1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/HarmonyOS/arm64-v8a/libLive2DCubismCore.so",
+      "bytes": 85808,
+      "sha256": "328cb068a6461f7cdd06be2903d1ffd8113e618d8d7e0c4916ea4a3475f096ec"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsParticle.cs",
+      "bytes": 1784,
+      "sha256": "0a56eef73796f83e82986cb337e6c819dda94d73230137b20a0e59bf49e7adb7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Linux/x86_64/libLive2DCubismCore.so",
+      "bytes": 110808,
+      "sha256": "97097425b02147e508e106b2ddb1cddcbfdd1be052296d184753b454c2cc656b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/ICubismUpdatable.cs",
+      "bytes": 552,
+      "sha256": "c29e0ceda2e45d373a71803bf58ae13ae345c0932c4b3331d3f08f33be08bebd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Motion/Description.md",
+      "bytes": 237,
+      "sha256": "327a4b283f27aa99a0a8426fd91e8e00249dbd47413c59f976810750a1e388e9"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/GlobalMaskTexture.asset",
+      "bytes": 464,
+      "sha256": "0ac45760fdabe6fc1c47cfeb5dcb105f4646193fefbee822fc58acf641d16087"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_02.exp3.json",
+      "bytes": 1851,
+      "sha256": "23181a539e73f471d52d8396aee03f2d025361db6729688063f2ec391da0a439"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Resources/Live2D/Cubism/OriginalWorkflowSettings.asset",
+      "bytes": 481,
+      "sha256": "58c575df5ba3fdefe40fc4edd485aba908965ca4f9de0f9b93a16b667ef9758a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/iOS/Release-iphonesimulator/libLive2DCubismCore.a",
+      "bytes": 121400,
+      "sha256": "28af66cceeeab516aea84c4f6a72d4d3c9fb193f377fc90b03517790c97fe6a3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/Editor/Live2D.Cubism.Editor.asmref",
+      "bytes": 60,
+      "sha256": "f74d241ac4af6a7cf38d4b56ce871e32294ef84b933af8f5b3f15d5a23bca726"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismDisplayInfoParameterName.cs",
+      "bytes": 824,
+      "sha256": "1284b1f518a774879cbbf42d5fcc66db0a05344887e98539e28c1628df9f344c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismMoveOnReimportCopyComponentsOnly.cs",
+      "bytes": 625,
+      "sha256": "29fe39e216d9fda1aea26ce2b5cdc9747c42af07523e47cf28b924d732f4b155"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_04.exp3.asset",
+      "bytes": 1799,
+      "sha256": "7602ca13a0b41f1b920c2451d425aec6d59969775b522aef70f575580821b068"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/UserData/CubismUserDataTag.cs",
+      "bytes": 1620,
+      "sha256": "8234c34322db31a7d64f9abc0f56709959f5e6ad14548d105c0a299133d9a3ad"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/ModelSpawner.cs",
+      "bytes": 3795,
+      "sha256": "e3a59cab383204e7e478d01bcb33779ab5e7628a00577e04d4b0d708343d79c4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/IntExtensionMethods.cs",
+      "bytes": 850,
+      "sha256": "7e7d1c0ab626056bb9ac10db866e6bd0cc0b855e4d0b5c1e893c35a996379fc3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_00.fade.asset",
+      "bytes": 33818,
+      "sha256": "117d4f14df138c9a98f7746532352a2d9b39c45fdfc4e92e585850775e002ef2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/ComponentExtensionMethods.cs",
+      "bytes": 1770,
+      "sha256": "30fd04bc992de726d00f168fa6e210d15ff4bd61a676ee697d41b883a6c21b17"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismDrawableInspector.cs",
+      "bytes": 951,
+      "sha256": "6af9a7775bc3068e35a0ded15a98a99ac57ce364b373bf62c67b6e9ca5455471"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_08.motion3.json",
+      "bytes": 19460,
+      "sha256": "8b12022b7bdf01e7a9e6f124f043452c6c49432368da0aecc82a550b79e72182"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.physics3.json",
+      "bytes": 21838,
+      "sha256": "27de73695ca6418a84953a0b2776e78160f9d0b988521e9bbfa02ff913f20a6d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_04.anim",
+      "bytes": 306767,
+      "sha256": "3dcfa24e67d2092964f0608acf7ad308178ef27252bf85cf4e7c9285cd686166"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/Demo.unity",
+      "bytes": 1204866,
+      "sha256": "2caa78c8a2230be8e62e50326d0fde1e1916366a24b9adb41d0aac44374ef9d6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/LookAt/CubismLookAxis.cs",
+      "bytes": 613,
+      "sha256": "873ef86b108b8e8e72ea57e6707ec5976fd453924f738707d4b5cd3ccc3b3254"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysics.cs",
+      "bytes": 1456,
+      "sha256": "625a1c5bbbd86ff62af368a3c3aad46fe84cae0086d262917e3e2b7ff7c7ba63"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/AsyncToggler.cs",
+      "bytes": 1892,
+      "sha256": "e25189849ee0652cbfdfa10f71476f987bdb671e37177ea5e7101fc7a6a7d6af"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_08.exp3.asset",
+      "bytes": 1796,
+      "sha256": "aba8fcfac02ca685adfce1860a76bcc9031ea22041a67defb00f3130a38230a2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_07.anim",
+      "bytes": 224296,
+      "sha256": "feb7872c99e670aff5383b1fbee2abe11768dde32c7aa55ceb43aaebb48f29af"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_03.fade.asset",
+      "bytes": 70570,
+      "sha256": "a585ae4070d3167c4e80fe5d23f276daf7c57d947779f631d682d0f2b88751a3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_04.fade.asset",
+      "bytes": 95610,
+      "sha256": "075b8dd4b5e1051d2a303cec8975f7d9b1521b0c68f47973050b30cc525f4b26"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/README.ja.md",
+      "bytes": 1342,
+      "sha256": "090fea6eed24ad04234e7b0fc0f85dbe183f1d6054118c18a0b01a5d0c239793"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_05.fade.asset",
+      "bytes": 80578,
+      "sha256": "f3e43e13b5eacca955db0f5379609c3e70fd75f917ca4a3ec66fdd633c3fe24d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMultiplyMaskedInverted.mat",
+      "bytes": 1105,
+      "sha256": "ec31a738370f48f79280365498e49877e69a904b20661fac9f3b17ead5b4dcb8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/face01.fade.asset",
+      "bytes": 17704,
+      "sha256": "5217e520c456e3a9aee5cfd5f9ad92211344eb237b8066b2628c864285a50100"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismPartColorsEditorInspector.cs",
+      "bytes": 4667,
+      "sha256": "637d7a4c73cfd11cb135abdeef68fef5334b16f159707dedd9e0bca48d93ed82"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismUpdateController.cs",
+      "bytes": 2061,
+      "sha256": "7712719586688962ec86db71aa144df5f39a23a02fc5a432ba584fba4fc4dcd4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Importers/CubismImporterBase.cs",
+      "bytes": 1710,
+      "sha256": "949ebc4e63bb80996e1a85f0d8bd2d57dbcc6d9bd05b7ce69f5f7ff99780dd85"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Clipping/Clipping.asset",
+      "bytes": 12952,
+      "sha256": "3fffbedea98d6ae594603a53ecde8a1be98241ee22d333c6ef93ae0fe10efb95"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.prefab",
+      "bytes": 877286,
+      "sha256": "bf947effb31b244423e52f37461bf8c285744da695448ce28fee98c95bdaf9ca"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_02.exp3.json",
+      "bytes": 1981,
+      "sha256": "6d35132627f9e362e526c0ce8c2152ece2b305c9abd3368da43460c2af8538f6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.physics3.json",
+      "bytes": 15575,
+      "sha256": "d280a0088b17df4ddaf8fb417b5ee11601bd40686a91540eaaf0e5eeb69eb874"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskProperties.cs",
+      "bytes": 814,
+      "sha256": "94c99a6230ee78d62d4efd6513387827ebad5bc433c6fae33fc18201c28ff7ed"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/MultipleModels/Description.ja.md",
+      "bytes": 777,
+      "sha256": "b416c716541694e3e787b7378cc3c7846e0dd2408dde0c235a8462557689674b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Pose/CubismPoseData.cs",
+      "bytes": 803,
+      "sha256": "d71ded67e19000e57d2a7c213b0db3d157701204f9bd8416a7f8c2c92bb4ca5b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.moc3",
+      "bytes": 479104,
+      "sha256": "be56f2d656d279d8db9fe302ec744fa5992ff884b2ebb233f202772d5dd7e4dc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/MaskCulling.mat",
+      "bytes": 598,
+      "sha256": "08c87c9c6d293884977ff8ef38f28a81efb4a591df5167e0ab7f1d4ea1927dfb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Windows/x86_64/Live2DCubismCore.dll",
+      "bytes": 240656,
+      "sha256": "c4599835b0349fcae774cedc6dbd0057743fa503d4cc0af8f9022ca3dd845634"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/face01.anim",
+      "bytes": 60343,
+      "sha256": "3b771d85128c14bf83c5bf501df83c1aa3413600956f5159f40a044c64b21d21"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/MultipleModels/MultipleModels.unity",
+      "bytes": 474241,
+      "sha256": "34fb9676b2a23aaabc96fc88efbf4ee60083ac690c40934767b3ee4992d1d593"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Clipping/Clipping.moc3",
+      "bytes": 6272,
+      "sha256": "cbcbb8691458294e5e9fc68918b1c9388301cc97c7a5143bf725a30b2609ff21"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_03.exp3.asset",
+      "bytes": 1754,
+      "sha256": "2db4d3cbeab30412c33e6bc6cd726ac30548baa97604a4ab469be3cad716056b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_02.exp3.asset",
+      "bytes": 1795,
+      "sha256": "7d2308a1ed2722aacaf958298a4ddb7674ac892f1ab770972013765b0486866d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismModel.cs",
+      "bytes": 17200,
+      "sha256": "8bf9119a8385f8fcb64aa0e9850248cf71b766b1a67da370cf79551ad314b127"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/AssetGuid.cs",
+      "bytes": 1263,
+      "sha256": "77feba472a9f3e65cdf1ddafc0f95a7ee7e4c6c0047329a6a69000cf450f7637"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismHitDrawable.cs",
+      "bytes": 604,
+      "sha256": "55feeec1a98efa137b04dbc001d8324b240d99e1e7cb23f10e2956cb79217c46"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/ComponentExtensionMethods.cs",
+      "bytes": 2129,
+      "sha256": "48f3e02b1dc5c3e1bbe4fd6f566957052aaf8684e3d80c360f06fa6c5dea3938"
+    },
+    {
+      "path": "Assets/mcs.rsp",
+      "bytes": 8,
+      "sha256": "90c766ae8407da69817bbe35fc9ef37c67f92d4247619bcad05dfd96125cc4d8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismUserData3Json.cs",
+      "bytes": 4530,
+      "sha256": "371f659b245c644cb635e75fda17d72692834f322bc285927da54abd63afa457"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/AsyncBenchmark.unity",
+      "bytes": 38262,
+      "sha256": "a0558c325aa5d8ad8c7ba7b35ee3ff2bb33bbd42404283d845f18f691263b7d5"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MouthMovement/CubismAutoMouthInput.cs",
+      "bytes": 1812,
+      "sha256": "7eb5448e5370c4816c67a02867d4b92e4cb82e59c36dee0a73df02b98ab6a13b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Masking/Masking.unity",
+      "bytes": 18107,
+      "sha256": "e5be81a55c0c93fe2d9f7bf2e8ca387d5de067f086af3535156a2c318ba55e9a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_07.exp3.asset",
+      "bytes": 1801,
+      "sha256": "7326597caf1680893727493cec8bf69b363f71fbf821eb14c31ca6d376438881"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.fadeMotionList.asset",
+      "bytes": 1096,
+      "sha256": "c0189a9deb3613f4268540b316d88053d4dfb4e3a825c98dd70f1057ed493fb5"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_06.exp3.asset",
+      "bytes": 1799,
+      "sha256": "4ed4a90d4ffd0ab8eba085166276c3b92b77651074b23ed6a6404f6a32ce9311"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_06.motion3.json",
+      "bytes": 23687,
+      "sha256": "f5b2c88f50c8e1e502579dfccbe84452c80fe9c9026706076a582343374937b0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_04.motion3.json",
+      "bytes": 25815,
+      "sha256": "79b39209297178e24386b6aebc24e20777fe58ee06b4329c92b878760674283d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/body.anim",
+      "bytes": 63204,
+      "sha256": "fabcdf67b952332dfdf1929cb95d3ea0de88d4887a2fcfa01f6a8fd87a666fd3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsRig.cs",
+      "bytes": 8003,
+      "sha256": "e69e01e9982b93dc1ff7daaaca820486c50599f61c6f3453757819cc274d6638"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsNormalization.cs",
+      "bytes": 1362,
+      "sha256": "44cdea9bce612a5785453f7ecd4eb37c69ed3aff1beb51a7e0dd38bf9d39cd57"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/face02.anim",
+      "bytes": 52593,
+      "sha256": "53a97449dd08103d4516af17b9e3dd2e870299a3d3fde9cdc7d19ea6ab27795a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/macOS/Live2DCubismCore.bundle",
+      "bytes": 235824,
+      "sha256": "bec92c8385703e96507da157a3bfe7603a59b751a59d8a2cb259709ee96631dc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/CubismFadeStateObserver.cs",
+      "bytes": 7716,
+      "sha256": "7309df1b67d6cc699b8fa326193b9597583d82aa158559687a18e963bdc818c8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Raycasting/CubismRaycastablePrecision.cs",
+      "bytes": 664,
+      "sha256": "4feb385638a5d72f2bc54dcf7d741b298c50b33704a7f2ae2f389766392238ea"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/CubismFadeMotionData.cs",
+      "bytes": 7824,
+      "sha256": "d009eb9e0d8b545cb327355967e58b086f3b6e9655ff447742800ed1a6496054"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/README.md",
+      "bytes": 5623,
+      "sha256": "5902ff51f44aa748496c520192f7a2027ccf6bb89b30b6e630d0478caf504484"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsSourceComponent.cs",
+      "bytes": 687,
+      "sha256": "33e1c65c8e35ed90bdc731130a5f5139b75e0aef2f8b086b2f82f0fd4474bd27"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/MotionFade/Description.ja.md",
+      "bytes": 306,
+      "sha256": "8fa0eba8dcde66e68a4a0cb3af0b42ce61af4dfd4054d98f874dcffaa6562dc0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismModel3Json.cs",
+      "bytes": 32519,
+      "sha256": "51dadef97a26a71238b8e0133d6b787c02d577694f727624aec02a10994c8b2a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/LookAt/LookAt.unity",
+      "bytes": 436451,
+      "sha256": "b638fbb476b8945a5a79e890d2a492d0aa9ab27c092ea87b238b3e5b5aae7fa2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_06.anim",
+      "bytes": 237932,
+      "sha256": "313902e6ebd4a347214d3154ef1f21a5285bdeff2a358ceca5e2af6df938ad35"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismRenderer.cs",
+      "bytes": 30033,
+      "sha256": "9b95832b1f23e80365d63bda48555eded5e878f004b4af3950fd700a43edf487"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Live2D.Cubism.Editor.asmdef",
+      "bytes": 397,
+      "sha256": "764a1ac2aaa173b76e04a85c1c1b7588fce609e9775e738dfc2c27d3d5864cad"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismPartColorsEditor.cs",
+      "bytes": 9866,
+      "sha256": "9082d38c53f025732a4d861ace6a1b7c3bcee6538ed4e7017b7bca208ec01a8c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/NOTICE.md",
+      "bytes": 2014,
+      "sha256": "2fbfd83ec0ec595ecd2ad6627315b2ac403b17f469e55a2351744984ea4b9b0a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismExp3Json.cs",
+      "bytes": 2776,
+      "sha256": "e8a081b8ac81e98da2dd042100fe8928395857459ec2d8885fbfe49653356da2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_03.motion3.json",
+      "bytes": 22165,
+      "sha256": "68147f88c8dd9d64b138ec36bfc2cc6cea0ec4d288778290684106ed97540ffe"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/Koharu.controller",
+      "bytes": 1908,
+      "sha256": "c4a937d0d91d5d5a978b8d09948c4e0d20f45e32ff91ba5f16d35d0f8c42fb43"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.cdi3.json",
+      "bytes": 12974,
+      "sha256": "8cdda2aa4ded26313f4cccea99cc1bc34cf939405f1d6e064d25387981648138"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Animation/Description.md",
+      "bytes": 139,
+      "sha256": "68490f9c063833b1e2f2c15d53eb0c14e9f19492c123b8122554ef4a24922d26"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskRendererExtensionMethods.cs",
+      "bytes": 1613,
+      "sha256": "bfb40eb6181767893539120e0113d7788a27d9e23145c1af64fb268630376a9e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_02.exp3.asset",
+      "bytes": 1752,
+      "sha256": "433197bb4a757718995207971bcce2d37240fac835183414ae60554d6ccc4e82"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Editor/ImportCustomization.cs",
+      "bytes": 1704,
+      "sha256": "f3218241c0268d822a02401fb238dd7683885eddc1f230155f76f2c18c31d41a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismEyeBlinkParameter.cs",
+      "bytes": 464,
+      "sha256": "ceb6fcc3c6f600a0fce2b46fd1a1ad9a55b2adbd4fd6e46ed5191917a166339a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Shaders/Mask.shader",
+      "bytes": 1861,
+      "sha256": "238b726c964d82ae279d22dc81900b7a5865dbc828f9bb3228fe610cf8986915"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Importers/CubismMotion3JsonImporter.cs",
+      "bytes": 8756,
+      "sha256": "e02c47cef17e09d1d3653bb3a2482d4e7f675ffc8c9c886c5f7d1fd1a39ba8d2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Motion/Motion.unity",
+      "bytes": 1262225,
+      "sha256": "10bbabd9e45bcb5db841cae21d05f4d07254f51dd88147154888a076591f386a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/CubismCreatedAssetList.cs",
+      "bytes": 2494,
+      "sha256": "9e3d4bf0eea8449dc88ddaad1c797b4c1e30a38bc655474f974df5a95a7e7bc6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/ByteExtensionMethods.cs",
+      "bytes": 4655,
+      "sha256": "ca759d1439b9b4cbac3c02785bfe0d04e6e2df9e031a4829fb3d4d291c5ba30f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMaskedCulling.mat",
+      "bytes": 1095,
+      "sha256": "acba3869acf32a5a9bf99ca62d007fc54d5544aef27acada7c9d7741b5186a85"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_03.motion3.json",
+      "bytes": 22934,
+      "sha256": "e31eab8c371a253322c68968dbe5895e3029562f31a5b8d277012e94b0a6badd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.controller",
+      "bytes": 1601,
+      "sha256": "656e9d3a79ca8ac7649286f478e78ed37f0ff436e1772f538900870b22e2e090"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_01.anim",
+      "bytes": 356737,
+      "sha256": "0b2b6789f9862ed59d361cf7c9c3ff6132447ee92d84ce06b27508f26ff67eb6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_00.motion3.json",
+      "bytes": 1539,
+      "sha256": "32842fd58d4fc5968f7802b3c2f371e2339611ebc14bee564f13bcd5791bd2e3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/README.md",
+      "bytes": 1169,
+      "sha256": "8babfd354676dceaca5c2186df1f1a5d44d1505a31ab76272c34f1d7945f57d4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.fadeMotionList.asset",
+      "bytes": 777,
+      "sha256": "8c796bf72c4884d18ac81b3ff499db12d1299960c5c935d277d1ca21c3872707"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Masking/Description.md",
+      "bytes": 600,
+      "sha256": "e9e877d14370deebabb26984ba3da1b2753bebd4cc7c8c9c5af69a4ae7ba8509"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_03.anim",
+      "bytes": 225996,
+      "sha256": "640b95f64b73d521e98725526fcaadebeae33b54f5215842a3cbd8263d44cfbf"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_05.motion3.json",
+      "bytes": 23692,
+      "sha256": "e3fbc3e43320c0a1132d168eaa5ada3c640152694c73a3dd1b101563a354dc31"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitAdditiveMaskedCulling.mat",
+      "bytes": 1101,
+      "sha256": "5343caeaca8801c0dca4ec402822266c33bf48739cb6e8583f64d46f54c08b93"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/sample_01.anim",
+      "bytes": 267832,
+      "sha256": "42ee2b0f7cdfe608814414fa7695cf649cf84207adcb25483c651fdaf679706e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_01.motion3.json",
+      "bytes": 22819,
+      "sha256": "1bbbb3b91c5574d04cee312b02e1e89d12e6c155f39b8b4816654daf6658c27d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/HarmonicMotion/CubismHarmonicMotionParameter.cs",
+      "bytes": 6291,
+      "sha256": "a08c12c23ae1b0a2cf93a304ce2610e10575fda9dc45d74b1013c34e5aaf2b2d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMultiplyCulling.mat",
+      "bytes": 1082,
+      "sha256": "dde8266856f8d5a33df8bd540aadd9c06804630fab8c8c0dd0d60250b6fed3f4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/face02.fade.asset",
+      "bytes": 15446,
+      "sha256": "868ce282ab878140264d2e5c9c0f0eef9b3aae4b071bd1f4692cc294302ffe5a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/DemoCubism4_2.unity",
+      "bytes": 2740721,
+      "sha256": "f74250f9beffbc82b8331377eaa3ffea4087565b823084dd49e06851a532ff8c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskTransform.cs",
+      "bytes": 2280,
+      "sha256": "aaf86e507256141a79095f4b8fe23f033a3caf38258bbe81e33b4089a5c6a0ff"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/LookAt/Target.anim",
+      "bytes": 3947,
+      "sha256": "ac4718274928dd1f9d2a2317dffbc6e18ec528b18e720000fb8aeeb0f8366e33"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Expression/CubismExpressionData.cs",
+      "bytes": 3311,
+      "sha256": "b1ef19030b84f40b67f5459227f9e576904d321e3d088e0e75d9f088397ec1d4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.model3.json",
+      "bytes": 769,
+      "sha256": "769fbf1369b9ef4e1ccb1205fe6b02e700e158f9949435675cffc84aadb60d5a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Expression/Expression.unity",
+      "bytes": 2160417,
+      "sha256": "5a6998ed178f53067fa7ed6c4925fb607f9b20409dc965d6ed29a6e8ddb0df61"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/FrameRateUiHolder.cs",
+      "bytes": 1406,
+      "sha256": "3bee06c048681e550aa91d3366732f4f35554d17f8529d666edb99f63aae313a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_02.fade.asset",
+      "bytes": 87116,
+      "sha256": "910b575a044df563fc523224c7101b1f890755d51887a206f35d15fbe6b00b2e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskCommandBuffer.cs",
+      "bytes": 5674,
+      "sha256": "71e1b8369a94b3d4acd14bb953b359caf99992dc46020a2e170e34508e674b0c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Shaders/CubismCG.cginc",
+      "bytes": 3710,
+      "sha256": "6aa3969d889031da355e9b061fb630413a0b11e7ec9d09892421759e2a3bdc06"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismPhysics3Json.cs",
+      "bytes": 14907,
+      "sha256": "2924a36cef39e2e9a639a5df982ceb0943e01585fd8d69b7db836989a35cc4f6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.asset",
+      "bytes": 1542550,
+      "sha256": "4ebcdedfb0110b6138374eb6981224b9906482234ebd9eb760e8cf288df37c55"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_01.fade.asset",
+      "bytes": 80143,
+      "sha256": "a40e80c30dd104d7a984007cadcbd1d90dc50fb17adfe49ccbecffbd8accf6dc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/BenchmarkController.cs",
+      "bytes": 5672,
+      "sha256": "745b2a4e27710e5229b9a44a81f3cea32d315bddf94ecd75ab135421c05fb283"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismBuiltinPickers.cs",
+      "bytes": 3290,
+      "sha256": "008a547c7818fd2427006bbda9ff575e1c26ab72f1f04bff4030caee0fcf9410"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_01.exp3.json",
+      "bytes": 1981,
+      "sha256": "afbe54559e428acdaf43190d1c497792048c35ed37979f33d9a37c70181ddf5b"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Pose/Pose.unity",
+      "bytes": 1879610,
+      "sha256": "2bf15f17838205800005b4df959317c0c43cb0f00bc2f77760ab17e173b43e48"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismParameterExtensionMethods.cs",
+      "bytes": 4503,
+      "sha256": "cb9beb766d5e72276f8b20cf7c64c9b94f6c0e388160889d5dd9e1458ae6a326"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Expression/Editor/CubismExpression3JsonImporter.cs",
+      "bytes": 8641,
+      "sha256": "bd3c5b42dcab666e5411907d00a63329abe73f336bc827fc100a48672445c06f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismParameter.cs",
+      "bytes": 9708,
+      "sha256": "3e0d1bfadc56085b88a9ac3928301f91c4068aee81fbc0b53bfc35c591fb9bef"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_02.anim",
+      "bytes": 288122,
+      "sha256": "7baac2f44155d414c9c1fcb770365e8dca2d8246a682d4f80fe07cf16383662f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitAdditiveMasked.mat",
+      "bytes": 1094,
+      "sha256": "c1916e03ab47635129b3380ad4861ef18cded050c146e2b13047bde8a1ff5f04"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismDisplayInfo3Json.cs",
+      "bytes": 5434,
+      "sha256": "249a297b4fed7bb619813806d03d7be5e5509af6710830054150e6d43f3b95ed"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismSortingModeExtensionMethods.cs",
+      "bytes": 1283,
+      "sha256": "5142c15e2cfc8333d52327d9453dfcc578058d776f5f705d4f256804d8cb6cc5"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/iOS/Release-iphoneos/libLive2DCubismCore.a",
+      "bytes": 95584,
+      "sha256": "4ba7134b24948a0c27bcd76e4401b956cf0f041b317bc6c22bb211c8b8291c83"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitAdditiveMaskedInverted.mat",
+      "bytes": 1104,
+      "sha256": "67d8f4daeec5b521d316488c1ca9538793934e8c06dcc84366c17d6d059673bc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/HarmonicMotion/CubismHarmonicMotionDirection.cs",
+      "bytes": 792,
+      "sha256": "efdd33b7f1dd49ab3b84a8f1ab7bb71d8df33608e77ba3177a0d0f8b0810922c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismBuiltinMaterials.cs",
+      "bytes": 6400,
+      "sha256": "154720d2beca5756a7cc0c7bdf060dcae768ae3ab1a28d4fbd8a343813930323"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Android/arm64-v8a/libLive2DCubismCore.so",
+      "bytes": 518192,
+      "sha256": "a407ecacb7b9b043f2874f98bbd9fc5f648d3c4d790cf3fb5d0dc678f0e6a507"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/NatoriMaskTexture.asset",
+      "bytes": 464,
+      "sha256": "c17c2776cf48c2dfdaf3e83b9ce91c68286d25c810c7b30790faf7652e4c95ca"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Koharu.fadeMotionList.asset",
+      "bytes": 699,
+      "sha256": "5a897e226356d7b239665a87e35e75cde41a202c6e758612adfeadb7c4f84bd6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_01.anim",
+      "bytes": 196632,
+      "sha256": "4c4474412abce05fe7e1016a16b9a9b41141d3dd9ffd798807ec20ca51bca961"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Utils/CubismMath.cs",
+      "bytes": 1979,
+      "sha256": "30cc227adaefb90e954b91b68faf0bc7decd933e581345323c9676e8e89d32d1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Json/CubismJsonParser.cs",
+      "bytes": 23384,
+      "sha256": "c2a6d67a9cd77db52ccf0e30c79bf17fce1a250daa2029e205732c839d6f3003"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/ICubismDrawOrderHandler.cs",
+      "bytes": 938,
+      "sha256": "d5a0896c7932583d416cc5fd9fb6d3070ee1908d119d1b605b5ab0b3d465a8d1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_10.exp3.asset",
+      "bytes": 1747,
+      "sha256": "86668d398afd54eeebafd25b82117f7a2dbca0c3de058ef35de14c24f310d00f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Editor/Live2D.Cubism.Editor.asmref",
+      "bytes": 60,
+      "sha256": "f74d241ac4af6a7cf38d4b56ce871e32294ef84b933af8f5b3f15d5a23bca726"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/Description.md",
+      "bytes": 327,
+      "sha256": "4f01f1f76fd2a35999df7894b33c7c359e7425d414e4bac9623e5d57865fb75d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/Android/x86_64/libLive2DCubismCore.so",
+      "bytes": 484112,
+      "sha256": "ec1bb0626928ccf7785f806a3fdaea8c6417536a2ab41966700dc371e27d2b98"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismDisplayInfoParameterNameInspector.cs",
+      "bytes": 1334,
+      "sha256": "25ad39e2ecdbfcff5cca3f94ebad40b5af7d8904a53cbe49602615751659ec3f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Tasking/CubismBuiltinAsyncTaskHandler.cs",
+      "bytes": 4669,
+      "sha256": "94ed6a7dab2556073328d84dacc11664e1d1a1f7e99f94386881a3acf8d760cb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/LookAt/Description.md",
+      "bytes": 474,
+      "sha256": "93bd4282819e9e66e9c688e15d0d6694759ac22b0dd9119085f3da93e898ee97"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_00.exp3.asset",
+      "bytes": 1746,
+      "sha256": "85798da2563c540c0e1a09df469be0ac3e72cf2dd61ab1c8306ca016a8cdf598"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/ICubismMaskTextureCommandSource.cs",
+      "bytes": 858,
+      "sha256": "d03926d526331ec22f7e366f0af474547832900db07f8d20b5b81df3be45f88d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Clipping/Clipping.1024/texture_00.png",
+      "bytes": 53718,
+      "sha256": "2bad62fccbbfc09d67b0957ab3a9453b35776338d9ec684d6a848eaff6641873"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_01.motion3.json",
+      "bytes": 34229,
+      "sha256": "141320d2e8913097156bf61aa2c27cd51ffcf8ba5d288172da288d2afcc164db"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/special_02.anim",
+      "bytes": 402536,
+      "sha256": "700ad7510e758afb34ccc900c86aa3410693e709654d53cc4753510fa594e6fb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_06.exp3.json",
+      "bytes": 1850,
+      "sha256": "553deb8ad4187b700fb4ef11aa572577fadf2dfc96e48a8b2f85428058b9f213"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/ICubismMaskCommandSource.cs",
+      "bytes": 753,
+      "sha256": "21981a7672568ab15e1faf1c659833865a06d6dee95d63b4de58eb295a4ed4aa"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismPart.cs",
+      "bytes": 3695,
+      "sha256": "e7d8f61dafe9800431bfc01e27732b565f12ea2d91d896d8bf36034399b14c0d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Masking/Description.ja.md",
+      "bytes": 913,
+      "sha256": "2f2b4c70012a113c004a4062f5ebf2354d051d68e901cc27baa317f351aa2eeb"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/body.fade.asset",
+      "bytes": 20691,
+      "sha256": "ff0f6707d5c4d81e953deb9a96d21a303c621d91f4232cd8199b0f5a09f6cedc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismEyeBlinkController.cs",
+      "bytes": 3445,
+      "sha256": "06e7e5ba1d9833b0f898ade4b0d3e02ece3a00a4a48dae40f7c3c2dcdf9e7fca"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/CubismFadeMotionList.cs",
+      "bytes": 775,
+      "sha256": "7f5d268b671b8750a09261652b317c5c0bb0e33b5b6d73a049f3117c03fb9a32"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Raycasting/Description.md",
+      "bytes": 362,
+      "sha256": "f033095347afb802ef6e18bf48f8b4abb784ed405c7e54445907c20d1d66f0f4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/motions/mtn_02.anim",
+      "bytes": 134356,
+      "sha256": "984b658d2ea5f4fa1151681a81675955dcee7efdf0241a6f0a5c0f429649736c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Expression/CubismExpressionPreview.cs",
+      "bytes": 1286,
+      "sha256": "22ac5e4aeee6ce60eef13469518b4909a786d2a3c4a59cc31c25d8cb631deb4a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismUserDataTagInspector.cs",
+      "bytes": 1755,
+      "sha256": "4b8f6715376c254045510934ddfb760b60a3606d00ccc4858fd430033fdcd957"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/HarmonyOS/x86_64/libLive2DCubismCore.so",
+      "bytes": 94576,
+      "sha256": "91f77aaea34e1d8cd00fbd9516a893875ba3cc546ab095a95beb713d9581f627"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitCulling.mat",
+      "bytes": 1075,
+      "sha256": "d9ad9f359a6784812f7b8673ee27873526a536140fd474d3b4229e734e788169"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsOutput.cs",
+      "bytes": 7863,
+      "sha256": "66a7b214395b2798a6a811827da0048c34c6805368793b85182701d061031169"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Deleters/CubismExpressionAssetDeleter.cs",
+      "bytes": 2352,
+      "sha256": "ef68d8c5ec408abdf6553b970e73c76bb96c49e05b19607d5254a76f6bb789d6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Physics/CubismPhysicsMath.cs",
+      "bytes": 6779,
+      "sha256": "e108872c980c4484ffd457a7f085e21b27f1eca4e596496628bab7f442346e88"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.moc3",
+      "bytes": 771072,
+      "sha256": "626f29b43be788d12affb1a57ab57d685ce410314f19c7bde8427a68c1b57715"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_03.exp3.asset",
+      "bytes": 1795,
+      "sha256": "1a343f03a8ca2c22572bd7739c9077ce3e13f639d889bbfca3e5626dced1a54e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Live2D.Cubism.asmdef",
+      "bytes": 345,
+      "sha256": "ea4e5a451586faf697919221c68618de8cd3f16d82eb2b5bbe18816e27979a5a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Pose/Natori.controller",
+      "bytes": 8022,
+      "sha256": "3225c4ca415e1e85fd68d617d9f52f65c447074ba87161dbe2dedb7d1ffa00a8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskMaskedJunction.cs",
+      "bytes": 5815,
+      "sha256": "eeccb8279ee2bc44e707808f8d36b81e2fc5e4665cf84de6b4bf9697eb8e4e03"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskTexture.cs",
+      "bytes": 13406,
+      "sha256": "ac76df22441e8ba3f1f46c1296ddaa4f52d1906c92f86d9075100c21075c61f7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismPartsInspector.cs",
+      "bytes": 2589,
+      "sha256": "820f400a896c4f3b56f0d5764afb7075bc3014744131e5a4606effe73ffe26af"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismDrawable.cs",
+      "bytes": 10476,
+      "sha256": "9e522d4de37634bcae5f741a529008507b2e6120ae9dd0e4be7a3065eca1f864"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitAdditiveCulling.mat",
+      "bytes": 1081,
+      "sha256": "3bb57f53ebf4a61b3fac9f32d0cc8256be2fd48914daeefb16a5c0fa6423c158"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/LookAt/Cubism.png",
+      "bytes": 29619,
+      "sha256": "63e8026d3f1b26ee5bf2eb4ca4482a80522e3856e23d0c0f9c0554ca40680cd3"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismPartInspector.cs",
+      "bytes": 6957,
+      "sha256": "242d6eb1d3b6a7f55c3367b8b81895eb021a47e9eab2bff8cb1378eb549b2866"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMaskedInverted.mat",
+      "bytes": 1290,
+      "sha256": "61c21e3ccd2c35ace40c3cf74f3e910177a372da1ff8c9d60243fa0492193670"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Motion/CubismMotionPriority.cs",
+      "bytes": 591,
+      "sha256": "5c31c4314932763e1025cda0b76679325ff4d5da5998a40db5ef83f1b60cfb88"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.model3.json",
+      "bytes": 1977,
+      "sha256": "e5144a5c360a03c383c1ab330466775660099519af24f3a79c011c776cafaaf0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskTilePool.cs",
+      "bytes": 18749,
+      "sha256": "8e18e9717c660164e1949a7185311fb42904f54ce9c81637ba8d95a892d6e9b7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/NOTICE.ja.md",
+      "bytes": 2552,
+      "sha256": "e2a5675cc674c1760a0ceaddcc79914a65495042f1d3d0bab90ec8345c06addf"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_05.exp3.json",
+      "bytes": 1986,
+      "sha256": "331fe0d9c78861496a9cc9acba9650f295a72af8c36df7036ab8a372840d2cc1"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Expression/CubismExpressionController.cs",
+      "bytes": 18632,
+      "sha256": "76a5d6db0449940933af522a99452db916b440301d85a7257db748e5f5d325d4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/expressions/exp_08.exp3.json",
+      "bytes": 1982,
+      "sha256": "761190452e48d22727fce91e76270af2c27b0bb0ee3d04b2c6b0dc6cec49f88d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Koharu.model3.json",
+      "bytes": 257,
+      "sha256": "09ca17c0ba58a3b78e86782563fc22bab7b3fd8c2b055d7463877e790a32031a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Raycasting/CubismRaycaster.cs",
+      "bytes": 16604,
+      "sha256": "fab0d19b5e1723b773e8e91b48abde5ff6942574a45ab0bbbd8a9b7771c3378d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/LookAt/Target.controller",
+      "bytes": 1913,
+      "sha256": "1baf11c00c30fae4ed018a297a699b888624ad53f080fb8a65e047f6030cea58"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Plugins/iOS/Debug-iphoneos/libLive2DCubismCore.a",
+      "bytes": 214008,
+      "sha256": "64b5df045e89cf1c7fd1c674f800e02e6b7768690a66fd654e4682ed4ba958ab"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MouthMovement/CubismMouthParameter.cs",
+      "bytes": 471,
+      "sha256": "fc03ed84b67ddeafbb97401276a25bcb6442a3cf074f2b5d2660b3bb03c62495"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/CubismSortingMode.cs",
+      "bytes": 980,
+      "sha256": "0a94eb37d45a9191594fe18c4633515b1172317be6755dbdd2ce7dfa6b9cf35e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Raycasting/Raycasting.unity",
+      "bytes": 486801,
+      "sha256": "8f850bab647f477419739e5502165316d82f499f5a99b6fdfeac0925015d1f2a"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/cubism-info.yml",
+      "bytes": 163,
+      "sha256": "712fde04b7ad49dc54ca0d8855127afc6a1b6013936d7a6a69e6ec96fb9e7dc6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Importers/ICubismImporter.cs",
+      "bytes": 758,
+      "sha256": "9fc5d655c24f3df29a4ba471e78325e56f84bb42bbb92581a31ec3c6018f30f4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/CHANGELOG.md",
+      "bytes": 20970,
+      "sha256": "29957810a5c4007438f1c90b1f724e1e838119e24488f714be0a7e798ce8e4c7"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Deleters/CubismDeleter.cs",
+      "bytes": 3073,
+      "sha256": "f7dd5d8c0836c98de24d5c9c7ddd0f613138e19c0b425f56a6a01155dd287bf2"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/Raycasting/CubismRaycastHit.cs",
+      "bytes": 1050,
+      "sha256": "5d174454a4073166445436c579d4f049ff78077f222ca2ab35faf7d4d6f3be8c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/MultipleModels/Description.md",
+      "bytes": 615,
+      "sha256": "765eb873032ca87ce3a2e477e8716da1f9ce9b35863717aeca96f49c849f2773"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/PerspectiveCamera/Description.md",
+      "bytes": 488,
+      "sha256": "b867919ae0984ede39505ce21a8665f932698261c376a3b049ded7398ec80add"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.moc3",
+      "bytes": 879680,
+      "sha256": "ad5195b39e35e0da8ba0c825ad9cc2d60571502007f6f7d4f00963b768bb90d8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/Natori.expressionList.asset",
+      "bytes": 1229,
+      "sha256": "21181932ba1dab533d9bb3604ce233112eda822c4be20a90a620a95abc5a3afd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_00.exp3.json",
+      "bytes": 1845,
+      "sha256": "4a331960146ed628ef46dcbc8aae65d799a0f276f5844f8a4772a0e5c3300f6e"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/PerspectiveCamera/PerspectiveCamera.unity",
+      "bytes": 479460,
+      "sha256": "5783fccfb8129fa7c40558cce93925e0bba370558e11bdac8e09ee2e2a628b47"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_06.fade.asset",
+      "bytes": 80594,
+      "sha256": "b788680b182ee8dd362902a0c35b1db9b7300a60c3be40c864f081e71cbc68da"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/Unmanaged/CubismUnmanagedMemory.cs",
+      "bytes": 3831,
+      "sha256": "e8c6a8438f966d4f8b3c3253b4206d8ed908a4faa4b892301ee921297093694d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMultiplyMaskedCulling.mat",
+      "bytes": 1102,
+      "sha256": "2551702103997a52aecd925e46964c33f069e10e84839e443332093fe1159d7f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Inspectors/CubismHitDrawableInspector.cs",
+      "bytes": 1589,
+      "sha256": "4ae68a468537f3ef12c5ab7c71c0a2926efd34594094d0e72931f5444f8ec4de"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/Rice.2048/texture_00.png",
+      "bytes": 1061518,
+      "sha256": "9930643898aeea3a5f11f06933e79a217b64fbec80c06158f512e85454ea60ea"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Raycasting/Description.ja.md",
+      "bytes": 428,
+      "sha256": "52666aec3411ba4530d68e194fd2c9a66b72a0b019e746398e455837a69a5b7d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_02.motion3.json",
+      "bytes": 24274,
+      "sha256": "aa8c78c03f1d5fe143eedecfb7d077e7e4a7804c93723ba661eef2dd6a5d5ae0"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Resources/Live2D/Cubism/Materials/UnlitMultiply.mat",
+      "bytes": 1075,
+      "sha256": "8bae6a4c886e541c7b38131a432753b56e57adb7140fec683033f0b820adcc09"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Animation/Description.ja.md",
+      "bytes": 179,
+      "sha256": "94ee0cbc7065bd9a045370d9db751676e36fed9eede87c4263259927becdd82c"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/Mao.model3.json",
+      "bytes": 1699,
+      "sha256": "d5fb29f93ef3cf3eba96b5aa9538eca063abbebee81a8d2dbeecea0cef4fecba"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_01.exp3.asset",
+      "bytes": 1746,
+      "sha256": "5ede6dc2eb1d33a860eb7d6bb5bce0b29a27ecadade55fea0260145c22bc57c8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/UserData/CubismUserDataTargetType.cs",
+      "bytes": 495,
+      "sha256": "b28f6edae8c3eb5b09ca325b9428576fd2c3ead7ec229f2da877b3ecfc5ade37"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismAutoEyeBlinkInput.cs",
+      "bytes": 7705,
+      "sha256": "054e3b6e8a796f8ca6e77311031a4314e5714c6ce7d3142ef0badc6ec2161cfd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Koharu.controller",
+      "bytes": 1603,
+      "sha256": "e77793118083daa2e6c6ebd9a656c4d23ec6a94aea6dd85e7c93f193bbd3d4f8"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Editor/Live2D.Cubism.Editor.asmref",
+      "bytes": 60,
+      "sha256": "f74d241ac4af6a7cf38d4b56ce871e32294ef84b933af8f5b3f15d5a23bca726"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Core/CubismTaskableModel.cs",
+      "bytes": 9642,
+      "sha256": "4ed68b437fba747aa731781c833398774d40a0df22d4e8ff48da4a300be7fcaf"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_10.exp3.json",
+      "bytes": 1856,
+      "sha256": "874464a11a8fa1108a712713acf5d2ed7cc6ca0a4d2f83d7a019e9034cea6c4d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/motions/mtn_01.fade.asset",
+      "bytes": 48660,
+      "sha256": "187a0b8bd1539b10d33c47fa1a9d55cbd07c5a339e986ffc02f34e8537cac5bd"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Rendering/Masking/CubismMaskController.cs",
+      "bytes": 9693,
+      "sha256": "d177131ee15142ecfd6b01958c9714deb0f94bf7744d32787c10e58e8811b653"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/AsyncBenchmark/Koharu.prefab",
+      "bytes": 370866,
+      "sha256": "7cd350ed717cc4015f0054a71aaa18cd0c48ebbdcb406b8c66f83ef989fcd619"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Animation/Animation.unity",
+      "bytes": 429998,
+      "sha256": "0f12ad489390f257f5e2211abe3cca9f8b3e13f24654783813829e38993b635f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Deleters/ICubismDeleter.cs",
+      "bytes": 653,
+      "sha256": "129c60855093e08eccc180670b86d5a9e0a7a337c6196399e64812a142ab6de4"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Koharu/Animation/face02.motion3.json",
+      "bytes": 3890,
+      "sha256": "65161d639246230f3e3ae5ffbf403e104c591d0984d19c8712775204f24f7dbc"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/MotionFade/CubismFadeController.cs",
+      "bytes": 14989,
+      "sha256": "f1f969bf9757c5eae323fa9904c5f2d5b42d14ee5afd94494e03d203577ba8fa"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Natori/exp/exp_08.exp3.json",
+      "bytes": 1875,
+      "sha256": "459e361bf7540f76653201dbe76fcaeae23b9f1dd4164ded4817c45c84ce5ae9"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Expression/Description.md",
+      "bytes": 258,
+      "sha256": "aa28e27c51a3ed8a940d9425e0e9f2fb37f3affc0359046af5a4eff96ac80f3f"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Rice/RiceMaskTexture.asset",
+      "bytes": 462,
+      "sha256": "6738837581568e86718c8133605c2722df59e0614bbeb6f634c3733b5d94e47d"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Samples/Models/Mao/motions/mtn_01.motion3.json",
+      "bytes": 27661,
+      "sha256": "4a17c9b0b4ffd42ee5b8386cba0ae18916953ac693d79f44cd831bf5d59877f6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Framework/CubismDisplayInfoPartName.cs",
+      "bytes": 809,
+      "sha256": "2291cd6d41498459c86be1de452504d5f0c19a9dec4a7334bd07dda9c1faabb6"
+    },
+    {
+      "path": "Assets/Live2D/Cubism/Editor/Importers/CubismImporter.cs",
+      "bytes": 9258,
+      "sha256": "db594932d623a0f8f113fea5081481330d8f5571f68b4bb838d341f01141349b"
+    }
+  ]
+}

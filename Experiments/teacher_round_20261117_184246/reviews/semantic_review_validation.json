@@ -1,0 +1,9 @@
+{
+  "contract_valid": true,
+  "validated_reviews": 18,
+  "all_hashes_match": true,
+  "empty_video_or_naturalness_claims": false,
+  "candidate_file_modified": false,
+  "validator": "Tools/ActionEncoder/review_evidence.py:validate_record",
+  "python": "D:\\UnityProjects\\Pet\\PetLive2d\\.venv-action-encoder\\Scripts\\python.exe"
+}

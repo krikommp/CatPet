@@ -1,0 +1,7 @@
+{
+  "version": "action-plan.v0.1",
+  "decision": "execute",
+  "steps": [
+    {"actions": [{"type": "blink", "count": 2, "amplitude": "full", "period_ms": 600}]}
+  ]
+}

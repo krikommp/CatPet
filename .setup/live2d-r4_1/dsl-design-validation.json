@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "scope": "Design artifacts only; no Unity Action DSL runtime exists",
+  "schema": "Draft 2020-12",
+  "valid_examples": [
+    "natori-blink.json",
+    "natori-listen.json"
+  ],
+  "invalid_example_checks": [
+    "explicit_zero",
+    "duplicate_time",
+    "frame_after_end",
+    "invented_parameter",
+    "reserved_local_parameter",
+    "model_range_exceeded",
+    "short_parameter_segment",
+    "unknown_field",
+    "wrong_profile"
+  ],
+  "metadata_matches_unity_probe": 8,
+  "model_hashes_verified": 3
+}

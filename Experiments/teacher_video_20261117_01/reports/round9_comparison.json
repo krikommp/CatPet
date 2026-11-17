@@ -1,0 +1,95 @@
+{
+  "dataset_sha256": "b5026d771cf25e619ff16b693eb13748b6faa3220b323d856ba0355c0add7460",
+  "runs": {
+    "baseline_legacy_fixed_eval": {
+      "checkpoint": "8cfb7a72bdac",
+      "total": 28,
+      "decision_correct": 20,
+      "execute_structure_correct": 10,
+      "execute_total": 14,
+      "none_false_execution": 2,
+      "none_total": 4,
+      "unsupported_false_execution": 6,
+      "unsupported_total": 6,
+      "ambiguous_false_execution": 0,
+      "ambiguous_total": 4,
+      "technical_rejections": 0,
+      "objective_constraints_passed": 16,
+      "objective_constraints_total": 34,
+      "unresolved_gold_rows": 1
+    },
+    "round9_legacy_fixed_eval": {
+      "checkpoint": "838f2c1ac110",
+      "total": 28,
+      "decision_correct": 20,
+      "execute_structure_correct": 11,
+      "execute_total": 14,
+      "none_false_execution": 2,
+      "none_total": 4,
+      "unsupported_false_execution": 5,
+      "unsupported_total": 6,
+      "ambiguous_false_execution": 0,
+      "ambiguous_total": 4,
+      "technical_rejections": 0,
+      "objective_constraints_passed": 16,
+      "objective_constraints_total": 34,
+      "unresolved_gold_rows": 1
+    },
+    "round9_strict_fixed_eval": {
+      "checkpoint": "838f2c1ac110",
+      "total": 28,
+      "decision_correct": 7,
+      "execute_structure_correct": 1,
+      "execute_total": 14,
+      "none_false_execution": 1,
+      "none_total": 4,
+      "unsupported_false_execution": 0,
+      "unsupported_total": 6,
+      "ambiguous_false_execution": 0,
+      "ambiguous_total": 4,
+      "technical_rejections": 19,
+      "objective_constraints_passed": 2,
+      "objective_constraints_total": 34,
+      "unresolved_gold_rows": 1
+    }
+  },
+  "model_trained_by_this_session": false,
+  "warnings": [
+    "Small diagnostic sample; both checkpoints may have seen the semantic families.",
+    "Strict decoder is a behavior guard comparison, not a model quality improvement.",
+    "Rejections include conservative grammar limits and actual violations; inspect per-row evidence.",
+    "No new Unity playback or model-specific video score was obtained.",
+    "No deployment or ready designation."
+  ],
+  "actual_predicted_config_CSharp_checks": {
+    "baseline_legacy_fixed_eval": {
+      "baseline": {
+        "passed": 28,
+        "total": 28,
+        "errors": {}
+      },
+      "patched": {
+        "passed": 26,
+        "total": 28,
+        "errors": {
+          "missing_hold_phase": 2
+        }
+      }
+    },
+    "round9_legacy_fixed_eval": {
+      "baseline": {
+        "passed": 28,
+        "total": 28,
+        "errors": {}
+      },
+      "patched": {
+        "passed": 24,
+        "total": 28,
+        "errors": {
+          "missing_hold_phase": 1,
+          "unrepresentable_hold": 3
+        }
+      }
+    }
+  }
+}

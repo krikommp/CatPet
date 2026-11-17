@@ -1,0 +1,374 @@
+{
+    "status": "passed",
+    "timestamp_utc": "2026-11-16T11:11:23.7084273Z",
+    "unity_version": "2022.3.53f1c1",
+    "original_scene": "Assets/Live2D/Cubism/Samples/OriginalWorkflow/Demo/Demo.unity",
+    "original_scene_dirty": true,
+    "original_scene_preserved": true,
+    "model": "Natori",
+    "motion_map": "natori-blink-prototype.v0.1",
+    "duration_ms": 1200,
+    "observed_closed_intervals": 2,
+    "pose_change_rejected": true,
+    "generation_change_rejected": true,
+    "model_prediction_trained": false,
+    "visual_semantics_verified": false,
+    "error": "",
+    "trajectory": [
+        {
+            "time_ms": 0,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 20,
+            "left_eye": 0.972000002861023,
+            "right_eye": 0.972000002861023
+        },
+        {
+            "time_ms": 40,
+            "left_eye": 0.8960000276565552,
+            "right_eye": 0.8960000276565552
+        },
+        {
+            "time_ms": 60,
+            "left_eye": 0.7839999794960022,
+            "right_eye": 0.7839999794960022
+        },
+        {
+            "time_ms": 80,
+            "left_eye": 0.6480000019073486,
+            "right_eye": 0.6480000019073486
+        },
+        {
+            "time_ms": 100,
+            "left_eye": 0.5,
+            "right_eye": 0.5
+        },
+        {
+            "time_ms": 120,
+            "left_eye": 0.35199999809265139,
+            "right_eye": 0.35199999809265139
+        },
+        {
+            "time_ms": 140,
+            "left_eye": 0.2160000056028366,
+            "right_eye": 0.2160000056028366
+        },
+        {
+            "time_ms": 160,
+            "left_eye": 0.10400000214576721,
+            "right_eye": 0.10400000214576721
+        },
+        {
+            "time_ms": 180,
+            "left_eye": 0.02800000086426735,
+            "right_eye": 0.02800000086426735
+        },
+        {
+            "time_ms": 200,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 220,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 240,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 260,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 280,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 300,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 320,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 340,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 360,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 380,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 400,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 420,
+            "left_eye": 0.02800000086426735,
+            "right_eye": 0.02800000086426735
+        },
+        {
+            "time_ms": 440,
+            "left_eye": 0.10400000214576721,
+            "right_eye": 0.10400000214576721
+        },
+        {
+            "time_ms": 460,
+            "left_eye": 0.2160000056028366,
+            "right_eye": 0.2160000056028366
+        },
+        {
+            "time_ms": 480,
+            "left_eye": 0.35199999809265139,
+            "right_eye": 0.35199999809265139
+        },
+        {
+            "time_ms": 500,
+            "left_eye": 0.5,
+            "right_eye": 0.5
+        },
+        {
+            "time_ms": 520,
+            "left_eye": 0.6480000019073486,
+            "right_eye": 0.6480000019073486
+        },
+        {
+            "time_ms": 540,
+            "left_eye": 0.7839999794960022,
+            "right_eye": 0.7839999794960022
+        },
+        {
+            "time_ms": 560,
+            "left_eye": 0.8960000276565552,
+            "right_eye": 0.8960000276565552
+        },
+        {
+            "time_ms": 580,
+            "left_eye": 0.972000002861023,
+            "right_eye": 0.972000002861023
+        },
+        {
+            "time_ms": 600,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 620,
+            "left_eye": 0.972000002861023,
+            "right_eye": 0.972000002861023
+        },
+        {
+            "time_ms": 640,
+            "left_eye": 0.8960000276565552,
+            "right_eye": 0.8960000276565552
+        },
+        {
+            "time_ms": 660,
+            "left_eye": 0.7839999794960022,
+            "right_eye": 0.7839999794960022
+        },
+        {
+            "time_ms": 680,
+            "left_eye": 0.6480000019073486,
+            "right_eye": 0.6480000019073486
+        },
+        {
+            "time_ms": 700,
+            "left_eye": 0.5,
+            "right_eye": 0.5
+        },
+        {
+            "time_ms": 720,
+            "left_eye": 0.35199999809265139,
+            "right_eye": 0.35199999809265139
+        },
+        {
+            "time_ms": 740,
+            "left_eye": 0.2160000056028366,
+            "right_eye": 0.2160000056028366
+        },
+        {
+            "time_ms": 760,
+            "left_eye": 0.10400000214576721,
+            "right_eye": 0.10400000214576721
+        },
+        {
+            "time_ms": 780,
+            "left_eye": 0.02800000086426735,
+            "right_eye": 0.02800000086426735
+        },
+        {
+            "time_ms": 800,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 820,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 840,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 860,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 880,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 900,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 920,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 940,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 960,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 980,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 1000,
+            "left_eye": 0.0,
+            "right_eye": 0.0
+        },
+        {
+            "time_ms": 1020,
+            "left_eye": 0.02800000086426735,
+            "right_eye": 0.02800000086426735
+        },
+        {
+            "time_ms": 1040,
+            "left_eye": 0.10400000214576721,
+            "right_eye": 0.10400000214576721
+        },
+        {
+            "time_ms": 1060,
+            "left_eye": 0.2160000056028366,
+            "right_eye": 0.2160000056028366
+        },
+        {
+            "time_ms": 1080,
+            "left_eye": 0.35199999809265139,
+            "right_eye": 0.35199999809265139
+        },
+        {
+            "time_ms": 1100,
+            "left_eye": 0.5,
+            "right_eye": 0.5
+        },
+        {
+            "time_ms": 1120,
+            "left_eye": 0.6480000019073486,
+            "right_eye": 0.6480000019073486
+        },
+        {
+            "time_ms": 1140,
+            "left_eye": 0.7839999794960022,
+            "right_eye": 0.7839999794960022
+        },
+        {
+            "time_ms": 1160,
+            "left_eye": 0.8960000276565552,
+            "right_eye": 0.8960000276565552
+        },
+        {
+            "time_ms": 1180,
+            "left_eye": 0.972000002861023,
+            "right_eye": 0.972000002861023
+        },
+        {
+            "time_ms": 1200,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1220,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1240,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1260,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1280,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1300,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1320,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1340,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1360,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1380,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        },
+        {
+            "time_ms": 1400,
+            "left_eye": 1.0,
+            "right_eye": 1.0
+        }
+    ]
+}

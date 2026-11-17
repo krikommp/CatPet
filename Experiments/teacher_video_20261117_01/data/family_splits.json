@@ -1,0 +1,3075 @@
+{
+  "policy": "conservative-topology-union.v1",
+  "immutable_for_this_round": true,
+  "precedence": "test > val > train across merged source ancestry",
+  "families": [
+    {
+      "semantic_family_id": "sf-000755a5572390c8",
+      "keys": [
+        "ambiguous:missing_prior_context",
+        "ambiguous:missing_target_for_parameter",
+        "ambiguous:unspecified_action"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-nonexec-ambiguous-0855",
+        "llm-nonexec-ambiguous-0856",
+        "llm-nonexec-ambiguous-0857",
+        "llm-nonexec-ambiguous-0858",
+        "llm-nonexec-ambiguous-0859",
+        "llm-nonexec-ambiguous-0860",
+        "llm-nonexec-ambiguous-0861",
+        "llm-nonexec-ambiguous-0862",
+        "llm-nonexec-ambiguous-0921",
+        "llm-nonexec-ambiguous-0922",
+        "llm-nonexec-ambiguous-0923",
+        "llm-nonexec-ambiguous-0924",
+        "llm-nonexec-ambiguous-0925",
+        "llm-nonexec-ambiguous-0926",
+        "llm-nonexec-ambiguous-0927",
+        "llm-nonexec-ambiguous-0928",
+        "llm-nonexec-ambiguous-0929",
+        "llm-nonexec-ambiguous-0930",
+        "llm-nonexec-ambiguous-0931",
+        "llm-nonexec-ambiguous-0932",
+        "llm-nonexec-ambiguous-0933",
+        "llm-nonexec-ambiguous-0934",
+        "llm-nonexec-ambiguous-0935",
+        "llm-nonexec-ambiguous-0936"
+      ],
+      "source_rows": 135
+    },
+    {
+      "semantic_family_id": "sf-00384f24ee6cd6bf",
+      "keys": [
+        "execute:nod.basic+wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0763"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-01afe3c6a68490a7",
+      "keys": [
+        "execute:cheer.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0680"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-01c1cf1568eb5dc1",
+      "keys": [
+        "execute:look_around.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-bare-fast-0334",
+        "llm-bare-heavy-0333",
+        "llm-bare-light-0332",
+        "llm-bare-normal-0331",
+        "llm-bare-slow-0335",
+        "llm-colloq-1015",
+        "llm-percycle-thrice_heavier_gradual-0472",
+        "llm-percycle-thrice_heavier_gradual-0473",
+        "llm-percycle-thrice_last_slow_hold-0474",
+        "llm-percycle-thrice_last_slow_hold-0475",
+        "llm-percycle-thrice_lighter_gradual-0470",
+        "llm-percycle-thrice_lighter_gradual-0471",
+        "llm-percycle-thrice_slower_gradual-0468",
+        "llm-percycle-thrice_slower_gradual-0469",
+        "llm-percycle-twice_second_faster-0458",
+        "llm-percycle-twice_second_faster-0459",
+        "llm-percycle-twice_second_heavier-0460",
+        "llm-percycle-twice_second_heavier-0461",
+        "llm-percycle-twice_second_lighter-0462",
+        "llm-percycle-twice_second_lighter-0463",
+        "llm-percycle-twice_second_longer_hold-0464",
+        "llm-percycle-twice_second_longer_hold-0465",
+        "llm-percycle-twice_second_slower-0456",
+        "llm-percycle-twice_second_slower-0457",
+        "llm-percycle-twice_second_slower_heavier-0466",
+        "llm-percycle-twice_second_slower_heavier-0467",
+        "llm-rp-0995",
+        "llm-rp-look_around.basic-0382",
+        "llm-single-fast-0106",
+        "llm-single-fast-0107",
+        "llm-single-fast-0108",
+        "llm-single-heavy-0103",
+        "llm-single-heavy-0104",
+        "llm-single-heavy-0105",
+        "llm-single-heavy_fast-0121",
+        "llm-single-heavy_fast-0122",
+        "llm-single-heavy_fast-0123",
+        "llm-single-light-0100",
+        "llm-single-light-0101",
+        "llm-single-light-0102",
+        "llm-single-light_slow-0118",
+        "llm-single-light_slow-0119",
+        "llm-single-light_slow-0120",
+        "llm-single-long_hold-0112",
+        "llm-single-long_hold-0113",
+        "llm-single-long_hold-0114",
+        "llm-single-normal-0097",
+        "llm-single-normal-0098",
+        "llm-single-normal-0099",
+        "llm-single-short_hold-0115",
+        "llm-single-short_hold-0116",
+        "llm-single-short_hold-0117",
+        "llm-single-slow-0109",
+        "llm-single-slow-0110",
+        "llm-single-slow-0111"
+      ],
+      "source_rows": 159
+    },
+    {
+      "semantic_family_id": "sf-02a15ccbcc3d1455",
+      "keys": [
+        "unsupported:tears"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-unsupported-0903"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-0738c7d0aa2e9cc6",
+      "keys": [
+        "execute:angry.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0673",
+        "llm-seq-0965",
+        "llm-seq-1222"
+      ],
+      "source_rows": 10
+    },
+    {
+      "semantic_family_id": "sf-08eb8f234bdb707f",
+      "keys": [
+        "execute:nod.basic>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0632",
+        "llm-seq-1115",
+        "llm-seq-1117"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-09c4d4fa94f5e589",
+      "keys": [
+        "execute:angry.basic+tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0746",
+        "llm-par-0749",
+        "llm-par-0989",
+        "llm-par-1233"
+      ],
+      "source_rows": 12
+    },
+    {
+      "semantic_family_id": "sf-09e9d3c00f12bdfd",
+      "keys": [
+        "execute:look_around.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-1123"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-0c172651353fb16f",
+      "keys": [
+        "execute:cheer.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0657"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-0cd3bf4e86b98494",
+      "keys": [
+        "execute:tilt_head.basic+wave.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-par-0761",
+        "llm-par-0822",
+        "llm-par-1145"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-0ed11fe195a2f9f8",
+      "keys": [
+        "execute:nod.basic>tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0681",
+        "llm-seq-0954"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-11669341eb82c41c",
+      "keys": [
+        "execute:shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0349",
+        "llm-bare-heavy-0348",
+        "llm-bare-light-0347",
+        "llm-bare-normal-0346",
+        "llm-bare-slow-0350",
+        "llm-colloq-1018",
+        "llm-dlg-mix-1414",
+        "llm-dlg-shy-1407",
+        "llm-hakimi-shy-1304",
+        "llm-hakimi-shy-1305",
+        "llm-percycle-thrice_heavier_gradual-0532",
+        "llm-percycle-thrice_heavier_gradual-0533",
+        "llm-percycle-thrice_last_slow_hold-0534",
+        "llm-percycle-thrice_last_slow_hold-0535",
+        "llm-percycle-thrice_lighter_gradual-0530",
+        "llm-percycle-thrice_lighter_gradual-0531",
+        "llm-percycle-thrice_slower_gradual-0528",
+        "llm-percycle-thrice_slower_gradual-0529",
+        "llm-percycle-twice_second_faster-0518",
+        "llm-percycle-twice_second_faster-0519",
+        "llm-percycle-twice_second_heavier-0520",
+        "llm-percycle-twice_second_heavier-0521",
+        "llm-percycle-twice_second_lighter-0522",
+        "llm-percycle-twice_second_lighter-0523",
+        "llm-percycle-twice_second_longer_hold-0524",
+        "llm-percycle-twice_second_longer_hold-0525",
+        "llm-percycle-twice_second_slower-0516",
+        "llm-percycle-twice_second_slower-0517",
+        "llm-percycle-twice_second_slower_heavier-0526",
+        "llm-percycle-twice_second_slower_heavier-0527",
+        "llm-rp-0998",
+        "llm-rp-shy.basic-0373",
+        "llm-single-fast-0187",
+        "llm-single-fast-0188",
+        "llm-single-fast-0189",
+        "llm-single-heavy-0184",
+        "llm-single-heavy-0185",
+        "llm-single-heavy-0186",
+        "llm-single-heavy_fast-0202",
+        "llm-single-heavy_fast-0203",
+        "llm-single-heavy_fast-0204",
+        "llm-single-light-0181",
+        "llm-single-light-0182",
+        "llm-single-light-0183",
+        "llm-single-light_slow-0199",
+        "llm-single-light_slow-0200",
+        "llm-single-light_slow-0201",
+        "llm-single-long_hold-0193",
+        "llm-single-long_hold-0194",
+        "llm-single-long_hold-0195",
+        "llm-single-normal-0178",
+        "llm-single-normal-0179",
+        "llm-single-normal-0180",
+        "llm-single-short_hold-0196",
+        "llm-single-short_hold-0197",
+        "llm-single-short_hold-0198",
+        "llm-single-slow-0190",
+        "llm-single-slow-0191",
+        "llm-single-slow-0192"
+      ],
+      "source_rows": 172
+    },
+    {
+      "semantic_family_id": "sf-1244fb6ad7dba23c",
+      "keys": [
+        "none:negated:blink.full",
+        "none:negated:look_around.basic",
+        "none:negated:nod.basic+shake_head.basic",
+        "none:negated:smile.basic",
+        "none:negated:surprise.basic",
+        "none:negated:tilt_head.basic",
+        "none:negated:wave.basic",
+        "none:non_animation_task",
+        "none:social_chat",
+        "none:static_cancel"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-nonexec-none-0826",
+        "llm-nonexec-none-0829",
+        "llm-nonexec-none-0830",
+        "llm-nonexec-none-0833",
+        "llm-nonexec-none-0836",
+        "llm-nonexec-none-0837",
+        "llm-nonexec-none-0838",
+        "llm-nonexec-none-0839",
+        "llm-nonexec-none-0840",
+        "llm-nonexec-none-0841",
+        "llm-nonexec-none-0842",
+        "llm-nonexec-none-0941",
+        "llm-nonexec-none-0942",
+        "llm-nonexec-none-0943",
+        "llm-nonexec-none-0944",
+        "llm-nonexec-none-0945",
+        "llm-nonexec-none-0946",
+        "llm-nonexec-none-0947",
+        "llm-nonexec-none-0948",
+        "llm-nonexec-none-1101",
+        "llm-nonexec-none-1102",
+        "llm-nonexec-none-1103",
+        "llm-nonexec-none-1104",
+        "llm-nonexec-none-1105",
+        "llm-nonexec-none-1106"
+      ],
+      "source_rows": 112
+    },
+    {
+      "semantic_family_id": "sf-14298458f67d723d",
+      "keys": [
+        "execute:surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0354",
+        "llm-bare-heavy-0353",
+        "llm-bare-light-0352",
+        "llm-bare-normal-0351",
+        "llm-bare-slow-0355",
+        "llm-colloq-1019",
+        "llm-dlg-mix-1416",
+        "llm-dlg-surprise-1406",
+        "llm-hakimi-surprise-1306",
+        "llm-hakimi-surprise-1307",
+        "llm-percycle-thrice_heavier_gradual-0552",
+        "llm-percycle-thrice_heavier_gradual-0553",
+        "llm-percycle-thrice_last_slow_hold-0554",
+        "llm-percycle-thrice_last_slow_hold-0555",
+        "llm-percycle-thrice_lighter_gradual-0550",
+        "llm-percycle-thrice_lighter_gradual-0551",
+        "llm-percycle-thrice_slower_gradual-0548",
+        "llm-percycle-thrice_slower_gradual-0549",
+        "llm-percycle-twice_second_faster-0538",
+        "llm-percycle-twice_second_faster-0539",
+        "llm-percycle-twice_second_heavier-0540",
+        "llm-percycle-twice_second_heavier-0541",
+        "llm-percycle-twice_second_lighter-0542",
+        "llm-percycle-twice_second_lighter-0543",
+        "llm-percycle-twice_second_longer_hold-0544",
+        "llm-percycle-twice_second_longer_hold-0545",
+        "llm-percycle-twice_second_slower-0536",
+        "llm-percycle-twice_second_slower-0537",
+        "llm-percycle-twice_second_slower_heavier-0546",
+        "llm-percycle-twice_second_slower_heavier-0547",
+        "llm-rp-0999",
+        "llm-rp-surprise.basic-0378",
+        "llm-single-fast-0214",
+        "llm-single-fast-0215",
+        "llm-single-fast-0216",
+        "llm-single-heavy-0211",
+        "llm-single-heavy-0212",
+        "llm-single-heavy-0213",
+        "llm-single-heavy_fast-0229",
+        "llm-single-heavy_fast-0230",
+        "llm-single-heavy_fast-0231",
+        "llm-single-light-0208",
+        "llm-single-light-0209",
+        "llm-single-light-0210",
+        "llm-single-light_slow-0226",
+        "llm-single-light_slow-0227",
+        "llm-single-light_slow-0228",
+        "llm-single-long_hold-0220",
+        "llm-single-long_hold-0221",
+        "llm-single-long_hold-0222",
+        "llm-single-normal-0205",
+        "llm-single-normal-0206",
+        "llm-single-normal-0207",
+        "llm-single-short_hold-0223",
+        "llm-single-short_hold-0224",
+        "llm-single-short_hold-0225",
+        "llm-single-slow-0217",
+        "llm-single-slow-0218",
+        "llm-single-slow-0219"
+      ],
+      "source_rows": 172
+    },
+    {
+      "semantic_family_id": "sf-16c852ee915238e3",
+      "keys": [
+        "execute:wave.basic>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0635",
+        "llm-seq-1116"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-16e20d9f41584103",
+      "keys": [
+        "execute:smile.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-dlg-seq-1421",
+        "llm-seq-0637"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-17058fceb0d4a465",
+      "keys": [
+        "execute:bow.basic>tilt_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0703"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-1811dbae8b3c4c0c",
+      "keys": [
+        "execute:cheer.basic>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0686"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-1a4b195e6a8879cb",
+      "keys": [
+        "unsupported:explicit_duration_out_of_bounds"
+      ],
+      "split": "test",
+      "source_group_ids": [],
+      "source_rows": 0
+    },
+    {
+      "semantic_family_id": "sf-228af45ac244bf15",
+      "keys": [
+        "execute:look_around.basic+surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0765",
+        "llm-par-0814"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-232888fdbe2db680",
+      "keys": [
+        "execute:look_around.basic>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0652"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-254325bc699c5bfa",
+      "keys": [
+        "execute:shake_head.basic>wave.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0679"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-25d8efa9c88b2ec5",
+      "keys": [
+        "execute:wave.basic>shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0633",
+        "llm-seq-0970"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-2926bd69b2203dfc",
+      "keys": [
+        "none:negated:angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-none-0831"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-2a3e6925d24b585f",
+      "keys": [
+        "execute:tilt_head.basic>wave.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0698"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-2a6408b94ebd8931",
+      "keys": [
+        "none:negated:nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-none-0827"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-2c67c5f20a1723be",
+      "keys": [
+        "execute:nod.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0644"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-2e15c8f1e6378268",
+      "keys": [
+        "execute:surprise.basic>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0694"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-2eb1aaa471e992cb",
+      "keys": [
+        "execute:shake_head.basic>tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0639",
+        "llm-seq-1125"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-2f295805b9ebdf91",
+      "keys": [
+        "execute:wave.basic>tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0706"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-300197a85ffb7b38",
+      "keys": [
+        "execute:blink.full+cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0807",
+        "llm-par-1147"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-312e9ae017cfaa67",
+      "keys": [
+        "execute:cheer.basic>wave.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0675",
+        "llm-seq-1120"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-3271befa50942625",
+      "keys": [
+        "execute:tilt_head.basic>shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0664"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-331d4f96367ae04e",
+      "keys": [
+        "execute:nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0319",
+        "llm-bare-heavy-0318",
+        "llm-bare-light-0317",
+        "llm-bare-normal-0316",
+        "llm-bare-slow-0320",
+        "llm-colloq-1012",
+        "llm-dlg-mix-1412",
+        "llm-dlg-nod-1403",
+        "llm-percycle-1031",
+        "llm-percycle-1161",
+        "llm-percycle-1162",
+        "llm-percycle-thrice_heavier_gradual-0412",
+        "llm-percycle-thrice_heavier_gradual-0413",
+        "llm-percycle-thrice_last_slow_hold-0414",
+        "llm-percycle-thrice_last_slow_hold-0415",
+        "llm-percycle-thrice_lighter_gradual-0410",
+        "llm-percycle-thrice_lighter_gradual-0411",
+        "llm-percycle-thrice_slower_gradual-0408",
+        "llm-percycle-thrice_slower_gradual-0409",
+        "llm-percycle-twice_second_faster-0398",
+        "llm-percycle-twice_second_faster-0399",
+        "llm-percycle-twice_second_heavier-0400",
+        "llm-percycle-twice_second_heavier-0401",
+        "llm-percycle-twice_second_lighter-0402",
+        "llm-percycle-twice_second_lighter-0403",
+        "llm-percycle-twice_second_longer_hold-0404",
+        "llm-percycle-twice_second_longer_hold-0405",
+        "llm-percycle-twice_second_slower-0396",
+        "llm-percycle-twice_second_slower-0397",
+        "llm-percycle-twice_second_slower_heavier-0406",
+        "llm-percycle-twice_second_slower_heavier-0407",
+        "llm-rp-0992",
+        "llm-rp-nod.basic-0376",
+        "llm-single-fast-0025",
+        "llm-single-fast-0026",
+        "llm-single-fast-0027",
+        "llm-single-heavy-0022",
+        "llm-single-heavy-0023",
+        "llm-single-heavy-0024",
+        "llm-single-heavy_fast-0040",
+        "llm-single-heavy_fast-0041",
+        "llm-single-heavy_fast-0042",
+        "llm-single-light-0019",
+        "llm-single-light-0020",
+        "llm-single-light-0021",
+        "llm-single-light_slow-0037",
+        "llm-single-light_slow-0038",
+        "llm-single-light_slow-0039",
+        "llm-single-long_hold-0031",
+        "llm-single-long_hold-0032",
+        "llm-single-long_hold-0033",
+        "llm-single-normal-0016",
+        "llm-single-normal-0017",
+        "llm-single-normal-0018",
+        "llm-single-short_hold-0034",
+        "llm-single-short_hold-0035",
+        "llm-single-short_hold-0036",
+        "llm-single-slow-0028",
+        "llm-single-slow-0029",
+        "llm-single-slow-0030"
+      ],
+      "source_rows": 178
+    },
+    {
+      "semantic_family_id": "sf-347418b8afe9be1e",
+      "keys": [
+        "execute:angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0344",
+        "llm-bare-heavy-0343",
+        "llm-bare-light-0342",
+        "llm-bare-normal-0341",
+        "llm-bare-slow-0345",
+        "llm-colloq-1017",
+        "llm-dlg-angry-1401",
+        "llm-dlg-mix-1413",
+        "llm-hakimi-angry-1301",
+        "llm-hakimi-angry-1302",
+        "llm-percycle-1170",
+        "llm-percycle-thrice_heavier_gradual-0512",
+        "llm-percycle-thrice_heavier_gradual-0513",
+        "llm-percycle-thrice_last_slow_hold-0514",
+        "llm-percycle-thrice_last_slow_hold-0515",
+        "llm-percycle-thrice_lighter_gradual-0510",
+        "llm-percycle-thrice_lighter_gradual-0511",
+        "llm-percycle-thrice_slower_gradual-0508",
+        "llm-percycle-thrice_slower_gradual-0509",
+        "llm-percycle-twice_second_faster-0498",
+        "llm-percycle-twice_second_faster-0499",
+        "llm-percycle-twice_second_heavier-0500",
+        "llm-percycle-twice_second_heavier-0501",
+        "llm-percycle-twice_second_lighter-0502",
+        "llm-percycle-twice_second_lighter-0503",
+        "llm-percycle-twice_second_longer_hold-0504",
+        "llm-percycle-twice_second_longer_hold-0505",
+        "llm-percycle-twice_second_slower-0496",
+        "llm-percycle-twice_second_slower-0497",
+        "llm-percycle-twice_second_slower_heavier-0506",
+        "llm-percycle-twice_second_slower_heavier-0507",
+        "llm-rp-0997",
+        "llm-rp-angry.basic-0374",
+        "llm-single-fast-0160",
+        "llm-single-fast-0161",
+        "llm-single-fast-0162",
+        "llm-single-heavy-0157",
+        "llm-single-heavy-0158",
+        "llm-single-heavy-0159",
+        "llm-single-heavy_fast-0175",
+        "llm-single-heavy_fast-0176",
+        "llm-single-heavy_fast-0177",
+        "llm-single-light-0154",
+        "llm-single-light-0155",
+        "llm-single-light-0156",
+        "llm-single-light_slow-0172",
+        "llm-single-light_slow-0173",
+        "llm-single-light_slow-0174",
+        "llm-single-long_hold-0166",
+        "llm-single-long_hold-0167",
+        "llm-single-long_hold-0168",
+        "llm-single-normal-0151",
+        "llm-single-normal-0152",
+        "llm-single-normal-0153",
+        "llm-single-short_hold-0169",
+        "llm-single-short_hold-0170",
+        "llm-single-short_hold-0171",
+        "llm-single-slow-0163",
+        "llm-single-slow-0164",
+        "llm-single-slow-0165"
+      ],
+      "source_rows": 175
+    },
+    {
+      "semantic_family_id": "sf-354f897fc32cf524",
+      "keys": [
+        "unsupported:yawn"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-nonexec-unsupported-0902"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-357292d06f9cd0d6",
+      "keys": [
+        "execute:tilt_head.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0634"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-37b31204019d66c4",
+      "keys": [
+        "execute:look_around.basic>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0969"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-3952b0c3bd9324b0",
+      "keys": [
+        "execute:cheer.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0714"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-3b350a4d7f91103f",
+      "keys": [
+        "execute:angry.basic+blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0732",
+        "llm-par-0754"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-3bd1ea1d16bace7f",
+      "keys": [
+        "execute:shy.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0662"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-3cb3206bbd2dc41a",
+      "keys": [
+        "execute:angry.basic+nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0735",
+        "llm-par-0750",
+        "llm-par-1152"
+      ],
+      "source_rows": 10
+    },
+    {
+      "semantic_family_id": "sf-3db8bb2af2231d44",
+      "keys": [
+        "execute:surprise.basic>nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0716",
+        "llm-seq-1121"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-3eca79a777594478",
+      "keys": [
+        "execute:tilt_head.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0640",
+        "llm-seq-1119"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-411cc14d5a06af7b",
+      "keys": [
+        "execute:bow.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0678"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-41e844f6d2bc0530",
+      "keys": [
+        "execute:surprise.basic+tilt_head.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-par-0740",
+        "llm-par-0785"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-42c9b3f7f9cb7b25",
+      "keys": [
+        "execute:blink.full+bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0762",
+        "llm-par-0770",
+        "llm-par-1154",
+        "llm-tired-1521",
+        "llm-tired-1522",
+        "llm-tired-1523",
+        "llm-tired-1524"
+      ],
+      "source_rows": 23
+    },
+    {
+      "semantic_family_id": "sf-43dfd602dd5176f3",
+      "keys": [
+        "execute:shake_head.basic>blink.full"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0699"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-46bb0ed31629c626",
+      "keys": [
+        "none:negated:bow.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-nonexec-none-0834"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-4a0b80547ad2bb98",
+      "keys": [
+        "execute:bow.basic>nod.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0690"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-4b3d9df153e59e84",
+      "keys": [
+        "execute:cheer.basic+shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0790",
+        "llm-par-0799"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-4d8168d97f2af7a5",
+      "keys": [
+        "execute:look_around.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0621",
+        "llm-seq-0957"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-4df6c8fbf43569cb",
+      "keys": [
+        "execute:smile.basic>tilt_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0655",
+        "llm-seq-0951",
+        "llm-seq-1111",
+        "llm-seq-1112"
+      ],
+      "source_rows": 13
+    },
+    {
+      "semantic_family_id": "sf-4f3eb4746288ef98",
+      "keys": [
+        "execute:cheer.basic+nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0738",
+        "llm-par-0985"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-50010e651ad7f8f7",
+      "keys": [
+        "execute:blink.full+nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0743",
+        "llm-par-0748",
+        "llm-par-1146"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-50b74dbbf91ad556",
+      "keys": [
+        "execute:nod.basic>wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0654",
+        "llm-seq-0964"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-52b18e2e7fe74517",
+      "keys": [
+        "execute:blink.full+surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0747",
+        "llm-par-0984"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-5682344c42f548f0",
+      "keys": [
+        "execute:tilt_head.basic>cheer.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0663"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-57fc71d159d72193",
+      "keys": [
+        "execute:cheer.basic>shy.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0665"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-5a33adf17b719bdb",
+      "keys": [
+        "execute:nod.basic+shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0729",
+        "llm-par-1142"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-5a58659fa18976ec",
+      "keys": [
+        "execute:bow.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-bare-fast-0369",
+        "llm-bare-heavy-0368",
+        "llm-bare-light-0367",
+        "llm-bare-normal-0366",
+        "llm-bare-slow-0370",
+        "llm-colloq-1022",
+        "llm-dlg-bow-1409",
+        "llm-percycle-1038",
+        "llm-percycle-1168",
+        "llm-percycle-thrice_heavier_gradual-0612",
+        "llm-percycle-thrice_heavier_gradual-0613",
+        "llm-percycle-thrice_last_slow_hold-0614",
+        "llm-percycle-thrice_last_slow_hold-0615",
+        "llm-percycle-thrice_lighter_gradual-0610",
+        "llm-percycle-thrice_lighter_gradual-0611",
+        "llm-percycle-thrice_slower_gradual-0608",
+        "llm-percycle-thrice_slower_gradual-0609",
+        "llm-percycle-twice_second_faster-0598",
+        "llm-percycle-twice_second_faster-0599",
+        "llm-percycle-twice_second_heavier-0600",
+        "llm-percycle-twice_second_heavier-0601",
+        "llm-percycle-twice_second_lighter-0602",
+        "llm-percycle-twice_second_lighter-0603",
+        "llm-percycle-twice_second_longer_hold-0604",
+        "llm-percycle-twice_second_longer_hold-0605",
+        "llm-percycle-twice_second_slower-0596",
+        "llm-percycle-twice_second_slower-0597",
+        "llm-percycle-twice_second_slower_heavier-0606",
+        "llm-percycle-twice_second_slower_heavier-0607",
+        "llm-rp-1002",
+        "llm-rp-bow.basic-0380",
+        "llm-single-fast-0295",
+        "llm-single-fast-0296",
+        "llm-single-fast-0297",
+        "llm-single-heavy-0292",
+        "llm-single-heavy-0293",
+        "llm-single-heavy-0294",
+        "llm-single-heavy_fast-0310",
+        "llm-single-heavy_fast-0311",
+        "llm-single-heavy_fast-0312",
+        "llm-single-light-0289",
+        "llm-single-light-0290",
+        "llm-single-light-0291",
+        "llm-single-light_slow-0307",
+        "llm-single-light_slow-0308",
+        "llm-single-light_slow-0309",
+        "llm-single-long_hold-0301",
+        "llm-single-long_hold-0302",
+        "llm-single-long_hold-0303",
+        "llm-single-normal-0286",
+        "llm-single-normal-0287",
+        "llm-single-normal-0288",
+        "llm-single-short_hold-0304",
+        "llm-single-short_hold-0305",
+        "llm-single-short_hold-0306",
+        "llm-single-slow-0298",
+        "llm-single-slow-0299",
+        "llm-single-slow-0300"
+      ],
+      "source_rows": 168
+    },
+    {
+      "semantic_family_id": "sf-5c0f2135b8c26363",
+      "keys": [
+        "execute:shake_head.basic>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0669"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-5c40320893d5dd71",
+      "keys": [
+        "execute:surprise.basic+wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0744",
+        "llm-par-1151"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-61a3065b09dfa8c5",
+      "keys": [
+        "execute:nod.basic>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0682"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-61aac0ab607dbb3c",
+      "keys": [
+        "execute:shy.basic>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0630",
+        "llm-seq-0953"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-6392be9f758b5c52",
+      "keys": [
+        "execute:shake_head.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0671"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-640b77357d11edaf",
+      "keys": [
+        "none:negated:shake_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-nonexec-none-0828"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-64751f515cb95869",
+      "keys": [
+        "execute:shake_head.basic+smile.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-par-0736",
+        "llm-par-0788"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-653218e5c64efa57",
+      "keys": [
+        "execute:tilt_head.basic>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0648",
+        "llm-seq-0958"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-6639494890d7ddae",
+      "keys": [
+        "execute:smile.basic>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0968"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-66f8042388f16c81",
+      "keys": [
+        "execute:angry.basic+shake_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-hakimi-angry-1303",
+        "llm-par-0755",
+        "llm-par-0817",
+        "llm-par-0980",
+        "llm-par-1231"
+      ],
+      "source_rows": 15
+    },
+    {
+      "semantic_family_id": "sf-674e64984274b6f5",
+      "keys": [
+        "execute:bow.basic+shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0756",
+        "llm-par-0797"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-6a384409d8a4020d",
+      "keys": [
+        "execute:bow.basic+surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0745"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-6b888edfa8200d84",
+      "keys": [
+        "execute:bow.basic+smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0774",
+        "llm-par-0816",
+        "llm-par-0987"
+      ],
+      "source_rows": 10
+    },
+    {
+      "semantic_family_id": "sf-6f1c2f749f8e9b1b",
+      "keys": [
+        "execute:bow.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0618"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-71078de98d5a27c1",
+      "keys": [
+        "execute:tilt_head.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0696"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-77261ef69244d9d7",
+      "keys": [
+        "execute:bow.basic+look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0825"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-77432569588e66bd",
+      "keys": [
+        "execute:blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0314",
+        "llm-bare-normal-0313",
+        "llm-bare-slow-0315",
+        "llm-colloq-1011",
+        "llm-percycle-1036",
+        "llm-percycle-1166",
+        "llm-percycle-thrice_last_slow_hold-0394",
+        "llm-percycle-thrice_last_slow_hold-0395",
+        "llm-percycle-thrice_slower_gradual-0392",
+        "llm-percycle-thrice_slower_gradual-0393",
+        "llm-percycle-twice_second_faster-0388",
+        "llm-percycle-twice_second_faster-0389",
+        "llm-percycle-twice_second_longer_hold-0390",
+        "llm-percycle-twice_second_longer_hold-0391",
+        "llm-percycle-twice_second_slower-0386",
+        "llm-percycle-twice_second_slower-0387",
+        "llm-rp-0991",
+        "llm-rp-blink.full-0381",
+        "llm-single-fast-0004",
+        "llm-single-fast-0005",
+        "llm-single-fast-0006",
+        "llm-single-long_hold-0010",
+        "llm-single-long_hold-0011",
+        "llm-single-long_hold-0012",
+        "llm-single-normal-0001",
+        "llm-single-normal-0002",
+        "llm-single-normal-0003",
+        "llm-single-short_hold-0013",
+        "llm-single-short_hold-0014",
+        "llm-single-short_hold-0015",
+        "llm-single-slow-0007",
+        "llm-single-slow-0008",
+        "llm-single-slow-0009"
+      ],
+      "source_rows": 100
+    },
+    {
+      "semantic_family_id": "sf-78f27bef7948e294",
+      "keys": [
+        "execute:shake_head.basic>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0649"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-7af365a95a0e03c8",
+      "keys": [
+        "execute:shy.basic+wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0728",
+        "llm-par-0791"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-7c0b7c39405880cb",
+      "keys": [
+        "unsupported:whole_body_locomotion"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-unsupported-0847",
+        "llm-nonexec-unsupported-0848",
+        "llm-nonexec-unsupported-0849",
+        "llm-nonexec-unsupported-0850",
+        "llm-nonexec-unsupported-0909",
+        "llm-nonexec-unsupported-0916",
+        "llm-nonexec-unsupported-1209"
+      ],
+      "source_rows": 36
+    },
+    {
+      "semantic_family_id": "sf-7c2874b6955861f6",
+      "keys": [
+        "execute:tilt_head.basic>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0713"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-7d375a4a764709a9",
+      "keys": [
+        "execute:surprise.basic>shy.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0963"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-7d6cdd65bbbe0047",
+      "keys": [
+        "execute:nod.basic>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0629"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-7f189690ddeed940",
+      "keys": [
+        "execute:angry.basic+cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0823"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-80c63604169be6ad",
+      "keys": [
+        "execute:smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0339",
+        "llm-bare-heavy-0338",
+        "llm-bare-light-0337",
+        "llm-bare-normal-0336",
+        "llm-bare-slow-0340",
+        "llm-colloq-1016",
+        "llm-dlg-mix-1417",
+        "llm-dlg-smile-1402",
+        "llm-hakimi-smile-1308",
+        "llm-percycle-1034",
+        "llm-percycle-1163",
+        "llm-percycle-thrice_heavier_gradual-0492",
+        "llm-percycle-thrice_heavier_gradual-0493",
+        "llm-percycle-thrice_last_slow_hold-0494",
+        "llm-percycle-thrice_last_slow_hold-0495",
+        "llm-percycle-thrice_lighter_gradual-0490",
+        "llm-percycle-thrice_lighter_gradual-0491",
+        "llm-percycle-thrice_slower_gradual-0488",
+        "llm-percycle-thrice_slower_gradual-0489",
+        "llm-percycle-twice_second_faster-0478",
+        "llm-percycle-twice_second_faster-0479",
+        "llm-percycle-twice_second_heavier-0480",
+        "llm-percycle-twice_second_heavier-0481",
+        "llm-percycle-twice_second_lighter-0482",
+        "llm-percycle-twice_second_lighter-0483",
+        "llm-percycle-twice_second_longer_hold-0484",
+        "llm-percycle-twice_second_longer_hold-0485",
+        "llm-percycle-twice_second_slower-0476",
+        "llm-percycle-twice_second_slower-0477",
+        "llm-percycle-twice_second_slower_heavier-0486",
+        "llm-percycle-twice_second_slower_heavier-0487",
+        "llm-rp-0996",
+        "llm-rp-smile.basic-0371",
+        "llm-single-fast-0133",
+        "llm-single-fast-0134",
+        "llm-single-fast-0135",
+        "llm-single-heavy-0130",
+        "llm-single-heavy-0131",
+        "llm-single-heavy-0132",
+        "llm-single-heavy_fast-0148",
+        "llm-single-heavy_fast-0149",
+        "llm-single-heavy_fast-0150",
+        "llm-single-light-0127",
+        "llm-single-light-0128",
+        "llm-single-light-0129",
+        "llm-single-light_slow-0145",
+        "llm-single-light_slow-0146",
+        "llm-single-light_slow-0147",
+        "llm-single-long_hold-0139",
+        "llm-single-long_hold-0140",
+        "llm-single-long_hold-0141",
+        "llm-single-normal-0124",
+        "llm-single-normal-0125",
+        "llm-single-normal-0126",
+        "llm-single-short_hold-0142",
+        "llm-single-short_hold-0143",
+        "llm-single-short_hold-0144",
+        "llm-single-slow-0136",
+        "llm-single-slow-0137",
+        "llm-single-slow-0138"
+      ],
+      "source_rows": 183
+    },
+    {
+      "semantic_family_id": "sf-83f6227b1f259772",
+      "keys": [
+        "execute:blink.full+wave.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-par-0783",
+        "llm-par-0988"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-84656cc95861fee5",
+      "keys": [
+        "execute:bow.basic>shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0651"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-85a98bba20ab6f98",
+      "keys": [
+        "execute:shy.basic>tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0684",
+        "llm-seq-0955"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-877ef59e050f234c",
+      "keys": [
+        "unsupported:single_eye"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-nonexec-unsupported-0901"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-87d8382a00f463c2",
+      "keys": [
+        "execute:shy.basic>nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0720"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-898f18d379bf4d5a",
+      "keys": [
+        "execute:wave.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0624",
+        "llm-seq-0959"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-89a61e82989adf67",
+      "keys": [
+        "execute:look_around.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-dlg-seq-1425",
+        "llm-seq-0715"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-8a94557345e531a2",
+      "keys": [
+        "execute:wave.basic>smile.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-dlg-seq-1424",
+        "llm-seq-0660"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-8cb0d821dfc63d06",
+      "keys": [
+        "execute:angry.basic>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0692"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-8d4be99e02eaaf9f",
+      "keys": [
+        "execute:tilt_head.basic>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0643",
+        "llm-seq-0967"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-8ef04a88df6993e0",
+      "keys": [
+        "execute:shy.basic>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0622"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-8f1e754ce2731d1e",
+      "keys": [
+        "execute:shy.basic>wave.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0676",
+        "llm-seq-0952"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-900cce316d0ee53a",
+      "keys": [
+        "execute:surprise.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0719"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-928bfa9218bca49d",
+      "keys": [
+        "execute:blink.full+shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0821"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-92f3113025d34e9c",
+      "keys": [
+        "execute:angry.basic>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-dlg-seq-1423",
+        "llm-seq-0636"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-94d766dd82f6efa5",
+      "keys": [
+        "execute:look_around.basic>shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0661"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-963b86fc464e78d5",
+      "keys": [
+        "execute:nod.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0702",
+        "llm-seq-1114",
+        "llm-seq-1221"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-96418c4c21ccc025",
+      "keys": [
+        "execute:tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0329",
+        "llm-bare-heavy-0328",
+        "llm-bare-light-0327",
+        "llm-bare-normal-0326",
+        "llm-bare-slow-0330",
+        "llm-colloq-1014",
+        "llm-dlg-mix-1411",
+        "llm-dlg-tilt-1405",
+        "llm-percycle-1033",
+        "llm-percycle-1165",
+        "llm-percycle-thrice_heavier_gradual-0452",
+        "llm-percycle-thrice_heavier_gradual-0453",
+        "llm-percycle-thrice_last_slow_hold-0454",
+        "llm-percycle-thrice_last_slow_hold-0455",
+        "llm-percycle-thrice_lighter_gradual-0450",
+        "llm-percycle-thrice_lighter_gradual-0451",
+        "llm-percycle-thrice_slower_gradual-0448",
+        "llm-percycle-thrice_slower_gradual-0449",
+        "llm-percycle-twice_second_faster-0438",
+        "llm-percycle-twice_second_faster-0439",
+        "llm-percycle-twice_second_heavier-0440",
+        "llm-percycle-twice_second_heavier-0441",
+        "llm-percycle-twice_second_lighter-0442",
+        "llm-percycle-twice_second_lighter-0443",
+        "llm-percycle-twice_second_longer_hold-0444",
+        "llm-percycle-twice_second_longer_hold-0445",
+        "llm-percycle-twice_second_slower-0436",
+        "llm-percycle-twice_second_slower-0437",
+        "llm-percycle-twice_second_slower_heavier-0446",
+        "llm-percycle-twice_second_slower_heavier-0447",
+        "llm-rp-0994",
+        "llm-rp-tilt_head.basic-0375",
+        "llm-single-fast-0079",
+        "llm-single-fast-0080",
+        "llm-single-fast-0081",
+        "llm-single-heavy-0076",
+        "llm-single-heavy-0077",
+        "llm-single-heavy-0078",
+        "llm-single-heavy_fast-0094",
+        "llm-single-heavy_fast-0095",
+        "llm-single-heavy_fast-0096",
+        "llm-single-light-0073",
+        "llm-single-light-0074",
+        "llm-single-light-0075",
+        "llm-single-light_slow-0091",
+        "llm-single-light_slow-0092",
+        "llm-single-light_slow-0093",
+        "llm-single-long_hold-0085",
+        "llm-single-long_hold-0086",
+        "llm-single-long_hold-0087",
+        "llm-single-normal-0070",
+        "llm-single-normal-0071",
+        "llm-single-normal-0072",
+        "llm-single-short_hold-0088",
+        "llm-single-short_hold-0089",
+        "llm-single-short_hold-0090",
+        "llm-single-slow-0082",
+        "llm-single-slow-0083",
+        "llm-single-slow-0084",
+        "llm-sway-1501",
+        "llm-sway-1502"
+      ],
+      "source_rows": 184
+    },
+    {
+      "semantic_family_id": "sf-9673424cbce2480f",
+      "keys": [
+        "execute:look_around.basic>smile.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0712"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-9706942fb2b5d68c",
+      "keys": [
+        "execute:look_around.basic+smile.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-par-0727",
+        "llm-par-0757",
+        "llm-par-1149"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-97b18b04ebf66431",
+      "keys": [
+        "execute:blink.full>nod.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0960"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-9828d1dfe53d769e",
+      "keys": [
+        "execute:surprise.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0724"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-9b3e907a021ebbc4",
+      "keys": [
+        "execute:cheer.basic+surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0808"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-9c5a2881a5a997c0",
+      "keys": [
+        "execute:surprise.basic>wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0693"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-9e2cde22999ba92f",
+      "keys": [
+        "execute:smile.basic>wave.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-rp-1003",
+        "llm-seq-0691"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-a068c2250bf59339",
+      "keys": [
+        "execute:blink.full+tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0782",
+        "llm-par-0982",
+        "llm-rp-par-0385"
+      ],
+      "source_rows": 10
+    },
+    {
+      "semantic_family_id": "sf-a2da2c6f70193f22",
+      "keys": [
+        "execute:smile.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0677"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-a3f86babf5e22a6a",
+      "keys": [
+        "execute:tilt_head.basic>nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-dlg-seq-1422",
+        "llm-seq-0722"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-a6928748bd69464e",
+      "keys": [
+        "none:negated:cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-none-0835"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-a7785f2362f5bd3d",
+      "keys": [
+        "execute:surprise.basic>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0646"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-a7db2756c54122d3",
+      "keys": [
+        "execute:look_around.basic+nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0780",
+        "llm-par-0819"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-a85421181d3db0c3",
+      "keys": [
+        "execute:surprise.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0709"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-a8a6b60a5e5d28e5",
+      "keys": [
+        "execute:smile.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0642"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-aabd9ca87f0b337b",
+      "keys": [
+        "execute:shake_head.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0695",
+        "llm-seq-0961"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-ab0c1580bfb89368",
+      "keys": [
+        "execute:nod.basic>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0620"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-abb3ec3c52a6788a",
+      "keys": [
+        "execute:cheer.basic>tilt_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0670"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-ac586ff3451a3751",
+      "keys": [
+        "execute:angry.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0628"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-af695745d3f34e57",
+      "keys": [
+        "execute:angry.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-1118"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-b1585cd6beba1abe",
+      "keys": [
+        "execute:smile.basic>shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0710"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-b281f857332eb1ea",
+      "keys": [
+        "execute:bow.basic>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0688",
+        "llm-seq-0966"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-b339e923b2f40a1a",
+      "keys": [
+        "execute:blink.full>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0617",
+        "llm-seq-1124"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-b5eb4b9090001ce4",
+      "keys": [
+        "unsupported:resource_channel_conflict",
+        "unsupported:unavailable_face_voice",
+        "unsupported:unavailable_hands_props"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-unsupported-0851",
+        "llm-nonexec-unsupported-0852",
+        "llm-nonexec-unsupported-0854",
+        "llm-nonexec-unsupported-0904",
+        "llm-nonexec-unsupported-0905",
+        "llm-nonexec-unsupported-0906",
+        "llm-nonexec-unsupported-0907",
+        "llm-nonexec-unsupported-0908",
+        "llm-nonexec-unsupported-0913",
+        "llm-nonexec-unsupported-0914",
+        "llm-nonexec-unsupported-0915",
+        "llm-nonexec-unsupported-1201",
+        "llm-nonexec-unsupported-1202",
+        "llm-nonexec-unsupported-1203",
+        "llm-nonexec-unsupported-1204",
+        "llm-nonexec-unsupported-1210",
+        "llm-par-0730",
+        "llm-par-0737",
+        "llm-par-0758",
+        "llm-par-0759",
+        "llm-par-0760",
+        "llm-par-0772",
+        "llm-par-0792",
+        "llm-par-0795",
+        "llm-par-0802",
+        "llm-par-0806",
+        "llm-par-0810",
+        "llm-par-0813",
+        "llm-par-0824",
+        "llm-par-0981"
+      ],
+      "source_rows": 99
+    },
+    {
+      "semantic_family_id": "sf-b6ba3983c2b28542",
+      "keys": [
+        "execute:wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0359",
+        "llm-bare-heavy-0358",
+        "llm-bare-light-0357",
+        "llm-bare-normal-0356",
+        "llm-bare-slow-0360",
+        "llm-colloq-1020",
+        "llm-dlg-mix-1415",
+        "llm-dlg-wave-1408",
+        "llm-percycle-1032",
+        "llm-percycle-1164",
+        "llm-percycle-thrice_heavier_gradual-0572",
+        "llm-percycle-thrice_heavier_gradual-0573",
+        "llm-percycle-thrice_last_slow_hold-0574",
+        "llm-percycle-thrice_last_slow_hold-0575",
+        "llm-percycle-thrice_lighter_gradual-0570",
+        "llm-percycle-thrice_lighter_gradual-0571",
+        "llm-percycle-thrice_slower_gradual-0568",
+        "llm-percycle-thrice_slower_gradual-0569",
+        "llm-percycle-twice_second_faster-0558",
+        "llm-percycle-twice_second_faster-0559",
+        "llm-percycle-twice_second_heavier-0560",
+        "llm-percycle-twice_second_heavier-0561",
+        "llm-percycle-twice_second_lighter-0562",
+        "llm-percycle-twice_second_lighter-0563",
+        "llm-percycle-twice_second_longer_hold-0564",
+        "llm-percycle-twice_second_longer_hold-0565",
+        "llm-percycle-twice_second_slower-0556",
+        "llm-percycle-twice_second_slower-0557",
+        "llm-percycle-twice_second_slower_heavier-0566",
+        "llm-percycle-twice_second_slower_heavier-0567",
+        "llm-rp-1000",
+        "llm-rp-wave.basic-0379",
+        "llm-single-fast-0241",
+        "llm-single-fast-0242",
+        "llm-single-fast-0243",
+        "llm-single-heavy-0238",
+        "llm-single-heavy-0239",
+        "llm-single-heavy-0240",
+        "llm-single-heavy_fast-0256",
+        "llm-single-heavy_fast-0257",
+        "llm-single-heavy_fast-0258",
+        "llm-single-light-0235",
+        "llm-single-light-0236",
+        "llm-single-light-0237",
+        "llm-single-light_slow-0253",
+        "llm-single-light_slow-0254",
+        "llm-single-light_slow-0255",
+        "llm-single-long_hold-0247",
+        "llm-single-long_hold-0248",
+        "llm-single-long_hold-0249",
+        "llm-single-normal-0232",
+        "llm-single-normal-0233",
+        "llm-single-normal-0234",
+        "llm-single-short_hold-0250",
+        "llm-single-short_hold-0251",
+        "llm-single-short_hold-0252",
+        "llm-single-slow-0244",
+        "llm-single-slow-0245",
+        "llm-single-slow-0246"
+      ],
+      "source_rows": 173
+    },
+    {
+      "semantic_family_id": "sf-b6c2f9b470fc1287",
+      "keys": [
+        "execute:cheer.basic>smile.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0708",
+        "llm-seq-0962"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-b7954d9596de5ea1",
+      "keys": [
+        "execute:wave.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0689"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-b9de6937e855eb89",
+      "keys": [
+        "execute:shy.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0701"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-bbc02f32664da8dc",
+      "keys": [
+        "none:negated:shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-none-0832"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-bd25332713b1110b",
+      "keys": [
+        "execute:wave.basic>blink.full"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0658"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-bd9ed61e0aa8dac9",
+      "keys": [
+        "execute:smile.basic>nod.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0631",
+        "llm-seq-1223"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-bdce35f2a2125020",
+      "keys": [
+        "execute:shake_head.basic>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0705"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-be02a2754fe70d3e",
+      "keys": [
+        "execute:nod.basic+shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0820",
+        "llm-par-1150"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-beb68a94e0a00892",
+      "keys": [
+        "execute:blink.full>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0704"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-bec4d7779094d3a0",
+      "keys": [
+        "execute:nod.basic>shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0683"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-bf89577b644e46a0",
+      "keys": [
+        "execute:shake_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-bare-fast-0324",
+        "llm-bare-heavy-0323",
+        "llm-bare-light-0322",
+        "llm-bare-normal-0321",
+        "llm-bare-slow-0325",
+        "llm-colloq-1013",
+        "llm-dlg-shake-1404",
+        "llm-percycle-1035",
+        "llm-percycle-1167",
+        "llm-percycle-thrice_heavier_gradual-0432",
+        "llm-percycle-thrice_heavier_gradual-0433",
+        "llm-percycle-thrice_last_slow_hold-0434",
+        "llm-percycle-thrice_last_slow_hold-0435",
+        "llm-percycle-thrice_lighter_gradual-0430",
+        "llm-percycle-thrice_lighter_gradual-0431",
+        "llm-percycle-thrice_slower_gradual-0428",
+        "llm-percycle-thrice_slower_gradual-0429",
+        "llm-percycle-twice_second_faster-0418",
+        "llm-percycle-twice_second_faster-0419",
+        "llm-percycle-twice_second_heavier-0420",
+        "llm-percycle-twice_second_heavier-0421",
+        "llm-percycle-twice_second_lighter-0422",
+        "llm-percycle-twice_second_lighter-0423",
+        "llm-percycle-twice_second_longer_hold-0424",
+        "llm-percycle-twice_second_longer_hold-0425",
+        "llm-percycle-twice_second_slower-0416",
+        "llm-percycle-twice_second_slower-0417",
+        "llm-percycle-twice_second_slower_heavier-0426",
+        "llm-percycle-twice_second_slower_heavier-0427",
+        "llm-rp-0993",
+        "llm-rp-shake_head.basic-0377",
+        "llm-single-fast-0052",
+        "llm-single-fast-0053",
+        "llm-single-fast-0054",
+        "llm-single-heavy-0049",
+        "llm-single-heavy-0050",
+        "llm-single-heavy-0051",
+        "llm-single-heavy_fast-0067",
+        "llm-single-heavy_fast-0068",
+        "llm-single-heavy_fast-0069",
+        "llm-single-light-0046",
+        "llm-single-light-0047",
+        "llm-single-light-0048",
+        "llm-single-light_slow-0064",
+        "llm-single-light_slow-0065",
+        "llm-single-light_slow-0066",
+        "llm-single-long_hold-0058",
+        "llm-single-long_hold-0059",
+        "llm-single-long_hold-0060",
+        "llm-single-normal-0043",
+        "llm-single-normal-0044",
+        "llm-single-normal-0045",
+        "llm-single-short_hold-0061",
+        "llm-single-short_hold-0062",
+        "llm-single-short_hold-0063",
+        "llm-single-slow-0055",
+        "llm-single-slow-0056",
+        "llm-single-slow-0057"
+      ],
+      "source_rows": 170
+    },
+    {
+      "semantic_family_id": "sf-bfecdeea756be94c",
+      "keys": [
+        "execute:shy.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0717",
+        "llm-seq-1122"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-c08b4611e173bf7b",
+      "keys": [
+        "execute:cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-bare-fast-0364",
+        "llm-bare-heavy-0363",
+        "llm-bare-light-0362",
+        "llm-bare-normal-0361",
+        "llm-bare-slow-0365",
+        "llm-colloq-1021",
+        "llm-dlg-cheer-1410",
+        "llm-dlg-mix-1418",
+        "llm-percycle-1037",
+        "llm-percycle-1169",
+        "llm-percycle-thrice_heavier_gradual-0592",
+        "llm-percycle-thrice_heavier_gradual-0593",
+        "llm-percycle-thrice_last_slow_hold-0594",
+        "llm-percycle-thrice_last_slow_hold-0595",
+        "llm-percycle-thrice_lighter_gradual-0590",
+        "llm-percycle-thrice_lighter_gradual-0591",
+        "llm-percycle-thrice_slower_gradual-0588",
+        "llm-percycle-thrice_slower_gradual-0589",
+        "llm-percycle-twice_second_faster-0578",
+        "llm-percycle-twice_second_faster-0579",
+        "llm-percycle-twice_second_heavier-0580",
+        "llm-percycle-twice_second_heavier-0581",
+        "llm-percycle-twice_second_lighter-0582",
+        "llm-percycle-twice_second_lighter-0583",
+        "llm-percycle-twice_second_longer_hold-0584",
+        "llm-percycle-twice_second_longer_hold-0585",
+        "llm-percycle-twice_second_slower-0576",
+        "llm-percycle-twice_second_slower-0577",
+        "llm-percycle-twice_second_slower_heavier-0586",
+        "llm-percycle-twice_second_slower_heavier-0587",
+        "llm-rp-1001",
+        "llm-rp-cheer.basic-0372",
+        "llm-single-fast-0268",
+        "llm-single-fast-0269",
+        "llm-single-fast-0270",
+        "llm-single-heavy-0265",
+        "llm-single-heavy-0266",
+        "llm-single-heavy-0267",
+        "llm-single-heavy_fast-0283",
+        "llm-single-heavy_fast-0284",
+        "llm-single-heavy_fast-0285",
+        "llm-single-light-0262",
+        "llm-single-light-0263",
+        "llm-single-light-0264",
+        "llm-single-light_slow-0280",
+        "llm-single-light_slow-0281",
+        "llm-single-light_slow-0282",
+        "llm-single-long_hold-0274",
+        "llm-single-long_hold-0275",
+        "llm-single-long_hold-0276",
+        "llm-single-normal-0259",
+        "llm-single-normal-0260",
+        "llm-single-normal-0261",
+        "llm-single-short_hold-0277",
+        "llm-single-short_hold-0278",
+        "llm-single-short_hold-0279",
+        "llm-single-slow-0271",
+        "llm-single-slow-0272",
+        "llm-single-slow-0273"
+      ],
+      "source_rows": 176
+    },
+    {
+      "semantic_family_id": "sf-c0b1c68e32d42f4e",
+      "keys": [
+        "execute:surprise.basic>blink.full"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0685"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-c15e6ba0fab561ba",
+      "keys": [
+        "execute:wave.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0616"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-c1b607c78c8ba454",
+      "keys": [
+        "execute:blink.full>tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0707"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-c2dad81c91930e78",
+      "keys": [
+        "execute:shake_head.basic+shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0786",
+        "llm-par-0800"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-c33c837b916e1d85",
+      "keys": [
+        "execute:smile.basic+tilt_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-par-0734",
+        "llm-par-0805",
+        "llm-par-1155",
+        "llm-sway-1503",
+        "llm-sway-1504"
+      ],
+      "source_rows": 15
+    },
+    {
+      "semantic_family_id": "sf-c3c9a6a5c6fe3436",
+      "keys": [
+        "execute:shake_head.basic+surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0741",
+        "llm-par-0752"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-c84111794addfa8f",
+      "keys": [
+        "execute:nod.basic+tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0767",
+        "llm-par-0796"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-cd6facd2f892e250",
+      "keys": [
+        "execute:bow.basic>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0697"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-cea691b2586c4966",
+      "keys": [
+        "execute:blink.full>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0723"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-ceb15bd01ea436c6",
+      "keys": [
+        "execute:bow.basic>look_around.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0711"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-cef79baba0325c84",
+      "keys": [
+        "execute:nod.basic+smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0739",
+        "llm-par-0979",
+        "llm-par-1141"
+      ],
+      "source_rows": 9
+    },
+    {
+      "semantic_family_id": "sf-cfffb5223f4e3aaa",
+      "keys": [
+        "unsupported:too_many_actions"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-nonexec-unsupported-0853",
+        "llm-nonexec-unsupported-0912",
+        "llm-nonexec-unsupported-1207"
+      ],
+      "source_rows": 14
+    },
+    {
+      "semantic_family_id": "sf-d2a7c47612d97cbc",
+      "keys": [
+        "execute:bow.basic+cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0775",
+        "llm-par-0798",
+        "llm-par-0975"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-d4824355c6565f86",
+      "keys": [
+        "execute:angry.basic+wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0789",
+        "llm-par-0811",
+        "llm-par-0976"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-d53e00632119ee98",
+      "keys": [
+        "execute:angry.basic>tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0638"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-d78995bc2032ec22",
+      "keys": [
+        "execute:wave.basic>nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0725"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-d87e270b7c8a4200",
+      "keys": [
+        "execute:shy.basic>look_around.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-seq-0666"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-d9ecdc8aa1a3b05f",
+      "keys": [
+        "execute:cheer.basic+tilt_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-par-0793"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-d9f2914412a3c1e6",
+      "keys": [
+        "execute:blink.full>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0718"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-dbcd5ba00d269063",
+      "keys": [
+        "execute:wave.basic>cheer.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0645",
+        "llm-seq-1126"
+      ],
+      "source_rows": 6
+    },
+    {
+      "semantic_family_id": "sf-de70260d5d62ab39",
+      "keys": [
+        "execute:angry.basic>wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0700"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-de7ee77d4458d3e5",
+      "keys": [
+        "execute:shake_head.basic>shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0641"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-dee90d6a00486381",
+      "keys": [
+        "execute:surprise.basic>tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0721"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-defa9901f10313b4",
+      "keys": [
+        "execute:look_around.basic+tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0742",
+        "llm-par-0768",
+        "llm-par-0986"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-df70286da0eba261",
+      "keys": [
+        "unsupported:count_exceeds_three"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-nonexec-unsupported-0843",
+        "llm-nonexec-unsupported-0844",
+        "llm-nonexec-unsupported-0845",
+        "llm-nonexec-unsupported-0846",
+        "llm-nonexec-unsupported-0910",
+        "llm-nonexec-unsupported-0911",
+        "llm-nonexec-unsupported-1205",
+        "llm-nonexec-unsupported-1206"
+      ],
+      "source_rows": 37
+    },
+    {
+      "semantic_family_id": "sf-df9b6759731caa9b",
+      "keys": [
+        "execute:nod.basic+surprise.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-par-0751"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-df9f4f93fc9bf9f3",
+      "keys": [
+        "execute:shake_head.basic+wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0731",
+        "llm-par-0778"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-e09188ce82c1cfb6",
+      "keys": [
+        "execute:bow.basic>angry.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0627",
+        "llm-seq-1113"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-e19f4298b397aedd",
+      "keys": [
+        "execute:smile.basic+wave.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-par-0769",
+        "llm-par-0978",
+        "llm-par-1144",
+        "llm-par-1232",
+        "llm-rp-par-0383"
+      ],
+      "source_rows": 18
+    },
+    {
+      "semantic_family_id": "sf-e35005193bbd4b4e",
+      "keys": [
+        "execute:cheer.basic>look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0650"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-e6766b40a1bbae3a",
+      "keys": [
+        "execute:angry.basic+bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0733",
+        "llm-par-0804",
+        "llm-par-1148"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-e87578d01be634df",
+      "keys": [
+        "execute:cheer.basic>nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0619"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-e8db5a54f45b331e",
+      "keys": [
+        "execute:look_around.basic>nod.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0687"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-e9bc35f848cb6209",
+      "keys": [
+        "execute:blink.full+look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0753",
+        "llm-par-0818"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-ea2f64a658ba89ff",
+      "keys": [
+        "execute:angry.basic+look_around.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0771",
+        "llm-par-0809"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-ed052caa0cd68a21",
+      "keys": [
+        "execute:smile.basic>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0623"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-ee81e3f1c076bc8f",
+      "keys": [
+        "execute:cheer.basic+shake_head.basic"
+      ],
+      "split": "test",
+      "source_group_ids": [
+        "llm-par-0764",
+        "llm-par-0787"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-f03f01de003b2323",
+      "keys": [
+        "execute:cheer.basic+smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-hakimi-smile-1309",
+        "llm-par-0766",
+        "llm-par-0812",
+        "llm-par-0983",
+        "llm-rp-1004",
+        "llm-rp-par-0384"
+      ],
+      "source_rows": 20
+    },
+    {
+      "semantic_family_id": "sf-f1528dd8105551e1",
+      "keys": [
+        "execute:bow.basic>surprise.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0647"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-f18e8eb942806db9",
+      "keys": [
+        "execute:look_around.basic>wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0656"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-f31f55971200473b",
+      "keys": [
+        "execute:bow.basic>wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0667"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-f41eb60b3c34e5bb",
+      "keys": [
+        "execute:blink.full>surprise.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0626",
+        "llm-seq-0956"
+      ],
+      "source_rows": 5
+    },
+    {
+      "semantic_family_id": "sf-f4445abada8c0c29",
+      "keys": [
+        "execute:nod.basic>bow.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0672"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-f5be5f4ca5935f37",
+      "keys": [
+        "execute:look_around.basic>tilt_head.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-seq-0659"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-f64f84770fce8fd3",
+      "keys": [
+        "execute:bow.basic+shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0781",
+        "llm-sad-1511",
+        "llm-sad-1512",
+        "llm-sad-1513",
+        "llm-sad-1514"
+      ],
+      "source_rows": 17
+    },
+    {
+      "semantic_family_id": "sf-f659ff100ee8fb0c",
+      "keys": [
+        "execute:tilt_head.basic>shake_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0653"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-f6a613b19ba1d3ee",
+      "keys": [
+        "execute:cheer.basic+look_around.basic"
+      ],
+      "split": "val",
+      "source_group_ids": [
+        "llm-par-0784",
+        "llm-par-0801",
+        "llm-par-1153"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-f74f1c453ddf6ca6",
+      "keys": [
+        "execute:bow.basic+wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0773",
+        "llm-par-0779",
+        "llm-par-0977"
+      ],
+      "source_rows": 8
+    },
+    {
+      "semantic_family_id": "sf-f79fce42d61389a4",
+      "keys": [
+        "execute:look_around.basic+wave.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0726",
+        "llm-par-0815"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-f7bb769518fa2f62",
+      "keys": [
+        "execute:shy.basic>cheer.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0668"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-f9057877ca5565c8",
+      "keys": [
+        "execute:blink.full+shy.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0794",
+        "llm-par-0803"
+      ],
+      "source_rows": 4
+    },
+    {
+      "semantic_family_id": "sf-faf3b98cf446fdb6",
+      "keys": [
+        "execute:surprise.basic>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0674"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-fc77696a2e1f4daa",
+      "keys": [
+        "execute:bow.basic+tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0776"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-fe7b09433767c970",
+      "keys": [
+        "execute:shake_head.basic+tilt_head.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-par-0777"
+      ],
+      "source_rows": 2
+    },
+    {
+      "semantic_family_id": "sf-fee85d02c5015309",
+      "keys": [
+        "execute:shake_head.basic>smile.basic"
+      ],
+      "split": "train",
+      "source_group_ids": [
+        "llm-seq-0625"
+      ],
+      "source_rows": 2
+    }
+  ]
+}

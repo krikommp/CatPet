@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-11-17T10:50:40.338154+00:00",
+  "python": "D:\\UnityProjects\\Pet\\PetLive2d\\.venv-action-encoder\\Scripts\\python.exe",
+  "python_version": "3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)]",
+  "pytorch": "2.9.1+cpu",
+  "cpu_threads_planned": 2,
+  "backbone": {
+    "model_id": "hfl/minirbt-h256",
+    "revision": "446e1b4012b10946f479563005700c54c9db3f7c",
+    "verified": true
+  },
+  "old_checkpoint": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_video_20261117_01\\round9_checkpoint",
+  "old_checkpoint_hashes": {
+    "backbone_state.pt": "dbd29e4a4689f0025465e25d6fb90f27908f675b2404138477ac9a5a69271a89",
+    "config_head.pt": "838f2c1ac110f5fa56359b5f67b8a2beda83c21f2a5e5921fdd86b9c906ec0be",
+    "manifest.json": "870cc437e7954fd30388d05b773951521e5bbae5bb8b6a10e3d6ab97d7ee8bb9",
+    "test_split.jsonl": "ecbc2f4d3ad1b6c2cd38cc17003830979bf1a72d86047063b9120344020e75eb"
+  },
+  "protected_inputs_still_match": true,
+  "no_new_training_started": true,
+  "concurrency_check": "Available Get-Process shows only pre-existing Python processes started 2026-11-12 or 2026-11-17 17:59, before this round. Command lines unavailable; unknown processes untouched. New output dir will be exclusive and a per-round lock prevents duplicate launches."
+}

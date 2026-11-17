@@ -1,0 +1,35 @@
+{
+  "reviewed_count": 24,
+  "reviewed_frames": 626,
+  "result_counts": {
+    "visual_unconfirmed": 7,
+    "objective_mismatch": 7,
+    "partial_visual_confirmation": 10
+  },
+  "training_eligible": 0,
+  "naturalness_or_style_scored": 0,
+  "resource_coverage": {
+    "shake_head.basic": 2,
+    "nod.basic": 7,
+    "tilt_head.basic": 4,
+    "smile.basic": 5,
+    "cheer.basic": 3,
+    "wave.basic": 3,
+    "angry.basic": 1,
+    "surprise.basic": 1,
+    "shy.basic": 2,
+    "bow.basic": 3,
+    "blink.full": 1
+  },
+  "missing_resources": [
+    "look_around.basic"
+  ],
+  "exact_numeric_duration_cases": 0,
+  "replay_required_count": 24,
+  "audit_only": true,
+  "persona_pending": false,
+  "persona_received": true,
+  "persona_status": "persona_file_present_rubric_pending",
+  "persona_sha256": "56b4364bf1c7da22e6b6faadc094299e570f93375e0acb78f510c360d614aa41",
+  "rubric_freeze_pending": true
+}

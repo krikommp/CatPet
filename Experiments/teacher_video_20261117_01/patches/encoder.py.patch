@@ -1,0 +1,85 @@
+--- original/Tools/ActionEncoder/encoder.py
++++ experiment/Tools/ActionEncoder/encoder.py
+@@ -7,7 +7,7 @@
+ from pathlib import Path
+ import time
+ 
+-ROOT = Path(__file__).resolve().parents[2]
++ROOT = next(parent for parent in Path(__file__).resolve().parents if (parent / "ProjectSettings" / "ProjectVersion.txt").is_file())
+ DEFAULT_MODEL_DIR = ROOT / ".cache" / "action-encoder" / "model"
+ DEFAULT_ACTION_HEAD_DIR = Path(__file__).resolve().parent / "checkpoints" / "latest"
+ DEFAULT_CONFIG_HEAD_DIR = Path(__file__).resolve().parent / "checkpoints" / "v02_latest"
+@@ -73,12 +73,14 @@
+         threads: int = 2,
+         action_head_dir: Path | None = None,
+         config_head_dir: Path | None = None,
++        legacy_baseline_evaluation: bool = False,
+     ):
+         # Inference has no download fallback, remote code, cloud API, or credential use.
+         os.environ["HF_HUB_OFFLINE"] = "1"
+         os.environ["TRANSFORMERS_OFFLINE"] = "1"
+         os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
+         self.model_dir = model_dir.resolve()
++        self._legacy_baseline_evaluation = legacy_baseline_evaluation
+         self.manifest = verify_model(self.model_dir)
+         import torch
+         from transformers import BertModel, BertTokenizer
+@@ -218,14 +220,25 @@
+         if data.get("label_policy_version") != expected_policy:
+             raise VersionMismatchError(f"Unsupported label_policy_version; expected {expected_policy}.")
+ 
++        from action_config_schema import (DECODER_POLICY_VERSION, INPUT_POLICY_VERSION,
++                                          ModelOutputError, decode_config, format_input_text, legacy_decode_config)
++        input_policy = self.config_head_manifest.get("input_policy")
++        if input_policy is None:
++            model_text = text.strip()  # Frozen legacy checkpoint contract.
++        elif input_policy == INPUT_POLICY_VERSION:
++            model_text = format_input_text(text, data.get("input_role"))
++        else:
++            raise VersionMismatchError(f"Unknown input policy: {input_policy}.")
++        decoder_policy = self.config_head_manifest.get("decoder_policy", DECODER_POLICY_VERSION)
++        if decoder_policy != DECODER_POLICY_VERSION and not self._legacy_baseline_evaluation:
++            raise VersionMismatchError(f"Unknown decoder policy: {decoder_policy}.")
+         max_length = int(self.config_head_manifest.get("max_length", 128))
+-        full_tokens = self.tokenizer.encode(text.strip(), add_special_tokens=True, truncation=False)
++        full_tokens = self.tokenizer.encode(model_text, add_special_tokens=True, truncation=False)
+         if len(full_tokens) > max_length:
+             raise InputTooLongError(f"Input exceeds max_length={max_length} ({len(full_tokens)} tokens); refusing truncated execution.")
+ 
+-        from action_config_schema import decode_config
+         start = time.perf_counter()
+-        inputs = self.tokenizer([text.strip()], padding=True, truncation=False, return_tensors="pt")
++        inputs = self.tokenizer([model_text], padding=True, truncation=False, return_tensors="pt")
+         bb = self.config_backbone or self.model
+         with self.torch.inference_mode():
+             hidden = bb(**inputs).last_hidden_state
+@@ -234,7 +247,20 @@
+             disc = self.config_head.forward_discrete(pooled)
+             pred_rids = disc["resource_id"].argmax(dim=-1)
+             params = self.config_head.forward_params(disc["h"], pred_rids)
+-            config_obj = decode_config(disc, params)
++            decoder = legacy_decode_config if self._legacy_baseline_evaluation else decode_config
++            config_obj = decoder(disc, params)
++        constraint_audit = None
++        role = data.get("input_role", "instruction")
++        if role not in {"instruction", "dialogue"}:
++            raise ValueError("input_role must be instruction or dialogue.")
++        if not self._legacy_baseline_evaluation and role == "instruction":
++            from input_constraints import validate_instruction_constraints
++            constraint_audit = validate_instruction_constraints(text.strip(), config_obj)
++            if constraint_audit["violations"] or constraint_audit["unresolved"]:
++                failure = ModelOutputError("Prediction violates explicit instruction constraints or has unresolved numeric scope.")
++                failure.raw_config = config_obj
++                failure.constraint_audit = constraint_audit
++                raise failure
+ 
+         return {
+             "request_id": request_id,
+@@ -245,6 +271,7 @@
+             "parameter_schema_version": expected_schema,
+             "label_policy_version": expected_policy,
+             "inference_ms": round((time.perf_counter() - start) * 1000, 3),
++            "instruction_constraint_audit": constraint_audit,
+             "config": config_obj,
+         }
+ 

@@ -1,0 +1,80 @@
+--- original/Assets/Scripts/ActionLanguage/ActionConfigCompiler.cs
++++ experiment/Assets/Scripts/ActionLanguage/ActionConfigCompiler.cs
+@@ -157,7 +157,8 @@
+                     for (int c = 0; c < act.Cycles.Count; c++)
+                     {
+                         var cyc = act.Cycles[c];
+-                        ExpandCycle(act.Resource, cyc, cycleStartMs, profile.MinParameterSegmentMs, frames);
++                        if (!TryExpandCycle(act.Resource, cyc, cycleStartMs, profile.MinParameterSegmentMs,
++                            act.Path + $".cycles[{c}]", frames, out error)) return false;
+                         cycleStartMs += cyc.DurationMs;
+                     }
+ 
+@@ -277,26 +278,40 @@
+             return true;
+         }
+ 
+-        private static void ExpandCycle(
++        private static bool TryExpandCycle(
+             ActionResourceDefinition res,
+             CycleSpec cyc,
+             int startMs,
+             int minSegmentMs,
+-            SortedDictionary<int, SortedDictionary<string, float>> frames)
++            string cyclePath,
++            SortedDictionary<int, SortedDictionary<string, float>> frames,
++            out ActionValidationError error)
+         {
+             double holdMs = cyc.DurationMs * cyc.HoldRatio;
+             double moveMs = cyc.DurationMs - holdMs;
+-            // ActionContract rejects any parameter segment shorter than MinParameterSegmentMs (80ms).
+-            if (holdMs < minSegmentMs || moveMs < 2.0 * minSegmentMs)
+-            {
+-                holdMs = 0.0;
+-                moveMs = cyc.DurationMs;
+-            }
+-            double enterMs = Math.Max(minSegmentMs, Math.Min(moveMs - minSegmentMs, moveMs * res.EnterReturnAlpha));
++            // Preserve the requested phase mapping. Reject an unrepresentable hold instead
++            // of silently changing the label to zero hold or clamping the enter/return ratio.
++            double enterMs = moveMs * res.EnterReturnAlpha;
+             double returnMs = moveMs - enterMs;
++            int enterEndMs = (int)Math.Round(enterMs, MidpointRounding.AwayFromZero);
++            int holdEndMs = (int)Math.Round(enterMs + holdMs, MidpointRounding.AwayFromZero);
++            if (holdMs > 0.0 && holdEndMs - enterEndMs < minSegmentMs)
++            {
++                return Fail("unrepresentable_hold", cyclePath + ".controls.hold_ratio",
++                    $"Requested hold becomes {holdEndMs - enterEndMs}ms after rounding; minimum is {minSegmentMs}ms. No parameters were changed.", out error);
++            }
+ 
+             foreach (var ch in res.Channels)
+             {
++                if (holdMs > 0.0)
++                {
++                    bool hasHoldEnd = false;
++                    foreach (var point in ch.Points)
++                        if (point.Phase == "hold" && point.LocalFraction == 1.0) hasHoldEnd = true;
++                    if (!hasHoldEnd)
++                        return Fail("missing_hold_phase", cyclePath + ".controls.hold_ratio",
++                            $"Resource '{res.ResourceId}' channel '{ch.ParameterId}' has no hold endpoint. A positive hold cannot be represented faithfully.", out error);
++                }
+                 foreach (var pt in ch.Points)
+                 {
+                     double offsetMs;
+@@ -306,7 +321,7 @@
+                     }
+                     else if (pt.Phase == "hold")
+                     {
+-                        if (holdMs < 1.0) continue; // skip zero-hold duplicate
++                        if (holdMs == 0.0) continue; // only an exactly zero hold may omit this point
+                         offsetMs = enterMs + holdMs * pt.LocalFraction;
+                     }
+                     else
+@@ -323,6 +338,8 @@
+                     SetFrameValue(frames, atMs, ch.ParameterId, targetVal);
+                 }
+             }
++            error = null;
++            return true;
+         }
+ 
+         private static void SetFrameValue(SortedDictionary<int, SortedDictionary<string, float>> frames, int atMs, string paramId, float value)

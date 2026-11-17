@@ -1,0 +1,20 @@
+{
+  "baseline": {
+    "rows": 3232,
+    "compiled": 3187,
+    "errors": {
+      "model_range_exceeded": 45
+    }
+  },
+  "patched": {
+    "rows": 3232,
+    "compiled": 2441,
+    "errors": {
+      "unrepresentable_hold": 549,
+      "model_range_exceeded": 42,
+      "missing_hold_phase": 200
+    }
+  },
+  "execution_environment": "Standalone Mono C# 9; actual project parser/resource catalog/native validator sources; no Unity scene/playback test",
+  "input_sha256": "1ad67b22cc8150fa6a078b8d46a6c1d5b3104e18ef35324f3341d544b5460cdc"
+}

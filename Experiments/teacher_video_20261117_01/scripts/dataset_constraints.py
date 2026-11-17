@@ -1,0 +1,268 @@
+"""Conservative, deterministic checks for an explicitly documented Chinese instruction subset.
+
+This is a validator, never a label repairer. Unresolved numeric scope is reported,
+not broadcast to every cycle. No persona/rubric preference is inferred here.
+"""
+from __future__ import annotations
+
+import re
+from decimal import Decimal
+
+NUM = r"(?:\d+(?:\.\d+)?|[一二两三四五六七八九十]+)"
+CN = {"一": 1, "二": 2, "两": 2, "三": 3, "四": 4, "五": 5, "六": 6,
+      "七": 7, "八": 8, "九": 9, "十": 10}
+ALIASES = {
+    "blink.full": r"眨(?:眨)?眼|眨(?:一下|两下|三下|一次|两次|三次)眼|眨一下",
+    "nod.basic": r"点(?:点)?头",
+    "shake_head.basic": r"摇(?:摇)?头|晃(?:晃)?(?:脑袋|头)",
+    "tilt_head.basic": r"歪(?:歪)?头|歪脑袋",
+    "look_around.basic": r"四处张望|东张西望|左右看|环顾四周|张望",
+    "smile.basic": r"微笑|笑一笑|笑笑|浅笑",
+    "angry.basic": r"生气|鼓嘴",
+    "shy.basic": r"害羞|不好意思|脸红害羞",
+    "surprise.basic": r"惊讶|吓一跳|吃惊",
+    "wave.basic": r"挥(?:挥)?手|招(?:招)?手|摆手",
+    "cheer.basic": r"举手欢呼|欢呼|加油",
+    "bow.basic": r"鞠躬|行礼|弯腰鞠躬",
+}
+
+
+def num(s):
+    if s in CN: return Decimal(CN[s])
+    if "十" in s:
+        a,b=s.split("十",1)
+        if (not a or a in CN) and (not b or b in CN):
+            return Decimal((CN[a] if a else 1)*10+(CN[b] if b else 0))
+    return Decimal(s)
+
+
+def canonical_actions(config):
+    # Match schema's canonical action indexing, not lexicographic resource order.
+    order = list(ALIASES)
+    return [(si, a) for si, step in enumerate(config.get("steps", []))
+            for a in sorted(step.get("actions", []), key=lambda a: order.index(a["resource_id"]))]
+
+
+def mentioned_resources(text):
+    return [r for r, pattern in ALIASES.items() if re.search(pattern, text)]
+
+
+def validate_instruction_constraints(text, config):
+    """Returns checked constraints, violations, and unresolved syntax/scope.
+
+    Supported exact durations: 第X次...N秒/毫秒; 每次N秒/毫秒;
+    named single-cycle action ... N秒/毫秒. Supported counts: named action N次/下/遍,
+    and 眨N次眼. Relative cycle clauses and monotonic duration/amplitude supported.
+    The function does not claim general NLU coverage or semantic completeness.
+    """
+    result = {"policy": "objective-instruction-checks.v1", "checks": [], "violations": [],
+              "unresolved": [], "no_silent_repair": True}
+    if config.get("decision") != "execute":
+        result["execution_constraints_applicable"] = False
+        return result
+    invalid_ordinal = next((m for m in re.finditer(r"第(\d+(?:\.\d+)?)[次下遍]",text)
+                            if num(m.group(1))<=0 or num(m.group(1))!=num(m.group(1)).to_integral_value()),None)
+    signed_quantity = re.search(r"[-−－]\s*(?:\d+(?:\.\d+)?|[一二两三四五六七八九十]+)",text)
+    if invalid_ordinal or signed_quantity:
+        match=invalid_ordinal or signed_quantity
+        result["unresolved"].append({"kind":"invalid_ordinal" if invalid_ordinal else "negative_numeric_quantity","span":match.group(0)})
+        result.update(execution_constraints_applicable=True,passed_checked_constraints=False,coverage_is_partial=True)
+        return result
+    # Refuse unsupported lexical numbers before matching substrings. E.g. never
+    # read the '六秒' suffix of '零点六秒' as 6000ms, or truncate 1.5 cycles to 1.
+    unsupported_numeric = re.search(r"[零〇一二两三四五六七八九十百千万]+点[零〇一二两三四五六七八九十]+|半|[百千万]|秒钟",text)
+    if unsupported_numeric:
+        result["unresolved"].append({"kind":"unresolved_numeric_syntax","span":unsupported_numeric.group(0)})
+        result.update(execution_constraints_applicable=True,passed_checked_constraints=False,coverage_is_partial=True)
+        return result
+    covered = []
+    def parse_count(value, span):
+        try: n=num(value)
+        except Exception:
+            result["unresolved"].append({"kind":"unresolved_numeric_syntax","span":span})
+            return None
+        if n != n.to_integral_value():
+            result["violations"].append({"kind":"fractional_count","span":span,"actual":str(n),"passed":False})
+            return None
+        return int(n)
+    flat = canonical_actions(config)
+    by_rid = {}
+    for index, (_, a) in enumerate(flat):
+        by_rid.setdefault(a["resource_id"], []).append(index)
+    requested_counts = {}
+    for rid, pattern in ALIASES.items():
+        values = [parse_count(m.group(1),m.group(0)) for m in re.finditer(r"(?:" + pattern + r")\s*(" + NUM + r")[次下遍]", text)]
+        if rid == "blink.full":
+            values += [parse_count(m.group(1),m.group(0)) for m in re.finditer(r"眨(" + NUM + r")[次下遍]眼", text)]
+        values=[v for v in values if v is not None]
+        if values:
+            requested_counts[rid] = set(values)
+
+    def add(kind, action_index, cycle_index=None, **kw):
+        item = {"kind": kind, "action_index": action_index, **kw}
+        if cycle_index is not None:
+            item["cycle_index"] = cycle_index
+        result["checks"].append(item)
+        if not item["passed"]:
+            result["violations"].append(item)
+
+    def resolve(clause, context=""):
+        named = mentioned_resources(clause)
+        if len(named) == 1 and len(by_rid.get(named[0], [])) == 1:
+            return by_rid[named[0]][0]
+        if not named:
+            prior = mentioned_resources(context)
+            if len(prior) == 1 and len(by_rid.get(prior[0], [])) == 1:
+                return by_rid[prior[0]][0]
+        return None
+
+    # Counts are checked adjacent to the named action; ordinal cycle references
+    # such as 第二次 are never interpreted as total counts.
+    for rid, pattern in ALIASES.items():
+        for m in re.finditer(r"(?:" + pattern + r")\s*(" + NUM + r")[次下遍]", text):
+            covered.append(m.span())
+            ai = by_rid.get(rid, [])
+            if len(ai) != 1:
+                result["unresolved"].append({"kind": "count_scope", "span": m.group(0), "resource_id": rid})
+                continue
+            expected = parse_count(m.group(1),m.group(0)); actual = len(flat[ai[0]][1]["cycles"])
+            if expected is None: continue
+            # A narrow textual clause sequence remains unresolved. Never waive
+            # action A's count because unrelated action B has a later ordinal.
+            if expected == 1 and len(mentioned_resources(text)) == 1 and re.search(r"先.*(?:再|接着|第[二三23][次下遍])", text) and not re.search(r"只|不|别|勿|禁止",text):
+                result["unresolved"].append({"kind": "count_clause_vs_total", "span": m.group(0)})
+                continue
+            add("cycle_count", ai[0], expected=expected, actual=actual, passed=actual == expected, span=m.group(0))
+    for m in re.finditer(r"眨(" + NUM + r")[次下遍]眼", text):
+        covered.append(m.span())
+        ids = by_rid.get("blink.full", [])
+        if len(ids) == 1:
+            actual = len(flat[ids[0]][1]["cycles"]); expected = parse_count(m.group(1),m.group(0))
+            if expected is None: continue
+            add("cycle_count", ids[0], expected=expected, actual=actual, passed=actual == expected, span=m.group(0))
+        else:
+            result["unresolved"].append({"kind": "count_scope", "span":m.group(0), "resource_id":"blink.full"})
+
+    clauses = list(re.finditer(r"[^，,；;。]+", text))
+    for cm in clauses:
+        clause = cm.group(0); context = text[:cm.start()]
+        duration_matches = list(re.finditer(r"(" + NUM + r")\s*(毫秒|ms|秒|s)(?!钟)", clause, re.I))
+        for dm in duration_matches:
+            covered.append((cm.start()+dm.start(),cm.start()+dm.end()))
+            prefix = clause[:dm.start()]
+            # Only a cycle duration is supported; a hold duration is a separate field.
+            if re.search(r"保持|停顿|闭眼|定格", prefix):
+                result["unresolved"].append({"kind": "duration_field", "span": clause})
+                continue
+            ai = resolve(clause, context)
+            if ai is None:
+                result["unresolved"].append({"kind": "duration_action_scope", "span": clause})
+                continue
+            cycles = flat[ai][1]["cycles"]
+            request_counts = requested_counts.get(flat[ai][1]["resource_id"], set())
+            ordinals = list(re.finditer(r"第(" + NUM + r")[次下遍]", prefix))
+            if ordinals:
+                targets = [int(num(ordinals[-1].group(1))) - 1]
+            elif "每次" in prefix or "每下" in prefix or "每遍" in prefix:
+                if len(request_counts) == 1:
+                    targets = list(range(min(next(iter(request_counts)),4)))
+                else:
+                    result["unresolved"].append({"kind": "duration_cycle_scope", "span":clause})
+                    continue
+            elif request_counts == {1}:
+                targets = [0]
+            else:
+                result["unresolved"].append({"kind": "duration_cycle_scope", "span": clause})
+                continue
+            try: expected = num(dm.group(1)) * (1 if dm.group(2).lower() in ("毫秒", "ms") else 1000)
+            except Exception:
+                result["unresolved"].append({"kind":"unresolved_numeric_syntax","span":dm.group(0)})
+                continue
+            for ci in targets:
+                actual = cycles[ci]["duration_ms"] if 0 <= ci < len(cycles) else None
+                add("exact_duration_ms", ai, ci, expected=float(expected), actual=actual,
+                    passed=actual is not None and Decimal(str(actual)) == expected, span=clause)
+
+        # Explicit relative cycle relations. No minimum subjective difference is
+        # invented: this only tests a strict inequality, not perceptual sufficiency.
+        ordinal = re.search(r"第([一二三123])[次下遍]", clause)
+        if ordinal:
+            if re.search(r"不|别|勿|禁止",clause):
+                result["unresolved"].append({"kind":"negated_relative_or_ordinal_scope","span":clause})
+                continue
+            ai = resolve(clause, context)
+            patterns = [
+                ("duration_ms", "gt", r"更慢|慢一点|慢些|放慢|慢下来|慢悠悠|放慢节奏|比第[一二三123][次下遍]慢"),
+                ("duration_ms", "lt", r"更快|快一点|快些|加快|快起来|比第[一二三123][次下遍]快"),
+                ("amplitude_scale", "gt", r"更重|重一点|用力一点|更大|更深|更高|幅度大|加大幅度"),
+                ("amplitude_scale", "lt", r"更轻|轻一点|变轻|更小|减小幅度|幅度小|比第[一二三123][次下遍]轻"),
+                ("hold_time_ms", "gt", r"停得更久|保持更久|闭眼更久|停顿更久|保持一下"),
+            ]
+            for field, op, pattern in patterns:
+                relation_match=re.search(pattern,clause)
+                if not relation_match:
+                    continue
+                covered.append((cm.start()+relation_match.start(),cm.start()+relation_match.end()))
+                if ai is None:
+                    result["unresolved"].append({"kind": "relative_action_scope", "span": clause})
+                    continue
+                ci = int(num(ordinal.group(1))) - 1
+                reference_match = re.search(r"(?:比|相较|相比)第([一二三123])[次下遍]",clause)
+                explicit_ordinals = list(re.finditer(r"第("+NUM+r")[次下遍]",clause))
+                if reference_match:
+                    ref=int(num(reference_match.group(1)))-1
+                elif len(explicit_ordinals)>1 or re.search(r"(?:比|相较|相比)",clause) and not re.search(r"(?:比|相较|相比)(?:前一次|上一次)",clause):
+                    result["unresolved"].append({"kind":"relative_reference_scope","span":clause})
+                    continue
+                else:
+                    ref = ci - 1
+                    previous_reference=re.search(r"(?:比|相较|相比)(?:前一次|上一次)",clause)
+                    if previous_reference:
+                        covered.append((cm.start()+previous_reference.start(),cm.start()+previous_reference.end()))
+                cycles = flat[ai][1]["cycles"]
+                def value(c):
+                    if field == "duration_ms": return c["duration_ms"]
+                    if field == "hold_time_ms": return c["duration_ms"] * c["controls"]["hold_ratio"]
+                    return c["controls"].get(field)
+                a = value(cycles[ci]) if 0 <= ci < len(cycles) else None
+                b = value(cycles[ref]) if 0 <= ref < len(cycles) else None
+                passed = a is not None and b is not None and (a > b if op == "gt" else a < b)
+                add("relative", ai, ci, reference_cycle_index=ref, field=field, op=op,
+                    actual=a, reference=b, passed=passed, span=clause)
+
+    named_in_request = mentioned_resources(text)
+    if len(named_in_request) == 1:
+        named_ids = by_rid.get(named_in_request[0], [])
+        ai = named_ids[0] if len(named_ids) == 1 else None
+        cycles = flat[ai][1]["cycles"] if ai is not None else []
+        gradual = [
+            ("duration_ms", "gt", r"越来越慢|逐渐放慢|越.*越慢"),
+            ("duration_ms", "lt", r"越来越快|逐渐加快|越.*越快"),
+            ("amplitude_scale", "gt", r"幅度越来越大|越来越重|越.*越用力"),
+            ("amplitude_scale", "lt", r"幅度越来越小|越来越轻"),
+        ]
+        for field, op, pattern in gradual:
+            if re.search(pattern, text):
+                if ai is None:
+                    result["unresolved"].append({"kind":"relative_action_scope", "span":text})
+                    continue
+                if len(cycles) < 2:
+                    result["violations"].append({"kind":"gradual_relative_missing_cycles","action_index":ai,"field":field,"actual_cycle_count":len(cycles),"passed":False})
+                for ci in range(1, len(cycles)):
+                    a = cycles[ci].get(field, cycles[ci]["controls"].get(field))
+                    b = cycles[ci-1].get(field, cycles[ci-1]["controls"].get(field))
+                    passed = a is not None and b is not None and (a > b if op == "gt" else a < b)
+                    add("gradual_relative", ai, ci, reference_cycle_index=ci-1,
+                        field=field, op=op, actual=a, reference=b, passed=passed)
+    # Consume ordinal syntax and intrinsic resource-name idioms separately. Any
+    # other number (including unitless amplitude 0.5) must be handled explicitly;
+    # empty checks never mean an unrecognized numeric instruction passed.
+    covered += [m.span() for m in re.finditer(r"第("+NUM+r")[次下遍]",text)]
+    for pattern in ALIASES.values(): covered += [m.span() for m in re.finditer(pattern,text)]
+    for m in re.finditer(r"\d+(?:\.\d+)?|[零〇一二两三四五六七八九十百千万]+",text):
+        if not any(a<=m.start() and m.end()<=b for a,b in covered):
+            result["unresolved"].append({"kind":"unresolved_numeric_syntax","span":m.group(0)})
+    result["execution_constraints_applicable"] = True
+    result["passed_checked_constraints"] = not result["violations"] and not result["unresolved"]
+    result["coverage_is_partial"] = True
+    return result
