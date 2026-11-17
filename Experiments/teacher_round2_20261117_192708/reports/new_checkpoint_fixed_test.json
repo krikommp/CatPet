@@ -1,0 +1,861 @@
+{
+  "stage": "diagnostic_report",
+  "checkpoint_id": "02a3692ec758",
+  "execution_source_sha256": {
+    "retrain_and_eval.py": "8aadcf5e2b6ae637df728f5c8a54fba9d4c201856be65c1bf60859991054ba06",
+    "encoder.py": "f14c7059f70fa52cf7cb34d3e07ebab100cd5a67683eccc5fba189b83c80a2b0",
+    "action_config_schema.py": "414d3c26cc2b333f048fbf8565380eaf3d266f33085eb572e3947f39a34bcda3",
+    "input_constraints.py": "32b0072999f616240746ab21d3a1ae2f2b2131ff179663ace8294f4862e44de9",
+    "config_prediction.py": "9f5c3de6e0d2af8e0721059ec9e94f32277cfde2cdb7d0440eb02be645cca7fe",
+    "feasible_config.py": "12bac82733f4c2d1efe906bbf18d7a3e921947295541372ee5419d68e1936637",
+    "literal_bindings.py": "b20875d14122eb03e9a2c2e3ad9761566eeeef52438a0031fb601fcf79d6b844"
+  },
+  "input_policy": "action-input-role.v1",
+  "model_architecture": "action-config-head.feasible-v1",
+  "parameterization_policy": "resource-feasible-hold-gate.v1",
+  "binding_policy": "explicit-duration-binding.v1",
+  "decoder_policy": "strict-predicted-resource.feasible-v1",
+  "checkpoint_sha256": {
+    "config_head.pt": "02a3692ec7586d8f7726ff1a676f7fe949a73b107e115ca44251ba2e98eba44b",
+    "backbone_state.pt": "19040be46f9ad437a6d7c25ad4d13e5a428c813503aeaefcfccd26ea3f9f698f",
+    "manifest.json": "daf1fa20c578f0d6c1e041ffbb618cd1db5ddce8efd4bb3b386c2b4342f989db"
+  },
+  "data": {
+    "snapshot_manifest": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\frozen_snapshot\\manifest.json",
+    "snapshot_manifest_sha256": "270e16fc4cdba98b7226921fd90f34739a5d3463c41dee6925a7b024bde4bf45",
+    "split_scope": "test",
+    "validated_frozen_snapshot": true,
+    "evaluated_row_count": 7
+  },
+  "metrics": {
+    "total": 7,
+    "gold_none": 1,
+    "decision_correct": 3,
+    "structure_correct": 1,
+    "execute_structure_correct": 0,
+    "false_execute_none": 0,
+    "valid_nonexecute_prediction": 2,
+    "gold_unsupported": 1,
+    "false_execute_unsupported": 0,
+    "gold_ambiguous": 1,
+    "false_execute_ambiguous": 1,
+    "gold_execute": 4,
+    "nonexecute_specificity": 0.6666666666666666,
+    "technical_error_rate": 0.0,
+    "execute_structure_accuracy": 0.0
+  },
+  "raw_prediction_metrics": {
+    "total": 7,
+    "decision_correct": 3,
+    "nonexecute_total": 3,
+    "nonexecute_prediction": 2,
+    "false_execution": 1,
+    "resource_slots": 8,
+    "resource_correct": 2,
+    "active_slots": 8,
+    "stage_correct": 8,
+    "cycle_count_correct": 7,
+    "per_decision": {
+      "execute": {
+        "total": 4,
+        "correct": 2
+      },
+      "none": {
+        "total": 1,
+        "correct": 0
+      },
+      "unsupported": {
+        "total": 1,
+        "correct": 1
+      },
+      "ambiguous": {
+        "total": 1,
+        "correct": 0
+      }
+    },
+    "decision_accuracy": 0.42857142857142855,
+    "macro_decision_accuracy": 0.375,
+    "nonexecute_specificity": 0.6666666666666666,
+    "resource_slot_accuracy": 0.25,
+    "active_stage_accuracy": 1.0,
+    "active_cycle_count_accuracy": 0.875
+  },
+  "confusion": {
+    "none": {
+      "unsupported": 1
+    },
+    "unsupported": {
+      "unsupported": 1
+    },
+    "ambiguous": {
+      "execute": 1
+    },
+    "execute": {
+      "unsupported": 2,
+      "execute": 2
+    }
+  },
+  "predictions": [
+    {
+      "raw_text": "不要眨眼，也不要鞠躬，停在原位即可。",
+      "input_role": "instruction",
+      "group_id": "tr1-none_negated_specific_actions",
+      "expected": {
+        "decision": "none",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "unsupported",
+        "steps": []
+      },
+      "inference_ms": 9.678,
+      "raw_prediction": {
+        "finite": true,
+        "head_finite": {
+          "decision": true,
+          "resource_id": true,
+          "stage": true,
+          "cycle_count": true
+        },
+        "decision": "unsupported",
+        "resource_ids": [
+          "shake_head.basic",
+          "angry.basic"
+        ],
+        "stages": [
+          0,
+          0
+        ],
+        "cycle_counts": [
+          1,
+          1
+        ]
+      },
+      "binding_audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": false,
+        "unchanged_structural_fields": {
+          "decision": "unsupported",
+          "stage_count": 0,
+          "actions": []
+        },
+        "execution_constraints_applicable": false,
+        "bypass_reason": "non_execution"
+      },
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "请让身体朝左、朝右交替摇摆，不是反复朝同一侧歪头。",
+      "input_role": "instruction",
+      "group_id": "tr1-unsupported_alternating_body",
+      "expected": {
+        "decision": "unsupported",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "unsupported",
+        "steps": []
+      },
+      "inference_ms": 9.244,
+      "raw_prediction": {
+        "finite": true,
+        "head_finite": {
+          "decision": true,
+          "resource_id": true,
+          "stage": true,
+          "cycle_count": true
+        },
+        "decision": "unsupported",
+        "resource_ids": [
+          "shake_head.basic",
+          "angry.basic"
+        ],
+        "stages": [
+          0,
+          0
+        ],
+        "cycle_counts": [
+          2,
+          1
+        ]
+      },
+      "binding_audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": false,
+        "unchanged_structural_fields": {
+          "decision": "unsupported",
+          "stage_count": 0,
+          "actions": []
+        },
+        "execution_constraints_applicable": false,
+        "bypass_reason": "non_execution"
+      },
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "幅度改小一点，速度再慢一些。",
+      "input_role": "instruction",
+      "group_id": "tr1-ambiguous_relative_missing_action",
+      "expected": {
+        "decision": "ambiguous",
+        "steps": [],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "tilt_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1078,
+                    "controls": {
+                      "hold_ratio": 0.289,
+                      "amplitude_scale": 0.942
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 16.297,
+      "raw_prediction": {
+        "finite": true,
+        "head_finite": {
+          "decision": true,
+          "resource_id": true,
+          "stage": true,
+          "cycle_count": true
+        },
+        "decision": "execute",
+        "resource_ids": [
+          "tilt_head.basic",
+          "PAD"
+        ],
+        "stages": [
+          0,
+          0
+        ],
+        "cycle_counts": [
+          1,
+          1
+        ]
+      },
+      "binding_audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "tilt_head.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 0
+      },
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    },
+    {
+      "raw_text": "用眨眼和挥手一起发出招呼信号，两种动作同时开始。",
+      "input_role": "instruction",
+      "group_id": "tr1-par_blink_wave_signal",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "blink.full"
+              },
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  },
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 600
+                  }
+                ],
+                "resource_id": "wave.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "unsupported",
+        "steps": []
+      },
+      "inference_ms": 9.049,
+      "raw_prediction": {
+        "finite": true,
+        "head_finite": {
+          "decision": true,
+          "resource_id": true,
+          "stage": true,
+          "cycle_count": true
+        },
+        "decision": "unsupported",
+        "resource_ids": [
+          "shake_head.basic",
+          "angry.basic"
+        ],
+        "stages": [
+          0,
+          0
+        ],
+        "cycle_counts": [
+          2,
+          1
+        ]
+      },
+      "binding_audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": false,
+        "unchanged_structural_fields": {
+          "decision": "unsupported",
+          "stage_count": 0,
+          "actions": []
+        },
+        "execution_constraints_applicable": false,
+        "bypass_reason": "non_execution"
+      },
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "合影摆姿势时，歪头的同时微笑，保持片刻后回正。",
+      "input_role": "instruction",
+      "group_id": "tr1-par_tilt_smile_pose",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.05,
+                      "hold_ratio": 0.4
+                    },
+                    "duration_ms": 1500
+                  }
+                ],
+                "resource_id": "tilt_head.basic"
+              },
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.98,
+                      "hold_ratio": 0.4
+                    },
+                    "duration_ms": 1500
+                  }
+                ],
+                "resource_id": "smile.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "unsupported",
+        "steps": []
+      },
+      "inference_ms": 8.741,
+      "raw_prediction": {
+        "finite": true,
+        "head_finite": {
+          "decision": true,
+          "resource_id": true,
+          "stage": true,
+          "cycle_count": true
+        },
+        "decision": "unsupported",
+        "resource_ids": [
+          "smile.basic",
+          "angry.basic"
+        ],
+        "stages": [
+          0,
+          0
+        ],
+        "cycle_counts": [
+          1,
+          1
+        ]
+      },
+      "binding_audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": false,
+        "unchanged_structural_fields": {
+          "decision": "unsupported",
+          "stage_count": 0,
+          "actions": []
+        },
+        "execution_constraints_applicable": false,
+        "bypass_reason": "non_execution"
+      },
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": false
+      }
+    },
+    {
+      "raw_text": "先露出微笑，接着收起笑容左右张望，像是要去找人。",
+      "input_role": "instruction",
+      "group_id": "tr1-seq_smile_look_investigate",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 0.98,
+                      "hold_ratio": 0.4
+                    },
+                    "duration_ms": 1400
+                  }
+                ],
+                "resource_id": "smile.basic"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 1300
+                  }
+                ],
+                "resource_id": "look_around.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "angry.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1570,
+                    "controls": {
+                      "hold_ratio": 0.454,
+                      "amplitude_scale": 1.012
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "look_around.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 1490,
+                    "controls": {
+                      "hold_ratio": 0.0,
+                      "amplitude_scale": 1.061
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 11.355,
+      "raw_prediction": {
+        "finite": true,
+        "head_finite": {
+          "decision": true,
+          "resource_id": true,
+          "stage": true,
+          "cycle_count": true
+        },
+        "decision": "execute",
+        "resource_ids": [
+          "angry.basic",
+          "look_around.basic"
+        ],
+        "stages": [
+          0,
+          1
+        ],
+        "cycle_counts": [
+          1,
+          1
+        ]
+      },
+      "binding_audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 2,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "angry.basic",
+              "cycle_count": 1
+            },
+            {
+              "action_index": 1,
+              "stage": 1,
+              "resource_id": "look_around.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 0
+      },
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    },
+    {
+      "raw_text": "表现改口：先点头，回正后再摇头。",
+      "input_role": "instruction",
+      "group_id": "tr1-seq_nod_shake_correction",
+      "expected": {
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.0,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 900
+                  }
+                ],
+                "resource_id": "nod.basic"
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "cycles": [
+                  {
+                    "controls": {
+                      "amplitude_scale": 1.05,
+                      "hold_ratio": 0.0
+                    },
+                    "duration_ms": 1000
+                  }
+                ],
+                "resource_id": "shake_head.basic"
+              }
+            ]
+          }
+        ],
+        "version": "action-config.v0.2"
+      },
+      "predicted": {
+        "version": "action-config.v0.2",
+        "decision": "execute",
+        "steps": [
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 861,
+                    "controls": {
+                      "hold_ratio": 0.0,
+                      "amplitude_scale": 0.949
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "actions": [
+              {
+                "resource_id": "shake_head.basic",
+                "cycles": [
+                  {
+                    "duration_ms": 866,
+                    "controls": {
+                      "hold_ratio": 0.0,
+                      "amplitude_scale": 0.928
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "inference_ms": 9.091,
+      "raw_prediction": {
+        "finite": true,
+        "head_finite": {
+          "decision": true,
+          "resource_id": true,
+          "stage": true,
+          "cycle_count": true
+        },
+        "decision": "execute",
+        "resource_ids": [
+          "shake_head.basic",
+          "shake_head.basic"
+        ],
+        "stages": [
+          0,
+          1
+        ],
+        "cycle_counts": [
+          1,
+          1
+        ]
+      },
+      "binding_audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 2,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "shake_head.basic",
+              "cycle_count": 1
+            },
+            {
+              "action_index": 1,
+              "stage": 1,
+              "resource_id": "shake_head.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 0
+      },
+      "explicit_instruction_constraints": {
+        "policy": "explicit-instruction-guard.v2",
+        "checks": [],
+        "violations": [],
+        "unresolved": [],
+        "coverage_is_partial": true,
+        "no_silent_repair": true,
+        "execution_constraints_applicable": true,
+        "passed_checked_constraints": true
+      }
+    }
+  ],
+  "release_approved": false,
+  "training_started": false,
+  "limitations": [
+    "No Unity playback or video review is performed by this evaluator.",
+    "Semantic-family independence from an older checkpoint is not inferred.",
+    "Unconstrained parameter MAE is not a success metric; explicit instruction checks retain unresolved scopes."
+  ]
+}

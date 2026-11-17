@@ -1,0 +1,117 @@
+{
+  "tr2-train-13-r2": {
+    "frames": [
+      4,
+      9,
+      26,
+      35
+    ],
+    "naturalness": 0.82,
+    "notes": "Two coherent left-right head shakes are visible, first over 0–600 ms and second over 600–1700 ms. Full-resolution extrema at frames 4/9 and 26/35 resolve the two opposite head orientations. The second cycle visibly develops and returns more slowly; trajectory confirms equal amplitude (~15.3) with 600/1100 ms durations and neutral returns at 600/1700 ms. Available character and both hands remain uncropped. Smooth easing and stable head geometry support naturalness 0.82; the return phase is somewhat deliberate but readable."
+  },
+  "tr2-train-14-r1": {
+    "frames": [
+      13,
+      40
+    ],
+    "naturalness": 0.87,
+    "notes": "Two same-side head tilts and returns are clearly visible, each lasting 900 ms. The second tilt is substantially larger in the full-resolution peak frames 13 and 40, matching head peaks ~10.956 and ~20.916 with body roll following proportionally. Each cycle returns to neutral at 900 and 1800 ms; no alternating-side claim is made. All visible character parts remain inside frame. Smooth coherent head/body movement and distinct repeated cycles support naturalness 0.87."
+  },
+  "tr2-train-15-r1": {
+    "frames": [
+      7,
+      15,
+      42,
+      54
+    ],
+    "naturalness": 0.84,
+    "notes": "Two clear left-right head-and-eye scans are visible. Full frames 7/15 and 42/54 resolve the gaze directions and repeated order. The first spans 0–1000 ms and the longer second spans 1000–2600 ms, returning head and gaze to center after each. The complete trajectory matches both timing and coordinated head/eye movement. Character and hands stay in frame. Smooth readable scans with a relatively slow final recentering support naturalness 0.84."
+  },
+  "tr2-train-16-r2": {
+    "frames": [
+      0,
+      13,
+      27
+    ],
+    "notes": "One coherent broad arm lift with an open palm is visible, peaking around 433–467 ms and returning by 900 ms; all fingers remain in frame. However, full frame 13 shows the arm on image-right, which is the frontal character’s anatomical left side. The literal raw instruction requests the right arm. No established mirrored/viewer-side convention was supplied, and the RT parameter name alone cannot resolve this visible side mismatch. Count, duration and return match, but complete literal gesture semantics are uncertain.",
+    "limitation": "The visible raised arm is image-right/anatomical-left; requested right-arm laterality is not established."
+  },
+  "tr2-train-17-r1": {
+    "frames": [
+      0,
+      9,
+      18,
+      27,
+      54
+    ],
+    "naturalness": 0.83,
+    "notes": "Two coherent downward nod-and-return movements occur first, with visible peaks at full frames 9 and 27 and an intervening neutral pose at 18. They occupy 0–600 and 600–1200 ms. A clear crescent-eye smile then appears, holds about 1567–2033 ms and returns to neutral at 2400 ms. The full trajectory confirms separated nod and smile stages without premature overlap. Full-resolution inspection resolves the modest nod amplitude. The available body and hands remain uncropped. Smooth modest nods and a clear friendly expression support naturalness 0.83."
+  },
+  "tr2-train-18-r1": {
+    "frames": [
+      18,
+      45,
+      54,
+      63
+    ],
+    "naturalness": 0.83,
+    "notes": "The character first gives a distinct crescent-eye smile, held approximately 367–833 ms and fully released by 1200 ms. Two visible downward nods then follow over 1200–1800 and 1800–2400 ms; full peak frames 45/63 and neutral frame 54 resolve their count and modest amplitude. No premature nod occurs during the smile. The complete trajectory corroborates the requested order and neutral returns. Whole available character and hands remain in frame. Smooth transitions and readable facial expression support naturalness 0.83."
+  },
+  "tr2-train-19-r1": {
+    "frames": [
+      7,
+      13,
+      20,
+      40
+    ],
+    "naturalness": 0.85,
+    "notes": "Two distinct eyelid closures occur first, visible at full frames 7 and 20 with reopened eyes at frame 13 and again by 900 ms. A clear surprised expression follows, with pale wide eyes and an open square mouth, held approximately 1167–1600 ms and released by 2000 ms. All focus rows and both contact sheets show the requested order without extra gestures, followed by neutral completion at 2200 ms. The available character and hands remain in frame. Smooth blinks and the readable stylized surprise support naturalness 0.85."
+  },
+  "tr2-train-20-r1": {
+    "frames": [
+      13,
+      40,
+      47,
+      53
+    ],
+    "naturalness": 0.85,
+    "notes": "The surprised expression occurs first over 0–1100 ms, visibly displaying pale wide eyes and an open square mouth. Two subsequent eyelid closures are separately resolved in full frames 40 and 53, with the intervening reopened eyes in frame 47. Both contact sheets and all focus rows confirm surprise release before the two 450 ms blinks, neutral return at 2000 ms and completion at 2200 ms. No character part is clipped by the frame. Smooth facial transitions and two distinct relaxed blinks support naturalness 0.85."
+  },
+  "tr2-train-21-r1": {
+    "frames": [
+      6,
+      13,
+      42
+    ],
+    "naturalness": 0.82,
+    "notes": "A left-right head shake appears first, with the opposite head orientations resolved in full frames 6 and 13. It returns to center around 850 ms before a clear same-side head-and-body tilt begins. The tilt visibly holds at approximately 1267–1533 ms and returns by the end of the 1950 ms action, completing at 2167 ms. Every trajectory row corroborates this order and the absence of shake/tilt overlap. Full frame 42 confirms the tilted ear remains inside the image despite the small top margin, and both hands and the available body stay visible. Smooth readable motion with a relatively deliberate return supports naturalness 0.82."
+  },
+  "tr2-train-22-r1": {
+    "frames": [
+      16,
+      39,
+      46
+    ],
+    "naturalness": 0.82,
+    "notes": "A clear head-and-body tilt occurs first, with its held pose resolved in full frame 16 and visible hold approximately 400–700 ms. It releases to center by 1100 ms. One left-right head shake follows over 1100–1950 ms, with its opposing orientations resolved at full frames 39 and 46, before neutral completion at 2167 ms. All contact-sheet frames and focus rows confirm the requested order without overlap. The tilted ear tip stays just inside the upper edge, and the available body and both hands remain fully inside the image. Smooth coherent motion with deliberate recentering supports naturalness 0.82."
+  },
+  "tr2-train-23-r1": {
+    "frames": [
+      0,
+      18,
+      49,
+      59
+    ],
+    "naturalness": 0.8,
+    "notes": "A visibly annoyed/angry expression appears first: full frame 18 resolves lowered inward brows, a tense narrowed eye shape and a small clenched mouth compared with neutral frame 0. It holds approximately 400–900 ms, then releases by 1300 ms. The character next scans left and right using coordinated head and gaze movement; full frames 49 and 59 resolve the opposite directions. All 85 focus rows and all three sheets confirm the sequential stages and return to center at 2600 ms, completing at 2800 ms. The available character and both hands remain in frame. The restrained but readable anger and smooth scan support naturalness 0.80."
+  },
+  "tr2-train-24-r1": {
+    "frames": [
+      10,
+      20,
+      57
+    ],
+    "naturalness": 0.8,
+    "notes": "The character first scans left and right with coordinated head and eye movement; full frames 10 and 20 resolve the opposing directions. It recenters by 1300 ms before developing a visibly angry/annoyed expression. Full frame 57 resolves the lowered inward brows, tense eye shape and clenched mouth. The expression holds approximately 1700–2200 ms and releases to neutral at 2600 ms, completing at 2800 ms. All three contact sheets and all 85 focus rows show the requested sequential order without overlap. The available character and both hands stay inside the frame. Smooth scanning and a restrained but readable angry expression support naturalness 0.80."
+  }
+}

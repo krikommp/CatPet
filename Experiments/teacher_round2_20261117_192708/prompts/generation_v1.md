@@ -1,0 +1,5 @@
+# Actual teacher prompt: codex-teacher-round2.v1
+
+Active root Codex session authors54 individual raw instructions/configs using the previously frozen scenario_plan.json. Provider OpenAI / Codex desktop, exact backend model not exposed. No Gemini or external teacher API claimed. No random/template corpus generation and no legacy/fixture data mixing. All new families assigned train before writing text; existing genuine42-record snapshot is reused with val8/test7 unchanged.
+
+Cover three-cycle actions, clear single/per-cycle durations, sequential/parallel compositions, explicit negation and capability bounds. Wave labels must describe the available broad arm/palm gesture clearly rather than claiming unobserved wrist articulation. Cheer and bow remain deferred after prior visual rejection. Native motion/hold/source constraints remain unchanged. Each execution goes through actual new Unity recording and independent complete-frame review. Each new candidate has at most two revisions and this round at most72 new recordings. Preserve failures; no generator self-acceptance. All reviewer identities/prompt versions and hashes must be real.

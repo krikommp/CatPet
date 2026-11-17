@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "started_at": "2026-11-17T12:05:45.875302+00:00",
+  "pid": 57940,
+  "command": [
+    "D:\\UnityProjects\\Pet\\PetLive2d\\.venv-action-encoder\\Scripts\\python.exe",
+    "D:\\UnityProjects\\Pet\\PetLive2d\\Tools\\ActionEncoder\\retrain_and_eval.py",
+    "train",
+    "--snapshot-manifest",
+    "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\frozen_snapshot\\manifest.json",
+    "--out-dir",
+    "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\checkpoint_epoch80",
+    "--epochs",
+    "80",
+    "--batch-size",
+    "16",
+    "--threads",
+    "2",
+    "--model-architecture",
+    "action-config-head.feasible-v1",
+    "--lr",
+    "0.001",
+    "--backbone-lr",
+    "0.00008",
+    "--unfreeze-layers",
+    "2"
+  ],
+  "release_approved": false,
+  "trainer_pid": 57028,
+  "exit_code": 0,
+  "finished_at": "2026-11-17T12:07:29.367764+00:00"
+}

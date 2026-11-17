@@ -13,6 +13,7 @@ import subprocess
 import sys
 
 from training_data import ROOT, dataset_summary, ensure_new_output_dir, file_sha256, load_snapshot
+from config_prediction import LEGACY_MODEL_ARCHITECTURE, MODEL_ARCHITECTURES
 
 TOOLS_DIR = Path(__file__).resolve().parent
 
@@ -34,7 +35,9 @@ def train_command(args) -> list[str]:
     return [sys.executable, str(TOOLS_DIR / "train_action_config.py"),
             "--snapshot-manifest", str(args.snapshot_manifest), "--out-dir", str(args.out_dir),
             "--epochs", str(args.epochs), "--batch-size", str(args.batch_size),
-            "--unfreeze-layers", str(args.unfreeze_layers), "--threads", str(args.threads)]
+            "--unfreeze-layers", str(args.unfreeze_layers), "--threads", str(args.threads),
+            "--model-architecture", args.model_architecture,
+            "--lr", str(args.lr), "--backbone-lr", str(args.backbone_lr)]
 
 
 def load_evaluation_rows(args) -> tuple[list[dict], dict]:
@@ -69,10 +72,12 @@ def load_evaluation_rows(args) -> tuple[list[dict], dict]:
 
 
 def evaluate(args) -> dict:
-    from action_config_schema import canonicalize_config
+    from action_config_schema import MAX_ACTIONS, canonicalize_config
+    from config_prediction import RawPredictionMetrics, architecture_policies, validate_head_manifest
     from encoder import LocalEncoder
     from input_constraints import validate_instruction_constraints
-    source_paths = [TOOLS_DIR / name for name in ("retrain_and_eval.py", "encoder.py", "action_config_schema.py", "input_constraints.py")]
+    source_paths = [TOOLS_DIR / name for name in ("retrain_and_eval.py", "encoder.py", "action_config_schema.py",
+        "input_constraints.py", "config_prediction.py", "feasible_config.py", "literal_bindings.py")]
     source_hashes = {path.name: file_sha256(path) for path in source_paths}
     if args.report.exists():
         raise FileExistsError(f"Refusing to overwrite a report: {args.report}")
@@ -84,6 +89,8 @@ def evaluate(args) -> dict:
             raise ValueError(f"Evaluation row {index} requires explicit input_role.")
         # Shape/parameter correctness is required for reference labels; no video claim is inferred.
         canonicalize_config(row["config"])
+    checkpoint_hashes = {name: file_sha256(args.checkpoint_dir / name)
+        for name in ("config_head.pt", "backbone_state.pt", "manifest.json") if (args.checkpoint_dir / name).exists()}
     encoder = LocalEncoder(config_head_dir=args.checkpoint_dir, threads=args.threads)
     manifest = encoder.config_head_manifest
     if not manifest:
@@ -91,6 +98,7 @@ def evaluate(args) -> dict:
     counts = Counter()
     confusion = defaultdict(Counter)
     predictions = []
+    raw_metrics = RawPredictionMetrics()
     for index, row in enumerate(rows):
         gold = row["config"]
         expected = gold["decision"]
@@ -102,12 +110,14 @@ def evaluate(args) -> dict:
         try:
             response = encoder.configure(request)
             predicted = response["config"]
-            result.update(predicted=predicted, inference_ms=response["inference_ms"])
+            result.update(predicted=predicted, inference_ms=response["inference_ms"],
+                          raw_prediction=response["raw_prediction"], binding_audit=response.get("binding_audit"))
             counts["decision_correct"] += int(predicted["decision"] == expected)
             counts["structure_correct"] += int(structure(predicted) == structure(gold))
             counts["execute_structure_correct"] += int(expected == "execute" and structure(predicted) == structure(gold))
             if expected != "execute":
                 counts[f"false_execute_{expected}"] += int(predicted["decision"] == "execute")
+                counts["valid_nonexecute_prediction"] += int(predicted["decision"] != "execute")
             confusion[expected][predicted["decision"]] += 1
             if row["input_role"] == "instruction":
                 result["explicit_instruction_constraints"] = validate_instruction_constraints(row["raw_text"], predicted)
@@ -116,18 +126,36 @@ def evaluate(args) -> dict:
             counts["technical_errors"] += 1
             confusion[expected]["technical_error"] += 1
             result["technical_error"] = {"type": type(exc).__name__, "message": str(exc)}
-            for field in ("raw_config", "constraint_audit"):
+            for field in ("raw_config", "constraint_audit", "raw_prediction", "binding_audit"):
                 if hasattr(exc, field):
                     result[field] = getattr(exc, field)
+        raw = result.get("raw_prediction")
+        if raw is None:
+            counts["raw_prediction_unavailable"] += 1
+            raw = {"finite": False, "decision": None, "resource_ids": ["PAD"] * MAX_ACTIONS,
+                   "stages": [2] * MAX_ACTIONS, "cycle_counts": [0] * MAX_ACTIONS}
+        raw_metrics.add(raw, gold)
         predictions.append(result)
     if any(file_sha256(path) != source_hashes[path.name] for path in source_paths):
         raise ValueError("Inference sources changed during evaluation; rerun after they are stable.")
+    if any(file_sha256(args.checkpoint_dir / name) != digest for name, digest in checkpoint_hashes.items()):
+        raise ValueError("Checkpoint changed during evaluation; refusing inconsistent diagnostic report.")
+    if args.snapshot_manifest:
+        from training_data import check_snapshot_unchanged
+        check_snapshot_unchanged(args.snapshot_manifest, data_origin["snapshot_manifest_sha256"])
+    elif file_sha256(args.dataset) != data_origin["dataset_sha256"]:
+        raise ValueError("Diagnostic dataset changed during evaluation.")
+    nonexecute_total = sum(counts[f"gold_{decision}"] for decision in ("none", "unsupported", "ambiguous"))
+    guarded_metrics = {**counts, "nonexecute_specificity": counts["valid_nonexecute_prediction"] / max(1, nonexecute_total),
+                       "technical_error_rate": counts["technical_errors"] / max(1, counts["total"]),
+                       "execute_structure_accuracy": counts["execute_structure_correct"] / max(1, counts["gold_execute"])}
     return {"stage": "diagnostic_report", "checkpoint_id": manifest["checkpoint_id"],
             "execution_source_sha256": source_hashes,
             "input_policy": manifest.get("input_policy", "legacy_raw_text"),
-            "checkpoint_sha256": {name: file_sha256(args.checkpoint_dir / name)
-                for name in ("config_head.pt", "backbone_state.pt", "manifest.json") if (args.checkpoint_dir / name).exists()},
-            "data": data_origin, "metrics": dict(counts), "confusion": {key: dict(value) for key, value in confusion.items()},
+            **architecture_policies(validate_head_manifest(manifest)),
+            "checkpoint_sha256": checkpoint_hashes,
+            "data": data_origin, "metrics": guarded_metrics, "raw_prediction_metrics": raw_metrics.summary(),
+            "confusion": {key: dict(value) for key, value in confusion.items()},
             "predictions": predictions, "release_approved": False, "training_started": False,
             "limitations": ["No Unity playback or video review is performed by this evaluator.",
                             "Semantic-family independence from an older checkpoint is not inferred.",
@@ -154,6 +182,9 @@ def build_parser():
     train.add_argument("--out-dir", type=Path, required=True)
     train.add_argument("--epochs", type=int, default=20)
     train.add_argument("--batch-size", type=int, default=32)
+    train.add_argument("--model-architecture", choices=MODEL_ARCHITECTURES, default=LEGACY_MODEL_ARCHITECTURE)
+    train.add_argument("--lr", type=float, default=1e-3)
+    train.add_argument("--backbone-lr", type=float, default=8e-5)
     train.add_argument("--unfreeze-layers", type=int, default=2)
     train.add_argument("--threads", type=int, choices=range(1, 17), default=2)
     evaluation = commands.add_parser("evaluate", help="Write a separate v0.2 diagnostic report; never promotes a checkpoint.")

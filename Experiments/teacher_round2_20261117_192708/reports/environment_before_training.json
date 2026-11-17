@@ -1,0 +1,31 @@
+{
+  "python": "3.11.2 (tags/v3.11.2:878ead1, Feb  7 2023, 16:38:35) [MSC v.1934 64 bit (AMD64)]",
+  "python_executable": "D:\\UnityProjects\\Pet\\PetLive2d\\.venv-action-encoder\\Scripts\\python.exe",
+  "pytorch": "2.9.1+cpu",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "planned_training_threads": 2,
+  "source_hashes": {
+    "action_config_schema.py": "414d3c26cc2b333f048fbf8565380eaf3d266f33085eb572e3947f39a34bcda3",
+    "action_schema.py": "d95275e56aa1469b2da71da030bddbe4e3528db913c995dbda177aade69681e3",
+    "config_prediction.py": "9f5c3de6e0d2af8e0721059ec9e94f32277cfde2cdb7d0440eb02be645cca7fe",
+    "download_model.py": "e6e2c178976b83aaff6aa9f8ee62eb571ce7230acd5a3094ab2a77f944bdb5c5",
+    "encode.py": "a1e94d6d6d617591f3c443c924c3a586ff26bca55094fa805e053b6b48d5b04f",
+    "encoder.py": "f14c7059f70fa52cf7cb34d3e07ebab100cd5a67683eccc5fba189b83c80a2b0",
+    "eval_action_head.py": "33b5cf76b216d09c42b4ae35720a22fc98d2f43ddd9097dba08b85d6243755a8",
+    "feasible_config.py": "12bac82733f4c2d1efe906bbf18d7a3e921947295541372ee5419d68e1936637",
+    "generate_seed_dataset.py": "5b1ab71630a79f2b5481761763b9e7d4631388835c02b09614fd6758e0954fa1",
+    "input_constraints.py": "32b0072999f616240746ab21d3a1ae2f2b2131ff179663ace8294f4862e44de9",
+    "install_dependencies.py": "154b43a79f70f732639d67646a95a650cc75f2ee9c5453d1881473d10c6daecf",
+    "literal_bindings.py": "b20875d14122eb03e9a2c2e3ad9761566eeeef52438a0031fb601fcf79d6b844",
+    "model_test.py": "e7488186e4a63372c0f94be3eaa9cff0d87196f5d974240c855b5de85b2d631a",
+    "retrain_and_eval.py": "8aadcf5e2b6ae637df728f5c8a54fba9d4c201856be65c1bf60859991054ba06",
+    "review_evidence.py": "3384ec008f6b5bb18f444771be5b67642d1348f89e0c451d31edd558673703bc",
+    "server.py": "48ef5913870b08bd78efe697b8419c8e21f378fa0d5d8368db87f85536992b4d",
+    "test_training_workflow.py": "122c91cfd7e5ad579e3beefc0209419591a90516bd029c2a7b8bd8a55cc1fce0",
+    "training_data.py": "969836cd19cda44a6ea1a7c586e7a9e8eaeedd389c58c6c9afaf2ad3ef35d8a4",
+    "train_action_config.py": "55d6c424d3286c50b6ae783a5cba491e91b42adc92cdd36d76fcdcf0dbe39bf4",
+    "train_action_head.py": "7ea866b61b3ba2bd54391636bbbe0fd83e826858495981146698ecff4f2ec7c6",
+    "validate_v02_corpus.py": "4cd055486a5ea882943d656093cbbcdd447d334a69ad58488f0aac470d8ecf6d"
+  },
+  "training_not_started_by_this_script": true
+}

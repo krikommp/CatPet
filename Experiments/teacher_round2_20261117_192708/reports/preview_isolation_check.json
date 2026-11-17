@@ -1,0 +1,13 @@
+{
+    "passed": true,
+    "separateScenes": true,
+    "cameraSceneBound": true,
+    "disposedScenes": true,
+    "beforeSha256": "cc204580d733c8caecd87da7e867d2139e38f9f830f7d25fccf5f46c2b3f6344",
+    "overlappingSha256": "cc204580d733c8caecd87da7e867d2139e38f9f830f7d25fccf5f46c2b3f6344",
+    "movedSha256": "cc204580d733c8caecd87da7e867d2139e38f9f830f7d25fccf5f46c2b3f6344",
+    "error": "",
+    "checkedAtUtc": "2026-11-17T11:48:43.0882461Z",
+    "previewScenesBefore": 1,
+    "previewScenesAfter": 1
+}

@@ -1,0 +1,71 @@
+{
+  "stage": "capture_evidence_validation",
+  "valid": true,
+  "candidate_id": "tr2-train-12",
+  "training_eligible": false,
+  "ai_reviewed": false,
+  "release_approved": false,
+  "config_sha256": "74b2d79b13dd6c10c94923a8d0258b3d33e1f2d7a8bd098c33bfc0a2c6812ed2",
+  "bindings": {
+    "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+    "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+    "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+    "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9"
+  },
+  "ffmpeg_sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+  "decoded_frames": 41,
+  "decoded_duration_ms": 1366.667,
+  "video_sha256": "7fa4d497e04535bb96231081612f80633888d1677c4640008a409c34bec54819",
+  "full_decode": true,
+  "evidence_sha256": "3852ac1f965457547038dd5b3d6807a4045e078e9bd2f4217098b7e007832d57",
+  "trajectory_sha256": "9e1d11f945237ded0a5fc0438bb1c82c0b6e8d3977d3f298434962a231ec76c2",
+  "native_sha256": "244aa75e2710142d95a9befbbb4137148d91d30ac8fcc619f60e29a822f69f79",
+  "native_duration_ms": 1100,
+  "first_player_time_ms": 0.0,
+  "last_player_time_ms": 1333.3333333332848,
+  "capture_completed_utc": "2026-11-17T11:41:48.3678983Z",
+  "fps": 30,
+  "resource_status": "candidate_except_blink; no formal calibration asserted",
+  "artifacts": [
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_main\\tr2-train-12\\meta.json",
+      "sha256": "012c4af1a516d7b4d3247b2659a917e8f9d283f3cceac3e6539aaf1e55ced64c",
+      "bytes": 1488
+    },
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionConfigCompiler.cs",
+      "sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "bytes": 21074
+    },
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\ActionResourceCatalog.cs",
+      "sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "bytes": 20843
+    },
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Assets\\Scripts\\ActionLanguage\\YukikazeActionCatalog.cs",
+      "sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "bytes": 21414
+    },
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Docs\\ActionLanguage\\personas\\gemini-cyber-cat.md",
+      "sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "bytes": 10394
+    },
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_main\\tr2-train-12\\evidence.json",
+      "sha256": "3852ac1f965457547038dd5b3d6807a4045e078e9bd2f4217098b7e007832d57",
+      "bytes": 4390
+    },
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_main\\tr2-train-12\\preview.mp4",
+      "sha256": "7fa4d497e04535bb96231081612f80633888d1677c4640008a409c34bec54819",
+      "bytes": 199231
+    },
+    {
+      "source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_main\\tr2-train-12\\trajectory.jsonl",
+      "sha256": "9e1d11f945237ded0a5fc0438bb1c82c0b6e8d3977d3f298434962a231ec76c2",
+      "bytes": 88676
+    }
+  ]
+}

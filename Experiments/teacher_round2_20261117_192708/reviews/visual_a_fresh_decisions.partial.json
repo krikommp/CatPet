@@ -1,0 +1,119 @@
+{
+  "tr2-train-04-r1": {
+    "naturalness": 0.89,
+    "frames": [
+      12,
+      36,
+      60
+    ],
+    "reviewed_at": "2026-11-17T11:51:36.660991+00:00",
+    "rationale": "All three pages (79 frames) and all focused rows were inspected. The character visibly tilts to the same side three times and returns upright between cycles, with successively smaller head/body excursion. Original peak frames 12/36/60 show coherent clean geometry and diminishing tilt. Trajectory peaks 18/15/11 at 400/1200/2000 ms, neutral at 800/1600/2400 ms, establish the requested three 800 ms cycles. Transitions are smooth and controlled; entire available character stays within frame with no duplication or unresolved limitation. Instruction-role literal semantics match; no alternating left/right sway is claimed."
+  },
+  "tr2-train-10-r1": {
+    "status": "uncertain",
+    "semantic_match": false,
+    "semantic": 0,
+    "frames": [
+      0,
+      11,
+      34
+    ],
+    "reviewed_at": "2026-11-17T11:59:05.469824+00:00",
+    "limitations": [
+      "The visible moving limb is on screen right. The raw instruction explicitly specifies right arm, but no anatomical-versus-screen or mirroring convention is established by the observed image or binding sources. Exact side semantics remain unresolved."
+    ],
+    "rationale": "All three contact sheets (75 frames), all focused trajectory rows and originals 0/11/34 were inspected. Three clean side lifts with an open palm and return are visible, peaking near 367/1133/1867 ms and returning at 750/1500/2250 ms. The full moving hand stays within frame and geometry is coherent. However the limb rises on screen right in a front-facing character. RT/Right Upper Arm metadata names do not establish whether this is anatomical right or screen right, and no mirroring convention was found. The explicit right-arm requirement is therefore not an unambiguous visual match. Withdraw the provisional naturalness assessment; no naturalness score or training acceptance is assigned."
+  },
+  "tr2-train-01-r1": {
+    "naturalness": 0.91,
+    "frames": [
+      7,
+      27
+    ],
+    "reviewed_at": "2026-11-17T11:58:16.335366+00:00",
+    "rationale": "All two contact sheets (48 frames) and all focused trajectory rows were inspected. Three distinct bilateral eye closures and reopenings are visible, with closure minima near 233, 667 and 1133 ms and full reopening between cycles. Original frames 7 and 27 resolve closed versus open eyes. Three 450 ms cycles finish by 1350 ms, then settle at the neutral open-eyed pose. Timing is even, the lids close smoothly, and the entire available character remains in frame without duplicate geometry."
+  },
+  "tr2-train-02-r1": {
+    "naturalness": 0.87,
+    "frames": [
+      0,
+      10
+    ],
+    "reviewed_at": "2026-11-17T11:58:16.335366+00:00",
+    "rationale": "All two contact sheets (70 frames) and all focused rows were inspected. Three downward head dips and returns visibly articulate nods. Original neutral frame 0 and peak frame 10 resolve the chin/head pitch without superimposed geometry. The three head-pitch minima are approximately -17.88 at 333/1033/1733 ms; returns to zero at 700/1400/2100 ms match three 700 ms cycles and explicit return after each. Small coordinated body pitch supports the head; motion is controlled and readable, with no framing obstruction."
+  },
+  "tr2-train-03-r1": {
+    "naturalness": 0.85,
+    "frames": [
+      6,
+      12
+    ],
+    "reviewed_at": "2026-11-17T11:58:16.335366+00:00",
+    "rationale": "All three contact sheets (75 frames) and all focused rows were inspected. Three repeated left-right head turns visibly read as shaking the head. Original frames 6 and 12 resolve opposite yaw poses; no extra face or ear layer remains. Opposite yaw extrema occur around 200/367, 933/1133 and 1700/1867 ms, with the head near neutral at each 750 ms cycle boundary and neutral after 2250 ms. The swing is brisk and mildly stylized but coherent and smooth enough for a repeated objection gesture. Framing and trajectory are complete."
+  },
+  "tr2-train-05-r1": {
+    "naturalness": 0.85,
+    "frames": [
+      7,
+      14
+    ],
+    "reviewed_at": "2026-11-17T11:59:05.469824+00:00",
+    "rationale": "All three contact sheets (88 frames) and all focused rows were inspected. Three visibly repeated side-to-side scans coordinate head yaw and horizontal eye direction. Originals 7 and 14 resolve the opposing gaze/head poses. Yaw reaches about -13.89/+13.94 and eye direction about -0.794/+0.797, repeating every 900 ms; both return to zero at 900/1800/2700 ms. The scans are modest and brisk but legible, with clean geometry, smooth onset/return and complete framing."
+  },
+  "tr2-train-06-r1": {
+    "naturalness": 0.9,
+    "frames": [
+      12
+    ],
+    "reviewed_at": "2026-11-17T11:59:05.469824+00:00",
+    "rationale": "All three contact sheets (88 frames) and all focused rows were inspected. Three distinct friendly closed-eye smiles rise, hold and fade back to the open-eyed neutral expression. Original frame 12 resolves curved smiling lids and a small upturned mouth rather than merely a blink. Full smile holds at 300-600, 1200-1500 and 2100-2400 ms; neutral returns at 900/1800/2700 ms match the explicit three 900 ms portrait poses and recovery between them. The coordinated face changes are smooth and coherent, with no unresolved obstruction or duplication."
+  },
+  "tr2-train-07-r1": {
+    "naturalness": 0.83,
+    "frames": [
+      15,
+      33
+    ],
+    "reviewed_at": "2026-11-17T11:59:52.876123+00:00",
+    "rationale": "All three contact sheets (106 frames) and all focused rows were inspected. Three successive expressions lower/draw together the brows and replace the relaxed mouth with a tense jagged tooth-bearing grimace. Original frame 15 resolves the irritated/protesting expression; frame 33 confirms its removal between cycles. Peaks hold at about 367-733, 1467-1833 and 2567-2933 ms, returning to neutral at 1100/2200/3300 ms as requested. This is a restrained anime anger expression, not a broad smile. Facial transitions are coherent and controlled, though the tooth-mouth crossfade is slightly stylized; complete character framing and clean geometry are visible."
+  },
+  "tr2-train-08-r1": {
+    "status": "uncertain",
+    "semantic_match": false,
+    "semantic": 0,
+    "frames": [
+      15,
+      30
+    ],
+    "reviewed_at": "2026-11-17T11:59:52.876123+00:00",
+    "limitations": [
+      "The pose visibly combines a side tilt and small pout, but its intended embarrassment/shyness is not unambiguously distinguishable from a puzzled or mildly sulky expression. Correct shy.basic channel values alone do not resolve that visual semantic uncertainty."
+    ],
+    "rationale": "All three contact sheets (98 frames), all focused rows and originals 15/30 were inspected. There are three clean tilt/pout presentations with full return between them, 1000 ms each; the plateau occurs near 333-667 ms per cycle and neutral at 1000/2000/3000 ms. The peak shows head tilt, a small pursed mouth and only subtle gaze change. The face remains largely forward-looking, and the baseline blush is not a distinct new embarrassment cue. Although this could be interpreted as coy, the observed result is equally a puzzled or sulky tilted pose, so the literal request for three embarrassed/shy expressions is not established without relying on the resource label. No naturalness score or admission is assigned."
+  },
+  "tr2-train-09-r1": {
+    "naturalness": 0.84,
+    "frames": [
+      12
+    ],
+    "reviewed_at": "2026-11-17T12:00:29.400273+00:00",
+    "rationale": "All three contact sheets (89 frames) and all focused rows were inspected. Three distinct cartoon surprise reactions show widened pale eyes, lifted brows and a vertically open mouth; original frame 12 resolves the unmistakable startled expression. Each rises within approximately 233 ms, holds until about 533 ms, then fades to neutral at 900/1800/2700 ms. Count and 900 ms duration match the alarm-reaction rehearsal. The expression is deliberately exaggerated, with a visible but coherent effect-layer crossfade; full framing and neutral return are clear."
+  },
+  "tr2-train-11-r1": {
+    "naturalness": 0.93,
+    "frames": [
+      18
+    ],
+    "reviewed_at": "2026-11-17T12:00:29.400273+00:00",
+    "rationale": "All two contact sheets (44 frames) and all focused rows were inspected. One smooth bilateral closure visibly rests shut before reopening. Original frame 18 confirms both eyes closed at 600 ms. The closed hold spans approximately 367-833 ms, followed by full reopening at 1200 ms and a neutral release through completion. This is precisely one 1200 ms restful blink with the requested pause; the lids move together without unexpected facial distortion or framing obstruction."
+  },
+  "tr2-train-12-r1": {
+    "naturalness": 0.88,
+    "frames": [
+      0,
+      16
+    ],
+    "reviewed_at": "2026-11-17T12:00:29.400273+00:00",
+    "rationale": "All two contact sheets (41 frames) and all focused rows were inspected. A single gentle downward head dip and recovery is visible. Originals 0 and 16 resolve the small pitch movement, which is visibly less pronounced than the standard-amplitude nod in the separately reviewed 02-r1. Head/body pitch minima are about -9.87/-2.47 at 533-567 ms, with one smooth return to zero at 1100 ms and stable neutral release. This matches one quieter acknowledgement with reduced amplitude and complete framing."
+  }
+}

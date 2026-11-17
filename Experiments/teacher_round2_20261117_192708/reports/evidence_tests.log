@@ -1,0 +1,40 @@
+test_ai_rejection_never_exported (test_review_evidence.ReviewEvidenceTests.test_ai_rejection_never_exported) ... ok
+test_capture_only_does_not_invent_ai_acceptance (test_review_evidence.ReviewEvidenceTests.test_capture_only_does_not_invent_ai_acceptance) ... ok
+test_changed_config_review_hash_rejected (test_review_evidence.ReviewEvidenceTests.test_changed_config_review_hash_rejected) ... ok
+test_changed_input_role_cannot_reuse_review (test_review_evidence.ReviewEvidenceTests.test_changed_input_role_cannot_reuse_review) ... ok
+test_changed_text_cannot_reuse_config_review (test_review_evidence.ReviewEvidenceTests.test_changed_text_cannot_reuse_config_review) ... ok
+test_complete_video_fixture_admitted_and_revalidated (test_review_evidence.ReviewEvidenceTests.test_complete_video_fixture_admitted_and_revalidated) ... ok
+test_cross_family_split_rejected (test_review_evidence.ReviewEvidenceTests.test_cross_family_split_rejected) ... ok
+test_dataset_tampering_rejected (test_review_evidence.ReviewEvidenceTests.test_dataset_tampering_rejected) ... ok
+test_decode_failure_never_admitted (test_review_evidence.ReviewEvidenceTests.test_decode_failure_never_admitted) ... ok
+test_encoder_error_rejected (test_review_evidence.ReviewEvidenceTests.test_encoder_error_rejected) ... ok
+test_execute_cannot_use_semantic_only_review (test_review_evidence.ReviewEvidenceTests.test_execute_cannot_use_semantic_only_review) ... ok
+test_existing_snapshot_not_overwritten (test_review_evidence.ReviewEvidenceTests.test_existing_snapshot_not_overwritten) ... ok
+test_explicit_training_ineligible_not_overridden (test_review_evidence.ReviewEvidenceTests.test_explicit_training_ineligible_not_overridden) ... ok
+test_historical_cold_does_not_require_ai_or_video (test_review_evidence.ReviewEvidenceTests.test_historical_cold_does_not_require_ai_or_video) ... ok
+test_historical_source_test_split_cannot_be_hidden (test_review_evidence.ReviewEvidenceTests.test_historical_source_test_split_cannot_be_hidden) ... ok
+test_incomplete_playback_rejected (test_review_evidence.ReviewEvidenceTests.test_incomplete_playback_rejected) ... ok
+test_original_files_can_disappear_after_freeze (test_review_evidence.ReviewEvidenceTests.test_original_files_can_disappear_after_freeze) ... ok
+test_parent_split_leak_rejected (test_review_evidence.ReviewEvidenceTests.test_parent_split_leak_rejected) ... ok
+test_pending_row_cannot_be_promoted (test_review_evidence.ReviewEvidenceTests.test_pending_row_cannot_be_promoted) ... ok
+test_persona_artifact_tampering_rejected (test_review_evidence.ReviewEvidenceTests.test_persona_artifact_tampering_rejected) ... ok
+test_raw_history_without_binding_rejected (test_review_evidence.ReviewEvidenceTests.test_raw_history_without_binding_rejected) ... ok
+test_real_full_decode_when_ffmpeg_configured (test_review_evidence.ReviewEvidenceTests.test_real_full_decode_when_ffmpeg_configured) ... skipped 'set REVIEW_EVIDENCE_TEST_FFMPEG for real decoder integration'
+test_real_video_fixture_full_export_roundtrip (test_review_evidence.ReviewEvidenceTests.test_real_video_fixture_full_export_roundtrip) ... skipped 'set REVIEW_EVIDENCE_TEST_FFMPEG for real export integration'
+test_rehashed_dataset_cannot_detach_review (test_review_evidence.ReviewEvidenceTests.test_rehashed_dataset_cannot_detach_review) ... ok
+test_same_context_rejected (test_review_evidence.ReviewEvidenceTests.test_same_context_rejected) ... ok
+test_semantic_ai_requires_no_human_keep_or_video (test_review_evidence.ReviewEvidenceTests.test_semantic_ai_requires_no_human_keep_or_video) ... ok
+test_short_trajectory_rejected (test_review_evidence.ReviewEvidenceTests.test_short_trajectory_rejected) ... ok
+test_stale_source_binding_rejected (test_review_evidence.ReviewEvidenceTests.test_stale_source_binding_rejected) ... ok
+test_test_to_train_rejected (test_review_evidence.ReviewEvidenceTests.test_test_to_train_rejected) ... ok
+test_trajectory_missing_start_rejected (test_review_evidence.ReviewEvidenceTests.test_trajectory_missing_start_rejected) ... ok
+test_trajectory_skipped_interval_rejected (test_review_evidence.ReviewEvidenceTests.test_trajectory_skipped_interval_rejected) ... ok
+test_truncated_frame_count_rejected (test_review_evidence.ReviewEvidenceTests.test_truncated_frame_count_rejected) ... ok
+test_unclosed_encoder_rejected (test_review_evidence.ReviewEvidenceTests.test_unclosed_encoder_rejected) ... ok
+test_wrong_config_video_rejected (test_review_evidence.ReviewEvidenceTests.test_wrong_config_video_rejected) ... ok
+test_wrong_parent_video_rejected (test_review_evidence.ReviewEvidenceTests.test_wrong_parent_video_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 4.514s
+
+OK (skipped=2)

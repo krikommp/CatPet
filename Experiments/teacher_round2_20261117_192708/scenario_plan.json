@@ -1,0 +1,516 @@
+{
+  "created_at": "2026-11-17T11:35:33.633938+00:00",
+  "initial_candidates": 54,
+  "execute": 36,
+  "nonexecute": 18,
+  "new_split": "train_only",
+  "fixed_heldout_source": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round_20261117_184246\\frozen_snapshot\\manifest.json",
+  "max_revisions_per_candidate": 2,
+  "max_new_recordings": 72,
+  "training_plan": {
+    "model_architecture": "action-config-head.feasible-v1",
+    "epochs": 80,
+    "batch_size": 16,
+    "threads": 2,
+    "unfreeze_layers": 2,
+    "head_lr": 0.001,
+    "backbone_lr": 8e-05,
+    "selection": "validation only; no fixed-test tuning"
+  },
+  "candidates": [
+    {
+      "candidate_id": "tr2-train-01",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_blink_code",
+      "semantic_family_id": "tr2-triple_blink_code",
+      "scenario": "triple_blink_code",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-02",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_nod_metronome",
+      "semantic_family_id": "tr2-triple_nod_metronome",
+      "scenario": "triple_nod_metronome",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-03",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_shake_objection",
+      "semantic_family_id": "tr2-triple_shake_objection",
+      "scenario": "triple_shake_objection",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-04",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_tilt_diminish",
+      "semantic_family_id": "tr2-triple_tilt_diminish",
+      "scenario": "triple_tilt_diminish",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-05",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_look_patrol",
+      "semantic_family_id": "tr2-triple_look_patrol",
+      "scenario": "triple_look_patrol",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-06",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_smile_photo_series",
+      "semantic_family_id": "tr2-triple_smile_photo_series",
+      "scenario": "triple_smile_photo_series",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-07",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_angry_stage_rehearsal",
+      "semantic_family_id": "tr2-triple_angry_stage_rehearsal",
+      "scenario": "triple_angry_stage_rehearsal",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-08",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_shy_rehearsal",
+      "semantic_family_id": "tr2-triple_shy_rehearsal",
+      "scenario": "triple_shy_rehearsal",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-09",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_surprise_alarm_series",
+      "semantic_family_id": "tr2-triple_surprise_alarm_series",
+      "scenario": "triple_surprise_alarm_series",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-10",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-triple_wave_arm_signal",
+      "semantic_family_id": "tr2-triple_wave_arm_signal",
+      "scenario": "triple_wave_arm_signal",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-11",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-single_blink_rest_pause",
+      "semantic_family_id": "tr2-single_blink_rest_pause",
+      "scenario": "single_blink_rest_pause",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-12",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-single_nod_soft_confirmation",
+      "semantic_family_id": "tr2-single_nod_soft_confirmation",
+      "scenario": "single_nod_soft_confirmation",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-13",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-double_shake_slowdown",
+      "semantic_family_id": "tr2-double_shake_slowdown",
+      "scenario": "double_shake_slowdown",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-14",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-double_tilt_grow",
+      "semantic_family_id": "tr2-double_tilt_grow",
+      "scenario": "double_tilt_grow",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-15",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-double_look_longer_scan",
+      "semantic_family_id": "tr2-double_look_longer_scan",
+      "scenario": "double_look_longer_scan",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-16",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-single_wave_open_palm_signal",
+      "semantic_family_id": "tr2-single_wave_open_palm_signal",
+      "scenario": "single_wave_open_palm_signal",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-17",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_nod_smile_agreement",
+      "semantic_family_id": "tr2-seq_nod_smile_agreement",
+      "scenario": "seq_nod_smile_agreement",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-18",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_smile_nod_gratitude",
+      "semantic_family_id": "tr2-seq_smile_nod_gratitude",
+      "scenario": "seq_smile_nod_gratitude",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-19",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_blink_surprise_awaken_alarm",
+      "semantic_family_id": "tr2-seq_blink_surprise_awaken_alarm",
+      "scenario": "seq_blink_surprise_awaken_alarm",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-20",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_surprise_blink_recover",
+      "semantic_family_id": "tr2-seq_surprise_blink_recover",
+      "scenario": "seq_surprise_blink_recover",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-21",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_shake_tilt_reconsider",
+      "semantic_family_id": "tr2-seq_shake_tilt_reconsider",
+      "scenario": "seq_shake_tilt_reconsider",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-22",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_tilt_shake_answer",
+      "semantic_family_id": "tr2-seq_tilt_shake_answer",
+      "scenario": "seq_tilt_shake_answer",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-23",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_angry_look_search_culprit",
+      "semantic_family_id": "tr2-seq_angry_look_search_culprit",
+      "scenario": "seq_angry_look_search_culprit",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-24",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_look_angry_find_fault",
+      "semantic_family_id": "tr2-seq_look_angry_find_fault",
+      "scenario": "seq_look_angry_find_fault",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-25",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_shy_blink_composure",
+      "semantic_family_id": "tr2-seq_shy_blink_composure",
+      "scenario": "seq_shy_blink_composure",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-26",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_blink_shy_stage_switch",
+      "semantic_family_id": "tr2-seq_blink_shy_stage_switch",
+      "scenario": "seq_blink_shy_stage_switch",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-27",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_wave_nod_signal_confirm",
+      "semantic_family_id": "tr2-seq_wave_nod_signal_confirm",
+      "scenario": "seq_wave_nod_signal_confirm",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-28",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-seq_nod_wave_confirm_signal",
+      "semantic_family_id": "tr2-seq_nod_wave_confirm_signal",
+      "scenario": "seq_nod_wave_confirm_signal",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-29",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_blink_tilt_playful",
+      "semantic_family_id": "tr2-par_blink_tilt_playful",
+      "scenario": "par_blink_tilt_playful",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-30",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_blink_shake_eye_exercise",
+      "semantic_family_id": "tr2-par_blink_shake_eye_exercise",
+      "scenario": "par_blink_shake_eye_exercise",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-31",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_nod_smile_approval",
+      "semantic_family_id": "tr2-par_nod_smile_approval",
+      "scenario": "par_nod_smile_approval",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-32",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_look_smile_exploration",
+      "semantic_family_id": "tr2-par_look_smile_exploration",
+      "scenario": "par_look_smile_exploration",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-33",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_tilt_surprise_question",
+      "semantic_family_id": "tr2-par_tilt_surprise_question",
+      "scenario": "par_tilt_surprise_question",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-34",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_shy_wave_open_palm",
+      "semantic_family_id": "tr2-par_shy_wave_open_palm",
+      "scenario": "par_shy_wave_open_palm",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-35",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_shake_wave_decline_signal",
+      "semantic_family_id": "tr2-par_shake_wave_decline_signal",
+      "scenario": "par_shake_wave_decline_signal",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-36",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-par_smile_wave_arm_demonstration",
+      "semantic_family_id": "tr2-par_smile_wave_arm_demonstration",
+      "scenario": "par_smile_wave_arm_demonstration",
+      "planned_decision": "execute"
+    },
+    {
+      "candidate_id": "tr2-train-37",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-none_listen_stationary",
+      "semantic_family_id": "tr2-none_listen_stationary",
+      "scenario": "none_listen_stationary",
+      "planned_decision": "none"
+    },
+    {
+      "candidate_id": "tr2-train-38",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-none_past_action_report",
+      "semantic_family_id": "tr2-none_past_action_report",
+      "scenario": "none_past_action_report",
+      "planned_decision": "none"
+    },
+    {
+      "candidate_id": "tr2-train-39",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-none_negated_smile",
+      "semantic_family_id": "tr2-none_negated_smile",
+      "scenario": "none_negated_smile",
+      "planned_decision": "none"
+    },
+    {
+      "candidate_id": "tr2-train-40",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-none_negated_shake",
+      "semantic_family_id": "tr2-none_negated_shake",
+      "scenario": "none_negated_shake",
+      "planned_decision": "none"
+    },
+    {
+      "candidate_id": "tr2-train-41",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-none_monitor_status",
+      "semantic_family_id": "tr2-none_monitor_status",
+      "scenario": "none_monitor_status",
+      "planned_decision": "none"
+    },
+    {
+      "candidate_id": "tr2-train-42",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-none_action_vocabulary",
+      "semantic_family_id": "tr2-none_action_vocabulary",
+      "scenario": "none_action_vocabulary",
+      "planned_decision": "none"
+    },
+    {
+      "candidate_id": "tr2-train-43",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-unsupported_turn_back",
+      "semantic_family_id": "tr2-unsupported_turn_back",
+      "scenario": "unsupported_turn_back",
+      "planned_decision": "unsupported"
+    },
+    {
+      "candidate_id": "tr2-train-44",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-unsupported_wink",
+      "semantic_family_id": "tr2-unsupported_wink",
+      "scenario": "unsupported_wink",
+      "planned_decision": "unsupported"
+    },
+    {
+      "candidate_id": "tr2-train-45",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-unsupported_five_cycles",
+      "semantic_family_id": "tr2-unsupported_five_cycles",
+      "scenario": "unsupported_five_cycles",
+      "planned_decision": "unsupported"
+    },
+    {
+      "candidate_id": "tr2-train-46",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-unsupported_pitch_conflict",
+      "semantic_family_id": "tr2-unsupported_pitch_conflict",
+      "scenario": "unsupported_pitch_conflict",
+      "planned_decision": "unsupported"
+    },
+    {
+      "candidate_id": "tr2-train-47",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-unsupported_eyelid_conflict",
+      "semantic_family_id": "tr2-unsupported_eyelid_conflict",
+      "scenario": "unsupported_eyelid_conflict",
+      "planned_decision": "unsupported"
+    },
+    {
+      "candidate_id": "tr2-train-48",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-unsupported_jump_turn",
+      "semantic_family_id": "tr2-unsupported_jump_turn",
+      "scenario": "unsupported_jump_turn",
+      "planned_decision": "unsupported"
+    },
+    {
+      "candidate_id": "tr2-train-49",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-ambiguous_missing_rhythm_action",
+      "semantic_family_id": "tr2-ambiguous_missing_rhythm_action",
+      "scenario": "ambiguous_missing_rhythm_action",
+      "planned_decision": "ambiguous"
+    },
+    {
+      "candidate_id": "tr2-train-50",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-ambiguous_missing_second_action",
+      "semantic_family_id": "tr2-ambiguous_missing_second_action",
+      "scenario": "ambiguous_missing_second_action",
+      "planned_decision": "ambiguous"
+    },
+    {
+      "candidate_id": "tr2-train-51",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-ambiguous_unspecified_emotion_transition",
+      "semantic_family_id": "tr2-ambiguous_unspecified_emotion_transition",
+      "scenario": "ambiguous_unspecified_emotion_transition",
+      "planned_decision": "ambiguous"
+    },
+    {
+      "candidate_id": "tr2-train-52",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-ambiguous_missing_demonstration",
+      "semantic_family_id": "tr2-ambiguous_missing_demonstration",
+      "scenario": "ambiguous_missing_demonstration",
+      "planned_decision": "ambiguous"
+    },
+    {
+      "candidate_id": "tr2-train-53",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-ambiguous_energetic_unspecified",
+      "semantic_family_id": "tr2-ambiguous_energetic_unspecified",
+      "scenario": "ambiguous_energetic_unspecified",
+      "planned_decision": "ambiguous"
+    },
+    {
+      "candidate_id": "tr2-train-54",
+      "parent_candidate_id": "",
+      "split": "train",
+      "group_id": "tr2-ambiguous_deictic_shape",
+      "semantic_family_id": "tr2-ambiguous_deictic_shape",
+      "scenario": "ambiguous_deictic_shape",
+      "planned_decision": "ambiguous"
+    }
+  ],
+  "limitations": [
+    "All instruction role.",
+    "No new cheer/bow pending visual calibration.",
+    "Shared primitives and compositional concepts do not prove statistical independence; no heldout utterance/parent may move to train.",
+    "Explicit train durations/ratios are teacher-authored; student literal duration binding is a declared policy, never a resource substitution.",
+    "No automatic service/model promotion.",
+    "Commit round code, evidence and result to Git regardless of quality, as explicitly requested."
+  ]
+}

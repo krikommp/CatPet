@@ -1,0 +1,776 @@
+{
+  "schema_version": "teacher-observation-artifacts.v1",
+  "candidate_id": "tr2-train-25-r1",
+  "stage": "observation_artifacts_only",
+  "created_at": "2026-11-17T11:56:05.896908+00:00",
+  "ai_reviewed": false,
+  "training_eligible": false,
+  "release_approved": false,
+  "raw_text": "先表演害羞，再眨眼两次调整心情。",
+  "input_role": "instruction",
+  "config": {
+    "version": "action-config.v0.2",
+    "decision": "execute",
+    "steps": [
+      {
+        "actions": [
+          {
+            "resource_id": "shy.basic",
+            "cycles": [
+              {
+                "duration_ms": 1300,
+                "controls": {
+                  "hold_ratio": 0.4,
+                  "amplitude_scale": 1.05
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "actions": [
+          {
+            "resource_id": "blink.full",
+            "cycles": [
+              {
+                "duration_ms": 450,
+                "controls": {
+                  "hold_ratio": 0.0
+                }
+              },
+              {
+                "duration_ms": 450,
+                "controls": {
+                  "hold_ratio": 0.0
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "config_sha256": "56989f181f5cd6b862e73eec124a16de9b54a407af13109dbf5ebb983b1ac83a",
+  "source_frame_count": 73,
+  "decoded_frame_count": 73,
+  "extracted_frame_count": 73,
+  "trajectory_frame_count": 73,
+  "focused_trajectory_frame_count": 73,
+  "contact_sheet_frame_count": 73,
+  "every_frame_included": true,
+  "resource_ids": [
+    "blink.full",
+    "shy.basic"
+  ],
+  "focused_parameter_ids": [
+    "PARAM_FXmouth2",
+    "PARAM_mouth",
+    "ParamAngleZ",
+    "ParamBrowLY",
+    "ParamBrowRY",
+    "ParamEyeBallX",
+    "ParamEyeBallY",
+    "ParamEyeLOpen",
+    "ParamEyeROpen"
+  ],
+  "source_dimensions": {
+    "width": 720,
+    "height": 840
+  },
+  "thumbnail_dimensions": {
+    "width": 180,
+    "height": 210
+  },
+  "sheet_layout": {
+    "columns": 6,
+    "rows": 6,
+    "cropping": false,
+    "timestamp_unit": "ms"
+  },
+  "evidence": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-25-r1\\evidence.json",
+    "sha256": "ae06ca942cfbe381abe93959a8e56cac02b8bdfecae4a27bba36193782a8ecae",
+    "bytes": 5281
+  },
+  "video": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-25-r1\\preview.mp4",
+    "sha256": "e8bcff60639a1d92df3f0060cb0b8fd99fd355d402d6bbd484727b200eb96d8b",
+    "bytes": 375520
+  },
+  "full_trajectory": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-25-r1\\trajectory.jsonl",
+    "sha256": "5805902d5a227524a6b426b8bc9b0741b43e2e3aa317ecf995f989609db02fd1",
+    "bytes": 160731
+  },
+  "metadata": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-25-r1\\meta.json",
+    "sha256": "724af7f2a5b1f51a46c4116a8a5c1c2b2e4a4871005b307c8edc2c61435468bb",
+    "bytes": 2354
+  },
+  "done_report": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\fixmain_done.json",
+    "sha256": "79ec226993692416b34d1735f834fd995da76123ea962f5b824ac8a593c16d70",
+    "bytes": 18252
+  },
+  "queue": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\fixmain_queue.jsonl",
+    "sha256": "c9c600401e223ee260f3355e788003d4f5d1a54cb6765c1a3b1f928778080fee",
+    "bytes": 19703
+  },
+  "physical_integrity_report": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\physical_integrity_report.json",
+    "sha256": "58c4f8a1949c45a262c4fe90b52dcd2e0ea2be89a81b2bde7487ff3765d185f0",
+    "bytes": 3547
+  },
+  "trajectory_focus": {
+    "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\trajectory_focus.jsonl",
+    "sha256": "c878858ad70614fb76f5da941721e9604fd5ac7937ac1e7d46e1c55034e825bc",
+    "bytes": 38967
+  },
+  "contact_sheets": [
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\contact_sheets\\page_001.png",
+      "sha256": "85a9ea72bed7fd56db7a9aac1ca2b7583313103f0f52fee39b80f4192cd886a4",
+      "bytes": 614875,
+      "page_index": 0,
+      "first_frame_index": 0,
+      "last_frame_index": 35,
+      "frame_count": 36,
+      "video_time_start_ms": 0.0,
+      "video_time_end_ms": 1166.6666666666667,
+      "player_time_start_ms": 0.0,
+      "player_time_end_ms": 1166.6666666667516
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\contact_sheets\\page_002.png",
+      "sha256": "cccceed77739d3ef784e1c09ef4ed6123428593afee4cd9ff4a9622d00432e39",
+      "bytes": 387702,
+      "page_index": 1,
+      "first_frame_index": 36,
+      "last_frame_index": 71,
+      "frame_count": 36,
+      "video_time_start_ms": 1200.0,
+      "video_time_end_ms": 2366.6666666666665,
+      "player_time_start_ms": 1200.0000000000873,
+      "player_time_end_ms": 2366.666666666839
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\contact_sheets\\page_003.png",
+      "sha256": "d3132149a37dae6c08ceb3133a01cd0d466dd1a8499399505427b4b1c502a969",
+      "bytes": 59015,
+      "page_index": 2,
+      "first_frame_index": 72,
+      "last_frame_index": 72,
+      "frame_count": 1,
+      "video_time_start_ms": 2400.0,
+      "video_time_end_ms": 2400.0,
+      "player_time_start_ms": 2400.0000000001746,
+      "player_time_end_ms": 2400.0000000001746
+    }
+  ],
+  "full_resolution_frames": [
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000000.png",
+      "sha256": "3baeeec7b3b1dfdd005357a422b9299c55f7090626eec3bd1720acd0b5c3649c",
+      "bytes": 378746,
+      "frame_index": 0,
+      "video_time_ms": 0.0,
+      "player_time_ms": 0.0
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000001.png",
+      "sha256": "037cadfc0111529e6a6cbbfab594a0da26ccfce58c10f79b035b7ebd0e655d7e",
+      "bytes": 379153,
+      "frame_index": 1,
+      "video_time_ms": 33.333333333333336,
+      "player_time_ms": 33.33333333333576
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000002.png",
+      "sha256": "6ae6482f1ae42f637604a498ba9433f2b04a7a3ebbeb4431beebc6269c88f3f6",
+      "bytes": 383784,
+      "frame_index": 2,
+      "video_time_ms": 66.66666666666667,
+      "player_time_ms": 66.66666666667152
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000003.png",
+      "sha256": "a6d632d9b358096caf8c4b4dfcf620bfd505a73cc694145b432e5d04dd881f47",
+      "bytes": 387455,
+      "frame_index": 3,
+      "video_time_ms": 100.0,
+      "player_time_ms": 100.00000000000728
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000004.png",
+      "sha256": "d5e9aa5a45208241b6d301818b68c50f3b929e1890049f28f27fbeaf3a83b4d9",
+      "bytes": 390069,
+      "frame_index": 4,
+      "video_time_ms": 133.33333333333334,
+      "player_time_ms": 133.33333333334303
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000005.png",
+      "sha256": "ed09fb952fd75259aaaae1b8702000f726fa158a7a9d6443f9a7e3ecc04bd867",
+      "bytes": 392341,
+      "frame_index": 5,
+      "video_time_ms": 166.66666666666666,
+      "player_time_ms": 166.6666666666788
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000006.png",
+      "sha256": "7a346c4aec495f4ac6fe9b665f3e2a153e3c1ad50c0db9f76294d20f051e65d3",
+      "bytes": 394362,
+      "frame_index": 6,
+      "video_time_ms": 200.0,
+      "player_time_ms": 200.00000000001455
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000007.png",
+      "sha256": "24cf99e1efd740f6eb719d784826b8eeac74f30ad75a425c5b97cba7d6cd962b",
+      "bytes": 396102,
+      "frame_index": 7,
+      "video_time_ms": 233.33333333333334,
+      "player_time_ms": 233.3333333333503
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000008.png",
+      "sha256": "9975f2978d6ea23677a1f0e5664418493f1d26d725cdca53abe2a208f7314355",
+      "bytes": 397251,
+      "frame_index": 8,
+      "video_time_ms": 266.6666666666667,
+      "player_time_ms": 266.66666666668607
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000009.png",
+      "sha256": "941494c48f3bc8162b98160fe3ed716c367df06f86c9edb68100f568db7327a4",
+      "bytes": 398726,
+      "frame_index": 9,
+      "video_time_ms": 300.0,
+      "player_time_ms": 300.0000000000218
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000010.png",
+      "sha256": "96bc13d4b47594abb9d3bf5cabd993a10cba6f6633871e501ff44a316c50b9f9",
+      "bytes": 401091,
+      "frame_index": 10,
+      "video_time_ms": 333.3333333333333,
+      "player_time_ms": 333.3333333333576
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000011.png",
+      "sha256": "fc89117f77f5485e39c5e25ed745d975d3ab059b3655ae2eb72eaf286c48f260",
+      "bytes": 404649,
+      "frame_index": 11,
+      "video_time_ms": 366.6666666666667,
+      "player_time_ms": 366.66666666669335
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000012.png",
+      "sha256": "e771911a76f3c643dc69816ece3bd2f49ff1c70ae04e75c8451c6e595cbf7e87",
+      "bytes": 404487,
+      "frame_index": 12,
+      "video_time_ms": 400.0,
+      "player_time_ms": 400.0000000000291
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000013.png",
+      "sha256": "b8bdd3c6c247727c84a38a43419b66b70d963148bf93040c027547598ff47f79",
+      "bytes": 404346,
+      "frame_index": 13,
+      "video_time_ms": 433.3333333333333,
+      "player_time_ms": 433.33333333336486
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000014.png",
+      "sha256": "c63f6daa5852de9c3d5fad4469320f1b47ff4e786a85ff36aa6c90eed5805c2e",
+      "bytes": 404324,
+      "frame_index": 14,
+      "video_time_ms": 466.6666666666667,
+      "player_time_ms": 466.6666666667006
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000015.png",
+      "sha256": "c63f6daa5852de9c3d5fad4469320f1b47ff4e786a85ff36aa6c90eed5805c2e",
+      "bytes": 404324,
+      "frame_index": 15,
+      "video_time_ms": 500.0,
+      "player_time_ms": 500.0000000000364
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000016.png",
+      "sha256": "c63f6daa5852de9c3d5fad4469320f1b47ff4e786a85ff36aa6c90eed5805c2e",
+      "bytes": 404324,
+      "frame_index": 16,
+      "video_time_ms": 533.3333333333334,
+      "player_time_ms": 533.3333333333721
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000017.png",
+      "sha256": "c63f6daa5852de9c3d5fad4469320f1b47ff4e786a85ff36aa6c90eed5805c2e",
+      "bytes": 404324,
+      "frame_index": 17,
+      "video_time_ms": 566.6666666666666,
+      "player_time_ms": 566.6666666667079
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000018.png",
+      "sha256": "c63f6daa5852de9c3d5fad4469320f1b47ff4e786a85ff36aa6c90eed5805c2e",
+      "bytes": 404324,
+      "frame_index": 18,
+      "video_time_ms": 600.0,
+      "player_time_ms": 600.0000000000437
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000019.png",
+      "sha256": "c63f6daa5852de9c3d5fad4469320f1b47ff4e786a85ff36aa6c90eed5805c2e",
+      "bytes": 404324,
+      "frame_index": 19,
+      "video_time_ms": 633.3333333333334,
+      "player_time_ms": 633.3333333333794
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000020.png",
+      "sha256": "7d733859629dfdaed35d9b0d18a9f328f921c07859db856defd1899d25d67731",
+      "bytes": 404376,
+      "frame_index": 20,
+      "video_time_ms": 666.6666666666666,
+      "player_time_ms": 666.6666666667152
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000021.png",
+      "sha256": "7d733859629dfdaed35d9b0d18a9f328f921c07859db856defd1899d25d67731",
+      "bytes": 404376,
+      "frame_index": 21,
+      "video_time_ms": 700.0,
+      "player_time_ms": 700.0000000000509
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000022.png",
+      "sha256": "7d733859629dfdaed35d9b0d18a9f328f921c07859db856defd1899d25d67731",
+      "bytes": 404376,
+      "frame_index": 22,
+      "video_time_ms": 733.3333333333334,
+      "player_time_ms": 733.3333333333867
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000023.png",
+      "sha256": "7d733859629dfdaed35d9b0d18a9f328f921c07859db856defd1899d25d67731",
+      "bytes": 404376,
+      "frame_index": 23,
+      "video_time_ms": 766.6666666666666,
+      "player_time_ms": 766.6666666667224
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000024.png",
+      "sha256": "c42f5e13d691f81af68dd6cd0b9dcfdcea3182e16120eb8c97633335b2408192",
+      "bytes": 411006,
+      "frame_index": 24,
+      "video_time_ms": 800.0,
+      "player_time_ms": 800.0000000000582
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000025.png",
+      "sha256": "c743241b508096c368a5e6db81cbffa527ee76dce671366d6ef34c70859c9dc8",
+      "bytes": 416867,
+      "frame_index": 25,
+      "video_time_ms": 833.3333333333334,
+      "player_time_ms": 833.333333333394
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000026.png",
+      "sha256": "b87417a8078122db821a6a45677c44033b4d07e81de61c131cce7577749de596",
+      "bytes": 420609,
+      "frame_index": 26,
+      "video_time_ms": 866.6666666666666,
+      "player_time_ms": 866.6666666667297
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000027.png",
+      "sha256": "7960ce6391599c4c8a03e3742577d2996253539046cdca896def8be4388996e6",
+      "bytes": 421922,
+      "frame_index": 27,
+      "video_time_ms": 900.0,
+      "player_time_ms": 900.0000000000655
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000028.png",
+      "sha256": "7b7468b6c8cd5a84d18505bc6735285cd77fdd84a7857a12025aaf379623ff5b",
+      "bytes": 422152,
+      "frame_index": 28,
+      "video_time_ms": 933.3333333333334,
+      "player_time_ms": 933.3333333334012
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000029.png",
+      "sha256": "640670a99685162c3d777d744146d9416e0dfc0da2257abeceab99b894387ca4",
+      "bytes": 421457,
+      "frame_index": 29,
+      "video_time_ms": 966.6666666666666,
+      "player_time_ms": 966.666666666737
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000030.png",
+      "sha256": "9e3025bfcb0cdc21debd0b7ee2e110f6f1fd1c4a6bfe9704080adfa6f535b3d0",
+      "bytes": 420600,
+      "frame_index": 30,
+      "video_time_ms": 1000.0,
+      "player_time_ms": 1000.0000000000728
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000031.png",
+      "sha256": "4d751e10e9433111dbd1e6b0849b0dd9377d5ea7da1c3b98892e5a8c6e4bdb5f",
+      "bytes": 420808,
+      "frame_index": 31,
+      "video_time_ms": 1033.3333333333333,
+      "player_time_ms": 1033.3333333334085
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000032.png",
+      "sha256": "e01c5ebab8e1d3e1d8dd35eb91f9be01d6391cafcb27a618e093098c72fca375",
+      "bytes": 420717,
+      "frame_index": 32,
+      "video_time_ms": 1066.6666666666667,
+      "player_time_ms": 1066.6666666667443
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000033.png",
+      "sha256": "71f02b119bb21b547a23604100b419916e8123d5925958c12141fd4eb3ca86ce",
+      "bytes": 421493,
+      "frame_index": 33,
+      "video_time_ms": 1100.0,
+      "player_time_ms": 1100.00000000008
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000034.png",
+      "sha256": "216c82f5cf467e910c3a16e1b1bfd76c194dd8e2f1926a1a503ae1dc319ed365",
+      "bytes": 421975,
+      "frame_index": 34,
+      "video_time_ms": 1133.3333333333333,
+      "player_time_ms": 1133.3333333334158
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000035.png",
+      "sha256": "c4e7930c270cc0af599acbb91d6244ac86bd8eb47ea76433539304af0642c4fa",
+      "bytes": 421537,
+      "frame_index": 35,
+      "video_time_ms": 1166.6666666666667,
+      "player_time_ms": 1166.6666666667516
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000036.png",
+      "sha256": "4f4d107d767fc5974ef8a7ae8baaaa3144b39c173b0a90d9c17b40ed687131bd",
+      "bytes": 422400,
+      "frame_index": 36,
+      "video_time_ms": 1200.0,
+      "player_time_ms": 1200.0000000000873
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000037.png",
+      "sha256": "407d99c7ab2482d7b39dbcfbba23c127805a22d84d5881839ec52523c55f1df3",
+      "bytes": 422452,
+      "frame_index": 37,
+      "video_time_ms": 1233.3333333333333,
+      "player_time_ms": 1233.333333333423
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000038.png",
+      "sha256": "a1dfc0506869a7636e5eafef6d5dfe8bc4a1570be926819f32a8ef02695a6d4f",
+      "bytes": 422261,
+      "frame_index": 38,
+      "video_time_ms": 1266.6666666666667,
+      "player_time_ms": 1266.6666666667588
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000039.png",
+      "sha256": "9c54d827ccdc07c28d0d19eaa66bcd989e2f493a9f7e4f61e3309a46df2ae4b1",
+      "bytes": 422341,
+      "frame_index": 39,
+      "video_time_ms": 1300.0,
+      "player_time_ms": 1300.0000000000946
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000040.png",
+      "sha256": "92f380fe75ef20f73c0e7041c028461e0cbc77b273f3d9b7d85fa453ef63d990",
+      "bytes": 422515,
+      "frame_index": 40,
+      "video_time_ms": 1333.3333333333333,
+      "player_time_ms": 1333.3333333334303
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000041.png",
+      "sha256": "aa9a6ed7b3e3b22032d92dae4300735bdfeec5331344024b777deaa1a4f27b1a",
+      "bytes": 422367,
+      "frame_index": 41,
+      "video_time_ms": 1366.6666666666667,
+      "player_time_ms": 1366.666666666766
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000042.png",
+      "sha256": "1e3f1356fe4c2bdd7b5a1511a1311e1cebc5d1dfb7250c613dba2ffeddd0c1c1",
+      "bytes": 422032,
+      "frame_index": 42,
+      "video_time_ms": 1400.0,
+      "player_time_ms": 1400.0000000001019
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000043.png",
+      "sha256": "c097dc66c610600aca1433e25fa75a490f294746022619086581d4485ec2537a",
+      "bytes": 421430,
+      "frame_index": 43,
+      "video_time_ms": 1433.3333333333333,
+      "player_time_ms": 1433.3333333334376
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000044.png",
+      "sha256": "7ec9564fdf8561692df40ad071e69843b6c9ed83a654db22aa656f0f6406d961",
+      "bytes": 420453,
+      "frame_index": 44,
+      "video_time_ms": 1466.6666666666667,
+      "player_time_ms": 1466.6666666667734
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000045.png",
+      "sha256": "fc8cc8f23e09c066f2ceebaf364f1b0871495098f30ba5fa55ad55b5c60e4617",
+      "bytes": 419507,
+      "frame_index": 45,
+      "video_time_ms": 1500.0,
+      "player_time_ms": 1500.0000000001091
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000046.png",
+      "sha256": "f4058ae17c8c2c81a63c7bcafa9be4e2980248468a173d66b03f74de52645ed4",
+      "bytes": 419081,
+      "frame_index": 46,
+      "video_time_ms": 1533.3333333333333,
+      "player_time_ms": 1533.333333333445
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000047.png",
+      "sha256": "c0a6b7957329906c4f74b147e1babdff0d3530c82df1db032cba444cb0e85c4e",
+      "bytes": 418953,
+      "frame_index": 47,
+      "video_time_ms": 1566.6666666666667,
+      "player_time_ms": 1566.6666666667807
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000048.png",
+      "sha256": "a4ae14d0ff78e24586b95bfaae12e4d16571bf5c7db5606e2cebf165b51479ea",
+      "bytes": 418821,
+      "frame_index": 48,
+      "video_time_ms": 1600.0,
+      "player_time_ms": 1600.0000000001164
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000049.png",
+      "sha256": "599cd8f5e7a3422bcc004e325071f8319664bb7b6162f779a8fab57c095aae08",
+      "bytes": 419571,
+      "frame_index": 49,
+      "video_time_ms": 1633.3333333333333,
+      "player_time_ms": 1633.3333333334522
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000050.png",
+      "sha256": "0c06a0f8e1418ff8b6fc1aca69159f05b8897bf7d2448eaa48f7e522770fbc66",
+      "bytes": 420624,
+      "frame_index": 50,
+      "video_time_ms": 1666.6666666666667,
+      "player_time_ms": 1666.666666666788
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000051.png",
+      "sha256": "9a90ba4d125ceeb0a6a8bd5f357f81ab904524d74cf62dca71144e84891a47fa",
+      "bytes": 421548,
+      "frame_index": 51,
+      "video_time_ms": 1700.0,
+      "player_time_ms": 1700.0000000001237
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000052.png",
+      "sha256": "1b274067c2b82e94c3ec9d9f82627a774596386d61b7f5715dd2c85e513213c9",
+      "bytes": 421951,
+      "frame_index": 52,
+      "video_time_ms": 1733.3333333333333,
+      "player_time_ms": 1733.3333333334594
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000053.png",
+      "sha256": "7d9012de7617c760e37c4f059c3a213e30b6748a21d5b36f3b02e7bd9fafe580",
+      "bytes": 422661,
+      "frame_index": 53,
+      "video_time_ms": 1766.6666666666667,
+      "player_time_ms": 1766.6666666667952
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000054.png",
+      "sha256": "e5c61d6fd127f6add4aad04f18215b0cfde7c3f5a9058bc7b9156e46a011ef3a",
+      "bytes": 422340,
+      "frame_index": 54,
+      "video_time_ms": 1800.0,
+      "player_time_ms": 1800.000000000131
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000055.png",
+      "sha256": "d6d3d0da28c663ef3af4b343034b58f26549b03ed04020ef834a80da2c6f513b",
+      "bytes": 422098,
+      "frame_index": 55,
+      "video_time_ms": 1833.3333333333333,
+      "player_time_ms": 1833.3333333334667
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000056.png",
+      "sha256": "04250121209f3a5eff6799cd55c8679b0b3bd5ac19fc1be564859b850dc42c50",
+      "bytes": 421571,
+      "frame_index": 56,
+      "video_time_ms": 1866.6666666666667,
+      "player_time_ms": 1866.6666666668025
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000057.png",
+      "sha256": "094151cf878e2a7c6b7490bb43192619f3583e547a6999cb5eb80e0f8de90724",
+      "bytes": 420425,
+      "frame_index": 57,
+      "video_time_ms": 1900.0,
+      "player_time_ms": 1900.0000000001382
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000058.png",
+      "sha256": "3cf4da93b930b48256c4e2efd5d002af48e76c032cc06a2911039fe9ae0da846",
+      "bytes": 419559,
+      "frame_index": 58,
+      "video_time_ms": 1933.3333333333333,
+      "player_time_ms": 1933.333333333474
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000059.png",
+      "sha256": "0dcccf096fa32e136e05d34c1389af2e40ef7d3fecdb5e59cc1d2506b25a696e",
+      "bytes": 418776,
+      "frame_index": 59,
+      "video_time_ms": 1966.6666666666667,
+      "player_time_ms": 1966.6666666668098
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000060.png",
+      "sha256": "dbee6401f8b29b0860d0219e8be251dcdde1c636f95ca9468487868056ac86ac",
+      "bytes": 373594,
+      "frame_index": 60,
+      "video_time_ms": 2000.0,
+      "player_time_ms": 2000.0000000001455
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000061.png",
+      "sha256": "c0fb571b381363151738849124f7b1393b456f0034b922d441e944f80f7ce070",
+      "bytes": 374266,
+      "frame_index": 61,
+      "video_time_ms": 2033.3333333333333,
+      "player_time_ms": 2033.3333333334813
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000062.png",
+      "sha256": "ff3ff8001db0b302860aaee51b80ba2ce00dcb2305d2c2f553f0d8567cec0e9d",
+      "bytes": 375056,
+      "frame_index": 62,
+      "video_time_ms": 2066.6666666666665,
+      "player_time_ms": 2066.666666666817
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000063.png",
+      "sha256": "0928d24a0533ce880038a8f2e5c90af901cc3042bbaeb405dbfe891371779ea9",
+      "bytes": 376387,
+      "frame_index": 63,
+      "video_time_ms": 2100.0,
+      "player_time_ms": 2100.000000000153
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000064.png",
+      "sha256": "95f35347d614bd5da1fc9456f650ac446de73a6b20ba0151e8a935b9b29ec869",
+      "bytes": 377697,
+      "frame_index": 64,
+      "video_time_ms": 2133.3333333333335,
+      "player_time_ms": 2133.3333333334886
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000065.png",
+      "sha256": "6f46a4f1d201bf96a0a799d16eb8cd84597761df3f151a13c41276bb732e3257",
+      "bytes": 378614,
+      "frame_index": 65,
+      "video_time_ms": 2166.6666666666665,
+      "player_time_ms": 2166.6666666668243
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000066.png",
+      "sha256": "578c95d10fb14c06ee069ac62437f701ddc07b06d014d4960a07444c2ccff19f",
+      "bytes": 378923,
+      "frame_index": 66,
+      "video_time_ms": 2200.0,
+      "player_time_ms": 2200.00000000016
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000067.png",
+      "sha256": "24e088719cd8facdc8dc84dd26f3369fe34fdec184ddee10940568c10089c43f",
+      "bytes": 379230,
+      "frame_index": 67,
+      "video_time_ms": 2233.3333333333335,
+      "player_time_ms": 2233.333333333496
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000068.png",
+      "sha256": "8919d82a1af8b1842bca15672734c12378c16c4ba0291b71a99bbdfb1d1549a0",
+      "bytes": 379221,
+      "frame_index": 68,
+      "video_time_ms": 2266.6666666666665,
+      "player_time_ms": 2266.6666666668316
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000069.png",
+      "sha256": "8919d82a1af8b1842bca15672734c12378c16c4ba0291b71a99bbdfb1d1549a0",
+      "bytes": 379221,
+      "frame_index": 69,
+      "video_time_ms": 2300.0,
+      "player_time_ms": 2300.0000000001673
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000070.png",
+      "sha256": "8919d82a1af8b1842bca15672734c12378c16c4ba0291b71a99bbdfb1d1549a0",
+      "bytes": 379221,
+      "frame_index": 70,
+      "video_time_ms": 2333.3333333333335,
+      "player_time_ms": 2333.333333333503
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000071.png",
+      "sha256": "8919d82a1af8b1842bca15672734c12378c16c4ba0291b71a99bbdfb1d1549a0",
+      "bytes": 379221,
+      "frame_index": 71,
+      "video_time_ms": 2366.6666666666665,
+      "player_time_ms": 2366.666666666839
+    },
+    {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-25-r1\\frames\\frame_000072.png",
+      "sha256": "8919d82a1af8b1842bca15672734c12378c16c4ba0291b71a99bbdfb1d1549a0",
+      "bytes": 379221,
+      "frame_index": 72,
+      "video_time_ms": 2400.0,
+      "player_time_ms": 2400.0000000001746
+    }
+  ],
+  "tooling": {
+    "builder": {
+      "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\scripts\\build_observations.py",
+      "sha256": "6959fbfe85bd4b079b3e31548b74ebba3bf59ba93733c0120484af09f5cea260",
+      "bytes": 15716
+    },
+    "ffmpeg": {
+      "path": "C:\\Users\\chenyifei\\.codex\\visualizations\\2026\\10\\15\\01a13f3f-3806-7061-aa03-4c3dfa56b899\\Pets\\Xuetuan\\tools\\python-packages\\imageio_ffmpeg\\binaries\\ffmpeg-win-x86_64-v7.1.exe",
+      "sha256": "2ce797a0f88d7f067180338fb227f7b1928ea727bd9a4d7a1d022f7c52af71a3",
+      "bytes": 87638016
+    },
+    "pillow_version": "12.2.0",
+    "pillow_module": "C:\\Python311\\Lib\\site-packages\\PIL\\__init__.py"
+  },
+  "limitations": [
+    "These artifacts do not establish actual AI observation or acceptance.",
+    "Contact sheets retain all frames at reduced resolution; full-resolution frames and full trajectory are available."
+  ]
+}

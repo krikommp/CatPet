@@ -1,0 +1,270 @@
+{
+  "stage": "independent_review_evidence_verification",
+  "verified_at": "2026-11-17T12:01:39.418395+00:00",
+  "records": [
+    {
+      "candidate_id": "tr2-train-01-r1",
+      "capture_validation": {
+        "decoded_frames": 48,
+        "decoded_duration_ms": 1600.0,
+        "video_sha256": "a65028410733703286f6ea16af6fcbb6c9b21ca4e4be1e3f35401a09ac40efa1",
+        "full_decode": true,
+        "evidence_sha256": "c1673b0a4acdf8388cdc545e8d1f01d7d1ade8f2a4dd5e1822e7fdcbc5c52b99",
+        "trajectory_sha256": "2ef13f3ec48f5ddf8aa277a67b056d23650e7cc55141154ad953e99cfa91f114",
+        "native_sha256": "77fde2e5a1945b24ad209a55dfb0c13d90ffe55789f96085a2cff2953de72206",
+        "native_duration_ms": 1350,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 1566.6666666666658,
+        "capture_completed_utc": "2026-11-17T11:50:34.1321949Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "522dfd551a2176657bc953a45a70aa7e2341e57ac20013acec7ab96af7c42943",
+      "hashed_artifacts": 58,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-02-r1",
+      "capture_validation": {
+        "decoded_frames": 70,
+        "decoded_duration_ms": 2333.333,
+        "video_sha256": "fb8f218b4a7559a16cbd33f6ce956ddd66e8e64c726cdf5e3b10c94a26d383d4",
+        "full_decode": true,
+        "evidence_sha256": "1bf23e1d41347f56940476e73adb8c0f27620af69bdf5fc7b160b9f2fcc02ef6",
+        "trajectory_sha256": "031e1f3818d7669b475079d73fe35888b52118b3367778ac7738bd6c38506da3",
+        "native_sha256": "70d1eab34d9955a2fab9e04e843061756461b9044c82a7dc4867a8c853139b06",
+        "native_duration_ms": 2100,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 2300.0000000000073,
+        "capture_completed_utc": "2026-11-17T11:50:41.7464752Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "75557293f35ac4a225ee61681338f907ec479c900836ea04cc00b6156b2d90df",
+      "hashed_artifacts": 80,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-03-r1",
+      "capture_validation": {
+        "decoded_frames": 75,
+        "decoded_duration_ms": 2500.0,
+        "video_sha256": "799d4f9a987090e1b49eebfc21bccb6d26384fc23e0ecdb5a2027399df0b72d4",
+        "full_decode": true,
+        "evidence_sha256": "f008f71a81aa46ac2cdeb8fc915b78a41d67b92131ed474460616c9a0242ea82",
+        "trajectory_sha256": "57fb09192239b2e16ab7ab65b370fc0b4c3c401b0bd9fa35f05763f5324f652d",
+        "native_sha256": "2b69ee8c0764b6d71ae0fb0811809b739b4edbca50496fef194868bbab5afb3d",
+        "native_duration_ms": 2250,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 2466.6666666666474,
+        "capture_completed_utc": "2026-11-17T11:50:49.8487599Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "4f76d71f8bdc71fcb7d01cbcfbf85f5ac43b43d0d5599955869501be39293207",
+      "hashed_artifacts": 86,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-04-r1",
+      "capture_validation": {
+        "decoded_frames": 79,
+        "decoded_duration_ms": 2633.333,
+        "video_sha256": "a6a36b34356aa1ca504a459e0e40506f6ba172e6f3c246c824a8bd6a36a8fe75",
+        "full_decode": true,
+        "evidence_sha256": "4b17e458f32fd4826ba278dc6afd54d45aebd684f539edeb480f222a6cd1b928",
+        "trajectory_sha256": "3a9457fb31a3096a8dfc7c81d79bb23bb341fb24abc2b7e196b69a6feddacc23",
+        "native_sha256": "74b85fd557bab282c3e91e576ce3544532b4c3da4e425e5c20fe3243e5d32dcf",
+        "native_duration_ms": 2400,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 2600.0000000000005,
+        "capture_completed_utc": "2026-11-17T11:49:01.9104343Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "3248ff1c3f909669096878a093f7b26343da347395e7a23fd49899123bd1a49b",
+      "hashed_artifacts": 90,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-05-r1",
+      "capture_validation": {
+        "decoded_frames": 88,
+        "decoded_duration_ms": 2933.333,
+        "video_sha256": "e14704628131c2c067220d4fdcf87ec0598a2c31f357909c7de1ddba41030260",
+        "full_decode": true,
+        "evidence_sha256": "9056a64e50f7d9a143d7a6d91c96dd95128090875c6bcdb353838b5eb474d31f",
+        "trajectory_sha256": "f4d66e8158be5196300bc4924bbfab21f20d160420768113e80fb5515ac763da",
+        "native_sha256": "c182b674bc87f1fc295bc3bd2014b8146b80f3d6f061e99d724f33c0e72d84c9",
+        "native_duration_ms": 2700,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 2900.0000000000027,
+        "capture_completed_utc": "2026-11-17T11:50:59.2499002Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "124155595030541a04ce7323e3d1b131eb1e55b251cc48e7262269ce2ce0e817",
+      "hashed_artifacts": 99,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-06-r1",
+      "capture_validation": {
+        "decoded_frames": 88,
+        "decoded_duration_ms": 2933.333,
+        "video_sha256": "ac79988a8ab482e8797081f0ec406d7daeeb0a5914173b08c035767939a7ae95",
+        "full_decode": true,
+        "evidence_sha256": "1832462cd3214922aad12270ed4e31fb8c416ded54f8aef24e6da07d9a15561d",
+        "trajectory_sha256": "785d7d421a4839847e8bc41d4ee95ab63813cee1aacce44cb99f5a446ad7f4db",
+        "native_sha256": "bfd6359a2874bc264f252e8f18e83d86d1adf816a32b7e09b276494544feafec",
+        "native_duration_ms": 2700,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 2900.0000000000528,
+        "capture_completed_utc": "2026-11-17T11:51:08.6658250Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "8a8bf1c37b6d9b3bff2c417391b99a817e9cbe31daeb249a79e9f0c968c3b321",
+      "hashed_artifacts": 99,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-07-r1",
+      "capture_validation": {
+        "decoded_frames": 106,
+        "decoded_duration_ms": 3533.333,
+        "video_sha256": "f3dd7c9e5f650fe643713476b02e519476de2f661b9c41e6a5f98bbde9506c7a",
+        "full_decode": true,
+        "evidence_sha256": "b742656330d788e1f53b45460c320837188e290566c85507ecc2c2a58c594e41",
+        "trajectory_sha256": "9db4e545c59ffeb17648cae46aa12c93bb373a2dfb918cbdbf33a39056fc7e0d",
+        "native_sha256": "cf161c393e3cff4fcff4446ae224beb1cc8a35a6a0b87b9384e86cec5c699539",
+        "native_duration_ms": 3300,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 3500.0000000000637,
+        "capture_completed_utc": "2026-11-17T11:51:19.8349226Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "75d584d4909d59f6da52ad85c28d65f18f35cbc83ac6b1923b0c500bf0047239",
+      "hashed_artifacts": 117,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-08-r1",
+      "capture_validation": {
+        "decoded_frames": 98,
+        "decoded_duration_ms": 3266.667,
+        "video_sha256": "4fca05f4f870472562a14d40a1972b143331636e63d3f60cd2f07f550ba3113d",
+        "full_decode": true,
+        "evidence_sha256": "c0531d62db9fb251a7fd67a204eb1e017275958f3e6fec4afba43ec7bc2efa5a",
+        "trajectory_sha256": "8a198a9d62f2ffc36be137199d71f52abd6e316d31227047046468892f7976bc",
+        "native_sha256": "3230337617c01a424550a0b11be7e7a0cee53db695e49028682b283da6a41ee9",
+        "native_duration_ms": 3000,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 3233.3333333332575,
+        "capture_completed_utc": "2026-11-17T11:51:30.2902579Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "e2900bf9aacc3ea7658054e7ddb75287f16e998552ea57a9de556917d393f446",
+      "hashed_artifacts": 109,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-09-r1",
+      "capture_validation": {
+        "decoded_frames": 89,
+        "decoded_duration_ms": 2966.667,
+        "video_sha256": "8b7b7b3c5f9f5b341664f0593c336c29963a826c177be397df6be959d99de4df",
+        "full_decode": true,
+        "evidence_sha256": "d163ff1a49072106fa6f3e5ad3ca0099060387b6ea4222ca2f096320cc3355f5",
+        "trajectory_sha256": "ae2061bc7ce49a7c2f79cb795505eef243f209664815e0c414616488ff2ffca2",
+        "native_sha256": "a43639439968889bc540c24f87ca1249ff5cad264dd2ce96e3084e1d9a57e9aa",
+        "native_duration_ms": 2700,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 2933.3333333332266,
+        "capture_completed_utc": "2026-11-17T11:51:39.8260524Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "4f208598cea88999e8845eb4796fa670952ee7f535f49a30b4714584c2c292e9",
+      "hashed_artifacts": 100,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-10-r1",
+      "capture_validation": {
+        "decoded_frames": 75,
+        "decoded_duration_ms": 2500.0,
+        "video_sha256": "9e6828158dd0c93d6c057b8a13fa3239bcbb6b1194e5489c904685833219ad0d",
+        "full_decode": true,
+        "evidence_sha256": "78080d16829bb49204ec00b6ae2c19e88595a9207bd9b07f6087b00a31feb1af",
+        "trajectory_sha256": "f16a4ef189befc802df1e208af931019e900acecc251a6b68c5bd9fe303e576b",
+        "native_sha256": "4677a8141e022d11dc0ea81cdab20d3f8beddeab7f6f0e033790f26a8cfc33d4",
+        "native_duration_ms": 2250,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 2466.6666666666647,
+        "capture_completed_utc": "2026-11-17T11:49:09.9739046Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "0879bc650f963610378d5ffc4c762fcadfaf48f7974c9516705404be2c877ba4",
+      "hashed_artifacts": 86,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-11-r1",
+      "capture_validation": {
+        "decoded_frames": 44,
+        "decoded_duration_ms": 1466.667,
+        "video_sha256": "5a76f07db7cef3270a28dcce718ca127b089f84dc92f1540af56507084bf0a15",
+        "full_decode": true,
+        "evidence_sha256": "fe059ba65bcf70a4ba098699d8b5729a448ec2fc31696ff7601856e8802478cc",
+        "trajectory_sha256": "92d2bbe22fc21fd65f67441d75acb3637fc0d8337167075e46c6b386627dc3f8",
+        "native_sha256": "9c4f1a498e305eeebd8138eddda69c67d236f88054444942fdcc201773535482",
+        "native_duration_ms": 1200,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 1433.3333333332812,
+        "capture_completed_utc": "2026-11-17T11:51:44.8888499Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "02957fc19cd8de2c6575647da4bb005d4f543c1696f608ffca9fccf5e7e72d14",
+      "hashed_artifacts": 54,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    },
+    {
+      "candidate_id": "tr2-train-12-r1",
+      "capture_validation": {
+        "decoded_frames": 41,
+        "decoded_duration_ms": 1366.667,
+        "video_sha256": "64d9036e4a0d037ef30fc00f19c0c01186dcfe2d0cf4d0c9ac4ff1ac813a15fc",
+        "full_decode": true,
+        "evidence_sha256": "e7d9e2915b55c0301f45af2b4f4440958efd2f9b4c8a5244cf8d03dace02b67b",
+        "trajectory_sha256": "9e1d11f945237ded0a5fc0438bb1c82c0b6e8d3977d3f298434962a231ec76c2",
+        "native_sha256": "244aa75e2710142d95a9befbbb4137148d91d30ac8fcc619f60e29a822f69f79",
+        "native_duration_ms": 1100,
+        "first_player_time_ms": 0.0,
+        "last_player_time_ms": 1333.3333333332848,
+        "capture_completed_utc": "2026-11-17T11:51:49.5953771Z",
+        "fps": 30,
+        "resource_status": "candidate_except_blink; no formal calibration asserted"
+      },
+      "manifest_sha256": "7244abeff1870535803d537e6a857874a9eaff1c278731845c2e106774152eec",
+      "hashed_artifacts": 51,
+      "done_ok": true,
+      "all_manifest_hashes_match": true
+    }
+  ]
+}

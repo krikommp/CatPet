@@ -1,0 +1,70 @@
+test_dataset_content_change_is_detected (test_training_workflow.WorkflowTests.test_dataset_content_change_is_detected) ... ok
+test_default_checkpoint_is_never_a_training_target (test_training_workflow.WorkflowTests.test_default_checkpoint_is_never_a_training_target) ... ok
+test_epoch_predictions_persist_roles_and_never_overwrite (test_training_workflow.WorkflowTests.test_epoch_predictions_persist_roles_and_never_overwrite) ... ok
+test_existing_empty_output_also_cannot_be_overwritten (test_training_workflow.WorkflowTests.test_existing_empty_output_also_cannot_be_overwritten) ... ok
+test_explicit_wrong_count_is_rejected_by_loader (test_training_workflow.WorkflowTests.test_explicit_wrong_count_is_rejected_by_loader) ... ok
+test_frozen_persona_change_is_detected (test_training_workflow.WorkflowTests.test_frozen_persona_change_is_detected) ... ok
+test_manifest_changes_during_operation_are_detected (test_training_workflow.WorkflowTests.test_manifest_changes_during_operation_are_detected) ... ok
+test_old_test_cannot_return_to_train (test_training_workflow.WorkflowTests.test_old_test_cannot_return_to_train) ... ok
+test_raw_evaluation_filters_declared_split (test_training_workflow.WorkflowTests.test_raw_evaluation_filters_declared_split) ... ok
+test_raw_evaluation_mixed_missing_split_is_rejected (test_training_workflow.WorkflowTests.test_raw_evaluation_mixed_missing_split_is_rejected) ... ok
+test_real_export_and_validation_need_no_human_keep (test_training_workflow.WorkflowTests.test_real_export_and_validation_need_no_human_keep) ... ok
+test_report_creation_never_overwrites (test_training_workflow.WorkflowTests.test_report_creation_never_overwrites) ... ok
+test_roles_and_ordinary_wording_not_rejected_as_numbers (test_training_workflow.WorkflowTests.test_roles_and_ordinary_wording_not_rejected_as_numbers) ... ok
+test_same_group_different_text_cannot_leak (test_training_workflow.WorkflowTests.test_same_group_different_text_cannot_leak) ... ok
+test_same_text_different_group_cannot_leak (test_training_workflow.WorkflowTests.test_same_text_different_group_cannot_leak) ... ok
+test_semantic_family_cannot_cross_decision_buckets (test_training_workflow.WorkflowTests.test_semantic_family_cannot_cross_decision_buckets) ... ok
+test_test_false_is_not_treated_as_train (test_training_workflow.WorkflowTests.test_test_false_is_not_treated_as_train) ... ok
+test_test_fixture_cannot_start_actual_training (test_training_workflow.WorkflowTests.test_test_fixture_cannot_start_actual_training) ... ok
+test_training_requires_explicit_admission (test_training_workflow.WorkflowTests.test_training_requires_explicit_admission) ... ok
+test_unlabelled_evaluation_is_explicitly_diagnostic_only (test_training_workflow.WorkflowTests.test_unlabelled_evaluation_is_explicitly_diagnostic_only) ... ok
+{"snapshot": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\workflow_fix_20261117\\tests_tmp\\training-fixture-8_hh14zm\\snapshot\\manifest.json", "split_counts": {"train": 1, "val": 1, "test": 1}, "source_counts_by_split": {"train": {"ai_semantic_reviewed": 1}, "val": {"ai_semantic_reviewed": 1}, "test": {"ai_semantic_reviewed": 1}}, "decision_counts_by_split": {"train": {"none": 1}, "val": {"unsupported": 1}, "test": {"ambiguous": 1}}, "missing_train_decisions": ["execute", "unsupported", "ambiguous"], "release_approved": false}
+Validated only. No training started or output directory created.
+test_validate_only_does_not_initialize_training_or_create_checkpoint (test_training_workflow.WorkflowTests.test_validate_only_does_not_initialize_training_or_create_checkpoint) ... ok
+test_validation_conditions_parameters_on_actual_predicted_resource (test_training_workflow.WorkflowTests.test_validation_conditions_parameters_on_actual_predicted_resource) ... ok
+test_wrapper_has_explicit_stages_no_implicit_train (test_training_workflow.WorkflowTests.test_wrapper_has_explicit_stages_no_implicit_train) ... usage: python.exe -m unittest [-h] {prepare,validate,train,evaluate} ...
+python.exe -m unittest: error: the following arguments are required: command
+ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 8.285s
+
+OK
+{
+  "stage": "validated_frozen_data",
+  "manifest_sha256": "019b5de32d52595c2bdfac80b0a58cbb4c87dc26341c8ce0882857ee0ab2d578",
+  "split_counts": {
+    "train": 1,
+    "val": 1,
+    "test": 1
+  },
+  "source_counts_by_split": {
+    "train": {
+      "ai_semantic_reviewed": 1
+    },
+    "val": {
+      "ai_semantic_reviewed": 1
+    },
+    "test": {
+      "ai_semantic_reviewed": 1
+    }
+  },
+  "decision_counts_by_split": {
+    "train": {
+      "none": 1
+    },
+    "val": {
+      "unsupported": 1
+    },
+    "test": {
+      "ambiguous": 1
+    }
+  },
+  "missing_train_decisions": [
+    "execute",
+    "unsupported",
+    "ambiguous"
+  ],
+  "release_approved": false,
+  "training_started": false
+}

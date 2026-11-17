@@ -1,0 +1,2514 @@
+{
+  "created_at": "2026-11-17T11:57:13.606111+00:00",
+  "scope": "train only; authored pending visual admission included for representability preflight, no new admission inferred",
+  "model_loaded": false,
+  "optimizer_started": false,
+  "test_rows_accessed": false,
+  "target_count": 81,
+  "all_gold_parameters_representable": true,
+  "target_tensor_shapes": {
+    "decision": [
+      81
+    ],
+    "resource_id": [
+      81,
+      2
+    ],
+    "stage": [
+      81,
+      2
+    ],
+    "cycle_count": [
+      81,
+      2
+    ],
+    "dur_norm": [
+      81,
+      2,
+      3
+    ],
+    "amp_norm": [
+      81,
+      2,
+      3
+    ],
+    "amp_mask": [
+      81,
+      2,
+      3
+    ],
+    "cyc_mask": [
+      81,
+      2,
+      3
+    ],
+    "hold_on": [
+      81,
+      2,
+      3
+    ],
+    "hold_mask": [
+      81,
+      2,
+      3
+    ],
+    "positive_hold_mask": [
+      81,
+      2,
+      3
+    ],
+    "hold_position": [
+      81,
+      2,
+      3
+    ],
+    "gold_hold_ratio": [
+      81,
+      2,
+      3
+    ]
+  },
+  "literal_binding_source_sha256": "b20875d14122eb03e9a2c2e3ad9761566eeeef52438a0031fb601fcf79d6b844",
+  "duration_rows": 25,
+  "supported_duration_rows": 14,
+  "audits": [
+    {
+      "candidate_id": "tr1-train-01",
+      "raw_text": "请眨眼两次，每次500毫秒，闭合后就睁开。",
+      "source": "prior_train",
+      "supported": true,
+      "binding_count": 2,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "blink.full",
+            "exact_duration_ms": 500,
+            "previous_predicted_ms": 500,
+            "sources": [
+              {
+                "text": "500毫秒",
+                "start": 8,
+                "end": 13,
+                "scope_text": "每次500毫秒",
+                "scope_start": 6,
+                "scope_end": 13
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "blink.full",
+            "exact_duration_ms": 500,
+            "previous_predicted_ms": 500,
+            "sources": [
+              {
+                "text": "500毫秒",
+                "start": 8,
+                "end": 13,
+                "scope_text": "每次500毫秒",
+                "scope_start": 6,
+                "scope_end": 13
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "blink.full",
+              "cycle_count": 2
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 2,
+              "actual": 2,
+              "span": "眨眼两次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 500,
+              "actual": 500,
+              "span": "每次500毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 500,
+              "actual": 500,
+              "span": "每次500毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 2
+      }
+    },
+    {
+      "candidate_id": "tr1-train-02",
+      "raw_text": "表示答应，点头两次，每次720毫秒，动作干脆。",
+      "source": "prior_train",
+      "supported": true,
+      "binding_count": 2,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "nod.basic",
+            "exact_duration_ms": 720,
+            "previous_predicted_ms": 720,
+            "sources": [
+              {
+                "text": "720毫秒",
+                "start": 12,
+                "end": 17,
+                "scope_text": "每次720毫秒",
+                "scope_start": 10,
+                "scope_end": 17
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "nod.basic",
+            "exact_duration_ms": 720,
+            "previous_predicted_ms": 720,
+            "sources": [
+              {
+                "text": "720毫秒",
+                "start": 12,
+                "end": 17,
+                "scope_text": "每次720毫秒",
+                "scope_start": 10,
+                "scope_end": 17
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "nod.basic",
+              "cycle_count": 2
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 2,
+              "actual": 2,
+              "span": "点头两次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 720,
+              "actual": 720,
+              "span": "每次720毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 720,
+              "actual": 720,
+              "span": "每次720毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 2
+      }
+    },
+    {
+      "candidate_id": "tr1-train-03",
+      "raw_text": "用摇头表示拒绝，摇头一次，持续900毫秒。",
+      "source": "prior_train",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "用摇头表示拒绝",
+            "start": 0,
+            "end": 7
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "shake_head.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "摇头一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 900,
+              "actual": 900,
+              "span": "持续900毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr1-train-04",
+      "raw_text": "摆出疑惑的样子，歪头一次，持续1200毫秒，中间稍作停留。",
+      "source": "prior_train",
+      "supported": true,
+      "binding_count": 1,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "tilt_head.basic",
+            "exact_duration_ms": 1200,
+            "previous_predicted_ms": 1200,
+            "sources": [
+              {
+                "text": "1200毫秒",
+                "start": 15,
+                "end": 21,
+                "scope_text": "持续1200毫秒",
+                "scope_start": 13,
+                "scope_end": 21
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "tilt_head.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "歪头一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1200,
+              "actual": 1200,
+              "span": "持续1200毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 1
+      }
+    },
+    {
+      "candidate_id": "tr1-train-05",
+      "raw_text": "寻找机房里的声音来源，左右张望一次，持续1300毫秒，连贯地看完再回正。",
+      "source": "prior_train",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "左右张望一次",
+            "start": 11,
+            "end": 17
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "look_around.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "张望一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1300,
+              "actual": 1300,
+              "span": "持续1300毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr1-train-06",
+      "raw_text": "拍照时露出明显的微笑，微笑一次，持续1400毫秒。",
+      "source": "prior_train",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "拍照时露出明显的微笑",
+            "start": 0,
+            "end": 10
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "smile.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "微笑一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1400,
+              "actual": 1400,
+              "span": "持续1400毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr1-train-07",
+      "raw_text": "表演气呼呼地抗议，生气一次，持续1500毫秒。",
+      "source": "prior_train",
+      "supported": true,
+      "binding_count": 1,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "angry.basic",
+            "exact_duration_ms": 1500,
+            "previous_predicted_ms": 1500,
+            "sources": [
+              {
+                "text": "1500毫秒",
+                "start": 16,
+                "end": 22,
+                "scope_text": "持续1500毫秒",
+                "scope_start": 14,
+                "scope_end": 22
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "angry.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "生气一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1500,
+              "actual": 1500,
+              "span": "持续1500毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 1
+      }
+    },
+    {
+      "candidate_id": "tr1-train-08",
+      "raw_text": "表演被戳穿后不好意思的神态，害羞一次，持续1600毫秒。",
+      "source": "prior_train",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "表演被戳穿后不好意思的神态",
+            "start": 0,
+            "end": 13
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "shy.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "害羞一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1600,
+              "actual": 1600,
+              "span": "持续1600毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr1-train-09",
+      "raw_text": "听到突如其来的警报，惊讶一次，持续1200毫秒。",
+      "source": "prior_train",
+      "supported": true,
+      "binding_count": 1,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "surprise.basic",
+            "exact_duration_ms": 1200,
+            "previous_predicted_ms": 1200,
+            "sources": [
+              {
+                "text": "1200毫秒",
+                "start": 17,
+                "end": 23,
+                "scope_text": "持续1200毫秒",
+                "scope_start": 15,
+                "scope_end": 23
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "surprise.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "惊讶一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1200,
+              "actual": 1200,
+              "span": "持续1200毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 1
+      }
+    },
+    {
+      "candidate_id": "tr2-train-01-r1",
+      "raw_text": "用眨眼发送短暗号：眨眼三次，每次450毫秒。",
+      "source": "current_authored_train_pending_admission",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "用眨眼发送短暗号：眨眼三次",
+            "start": 0,
+            "end": 13
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "blink.full",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "眨眼三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 450,
+              "actual": 450,
+              "span": "每次450毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 450,
+              "actual": 450,
+              "span": "每次450毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 450,
+              "actual": 450,
+              "span": "每次450毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr2-train-02-r1",
+      "raw_text": "跟着节拍点头三次，每次700毫秒，每次都回正。",
+      "source": "current_authored_train_pending_admission",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "跟着节拍点头三次",
+            "start": 0,
+            "end": 8
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "nod.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "点头三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 700,
+              "actual": 700,
+              "span": "每次700毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 700,
+              "actual": 700,
+              "span": "每次700毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 700,
+              "actual": 700,
+              "span": "每次700毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr2-train-03-r1",
+      "raw_text": "表达反对，摇头三次，每次750毫秒。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 3,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "shake_head.basic",
+            "exact_duration_ms": 750,
+            "previous_predicted_ms": 750,
+            "sources": [
+              {
+                "text": "750毫秒",
+                "start": 12,
+                "end": 17,
+                "scope_text": "每次750毫秒",
+                "scope_start": 10,
+                "scope_end": 17
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "shake_head.basic",
+            "exact_duration_ms": 750,
+            "previous_predicted_ms": 750,
+            "sources": [
+              {
+                "text": "750毫秒",
+                "start": 12,
+                "end": 17,
+                "scope_text": "每次750毫秒",
+                "scope_start": 10,
+                "scope_end": 17
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 2,
+            "stage": 0,
+            "resource_id": "shake_head.basic",
+            "exact_duration_ms": 750,
+            "previous_predicted_ms": 750,
+            "sources": [
+              {
+                "text": "750毫秒",
+                "start": 12,
+                "end": 17,
+                "scope_text": "每次750毫秒",
+                "scope_start": 10,
+                "scope_end": 17
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "shake_head.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "摇头三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 750,
+              "actual": 750,
+              "span": "每次750毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 750,
+              "actual": 750,
+              "span": "每次750毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 750,
+              "actual": 750,
+              "span": "每次750毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 3
+      }
+    },
+    {
+      "candidate_id": "tr2-train-04-r1",
+      "raw_text": "歪头三次，每次800毫秒，幅度越来越小。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 3,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "tilt_head.basic",
+            "exact_duration_ms": 800,
+            "previous_predicted_ms": 800,
+            "sources": [
+              {
+                "text": "800毫秒",
+                "start": 7,
+                "end": 12,
+                "scope_text": "每次800毫秒",
+                "scope_start": 5,
+                "scope_end": 12
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "tilt_head.basic",
+            "exact_duration_ms": 800,
+            "previous_predicted_ms": 800,
+            "sources": [
+              {
+                "text": "800毫秒",
+                "start": 7,
+                "end": 12,
+                "scope_text": "每次800毫秒",
+                "scope_start": 5,
+                "scope_end": 12
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 2,
+            "stage": 0,
+            "resource_id": "tilt_head.basic",
+            "exact_duration_ms": 800,
+            "previous_predicted_ms": 800,
+            "sources": [
+              {
+                "text": "800毫秒",
+                "start": 7,
+                "end": 12,
+                "scope_text": "每次800毫秒",
+                "scope_start": 5,
+                "scope_end": 12
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "tilt_head.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "歪头三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 800,
+              "actual": 800,
+              "span": "每次800毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 800,
+              "actual": 800,
+              "span": "每次800毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 800,
+              "actual": 800,
+              "span": "每次800毫秒"
+            },
+            {
+              "kind": "gradual_relative",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "reference_cycle_index": 0,
+              "field": "amplitude_scale",
+              "op": "lt",
+              "actual": 0.75,
+              "reference": 0.9,
+              "span": "歪头三次，每次800毫秒，幅度越来越小。"
+            },
+            {
+              "kind": "gradual_relative",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "reference_cycle_index": 1,
+              "field": "amplitude_scale",
+              "op": "lt",
+              "actual": 0.55,
+              "reference": 0.75,
+              "span": "歪头三次，每次800毫秒，幅度越来越小。"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 3
+      }
+    },
+    {
+      "candidate_id": "tr2-train-05-r1",
+      "raw_text": "巡视走廊，左右张望三次，每次900毫秒。",
+      "source": "current_authored_train_pending_admission",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "左右张望三次",
+            "start": 5,
+            "end": 11
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "look_around.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "张望三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr2-train-06-r1",
+      "raw_text": "拍三张表情练习照，微笑三次，每次900毫秒，中间恢复正常。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 3,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "smile.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 16,
+                "end": 21,
+                "scope_text": "每次900毫秒",
+                "scope_start": 14,
+                "scope_end": 21
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "smile.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 16,
+                "end": 21,
+                "scope_text": "每次900毫秒",
+                "scope_start": 14,
+                "scope_end": 21
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 2,
+            "stage": 0,
+            "resource_id": "smile.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 16,
+                "end": 21,
+                "scope_text": "每次900毫秒",
+                "scope_start": 14,
+                "scope_end": 21
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "smile.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "微笑三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 3
+      }
+    },
+    {
+      "candidate_id": "tr2-train-07-r1",
+      "raw_text": "排练抗议表情，生气三次，每次1100毫秒，中间收起表情。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 3,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "angry.basic",
+            "exact_duration_ms": 1100,
+            "previous_predicted_ms": 1100,
+            "sources": [
+              {
+                "text": "1100毫秒",
+                "start": 14,
+                "end": 20,
+                "scope_text": "每次1100毫秒",
+                "scope_start": 12,
+                "scope_end": 20
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "angry.basic",
+            "exact_duration_ms": 1100,
+            "previous_predicted_ms": 1100,
+            "sources": [
+              {
+                "text": "1100毫秒",
+                "start": 14,
+                "end": 20,
+                "scope_text": "每次1100毫秒",
+                "scope_start": 12,
+                "scope_end": 20
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 2,
+            "stage": 0,
+            "resource_id": "angry.basic",
+            "exact_duration_ms": 1100,
+            "previous_predicted_ms": 1100,
+            "sources": [
+              {
+                "text": "1100毫秒",
+                "start": 14,
+                "end": 20,
+                "scope_text": "每次1100毫秒",
+                "scope_start": 12,
+                "scope_end": 20
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "angry.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "生气三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1100,
+              "actual": 1100,
+              "span": "每次1100毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 1100,
+              "actual": 1100,
+              "span": "每次1100毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 1100,
+              "actual": 1100,
+              "span": "每次1100毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 3
+      }
+    },
+    {
+      "candidate_id": "tr2-train-08-r1",
+      "raw_text": "练习不好意思的神态，害羞三次，每次1000毫秒。",
+      "source": "current_authored_train_pending_admission",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "练习不好意思的神态",
+            "start": 0,
+            "end": 9
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "shy.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "害羞三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1000,
+              "actual": 1000,
+              "span": "每次1000毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 1000,
+              "actual": 1000,
+              "span": "每次1000毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 1000,
+              "actual": 1000,
+              "span": "每次1000毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr2-train-09-r1",
+      "raw_text": "排练听见警报的反应，惊讶三次，每次900毫秒。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 3,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "surprise.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 17,
+                "end": 22,
+                "scope_text": "每次900毫秒",
+                "scope_start": 15,
+                "scope_end": 22
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "surprise.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 17,
+                "end": 22,
+                "scope_text": "每次900毫秒",
+                "scope_start": 15,
+                "scope_end": 22
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 2,
+            "stage": 0,
+            "resource_id": "surprise.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 17,
+                "end": 22,
+                "scope_text": "每次900毫秒",
+                "scope_start": 15,
+                "scope_end": 22
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "surprise.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "惊讶三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 3
+      }
+    },
+    {
+      "candidate_id": "tr2-train-10-r1",
+      "raw_text": "发出手臂信号：挥手三次，每次750毫秒，右臂侧抬并张开手掌，再放回。",
+      "source": "current_authored_train_pending_admission",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "发出手臂信号：挥手三次",
+            "start": 0,
+            "end": 11
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "wave.basic",
+              "cycle_count": 3
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 3,
+              "actual": 3,
+              "span": "挥手三次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 750,
+              "actual": 750,
+              "span": "每次750毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 750,
+              "actual": 750,
+              "span": "每次750毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 2,
+              "expected": 750,
+              "actual": 750,
+              "span": "每次750毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr2-train-11-r1",
+      "raw_text": "让眼睛休息一下，眨眼一次，持续1200毫秒，闭上后停一会儿再睁开。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 1,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "blink.full",
+            "exact_duration_ms": 1200,
+            "previous_predicted_ms": 1200,
+            "sources": [
+              {
+                "text": "1200毫秒",
+                "start": 15,
+                "end": 21,
+                "scope_text": "持续1200毫秒",
+                "scope_start": 13,
+                "scope_end": 21
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "blink.full",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "眨眼一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1200,
+              "actual": 1200,
+              "span": "持续1200毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 1
+      }
+    },
+    {
+      "candidate_id": "tr2-train-12-r1",
+      "raw_text": "轻轻表示确认，点头一次，持续1100毫秒，幅度小一些。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 1,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "nod.basic",
+            "exact_duration_ms": 1100,
+            "previous_predicted_ms": 1100,
+            "sources": [
+              {
+                "text": "1100毫秒",
+                "start": 14,
+                "end": 20,
+                "scope_text": "持续1100毫秒",
+                "scope_start": 12,
+                "scope_end": 20
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "nod.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "点头一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1100,
+              "actual": 1100,
+              "span": "持续1100毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 1
+      }
+    },
+    {
+      "candidate_id": "tr2-train-13-r2",
+      "raw_text": "摇头两次，第一次600毫秒，第二次1100毫秒，逐次变慢。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 2,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "shake_head.basic",
+            "exact_duration_ms": 600,
+            "previous_predicted_ms": 600,
+            "sources": [
+              {
+                "text": "600毫秒",
+                "start": 8,
+                "end": 13,
+                "scope_text": "第一次600毫秒",
+                "scope_start": 5,
+                "scope_end": 13
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "shake_head.basic",
+            "exact_duration_ms": 1100,
+            "previous_predicted_ms": 1100,
+            "sources": [
+              {
+                "text": "1100毫秒",
+                "start": 17,
+                "end": 23,
+                "scope_text": "第二次1100毫秒",
+                "scope_start": 14,
+                "scope_end": 23
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "shake_head.basic",
+              "cycle_count": 2
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 2,
+              "actual": 2,
+              "span": "摇头两次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 600,
+              "actual": 600,
+              "span": "第一次600毫秒"
+            },
+            {
+              "kind": "referenced_cycle_exists",
+              "action_index": 0,
+              "passed": true,
+              "expected_minimum": 1,
+              "actual": 2,
+              "span": "第一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 1100,
+              "actual": 1100,
+              "span": "第二次1100毫秒"
+            },
+            {
+              "kind": "referenced_cycle_exists",
+              "action_index": 0,
+              "passed": true,
+              "expected_minimum": 2,
+              "actual": 2,
+              "span": "第二次"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 2
+      }
+    },
+    {
+      "candidate_id": "tr2-train-14-r1",
+      "raw_text": "歪头两次，每次900毫秒，幅度越来越大。",
+      "source": "current_authored_train_pending_admission",
+      "supported": true,
+      "binding_count": 2,
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [
+          {
+            "action_index": 0,
+            "cycle_index": 0,
+            "stage": 0,
+            "resource_id": "tilt_head.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 7,
+                "end": 12,
+                "scope_text": "每次900毫秒",
+                "scope_start": 5,
+                "scope_end": 12
+              }
+            ]
+          },
+          {
+            "action_index": 0,
+            "cycle_index": 1,
+            "stage": 0,
+            "resource_id": "tilt_head.basic",
+            "exact_duration_ms": 900,
+            "previous_predicted_ms": 900,
+            "sources": [
+              {
+                "text": "900毫秒",
+                "start": 7,
+                "end": 12,
+                "scope_text": "每次900毫秒",
+                "scope_start": 5,
+                "scope_end": 12
+              }
+            ]
+          }
+        ],
+        "rejections": [],
+        "deferred_duration_constraints": [],
+        "accepted": true,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "tilt_head.basic",
+              "cycle_count": 2
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 2,
+              "actual": 2,
+              "span": "歪头两次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 900,
+              "actual": 900,
+              "span": "每次900毫秒"
+            },
+            {
+              "kind": "gradual_relative",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "reference_cycle_index": 0,
+              "field": "amplitude_scale",
+              "op": "gt",
+              "actual": 1.05,
+              "reference": 0.55,
+              "span": "歪头两次，每次900毫秒，幅度越来越大。"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        },
+        "binding_count": 2
+      }
+    },
+    {
+      "candidate_id": "tr2-train-15-r1",
+      "raw_text": "左右张望两次，第一次1000毫秒，第二次1600毫秒。",
+      "source": "current_authored_train_pending_admission",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "左右张望两次",
+            "start": 0,
+            "end": 6
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "look_around.basic",
+              "cycle_count": 2
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 2,
+              "actual": 2,
+              "span": "张望两次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 1000,
+              "actual": 1000,
+              "span": "第一次1000毫秒"
+            },
+            {
+              "kind": "referenced_cycle_exists",
+              "action_index": 0,
+              "passed": true,
+              "expected_minimum": 1,
+              "actual": 2,
+              "span": "第一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 1,
+              "expected": 1600,
+              "actual": 1600,
+              "span": "第二次1600毫秒"
+            },
+            {
+              "kind": "referenced_cycle_exists",
+              "action_index": 0,
+              "passed": true,
+              "expected_minimum": 2,
+              "actual": 2,
+              "span": "第二次"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    },
+    {
+      "candidate_id": "tr2-train-16-r2",
+      "raw_text": "示范侧抬右臂并张开手掌：挥手一次，持续900毫秒，随后放回。",
+      "source": "current_authored_train_pending_admission",
+      "supported": false,
+      "error": "Explicit duration binding rejected: unsupported_literal_context.",
+      "audit": {
+        "policy": "explicit-duration-binding.v1",
+        "input_role": "instruction",
+        "no_silent_repair": true,
+        "coverage_is_partial": true,
+        "binding_syntax": "positive-exact-clause-subset",
+        "structural_fields_unchanged": true,
+        "bindings": [],
+        "rejections": [
+          {
+            "kind": "unsupported_literal_context",
+            "reason": "unrecognized_positive_action_anchor",
+            "span": "示范侧抬右臂并张开手掌：挥手一次",
+            "start": 0,
+            "end": 16
+          }
+        ],
+        "deferred_duration_constraints": [],
+        "accepted": false,
+        "final_instruction_guard_required": true,
+        "unchanged_structural_fields": {
+          "decision": "execute",
+          "stage_count": 1,
+          "actions": [
+            {
+              "action_index": 0,
+              "stage": 0,
+              "resource_id": "wave.basic",
+              "cycle_count": 1
+            }
+          ]
+        },
+        "execution_constraints_applicable": true,
+        "constraint_audit": {
+          "policy": "explicit-instruction-guard.v2",
+          "checks": [
+            {
+              "kind": "cycle_count",
+              "action_index": 0,
+              "passed": true,
+              "expected": 1,
+              "actual": 1,
+              "span": "挥手一次"
+            },
+            {
+              "kind": "exact_duration_ms",
+              "action_index": 0,
+              "passed": true,
+              "cycle_index": 0,
+              "expected": 900,
+              "actual": 900,
+              "span": "持续900毫秒"
+            }
+          ],
+          "violations": [],
+          "unresolved": [],
+          "coverage_is_partial": true,
+          "no_silent_repair": true,
+          "execution_constraints_applicable": true,
+          "passed_checked_constraints": true
+        }
+      }
+    }
+  ]
+}

@@ -8,7 +8,9 @@ using Live2D.Cubism.Framework.Motion;
 using Live2D.Cubism.Framework.Physics;
 using UnityEditor;
 using UnityEditor.Media;
+using UnityEditor.SceneManagement;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace PetLive2d.ActionLanguage.Editor
 {
@@ -36,6 +38,7 @@ namespace PetLive2d.ActionLanguage.Editor
         private CubismModel _previewModel;
         private CubismUpdateController _updateController;
         private Camera _previewCamera;
+        private Scene _previewScene;
         private ActionCardCandidate _activeCandidate;
         private Action<ActionCardCandidate> _onPlaybackCompleted;
         private Action<ActionCardCandidate, bool, bool> _onCompileOutcome;
@@ -71,11 +74,14 @@ namespace PetLive2d.ActionLanguage.Editor
             _onCompileOutcome = onCompileOutcome;
             Profile = YukikazeActionCatalog.CreateProfile();
 
-            // Place isolated preview far away from main scene view so it never overlaps user's scene.
+            // A spatial offset alone is not isolation: multiple review/batch sessions
+            // occupy that same location. Give each camera its own editor preview scene.
+            _previewScene = EditorSceneManager.NewPreviewScene();
             PreviewRoot = new GameObject("__YukikazeReviewPreviewRoot")
             {
                 hideFlags = HideFlags.HideAndDontSave
             };
+            SceneManager.MoveGameObjectToScene(PreviewRoot, _previewScene);
             PreviewRoot.transform.position = new Vector3(1000f, 0f, 0f);
 
             var clone = UnityEngine.Object.Instantiate(sourceModel.gameObject, PreviewRoot.transform);
@@ -474,6 +480,7 @@ namespace PetLive2d.ActionLanguage.Editor
             camGo.transform.rotation = Quaternion.identity;
 
             _previewCamera = camGo.AddComponent<Camera>();
+            _previewCamera.scene = _previewScene;
             _previewCamera.orthographic = true;
             _previewCamera.orthographicSize = orthoSize;
             _previewCamera.nearClipPlane = 0.1f;
@@ -663,6 +670,11 @@ namespace PetLive2d.ActionLanguage.Editor
             {
                 UnityEngine.Object.DestroyImmediate(PreviewRoot);
                 PreviewRoot = null;
+            }
+            if (_previewScene.IsValid())
+            {
+                EditorSceneManager.ClosePreviewScene(_previewScene);
+                _previewScene = default;
             }
             Adapter = null;
             Receiver = null;

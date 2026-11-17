@@ -22,7 +22,11 @@ from action_config_schema import (
     decode_config,
 )
 from encoder import DEFAULT_MODEL_DIR, MODEL_ID, MODEL_REVISION, verify_model
-from input_constraints import validate_instruction_constraints
+from config_prediction import (
+    FEASIBLE_MODEL_ARCHITECTURE, LEGACY_MODEL_ARCHITECTURE, MODEL_ARCHITECTURES,
+    SELECTION_RULE_VERSION, RawPredictionMetrics, architecture_policies, create_config_head,
+    predict_config, raw_prediction_record, slice_parameters,
+)
 from training_data import (build_samples, check_snapshot_unchanged, dataset_summary,
                            ensure_new_output_dir, file_sha256, load_snapshot, split_by_group)
 
@@ -32,28 +36,27 @@ def structure(config: dict) -> tuple:
              for a in step["actions"])) for step in config["steps"]))
 
 
-def prediction_metrics(model: ActionConfigV02Model, features: torch.Tensor, samples: list[dict]) -> tuple[dict, list[dict]]:
+def prediction_metrics(model: ActionConfigV02Model, features: torch.Tensor, samples: list[dict],
+                       architecture: str = LEGACY_MODEL_ARCHITECTURE) -> tuple[dict, list[dict]]:
     discrete = model.forward_discrete(features)
     predicted_resources = discrete["resource_id"].argmax(dim=-1)
     params = model.forward_params(discrete["h"], predicted_resources)
     counts = Counter()
     per_class = {decision: Counter() for decision in DECISIONS}
     predictions = []
+    raw_metrics = RawPredictionMetrics()
     for index, sample in enumerate(samples):
         gold = sample["config"]
         decision = gold["decision"]
         counts["total"] += 1
         per_class[decision]["total"] += 1
         counts["execute_total" if decision == "execute" else "nonexecute_total"] += 1
+        row_discrete = {key: value[index:index + 1] for key, value in discrete.items()}
+        raw_prediction = raw_prediction_record(row_discrete)
+        raw_metrics.add(raw_prediction, gold)
         try:
-            predicted = decode_config({key: value[index:index + 1] for key, value in discrete.items()}, params[index:index + 1])
-            if sample.get("input_role", "instruction") == "instruction":
-                audit = validate_instruction_constraints(sample["text"], predicted)
-                if audit["violations"] or audit["unresolved"]:
-                    failure = ModelOutputError("Prediction violates explicit instruction constraints or has unresolved numeric scope.")
-                    failure.raw_config = predicted
-                    failure.constraint_audit = audit
-                    raise failure
+            predicted, audit = predict_config(row_discrete, slice_parameters(params, index), sample["text"],
+                sample.get("input_role", "instruction"), architecture, legacy_decoder=decode_config)
             correct_decision = predicted["decision"] == decision
             correct_structure = structure(predicted) == structure(gold)
             counts["decision_correct"] += int(correct_decision)
@@ -61,29 +64,41 @@ def prediction_metrics(model: ActionConfigV02Model, features: torch.Tensor, samp
             counts["structure_correct"] += int(correct_structure)
             counts["execute_structure_correct"] += int(decision == "execute" and correct_structure)
             counts["false_execution"] += int(decision != "execute" and predicted["decision"] == "execute")
+            counts["valid_nonexecute_prediction"] += int(decision != "execute" and predicted["decision"] != "execute")
             predictions.append({"raw_text": sample["text"], "input_role": sample["input_role"],
-                                "group_id": sample["group_id"], "gold": gold, "predicted": predicted})
+                                "group_id": sample["group_id"], "gold": gold, "predicted": predicted, **audit})
         except ModelOutputError as exc:
             counts["technical_errors"] += 1
             record = {"raw_text": sample["text"], "input_role": sample["input_role"],
-                      "group_id": sample["group_id"], "gold": gold, "technical_error": str(exc)}
+                      "group_id": sample["group_id"], "gold": gold, "technical_error": str(exc),
+                      "raw_prediction": raw_prediction, "binding_audit": getattr(exc, "binding_audit", None)}
             if hasattr(exc, "raw_config"):
                 record.update(raw_prediction_before_guard=exc.raw_config, instruction_constraint_audit=exc.constraint_audit)
             predictions.append(record)
     macro = sum(c["correct"] / c["total"] for c in per_class.values() if c["total"]) / max(1, sum(bool(c["total"]) for c in per_class.values()))
     execute_accuracy = counts["execute_structure_correct"] / max(1, counts["execute_total"])
-    nonexecute_specificity = 1 - counts["false_execution"] / max(1, counts["nonexecute_total"])
+    nonexecute_specificity = counts["valid_nonexecute_prediction"] / max(1, counts["nonexecute_total"])
     error_rate = counts["technical_errors"] / max(1, counts["total"])
-    score = (macro + execute_accuracy + nonexecute_specificity) / 3 - error_rate
+    raw = raw_metrics.summary()
+    if architecture == FEASIBLE_MODEL_ARCHITECTURE:
+        score = (raw["macro_decision_accuracy"] + execute_accuracy + raw["nonexecute_specificity"]) / 3 - error_rate
+        selection_rule = "mean(raw.macro_decision_accuracy, execute_structure_accuracy, raw.nonexecute_specificity) - technical_error_rate"
+        selection_version = SELECTION_RULE_VERSION
+    else:
+        score = (macro + execute_accuracy + nonexecute_specificity) / 3 - error_rate
+        selection_rule = "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"
+        selection_version = "guarded-decision-valid-specificity.v2"
     return {**counts, "per_decision": {d: dict(c) for d, c in per_class.items()},
             "macro_decision_accuracy": macro, "execute_structure_accuracy": execute_accuracy,
             "nonexecute_specificity": nonexecute_specificity, "technical_error_rate": error_rate,
-            "selection_score": score,
-            "selection_rule": "mean(macro_decision_accuracy, execute_structure_accuracy, nonexecute_specificity) - technical_error_rate"}, predictions
+            "raw": raw, "selection_score": score, "selection_rule_version": selection_version,
+            "selection_rule": selection_rule}, predictions
 
 
-def write_epoch_predictions(out_dir: Path, epoch: int, predictions: list[dict]) -> Path:
-    path = out_dir / f"epoch_{epoch}_validation_predictions.jsonl"
+def write_epoch_predictions(out_dir: Path, epoch: int, predictions: list[dict], split: str = "validation") -> Path:
+    if split not in {"train", "validation"}:
+        raise ValueError("Per-epoch diagnostics permit only train and validation; never test.")
+    path = out_dir / f"epoch_{epoch}_{split}_predictions.jsonl"
     with path.open("x", encoding="utf-8") as stream:
         for prediction in predictions:
             stream.write(json.dumps(prediction, ensure_ascii=False) + "\n")
@@ -141,6 +156,22 @@ def pool_backbone(backbone: BertModel, inputs: dict[str, torch.Tensor]) -> torch
     return (hidden * mask).sum(1) / mask.sum(1).clamp(min=1)
 
 
+def split_diagnostics(model, backbone, tokenizer, samples, tensors, batch_size, loss_function, architecture):
+    """Evaluation-mode fit diagnostics; caller selects checkpoints using validation only."""
+    features = []
+    weighted_loss = 0.0
+    for start in range(0, len(samples), batch_size):
+        chunk = samples[start:start + batch_size]
+        inputs = tokenizer([sample["model_text"] for sample in chunk],
+                           padding=True, truncation=False, return_tensors="pt")
+        pooled = pool_backbone(backbone, inputs)
+        targets = {key: values[start:start + batch_size] for key, values in tensors.items()}
+        weighted_loss += float(loss_function(model, pooled, targets).item()) * len(chunk)
+        features.append(pooled)
+    metrics, predictions = prediction_metrics(model, torch.cat(features), samples, architecture)
+    return weighted_loss / len(samples), metrics, predictions
+
+
 def main(argv: list[str] | None = None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--snapshot-manifest", type=Path, required=True)
@@ -151,6 +182,7 @@ def main(argv: list[str] | None = None):
     parser.add_argument("--batch-size", type=int, default=32)
     parser.add_argument("--lr", type=float, default=1e-3)
     parser.add_argument("--backbone-lr", type=float, default=8e-5)
+    parser.add_argument("--model-architecture", choices=MODEL_ARCHITECTURES, default=LEGACY_MODEL_ARCHITECTURE)
     parser.add_argument("--unfreeze-layers", type=int, default=2)
     parser.add_argument("--threads", type=int, default=2)
     parser.add_argument("--status", choices=["experimental"], default="experimental")
@@ -160,11 +192,14 @@ def main(argv: list[str] | None = None):
         parser.error("epochs, batch-size, threads must be positive; max-length must be >=8.")
     if not 0 <= args.unfreeze_layers <= 6:
         parser.error("unfreeze-layers must be 0..6.")
+    if not 0 < args.lr < float("inf") or not 0 < args.backbone_lr < float("inf"):
+        parser.error("lr and backbone-lr must be finite and positive.")
     if args.out_dir is None and not args.validate_only:
         parser.error("--out-dir is required; the current/default checkpoint is never overwritten.")
     out_dir = ensure_new_output_dir(args.out_dir) if args.out_dir else None
     source_paths = [Path(__file__).with_name(name) for name in (
-        "train_action_config.py", "training_data.py", "review_evidence.py", "input_constraints.py", "action_config_schema.py", "encoder.py")]
+        "train_action_config.py", "retrain_and_eval.py", "training_data.py", "review_evidence.py", "input_constraints.py",
+        "action_config_schema.py", "encoder.py", "config_prediction.py", "feasible_config.py", "literal_bindings.py")]
     source_hashes = {path.name: file_sha256(path) for path in source_paths}
     snapshot_hash = file_sha256(args.snapshot_manifest)
     rows, frozen_manifest = load_snapshot(args.snapshot_manifest)
@@ -190,9 +225,13 @@ def main(argv: list[str] | None = None):
         for layer in backbone.encoder.layer[-args.unfreeze_layers:]:
             for parameter in layer.parameters():
                 parameter.requires_grad = True
-    model = ActionConfigV02Model(hidden_size=256)
-    train_t = make_batch_tensors(train_s)
-    val_t = make_batch_tensors(val_s)
+    model = create_config_head(args.model_architecture, hidden_size=256)
+    batch_function, loss_function = make_batch_tensors, compute_loss
+    if args.model_architecture == FEASIBLE_MODEL_ARCHITECTURE:
+        from feasible_config import make_feasible_batch, compute_feasible_loss
+        batch_function, loss_function = make_feasible_batch, compute_feasible_loss
+    train_t = batch_function(train_s)
+    val_t = batch_function(val_s)
     groups = [{"params": model.parameters(), "lr": args.lr}]
     backbone_parameters = [parameter for parameter in backbone.parameters() if parameter.requires_grad]
     if backbone_parameters:
@@ -204,7 +243,7 @@ def main(argv: list[str] | None = None):
     (out_dir / "training_request.json").write_text(json.dumps({
         "snapshot_manifest": str(args.snapshot_manifest.resolve()), "snapshot_manifest_sha256": snapshot_hash,
         "frozen_data_manifest": frozen_manifest, "dataset_summary": summary,
-        "training_source_sha256": source_hashes,
+        "training_source_sha256": source_hashes, **architecture_policies(args.model_architecture),
         "arguments": {key: str(value) if isinstance(value, Path) else value for key, value in vars(args).items()},
         "status": "training", "release_approved": False}, ensure_ascii=False, indent=2), encoding="utf-8")
     best_key = None
@@ -212,6 +251,8 @@ def main(argv: list[str] | None = None):
     best_model_state = best_backbone_state = None
     best_metrics = best_predictions = None
     best_val_loss = None
+    optimizer_updates_total = 0
+    optimizer_updates_by_epoch = []
     for epoch in range(1, args.epochs + 1):
         model.train()
         backbone.train(args.unfreeze_layers > 0)
@@ -224,24 +265,31 @@ def main(argv: list[str] | None = None):
                                padding=True, truncation=False, return_tensors="pt")
             optimizer.zero_grad()
             features = pool_backbone(backbone, inputs)
-            loss = compute_loss(model, features, targets)
+            loss = loss_function(model, features, targets)
             loss.backward()
             optimizer.step()
+            optimizer_updates_total += 1
             total_loss += float(loss.item())
             batches += 1
         model.eval()
         backbone.eval()
+        optimizer_updates_by_epoch.append(batches)
         with torch.inference_mode():
-            validation_inputs = tokenizer([sample["model_text"] for sample in val_s],
-                                          padding=True, truncation=False, return_tensors="pt")
-            validation_features = pool_backbone(backbone, validation_inputs)
-            val_loss = float(compute_loss(model, validation_features, val_t).item())
-            metrics, predictions = prediction_metrics(model, validation_features, val_s)
+            train_fit_loss, train_metrics, train_predictions = split_diagnostics(
+                model, backbone, tokenizer, train_s, train_t, args.batch_size, loss_function, args.model_architecture)
+            val_loss, metrics, predictions = split_diagnostics(
+                model, backbone, tokenizer, val_s, val_t, args.batch_size, loss_function, args.model_architecture)
         key = (metrics["selection_score"], -metrics["technical_error_rate"], -val_loss)
         record = {"epoch": epoch, "train_loss": total_loss / max(1, batches),
-                  "gold_conditioned_val_loss": val_loss, "predicted_resource_validation": metrics}
+                  "optimizer_updates_epoch": batches, "optimizer_updates_total": optimizer_updates_total,
+                  "gold_conditioned_train_fit_loss": train_fit_loss,
+                  "train_diagnostic_only": True, "predicted_resource_train_fit": train_metrics,
+                  "gold_conditioned_val_loss": val_loss, "predicted_resource_validation": metrics,
+                  "selection_split": "val", "selection_rule_version": metrics["selection_rule_version"]}
         prediction_path = write_epoch_predictions(out_dir, epoch, predictions)
         record["validation_predictions"] = {"path": prediction_path.name, "sha256": file_sha256(prediction_path)}
+        train_prediction_path = write_epoch_predictions(out_dir, epoch, train_predictions, "train")
+        record["train_predictions"] = {"path": train_prediction_path.name, "sha256": file_sha256(train_prediction_path)}
         with (out_dir / "epoch_metrics.jsonl").open("a", encoding="utf-8") as stream:
             stream.write(json.dumps(record, ensure_ascii=False) + "\n")
         print(json.dumps(record, ensure_ascii=False), flush=True)
@@ -274,11 +322,17 @@ def main(argv: list[str] | None = None):
         "status": "experimental", "release_approved": False, "can_generate_configs": True,
         "parameter_schema_version": CONFIG_VERSION, "capability_profile": CAPABILITY_PROFILE,
         "resource_catalog_version": RESOURCE_CATALOG_VERSION, "label_policy_version": LABEL_POLICY_VERSION,
-        "input_policy": INPUT_POLICY_VERSION, "decoder_policy": DECODER_POLICY_VERSION,
+        "input_policy": INPUT_POLICY_VERSION, **architecture_policies(args.model_architecture),
         "max_length": args.max_length, "unfrozen_layers": args.unfreeze_layers,
         "supported_resources": supported_resources, "max_actions": MAX_ACTIONS, "max_cycles": MAX_CYCLES,
         "decisions": DECISIONS, "train_count": len(train_s), "val_count": len(val_s), "test_count": len(test_s),
         "best_epoch": best_epoch, "selected_epoch_gold_conditioned_val_loss": best_val_loss,
+        "optimizer_updates_total": optimizer_updates_total,
+        "optimizer_updates_by_epoch": optimizer_updates_by_epoch,
+        "selected_epoch_optimizer_updates": sum(optimizer_updates_by_epoch[:best_epoch]),
+        "selection_split": "val", "selection_rule_version": best_metrics["selection_rule_version"],
+        "selection_rule": best_metrics["selection_rule"],
+        "selection_tiebreakers": ["lower technical_error_rate", "lower gold_conditioned_val_loss", "earlier epoch"],
         "best_validation_prediction_metrics": best_metrics, "data_summary": summary,
         "snapshot_manifest_path": str(args.snapshot_manifest.resolve()), "snapshot_manifest_sha256": snapshot_hash,
         "frozen_data_manifest": frozen_manifest,

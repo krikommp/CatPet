@@ -1,0 +1,643 @@
+{
+  "created_at": "2026-11-17T12:04:12.302396+00:00",
+  "generated_candidates_including_revisions": 94,
+  "recordings_attempted": 72,
+  "recording_failures": [],
+  "reviewed": 54,
+  "review_verdict_counts": {
+    "accepted": 45,
+    "uncertain": 7,
+    "rejected": 2
+  },
+  "accepted": 87,
+  "accepted_by_split": {
+    "train": {
+      "none": 10,
+      "unsupported": 10,
+      "ambiguous": 10,
+      "execute": 42
+    },
+    "val": {
+      "none": 1,
+      "unsupported": 1,
+      "ambiguous": 1,
+      "execute": 5
+    },
+    "test": {
+      "none": 1,
+      "unsupported": 1,
+      "ambiguous": 1,
+      "execute": 4
+    }
+  },
+  "accepted_resource_coverage": {
+    "blink.full": 12,
+    "nod.basic": 10,
+    "shake_head.basic": 9,
+    "tilt_head.basic": 10,
+    "look_around.basic": 7,
+    "smile.basic": 9,
+    "angry.basic": 6,
+    "shy.basic": 5,
+    "surprise.basic": 7,
+    "wave.basic": 2
+  },
+  "missing_reviews": [],
+  "accepted_ids": [
+    "tr1-train-25",
+    "tr1-train-26",
+    "tr1-train-27",
+    "tr1-train-28",
+    "tr1-train-29",
+    "tr1-train-30",
+    "tr1-train-31",
+    "tr1-train-32",
+    "tr1-train-33",
+    "tr1-train-34",
+    "tr1-train-35",
+    "tr1-train-36",
+    "tr1-val-07",
+    "tr1-val-08",
+    "tr1-val-09",
+    "tr1-test-07",
+    "tr1-test-08",
+    "tr1-test-09",
+    "tr1-train-01",
+    "tr1-train-02",
+    "tr1-train-03",
+    "tr1-train-04",
+    "tr1-train-05",
+    "tr1-train-06",
+    "tr1-train-07",
+    "tr1-train-08",
+    "tr1-train-09",
+    "tr1-train-13",
+    "tr1-train-14",
+    "tr1-train-17",
+    "tr1-train-18",
+    "tr1-train-21",
+    "tr1-train-23",
+    "tr1-val-02",
+    "tr1-val-03",
+    "tr1-val-04",
+    "tr1-val-05-r1",
+    "tr1-val-06",
+    "tr1-test-01",
+    "tr1-test-02",
+    "tr1-test-05",
+    "tr1-test-06",
+    "tr2-train-37",
+    "tr2-train-38",
+    "tr2-train-39",
+    "tr2-train-40",
+    "tr2-train-41",
+    "tr2-train-42",
+    "tr2-train-43",
+    "tr2-train-44",
+    "tr2-train-45",
+    "tr2-train-46",
+    "tr2-train-47",
+    "tr2-train-48",
+    "tr2-train-49",
+    "tr2-train-50",
+    "tr2-train-51",
+    "tr2-train-52",
+    "tr2-train-53",
+    "tr2-train-54",
+    "tr2-train-01-r1",
+    "tr2-train-02-r1",
+    "tr2-train-03-r1",
+    "tr2-train-04-r1",
+    "tr2-train-05-r1",
+    "tr2-train-06-r1",
+    "tr2-train-07-r1",
+    "tr2-train-09-r1",
+    "tr2-train-11-r1",
+    "tr2-train-12-r1",
+    "tr2-train-13-r2",
+    "tr2-train-14-r1",
+    "tr2-train-15-r1",
+    "tr2-train-17-r1",
+    "tr2-train-18-r1",
+    "tr2-train-19-r1",
+    "tr2-train-20-r1",
+    "tr2-train-21-r1",
+    "tr2-train-22-r1",
+    "tr2-train-23-r1",
+    "tr2-train-24-r1",
+    "tr2-train-25-r1",
+    "tr2-train-26-r1",
+    "tr2-train-29-r2",
+    "tr2-train-30-r2",
+    "tr2-train-31-r1",
+    "tr2-train-33-r1"
+  ],
+  "rejected_or_uncertain": [
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_a:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T11:59:52.876123+00:00",
+      "candidate_id": "tr2-train-08-r1",
+      "parent_candidate_id": "tr2-train-08",
+      "input_role": "instruction",
+      "raw_text_sha256": "7a7d0758df24e2c4b841b593711368d7e3386fc7bb8f61cfae0709a10b797a53",
+      "config_sha256": "f9dc1321b192a99a2bc08d68147d4358e781714fa5019a39766d7a05198f2c16",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "c0531d62db9fb251a7fd67a204eb1e017275958f3e6fec4afba43ec7bc2efa5a",
+      "video_sha256": "4fca05f4f870472562a14d40a1972b143331636e63d3f60cd2f07f550ba3113d",
+      "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-08-r1\\evidence.json",
+      "status": "uncertain",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0
+      },
+      "rationale": "All three contact sheets (98 frames), all focused rows and originals 15/30 were inspected. There are three clean tilt/pout presentations with full return between them, 1000 ms each; the plateau occurs near 333-667 ms per cycle and neutral at 1000/2000/3000 ms. The peak shows head tilt, a small pursed mouth and only subtle gaze change. The face remains largely forward-looking, and the baseline blush is not a distinct new embarrassment cue. Although this could be interpreted as coy, the observed result is equally a puzzled or sulky tilted pose, so the literal request for three embarrassed/shy expressions is not established without relying on the resource label. No naturalness score or admission is assigned.",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "The pose visibly combines a side tilt and small pout, but its intended embarrassment/shyness is not unambiguously distinguishable from a puzzled or mildly sulky expression. Correct shy.basic channel values alone do not resolve that visual semantic uncertainty."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-08-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-08-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-08-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-08-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-08-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-08-r1\\contact_sheets\\page_003.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-08-r1\\frames\\frame_000015.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-08-r1\\frames\\frame_000030.png"
+        ],
+        "contact_sheet_pages_observed": 3,
+        "contact_sheet_frames_observed": 98,
+        "focused_trajectory_rows_observed": 98,
+        "original_resolution_frame_indices_observed": [
+          15,
+          30
+        ]
+      },
+      "resource_status": "candidate_except_blink; no formal calibration asserted"
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_a:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T11:59:05.469824+00:00",
+      "candidate_id": "tr2-train-10-r1",
+      "parent_candidate_id": "tr2-train-10",
+      "input_role": "instruction",
+      "raw_text_sha256": "5997df9703a69d7ed4255ef4906d827513ac153bc66cafcddf829cb6f7a3f0aa",
+      "config_sha256": "cd0069c37c7db365ecc96a664c293780172913d7af4727359c22b87b299e7191",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "78080d16829bb49204ec00b6ae2c19e88595a9207bd9b07f6087b00a31feb1af",
+      "video_sha256": "9e6828158dd0c93d6c057b8a13fa3239bcbb6b1194e5489c904685833219ad0d",
+      "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixpilot\\tr2-train-10-r1\\evidence.json",
+      "status": "uncertain",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0
+      },
+      "rationale": "All three contact sheets (75 frames), all focused trajectory rows and originals 0/11/34 were inspected. Three clean side lifts with an open palm and return are visible, peaking near 367/1133/1867 ms and returning at 750/1500/2250 ms. The full moving hand stays within frame and geometry is coherent. However the limb rises on screen right in a front-facing character. RT/Right Upper Arm metadata names do not establish whether this is anatomical right or screen right, and no mirroring convention was found. The explicit right-arm requirement is therefore not an unambiguous visual match. Withdraw the provisional naturalness assessment; no naturalness score or training acceptance is assigned.",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "The visible moving limb is on screen right. The raw instruction explicitly specifies right arm, but no anatomical-versus-screen or mirroring convention is established by the observed image or binding sources. Exact side semantics remain unresolved."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixpilot\\tr2-train-10-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\contact_sheets\\page_003.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\frames\\frame_000000.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\frames\\frame_000011.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-10-r1\\frames\\frame_000034.png"
+        ],
+        "contact_sheet_pages_observed": 3,
+        "contact_sheet_frames_observed": 75,
+        "focused_trajectory_rows_observed": 75,
+        "original_resolution_frame_indices_observed": [
+          0,
+          11,
+          34
+        ]
+      },
+      "resource_status": "candidate_except_blink; no formal calibration asserted"
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_b:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "prompt_sha256": "8a65cb087f2fa0b7ce6f2a69f34db3ef5642ae75adc39d8b5ef16656c93e2ea5",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T12:03:18.314411+00:00",
+      "status": "rejected",
+      "semantic_match": false,
+      "scores": {
+        "semantic": 0
+      },
+      "candidate_id": "tr2-train-16-r2",
+      "parent_candidate_id": "tr2-train-16-r1",
+      "input_role": "instruction",
+      "raw_text_sha256": "89828545329208d152b67d467df402c0a5df05d8574b872d7054e3f9fc4104c0",
+      "config_sha256": "1bfcdca787b6e77dab459700fca8cffa9d87c018012ff0d5a1f0b8254542b868",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "49540537a2ec7a2c97bb6bf7dd3f24caff726f99686c684b397c498151e9240c",
+      "video_sha256": "dafaee85dbc3ab82a7a9c533360ba125450dcda115fa8887e9cf004eba93d1a3",
+      "rationale": "One coherent broad arm lift with an open palm is visible, peaking around 433–467 ms and returning by 900 ms; all fingers remain in frame. However, full frame 13 shows the arm on image-right, which is the frontal character’s anatomical left side. The literal raw instruction requests the right arm. No established mirrored/viewer-side convention was supplied, and the RT parameter name alone cannot resolve this visible side mismatch. Count, duration and return match, but complete literal gesture semantics are uncertain.",
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "The visible raised arm is image-right/anatomical-left; requested right-arm laterality is not established."
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-16-r2\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\frames\\frame_000000.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\frames\\frame_000013.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\frames\\frame_000027.png"
+        ],
+        "artifact_hashes": [
+          {
+            "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\contact_sheets\\page_001.png",
+            "sha256": "fd6ea10540067dcf74160380927921409873bb3c41ce215e649c2a8e84952d37"
+          },
+          {
+            "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\observation_manifest.json",
+            "sha256": "dba3ae845b678e50006bed9fdafd4d6f697e1a28c27ab255aa37890855af5037"
+          },
+          {
+            "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\trajectory_focus.jsonl",
+            "sha256": "6bd4807edcdbd67f0831dc8ae4790420b4cd73b2595b4b58c52ecdca62d63f63"
+          },
+          {
+            "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-16-r2\\trajectory.jsonl",
+            "sha256": "e6fd679a7820af192f5d2f83ad983c6f2ff8b64c16a99c9d476cdb2fc136ab99"
+          },
+          {
+            "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\frames\\frame_000000.png",
+            "sha256": "3baeeec7b3b1dfdd005357a422b9299c55f7090626eec3bd1720acd0b5c3649c"
+          },
+          {
+            "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\frames\\frame_000013.png",
+            "sha256": "fb4ab40d644fedbe1ca700a3fb58878b5717eb3e91b4731dc256206e953b2442"
+          },
+          {
+            "path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\frames\\frame_000027.png",
+            "sha256": "1e97702d6001a507a7949add8eaf1f433cb385d5245470ceeddf5498a3f5db80"
+          }
+        ],
+        "contact_sheet_pages_observed": 1,
+        "trajectory_rows_observed": 35,
+        "additional_full_frames_observed": [
+          0,
+          13,
+          27
+        ]
+      },
+      "candidate_source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\revised_candidates_capture.jsonl",
+      "candidate_source_sha256": "007d2ee340b98ab4e9d6deb829db729fb2b221c8a142777a71a909a7175d4d69",
+      "candidate_record_sha256": "9e4587ada3e5e34bcb3b00c91b21726dffa5face5e61bdfe5a3b84d867bfdd24",
+      "generation_source_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\scripts\\revise_capture_isolation.py",
+      "generation_source_sha256": "faa5581afe9469748ab08725bbd51e970b963b3ffb335be68a1b3c3d910b7d3a",
+      "evidence_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-16-r2\\evidence.json",
+      "physical_integrity_report_path": "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-16-r2\\physical_integrity_report.json",
+      "physical_integrity_report_sha256": "95bbd146db47981a85509447355c3d439f5b51401fe08b2a0ff109a569837d5e",
+      "training_eligible": false
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_c:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T12:02:02Z",
+      "status": "uncertain",
+      "semantic_match": false,
+      "candidate_id": "tr2-train-27-r1",
+      "parent_candidate_id": "tr2-train-27",
+      "input_role": "instruction",
+      "raw_text_sha256": "6dbab99fca514b8af17d9dc462455a024304122cc1b3662f455697fdeb6c82ba",
+      "config_sha256": "9acdd41789422d1be615faebcd06ec45bc8435453e570cad9eafeb72b08a27b0",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "dd623442169ca2d6e598385d30e8e3ab04a5a8f3a88d6b68e255b8ff1fc6b512",
+      "video_sha256": "223f3e4e5dba914c1e968e386a98ff7c417ae4b119582212469bbf560a328df2",
+      "rationale": "完整观察58帧与原分辨率13/39帧。0–900ms清楚出现画面右侧手臂侧抬、手掌展开和放回，900–1700ms随后点头并回位，顺序可确认且未裁切。但正面角色抬起的是screen-right手臂，通常对应角色自身左臂；raw明确要求右臂，而现有绑定资料没有明确屏幕侧别或镜像约定。PARAM_Arm_RT_Angle命名不能消除这项视觉语义不确定，因此不能给semantic=1或naturalness。",
+      "scores": {
+        "semantic": 0.5
+      },
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "Raw要求右臂，但观察仅确认画面右侧手臂动作；角色自身左右与镜像约定未证实。"
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-27-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-27-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-27-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-27-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-27-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-27-r1\\frames\\frame_000013.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-27-r1\\frames\\frame_000039.png"
+        ],
+        "observed_frame_count": 58,
+        "observed_contact_sheet_count": 2,
+        "full_resolution_frame_indices": [
+          13,
+          39
+        ],
+        "all_focused_trajectory_rows_observed": true
+      },
+      "feedback": "保留当前样本为不确定。未来需明确并视觉核验角色自身左右与屏幕左右的约定，再生成对应新样本；不可把现有raw的右臂默认为画面右侧。"
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_c:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T12:02:02Z",
+      "status": "uncertain",
+      "semantic_match": false,
+      "candidate_id": "tr2-train-28-r1",
+      "parent_candidate_id": "tr2-train-28",
+      "input_role": "instruction",
+      "raw_text_sha256": "be0632be7cad58e04794b7ae04d43562f08210fe726ee5544404ab4c6f20c008",
+      "config_sha256": "f02056dcb766544da9286e83c777de2aeb0491315aae60cd4f5fba028c313300",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "e921403e2d83abaa4b748731ae5685686671fef8e90d66143d8a77d6d41a75a5",
+      "video_sha256": "c14c06ffe22040e63f189e4cad29933ef9ffada2c1afac903fcde23876f56b86",
+      "rationale": "完整观察58帧与原分辨率12/37帧。先在0–800ms低头点头并回正，之后800–1700ms画面右侧手臂侧抬、张掌再放回，动作顺序与画面完整性确认。但raw要求角色右臂，正面画面的screen-right手臂通常为角色左臂，资料没有足够的屏幕/自身左右或镜像定义；仅凭资源参数名不能接受该侧别。无naturalness评分。",
+      "scores": {
+        "semantic": 0.5
+      },
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "Raw右臂与实际画面右侧手臂之间缺少已证实的角色侧别或镜像映射。"
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-28-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-28-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-28-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-28-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-28-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-28-r1\\frames\\frame_000012.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-28-r1\\frames\\frame_000037.png"
+        ],
+        "observed_frame_count": 58,
+        "observed_contact_sheet_count": 2,
+        "full_resolution_frame_indices": [
+          12,
+          37
+        ],
+        "all_focused_trajectory_rows_observed": true
+      },
+      "feedback": "顺序实现正确，侧别仍需独立定义和视觉标定后新建样本，当前保持不确定。"
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_c:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T12:02:02Z",
+      "status": "rejected",
+      "semantic_match": false,
+      "candidate_id": "tr2-train-32-r1",
+      "parent_candidate_id": "tr2-train-32",
+      "input_role": "instruction",
+      "raw_text_sha256": "714dee26c8e36dd25af94f5521467659793402244e194a188bae1b727a0583d3",
+      "config_sha256": "9212e481fc635ab5127b08e2faea239c4a0264fc14fabf3c01d1d40f7fdf5efe",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "70f269e5be9707a008530536f8f4a28714847cb914b81c8c077645229e91121f",
+      "video_sha256": "30e1eac18e0af7fb5984174e9e00fb061315158128f1eacd49b5dbfabb4ae978",
+      "rationale": "完整观察50帧及6/10/21/34原分辨率帧。微笑和左右头部转动确实同时起始，1400ms回位，未裁切。但主要左右扫视期间双眼变成完全闭合的月牙眼：约433–967ms眼睑值为0，700ms头部转向另一侧峰值时原分辨率画面也完全闭眼。画面主要表现笑着转头，缺少能看清的双向视线寻找；无法无歧义履行raw的左右张望寻找朋友，参数存在眼球运动不足以替代可见语义。故拒绝且不评分naturalness。",
+      "scores": {
+        "semantic": 0.6
+      },
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "微笑闭眼遮蔽主要张望阶段，无法确认raw所要求的可见双向寻找行为。"
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-32-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\frames\\frame_000006.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\frames\\frame_000010.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\frames\\frame_000021.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-32-r1\\frames\\frame_000034.png"
+        ],
+        "observed_frame_count": 50,
+        "observed_contact_sheet_count": 2,
+        "full_resolution_frame_indices": [
+          6,
+          10,
+          21,
+          34
+        ],
+        "all_focused_trajectory_rows_observed": true
+      },
+      "feedback": "后续需采用视觉上能保持睁眼的微笑资源或另行设计有可见双向观察的样本；不能仅以look_around资源名和眼球轨迹认定当前闭眼表演已完成寻找。"
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_c:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T12:02:02Z",
+      "status": "uncertain",
+      "semantic_match": false,
+      "candidate_id": "tr2-train-34-r1",
+      "parent_candidate_id": "tr2-train-34",
+      "input_role": "instruction",
+      "raw_text_sha256": "9d362c6fdce30572a2a42d92b3431588f304871cd9e7ffd0f4ef93c2e02f786d",
+      "config_sha256": "ff82d97eadd6561680ce39884c16df6f6a54ab4d9580b214e632431ac9c06d5a",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "de548fd50287cb16d3598fea8017f448600c75e74c7ef2adf18c16641130ca8b",
+      "video_sha256": "3105d54101f44d3a1c8639e94a74931a7c2b2b631015bb8205307d5404252408",
+      "rationale": "完整观察50帧及原分辨率15帧。害羞的歪头、回避视线和嘟嘴与侧抬张掌同时进入；手臂1000ms放回，害羞1400ms结束。可用角色图形和活动手指均未裁切。但活动手臂在画面右侧，正面角色通常对应自身左臂，而raw明确说右臂；未有明确镜像/屏幕侧别约定可支持这一差异。尽管其余并行结构可见，侧别语义仍不确定，不能接受或给naturalness。",
+      "scores": {
+        "semantic": 0.5
+      },
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "画面右侧手臂动作无法无歧义绑定raw中的角色右臂。"
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-34-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-34-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-34-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-34-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-34-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-34-r1\\frames\\frame_000015.png"
+        ],
+        "observed_frame_count": 50,
+        "observed_contact_sheet_count": 2,
+        "full_resolution_frame_indices": [
+          15
+        ],
+        "all_focused_trajectory_rows_observed": true
+      },
+      "feedback": "害羞与张掌并行结构可见；当前右臂表述需先解决角色左右和屏幕左右约定，保留不确定记录。"
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_c:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T12:02:02Z",
+      "status": "uncertain",
+      "semantic_match": false,
+      "candidate_id": "tr2-train-35-r1",
+      "parent_candidate_id": "tr2-train-35",
+      "input_role": "instruction",
+      "raw_text_sha256": "6dea9538506df15a66c625ef23a3ac0728c0ec10fa8308ac0ebb09d9e357f15e",
+      "config_sha256": "9a079ece0064d084202c55b45ad6a8737e9b7586d6543857e579e0d1860ef3cd",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "f6cfb075736d8a11e065229326bc409ca72963bfb2ac2d04fc93996ca8fc9685",
+      "video_sha256": "30565d6c21340b61a2d80c987c9acf9ad2765006762ae3043fa0ba862fa0f655",
+      "rationale": "完整观察38帧及原分辨率7/15帧。头部先朝一侧、再朝另一侧并回中，侧抬张掌同起，1000ms共同回位；画面完整，活动手指没有出框。摇头支持拒绝的动作语境，但抬起的是screen-right手臂，正面角色通常为自身左臂；raw明确要求右臂，现有资料不能证实镜像或屏幕左右解释。因此全句语义不确定，无naturalness评分。",
+      "scores": {
+        "semantic": 0.5
+      },
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "Raw指定右臂，但仅观察到画面右侧手臂；未证实解剖侧别或镜像约定。"
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-35-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-35-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-35-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-35-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-35-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-35-r1\\frames\\frame_000007.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-35-r1\\frames\\frame_000015.png"
+        ],
+        "observed_frame_count": 38,
+        "observed_contact_sheet_count": 2,
+        "full_resolution_frame_indices": [
+          7,
+          15
+        ],
+        "all_focused_trajectory_rows_observed": true
+      },
+      "feedback": "摇头与侧抬张掌的并发关系已观察到；侧别未证实之前不应将本条作为明确右臂训练正例。"
+    },
+    {
+      "reviewer_type": "AI",
+      "provider": "OpenAI / Codex desktop",
+      "model": "Codex (exact backend model identifier not exposed)",
+      "context_id": "codex-desktop:/root/round2_visual_c:teacher_round2_20261117_192708",
+      "prompt_version": "codex-review-round2.v1",
+      "rubric_version": "codex-independent-video.v1",
+      "reviewed_at": "2026-11-17T12:02:02Z",
+      "status": "uncertain",
+      "semantic_match": false,
+      "candidate_id": "tr2-train-36-r1",
+      "parent_candidate_id": "tr2-train-36",
+      "input_role": "instruction",
+      "raw_text_sha256": "984a2e508588adb3cb4e99ee68619f6d4ee26bea9ea719bd0b591de1d67477de",
+      "config_sha256": "ba3d3528230ec649c2c51cfdeb99bdeed87e9d9545e1532d55b62866357ed46f",
+      "compiler_sha256": "6e0b49db2f9c4a3fbf17d63189254c949ee5b7a9af742e5e01cc755c2fec858f",
+      "resource_sha256": "fda63e6236157c90e54abc5d761c324cff348cf4701175b97673b68703002684",
+      "native_profile_sha256": "64a074f4103cf0111347c5c915ca73f243c14f861fecae8bb31868cb072dcca6",
+      "persona_sha256": "d758cac79840d9c91e28697c750a2a51d629bce830c411d42c24854f9ac53ce9",
+      "evidence_sha256": "0fd5dcfb0df57b91e7dc6073fc855ad2dae808dd7b7d1bb91b1113e4b9bb10c3",
+      "video_sha256": "0b6d350783940f20d15dbfa6c328733269c6235e6651bb7adf9500ca4b7757a6",
+      "rationale": "完整观察50帧及原分辨率15帧。笑眼与侧抬张掌从开头同时进入，500ms附近手臂抬至最大、手掌展开，1000ms手臂放回，1400ms笑容退去，画面完整。可见表演符合微笑加侧抬张掌，但手臂是画面右侧，正面角色通常对应自身左臂，raw所述右臂没有明确镜像/屏幕约定支撑。故不确定且不提供naturalness。",
+      "scores": {
+        "semantic": 0.5
+      },
+      "observation": {
+        "method": "timestamped_frames_and_trajectory",
+        "full_clip_observed": true,
+        "limitations": [
+          "画面右侧手臂与raw角色右臂的映射未获证实。"
+        ],
+        "artifact_paths": [
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-36-r1\\contact_sheets\\page_001.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-36-r1\\contact_sheets\\page_002.png",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-36-r1\\observation_manifest.json",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-36-r1\\trajectory_focus.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\snapshots_fixmain\\tr2-train-36-r1\\trajectory.jsonl",
+          "D:\\UnityProjects\\Pet\\PetLive2d\\Experiments\\teacher_round2_20261117_192708\\observations\\tr2-train-36-r1\\frames\\frame_000015.png"
+        ],
+        "observed_frame_count": 50,
+        "observed_contact_sheet_count": 2,
+        "full_resolution_frame_indices": [
+          15
+        ],
+        "all_focused_trajectory_rows_observed": true
+      },
+      "feedback": "微笑与手臂的时间关系可确认，但必须先解决raw右臂的坐标含义再制作新的可接受正例。"
+    }
+  ],
+  "release_approved": false,
+  "prior_records": 42,
+  "new_accepted": 45,
+  "prior_source_sha256": "360a44e52ff5f9cf8859dbd5316665aae3b83a8adba6482eee1222fc7b1017b7",
+  "heldout_rows_unchanged": true,
+  "initial_guard_failures_preserved": [
+    "tr2-train-13",
+    "tr2-train-16",
+    "tr2-train-29",
+    "tr2-train-30"
+  ]
+}

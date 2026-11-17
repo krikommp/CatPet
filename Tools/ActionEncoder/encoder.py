@@ -152,12 +152,13 @@ class LocalEncoder:
 
     def _load_config_head(self, head_dir: Path) -> None:
         from transformers import BertModel
-        from action_config_schema import ActionConfigV02Model
+        from config_prediction import create_config_head, validate_head_manifest, architecture_policies
         head_manifest = json.loads((head_dir / "manifest.json").read_text(encoding="utf-8"))
         if head_manifest.get("model_id") != MODEL_ID or head_manifest.get("model_revision") != self.manifest["revision"]:
             raise ValueError("Config head manifest does not match MiniRBT backbone revision.")
-        head = ActionConfigV02Model(hidden_size=256)
-        head.load_state_dict(self.torch.load(head_dir / "config_head.pt", map_location="cpu"))
+        architecture = validate_head_manifest(head_manifest)
+        head = create_config_head(architecture, hidden_size=256)
+        head.load_state_dict(self.torch.load(head_dir / "config_head.pt", map_location="cpu"), strict=True)
         head.eval()
 
         backbone_state_path = head_dir / "backbone_state.pt"
@@ -185,7 +186,7 @@ class LocalEncoder:
             "max_length": head_manifest.get("max_length", 128),
             "supported_resources": head_manifest.get("supported_resources", []),
             "input_policy": head_manifest.get("input_policy", "legacy-unprefixed"),
-            "decoder_policy": DECODER_POLICY_VERSION,
+            **architecture_policies(architecture),
         }
 
     def health(self) -> dict:
@@ -234,7 +235,8 @@ class LocalEncoder:
         if len(full_tokens) > max_length:
             raise InputTooLongError(f"Input exceeds max_length={max_length} ({len(full_tokens)} tokens); refusing truncated execution.")
 
-        from action_config_schema import decode_config
+        from config_prediction import predict_config, validate_head_manifest, architecture_policies
+        architecture = validate_head_manifest(self.config_head_manifest)
         start = time.perf_counter()
         inputs = self.tokenizer([model_text], padding=True, truncation=False, return_tensors="pt")
         bb = self.config_backbone or self.model
@@ -245,25 +247,15 @@ class LocalEncoder:
             disc = self.config_head.forward_discrete(pooled)
             pred_rids = disc["resource_id"].argmax(dim=-1)
             params = self.config_head.forward_params(disc["h"], pred_rids)
-            config_obj = decode_config(disc, params)
-
-        constraint_audit = None
-        if input_role == "instruction":
-            from input_constraints import validate_instruction_constraints
-            constraint_audit = validate_instruction_constraints(text.strip(), config_obj)
-            if constraint_audit["violations"] or constraint_audit["unresolved"]:
-                failure = ModelOutputError("Prediction violates explicit instruction constraints or their numeric scope is unresolved.")
-                failure.raw_config = config_obj
-                failure.constraint_audit = constraint_audit
-                raise failure
+            config_obj, prediction_audit = predict_config(disc, params, text.strip(), input_role, architecture)
 
         return {
             "request_id": request_id,
             "source": "local_minirbt_v02",
             "input_role": input_role,
             "input_policy": input_policy or "legacy-unprefixed",
-            "decoder_policy": DECODER_POLICY_VERSION,
-            "constraint_audit": constraint_audit,
+            **architecture_policies(architecture),
+            **prediction_audit,
             "model_version": self.config_head_manifest.get("model_version", "unknown"),
             "capability_profile": expected_profile,
             "resource_catalog_version": expected_catalog,
